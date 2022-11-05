@@ -1,4 +1,6 @@
 #!/bin/bash
+#
+# JILT launcher script for Linux.
 
 export CLASSPATH=$(dirname "$0")/out/production/jilt
 
