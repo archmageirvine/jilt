@@ -3,6 +3,7 @@ package irvine.jilt;
 import java.util.Arrays;
 import java.util.Locale;
 
+import irvine.language.Anagram;
 import irvine.util.StringUtils;
 
 /**
@@ -40,12 +41,7 @@ public final class Jilt {
     /** Dummy module that returns the list of possible modules. */
     HELP(new Help()),
     /** Simple anagrams. */
-    ANAGRAM(new Command("Anagram") {
-      @Override
-      protected void mainExec(final String... args) {
-
-      }
-    }),
+    ANAGRAM(new Anagram()),
     ;
 
     private final Command mCommand;

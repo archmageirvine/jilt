@@ -16,7 +16,11 @@ public abstract class Command {
     mDescription = description;
   }
 
-  String getDescription() {
+  /**
+   * Get the brief description of this module.
+   * @return module description
+   */
+  public String getDescription() {
     return mDescription;
   }
 

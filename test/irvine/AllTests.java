@@ -12,6 +12,7 @@ public class AllTests extends TestSuite {
   public static Test suite() {
     final TestSuite suite = new TestSuite();
     suite.addTest(irvine.jilt.AllTests.suite());
+    suite.addTest(irvine.language.AllTests.suite());
     suite.addTest(irvine.util.AllTests.suite());
     return suite;
   }

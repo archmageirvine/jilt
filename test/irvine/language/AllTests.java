@@ -1,20 +1,17 @@
-package irvine.util;
+package irvine.language;
 
 import junit.framework.Test;
 import junit.framework.TestSuite;
 
 /**
- * Links all the tests in this package.
+ * Test class for all tests in this directory.
  * @author Sean A. Irvine
  */
 public class AllTests extends TestSuite {
 
   public static Test suite() {
     final TestSuite suite = new TestSuite();
-    suite.addTestSuite(CasingTest.class);
-    suite.addTestSuite(CliFlagsTest.class);
-    suite.addTestSuite(StringUtilsTest.class);
-    suite.addTestSuite(StringUtilsTest.class);
+    suite.addTestSuite(AnagramTest.class);
     return suite;
   }
 
@@ -22,3 +19,4 @@ public class AllTests extends TestSuite {
     junit.textui.TestRunner.run(suite());
   }
 }
+

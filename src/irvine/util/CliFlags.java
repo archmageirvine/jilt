@@ -894,9 +894,8 @@ public final class CliFlags {
     mRegisteredFlags = new TreeSet<>();
     mLongNames = new TreeMap<>();
     mShortNames = new TreeMap<>();
-    registerOptional('h', HELP_FLAG, "Print help on command-line flag usage.");
+    registerOptional('h', HELP_FLAG, "print help on command-line flag usage.");
   }
-
 
   // Switch flags -- those that have a name but don't take a parameter
   // These can only be optional
