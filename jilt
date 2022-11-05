@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export CLASSPATH=$(dirname "$0")/out/production/jilt
+
+java irvine.jilt.Jilt "$@"
