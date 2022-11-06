@@ -14,8 +14,4 @@ public class AllTests extends TestSuite {
     //suite.addTestSuite(StringUtilsTest.class);
     return suite;
   }
-
-  public static void main(final String[] args) {
-    junit.textui.TestRunner.run(suite());
-  }
 }

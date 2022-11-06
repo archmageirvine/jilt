@@ -11,13 +11,10 @@ public class AllTests extends TestSuite {
 
   public static Test suite() {
     final TestSuite suite = new TestSuite();
+    suite.addTest(irvine.filter.AllTests.suite());
     suite.addTest(irvine.jilt.AllTests.suite());
     suite.addTest(irvine.language.AllTests.suite());
     suite.addTest(irvine.util.AllTests.suite());
     return suite;
-  }
-
-  public static void main(final String[] args) {
-    junit.textui.TestRunner.run(suite());
   }
 }

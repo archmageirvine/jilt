@@ -40,6 +40,8 @@ public final class Jilt {
   private enum Module {
     /** Dummy module that returns the list of possible modules. */
     HELP(new Help()),
+    /** Filtering by various simple criteria. */
+    FILTER(new FilterCommand()),
     /** Simple anagrams. */
     ANAGRAM(new Anagram()),
     ;

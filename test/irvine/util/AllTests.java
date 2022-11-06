@@ -14,11 +14,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(CasingTest.class);
     suite.addTestSuite(CliFlagsTest.class);
     suite.addTestSuite(StringUtilsTest.class);
-    suite.addTestSuite(StringUtilsTest.class);
+    suite.addTestSuite(WrappingStringBufferTest.class);
     return suite;
-  }
-
-  public static void main(final String[] args) {
-    junit.textui.TestRunner.run(suite());
   }
 }

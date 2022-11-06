@@ -1,13 +1,16 @@
 package irvine.jilt;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.PrintStream;
 import java.util.Arrays;
 import java.util.Locale;
 
 import irvine.language.Anagram;
 import irvine.util.CliFlags;
+import irvine.util.IOUtils;
 import irvine.util.StringUtils;
 
 /**
@@ -21,8 +24,6 @@ public final class CommonFlags {
 
   /** Name of the dictionary flag. */
   public static final String DICTIONARY_FLAG = "dictionary";
-  /** Output file name. */
-  public static final String OUTPUT_FLAG = "output";
 
   /** Register the dictionary flag. */
   public static CliFlags.Flag<String> registerDictionaryFlag(final CliFlags flags) {
@@ -41,9 +42,12 @@ public final class CommonFlags {
     return true;
   }
 
+  /** Output file name. */
+  public static final String OUTPUT_FLAG = "output";
+
   /** Register the output flag. */
   public static CliFlags.Flag<String> registerOutputFlag(final CliFlags flags) {
-    return flags.registerOptional('o',OUTPUT_FLAG, String.class, "FILE", "where to write output (with \"-\" for stdout)", "-");
+    return flags.registerOptional('o', OUTPUT_FLAG, String.class, "FILE", "where to write output (with \"-\" for stdout)", "-");
   }
 
   /** Validation for output flag. */
@@ -63,6 +67,34 @@ public final class CommonFlags {
       return "-".equals(out) ? System.out : new PrintStream(out);
     } catch (final FileNotFoundException e) {
       throw new RuntimeException("Could not write output to \"" + out + "\".", e);
+    }
+  }
+
+  /** Output file name. */
+  public static final String INPUT_FLAG = "input";
+
+  /** Register the input flag. */
+  public static CliFlags.Flag<String> registerInputFlag(final CliFlags flags) {
+    return flags.registerOptional('i', INPUT_FLAG, String.class, "FILE", "where to read from (with \"-\" for stdin)", "-");
+  }
+
+  /** Validation for input flag. */
+  public static boolean validateInput(final CliFlags flags) {
+    final String out = (String) flags.getValue(INPUT_FLAG);
+    if (!"-".equals(out) && !new File(out).canRead()) {
+      flags.setParseMessage("Specified input file \"" + out + "\" is not readable.");
+      return false;
+    }
+    return true;
+  }
+
+  /** Get the output stream based on the flags. */
+  public static BufferedReader getInput(final CliFlags flags) {
+    final String in = (String) flags.getValue(INPUT_FLAG);
+    try {
+      return IOUtils.getReader(in);
+    } catch (final IOException e) {
+      throw new RuntimeException("Could not read from \"" + in + "\")");
     }
   }
 }

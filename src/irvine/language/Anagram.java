@@ -27,7 +27,7 @@ public final class Anagram extends Command {
 
   /** Construct the module. */
   public Anagram() {
-    super("Find single word anagrams");
+    super("Find simple anagrams");
   }
 
   /** Symbol used for a dit. */
@@ -81,17 +81,20 @@ public final class Anagram extends Command {
    * Find anagrams matching a specified pattern.
    * @param pattern anagram target
    * @param reader input stream of target strings one per line
+   * @param ranked true if the rank (position of solution in the dictionary) should be reported
    * @return matches if any
    * @exception IOException if an I/O error occurs
    */
-  public static ArrayList<String> findAnagrams(final String pattern, final BufferedReader reader) throws IOException {
+  public static ArrayList<String> findAnagrams(final String pattern, final BufferedReader reader, final boolean ranked) throws IOException {
     final char[] target = makeTarget(pattern);
+    int rank = 0;
     final ArrayList<String> results = new ArrayList<>();
       String current;
       while ((current = reader.readLine()) != null) {
         if (check(target, current.toLowerCase(Locale.getDefault()))) {
-          results.add(current);
+          results.add(ranked ? rank + " " + current : current);
         }
+        ++rank;
       }
     return results;
   }
@@ -105,7 +108,7 @@ public final class Anagram extends Command {
    */
   public static ArrayList<String> findAnagrams(final String pattern, final InputStream source) throws IOException {
     try (final BufferedReader r = new BufferedReader(new InputStreamReader(source))) {
-      return findAnagrams(pattern, r);
+      return findAnagrams(pattern, r, false);
     }
   }
 
@@ -117,9 +120,10 @@ public final class Anagram extends Command {
    * @param pattern anagram target
    * @param words1 words to try and match
    * @param words2 words to try and match
+   * @param ranked true if a rank of the solution should be produced
    * @return matches if any
    */
-  public static ArrayList<String> findAnagrams(final String pattern, final List<String> words1, final List<String> words2) {
+  public static ArrayList<String> findAnagrams(final String pattern, final List<String> words1, final List<String> words2, final boolean ranked) {
     if (pattern == null) {
       return null;
     }
@@ -139,7 +143,11 @@ public final class Anagram extends Command {
               // Record k + j as a score for the word.  This is sometimes useful if
               // the input lists are sorted according to some metric, then the lower
               // the sum the "better" the solution according to some metric.
-              results.add((k + j) + " " + current + " " + w2);
+              if (ranked) {
+                results.add((k + j) + " " + current + " " + w2);
+              } else {
+                results.add(current + " " + w2);
+              }
             }
           }
           ++j;
@@ -152,18 +160,23 @@ public final class Anagram extends Command {
 
   private static final String FIRST_LIST_FLAG = "first";
   private static final String SECOND_LIST_FLAG = "second";
+  private static final String RANK_FLAG = "rank";
+
+  private static final String DESC = "The anagram module can be used to find simple single word anagrams including cases where the query pattern contains unknown letters. For example, \"anagram cat\" will find the words \"act\" and \"cat\"; similarly, \"anagram c.t\" will find all anagrams of \"c\", \"t\", and one other letter. With the options -A and -B, anagram can be used to split an anagram across two word lists. This is useful, for example, in trying to solve anagrams of personal names where -A is a file containing first names and -B is a file containing surnames.";
 
   /**
    * Find anagrams.
-   * @param args pattern (possibly containing dits).
+   * @param args see help
    */
   public void mainExec(final String... args) {
     final CliFlags flags = new CliFlags(getDescription());
+    flags.setDescription(DESC);
     CommonFlags.registerDictionaryFlag(flags);
     CommonFlags.registerOutputFlag(flags);
     flags.registerRequired(String.class, "PATTERN", "pattern to anagram (with unknown letters denoted by \".\")");
     flags.registerOptional('A', FIRST_LIST_FLAG, String.class, "FILE", "first list of words (with \"-\" for stdin)");
     flags.registerOptional('B', SECOND_LIST_FLAG, String.class, "FILE", "second list of words (with \"-\" for stdin)");
+    flags.registerOptional(RANK_FLAG, "report the rank of the solution");
     flags.setValidator(f -> {
       if (!CommonFlags.validateDictionary(f)) {
         return false;
@@ -195,27 +208,29 @@ public final class Anagram extends Command {
     });
     flags.setFlags(args);
 
-    final PrintStream out = CommonFlags.getOutput(flags);
     final String pattern = (String) flags.getAnonymousValue(0);
+    final boolean ranked = flags.isSet(RANK_FLAG);
 
-    if (flags.isSet(FIRST_LIST_FLAG)) {
-      // We are doing a two word list match
-      try {
-        final List<String> list1 = StringUtils.suckInWords((String) flags.getValue(FIRST_LIST_FLAG), Casing.LOWER);
-        final List<String> list2 = StringUtils.suckInWords((String) flags.getValue(SECOND_LIST_FLAG), Casing.LOWER);
-        for (final String r : findAnagrams(pattern, list1, list2)) {
-          out.println(r);
+    try (final PrintStream out = CommonFlags.getOutput(flags)) {
+      if (flags.isSet(FIRST_LIST_FLAG)) {
+        // We are doing a two word list match
+        try {
+          final List<String> list1 = StringUtils.suckInWords((String) flags.getValue(FIRST_LIST_FLAG), Casing.LOWER);
+          final List<String> list2 = StringUtils.suckInWords((String) flags.getValue(SECOND_LIST_FLAG), Casing.LOWER);
+          for (final String r : findAnagrams(pattern, list1, list2, ranked)) {
+            out.println(r);
+          }
+        } catch (final IOException e) {
+          throw new RuntimeException("I/O problem reading from a word list", e);
         }
-      } catch (final IOException e) {
-        throw new RuntimeException("I/O problem reading from a word list", e);
-      }
-    } else {
-      try (final BufferedReader reader = Dictionary.getDictionaryReader((String) flags.getValue(CommonFlags.DICTIONARY_FLAG))) {
-        for (final String res : findAnagrams(pattern, reader)) {
-          out.println(res);
+      } else {
+        try (final BufferedReader reader = Dictionary.getDictionaryReader((String) flags.getValue(CommonFlags.DICTIONARY_FLAG))) {
+          for (final String res : findAnagrams(pattern, reader, ranked)) {
+            out.println(res);
+          }
+        } catch (final IOException e) {
+          throw new RuntimeException("I/O problem with dictionary", e);
         }
-      } catch (final IOException e) {
-        throw new RuntimeException("I/O problem with dictionary", e);
       }
     }
   }
