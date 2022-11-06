@@ -6,13 +6,13 @@ import junit.framework.TestCase;
  * Test the corresponding class.
  * @author Sean A. Irvine
  */
-public class MaxLengthFilterTest extends TestCase {
+public class LengthFilterTest extends TestCase {
 
   public void testFilter() {
-    final Filter filter = new MaxLengthFilter(3);
-    assertTrue(filter.is(""));
-    assertTrue(filter.is("a"));
-    assertTrue(filter.is("aa"));
+    final Filter filter = new LengthFilter(3);
+    assertFalse(filter.is(""));
+    assertFalse(filter.is("a"));
+    assertFalse(filter.is("aa"));
     assertTrue(filter.is("abz"));
     assertFalse(filter.is("ahhh"));
   }

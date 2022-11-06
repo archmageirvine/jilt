@@ -11,8 +11,10 @@ import irvine.filter.AlphabeticalFilter;
 import irvine.filter.DecreasingFilter;
 import irvine.filter.Filter;
 import irvine.filter.IncreasingFilter;
+import irvine.filter.LengthFilter;
 import irvine.filter.MaxLengthFilter;
 import irvine.filter.MinLengthFilter;
+import irvine.filter.PalindromeFilter;
 import irvine.filter.ReverseAlphabeticalFilter;
 import irvine.util.CliFlags;
 
@@ -32,8 +34,10 @@ public final class FilterCommand extends Command {
   private static final String REVERSE_ALPHABETICAL_FLAG = "reverse";
   private static final String INCREASING_FLAG = "increasing";
   private static final String DECREASING_FLAG = "decreasing";
+  private static final String LENGTH_FLAG = "length";
   private static final String MIN_LENGTH_FLAG = "min-length";
   private static final String MAX_LENGTH_FLAG = "max-length";
+  private static final String PALINDROME_FLAG = "palindrome";
 
   private boolean is(final List<Filter> filters, final String word) {
     for (final Filter f : filters) {
@@ -58,6 +62,8 @@ public final class FilterCommand extends Command {
     flags.registerOptional('r', REVERSE_ALPHABETICAL_FLAG, "letters are in reverse alphabetical order");
     flags.registerOptional('A', INCREASING_FLAG, "letters are in strictly increasing alphabetical order");
     flags.registerOptional('R', DECREASING_FLAG, "letters are in strictly decreasing alphabetical order");
+    flags.registerOptional('p', PALINDROME_FLAG, "word is a palindrome");
+    flags.registerOptional('l', LENGTH_FLAG, Integer.class, "INT", "exact word length");
     flags.registerOptional('m', MIN_LENGTH_FLAG, Integer.class, "INT", "minimum word length");
     flags.registerOptional('M', MAX_LENGTH_FLAG, Integer.class, "INT", "maximum word length");
     flags.setValidator(f -> {
@@ -74,11 +80,17 @@ public final class FilterCommand extends Command {
     });
     flags.setFlags(args);
     final List<Filter> filters = new ArrayList<>();
+    if (flags.isSet(LENGTH_FLAG)) {
+      filters.add(new LengthFilter((Integer) flags.getValue(LENGTH_FLAG)));
+    }
     if (flags.isSet(MIN_LENGTH_FLAG)) {
       filters.add(new MinLengthFilter((Integer) flags.getValue(MIN_LENGTH_FLAG)));
     }
     if (flags.isSet(MAX_LENGTH_FLAG)) {
       filters.add(new MaxLengthFilter((Integer) flags.getValue(MAX_LENGTH_FLAG)));
+    }
+    if (flags.isSet(PALINDROME_FLAG)) {
+      filters.add(new PalindromeFilter());
     }
     if (flags.isSet(ALPHABETICAL_FLAG)) {
       filters.add(new AlphabeticalFilter());
