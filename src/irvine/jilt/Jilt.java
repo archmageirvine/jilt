@@ -42,6 +42,8 @@ public final class Jilt {
     HELP(new Help()),
     /** Filtering by various simple criteria. */
     FILTER(new FilterCommand()),
+    /** Transform the input. */
+    TRANSFORM(new TransformCommand()),
     /** Simple anagrams. */
     ANAGRAM(new Anagram()),
     ;

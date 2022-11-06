@@ -16,6 +16,7 @@ import irvine.filter.MaxLengthFilter;
 import irvine.filter.MinLengthFilter;
 import irvine.filter.PalindromeFilter;
 import irvine.filter.ReverseAlphabeticalFilter;
+import irvine.filter.SetFilter;
 import irvine.filter.TautonymFilter;
 import irvine.util.CliFlags;
 
@@ -40,6 +41,7 @@ public final class FilterCommand extends Command {
   private static final String MAX_LENGTH_FLAG = "max-length";
   private static final String PALINDROME_FLAG = "palindrome";
   private static final String TAUTONUM_FLAG = "tautonym";
+  private static final String IN_DICT_FLAG = "in-dict";
 
   private boolean is(final List<Filter> filters, final String word) {
     for (final Filter f : filters) {
@@ -57,7 +59,7 @@ public final class FilterCommand extends Command {
   public void mainExec(final String... args) {
     final CliFlags flags = new CliFlags(getDescription());
     flags.setDescription(DESC);
-//    CommonFlags.registerDictionaryFlag(flags);
+    CommonFlags.registerDictionaryFlag(flags);
     CommonFlags.registerOutputFlag(flags);
     CommonFlags.registerInputFlag(flags);
     flags.registerOptional('a', ALPHABETICAL_FLAG, "letters are in alphabetical order");
@@ -65,6 +67,7 @@ public final class FilterCommand extends Command {
     flags.registerOptional('A', INCREASING_FLAG, "letters are in strictly increasing alphabetical order");
     flags.registerOptional('R', DECREASING_FLAG, "letters are in strictly decreasing alphabetical order");
     flags.registerOptional('p', PALINDROME_FLAG, "word is a palindrome");
+    flags.registerOptional('d', IN_DICT_FLAG, "word is in the dictionary");
     flags.registerOptional('l', LENGTH_FLAG, Integer.class, "INT", "exact word length");
     flags.registerOptional('m', MIN_LENGTH_FLAG, Integer.class, "INT", "minimum word length");
     flags.registerOptional('M', MAX_LENGTH_FLAG, Integer.class, "INT", "maximum word length");
@@ -116,6 +119,13 @@ public final class FilterCommand extends Command {
     }
     if (flags.isSet(TAUTONUM_FLAG)) {
       filters.add(new TautonymFilter((Integer) flags.getValue(TAUTONUM_FLAG)));
+    }
+    if (flags.isSet(IN_DICT_FLAG)) {
+      try (final BufferedReader reader = Dictionary.getDictionaryReader((String) flags.getValue(CommonFlags.DICTIONARY_FLAG))) {
+        filters.add(new SetFilter(reader));
+      } catch (final IOException e) {
+        throw new RuntimeException("Problem reading words from the specified dictionary.", e);
+      }
     }
 
     try (final PrintStream out = CommonFlags.getOutput(flags)) {
