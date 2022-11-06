@@ -1,8 +1,5 @@
 package irvine.filter;
 
-import irvine.util.CasingTest;
-import irvine.util.CliFlagsTest;
-import irvine.util.StringUtilsTest;
 import junit.framework.Test;
 import junit.framework.TestSuite;
 
@@ -17,6 +14,8 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(AlphabeticalFilterTest.class);
     suite.addTestSuite(DecreasingFilterTest.class);
     suite.addTestSuite(IncreasingFilterTest.class);
+    suite.addTestSuite(MaxLengthFilterTest.class);
+    suite.addTestSuite(MinLengthFilterTest.class);
     suite.addTestSuite(ReverseAlphabeticalFilterTest.class);
     return suite;
   }
