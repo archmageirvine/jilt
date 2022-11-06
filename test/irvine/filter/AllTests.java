@@ -19,6 +19,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(MinLengthFilterTest.class);
     suite.addTestSuite(PalindromeFilterTest.class);
     suite.addTestSuite(ReverseAlphabeticalFilterTest.class);
+    suite.addTestSuite(TautonymFilterTest.class);
     return suite;
   }
 }

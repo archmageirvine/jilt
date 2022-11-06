@@ -16,6 +16,7 @@ import irvine.filter.MaxLengthFilter;
 import irvine.filter.MinLengthFilter;
 import irvine.filter.PalindromeFilter;
 import irvine.filter.ReverseAlphabeticalFilter;
+import irvine.filter.TautonymFilter;
 import irvine.util.CliFlags;
 
 /**
@@ -38,6 +39,7 @@ public final class FilterCommand extends Command {
   private static final String MIN_LENGTH_FLAG = "min-length";
   private static final String MAX_LENGTH_FLAG = "max-length";
   private static final String PALINDROME_FLAG = "palindrome";
+  private static final String TAUTONUM_FLAG = "tautonym";
 
   private boolean is(final List<Filter> filters, final String word) {
     for (final Filter f : filters) {
@@ -66,6 +68,7 @@ public final class FilterCommand extends Command {
     flags.registerOptional('l', LENGTH_FLAG, Integer.class, "INT", "exact word length");
     flags.registerOptional('m', MIN_LENGTH_FLAG, Integer.class, "INT", "minimum word length");
     flags.registerOptional('M', MAX_LENGTH_FLAG, Integer.class, "INT", "maximum word length");
+    flags.registerOptional(TAUTONUM_FLAG, Integer.class, "INT", "word is a tautonym with given number of repeats");
     flags.setValidator(f -> {
       if (!CommonFlags.validateDictionary(f)) {
         return false;
@@ -75,6 +78,13 @@ public final class FilterCommand extends Command {
       }
       if (!CommonFlags.validateInput(f)) {
         return false;
+      }
+      if (f.isSet(TAUTONUM_FLAG)) {
+        final int repeats = (Integer) f.getValue(TAUTONUM_FLAG);
+        if (repeats < 1) {
+          f.setParseMessage("--" + TAUTONUM_FLAG + " must be at least 1");
+          return false;
+        }
       }
       return true;
     });
@@ -103,6 +113,9 @@ public final class FilterCommand extends Command {
     }
     if (flags.isSet(DECREASING_FLAG)) {
       filters.add(new DecreasingFilter());
+    }
+    if (flags.isSet(TAUTONUM_FLAG)) {
+      filters.add(new TautonymFilter((Integer) flags.getValue(TAUTONUM_FLAG)));
     }
 
     try (final PrintStream out = CommonFlags.getOutput(flags)) {
