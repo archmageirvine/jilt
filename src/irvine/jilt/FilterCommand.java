@@ -9,6 +9,7 @@ import java.util.Locale;
 
 import irvine.filter.AlphabeticalFilter;
 import irvine.filter.DecreasingFilter;
+import irvine.filter.DiplogramFilter;
 import irvine.filter.Filter;
 import irvine.filter.IncreasingFilter;
 import irvine.filter.LengthFilter;
@@ -41,6 +42,7 @@ public final class FilterCommand extends Command {
   private static final String MAX_LENGTH_FLAG = "max-length";
   private static final String PALINDROME_FLAG = "palindrome";
   private static final String TAUTONUM_FLAG = "tautonym";
+  private static final String DIPLOGRAM_FLAG = "diplogram";
   private static final String IN_DICT_FLAG = "in-dict";
 
   private boolean is(final List<Filter> filters, final String word) {
@@ -72,6 +74,7 @@ public final class FilterCommand extends Command {
     flags.registerOptional('m', MIN_LENGTH_FLAG, Integer.class, "INT", "minimum word length");
     flags.registerOptional('M', MAX_LENGTH_FLAG, Integer.class, "INT", "maximum word length");
     flags.registerOptional(TAUTONUM_FLAG, Integer.class, "INT", "word is a tautonym with given number of repeats");
+    flags.registerOptional(DIPLOGRAM_FLAG, Integer.class, "INT", "word is a diplogram with given number of repeats");
     flags.setValidator(f -> {
       if (!CommonFlags.validateDictionary(f)) {
         return false;
@@ -86,6 +89,13 @@ public final class FilterCommand extends Command {
         final int repeats = (Integer) f.getValue(TAUTONUM_FLAG);
         if (repeats < 1) {
           f.setParseMessage("--" + TAUTONUM_FLAG + " must be at least 1");
+          return false;
+        }
+      }
+      if (f.isSet(DIPLOGRAM_FLAG)) {
+        final int repeats = (Integer) f.getValue(DIPLOGRAM_FLAG);
+        if (repeats < 1) {
+          f.setParseMessage("--" + DIPLOGRAM_FLAG + " must be at least 1");
           return false;
         }
       }
@@ -119,6 +129,9 @@ public final class FilterCommand extends Command {
     }
     if (flags.isSet(TAUTONUM_FLAG)) {
       filters.add(new TautonymFilter((Integer) flags.getValue(TAUTONUM_FLAG)));
+    }
+    if (flags.isSet(DIPLOGRAM_FLAG)) {
+      filters.add(new DiplogramFilter((Integer) flags.getValue(DIPLOGRAM_FLAG)));
     }
     if (flags.isSet(IN_DICT_FLAG)) {
       try (final BufferedReader reader = Dictionary.getDictionaryReader((String) flags.getValue(CommonFlags.DICTIONARY_FLAG))) {

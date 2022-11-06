@@ -13,6 +13,7 @@ public class AllTests extends TestSuite {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(AlphabeticalFilterTest.class);
     suite.addTestSuite(DecreasingFilterTest.class);
+    suite.addTestSuite(DiplogramFilterTest.class);
     suite.addTestSuite(IncreasingFilterTest.class);
     suite.addTestSuite(LengthFilterTest.class);
     suite.addTestSuite(MaxLengthFilterTest.class);
