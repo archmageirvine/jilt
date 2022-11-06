@@ -12,4 +12,9 @@ public class LowercaseTransform implements Transform {
   public String apply(final String word) {
     return word.toLowerCase(Locale.getDefault());
   }
+
+  @Override
+  public String getName() {
+    return "LOWER";
+  }
 }

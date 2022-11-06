@@ -12,4 +12,10 @@ public interface Transform {
    * @return transformed word
    */
   String apply(final String word);
+
+  /**
+   * Return a short name of this transform.
+   * @return name
+   */
+  String getName();
 }

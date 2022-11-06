@@ -12,4 +12,9 @@ public class UppercaseTransform implements Transform {
   public String apply(final String word) {
     return word.toUpperCase(Locale.getDefault());
   }
+
+  @Override
+  public String getName() {
+    return "UPPER";
+  }
 }

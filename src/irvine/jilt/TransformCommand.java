@@ -18,6 +18,7 @@ import irvine.filter.PalindromeFilter;
 import irvine.filter.ReverseAlphabeticalFilter;
 import irvine.filter.SetFilter;
 import irvine.filter.TautonymFilter;
+import irvine.transform.LoopsTransform;
 import irvine.transform.LowercaseTransform;
 import irvine.transform.TitlecaseTransform;
 import irvine.transform.Transform;
@@ -36,9 +37,11 @@ public final class TransformCommand extends Command {
   }
 
   private static final String DESC = "Apply each specified transform, generating a line of output for each selected transform for each input line.";
+  private static final String NAME_FLAG = "name";
   private static final String UPPERCASE_FLAG = "uppercase";
   private static final String LOWERCASE_FLAG = "lowercase";
   private static final String TITLECASE_FLAG = "titlecase";
+  private static final String LOOPS_FLAG = "loops";
 
   /**
    * Transform words.
@@ -47,9 +50,11 @@ public final class TransformCommand extends Command {
   public void mainExec(final String... args) {
     final CliFlags flags = new CliFlags(getDescription());
     flags.setDescription(DESC);
+    flags.registerOptional('n', NAME_FLAG, "prefix each line of output with the transform name");
     flags.registerOptional('U', UPPERCASE_FLAG, "uppercase the input");
     flags.registerOptional('L', LOWERCASE_FLAG, "lowercase the input");
     flags.registerOptional('T', TITLECASE_FLAG, "titlecase the input");
+    flags.registerOptional(LOOPS_FLAG, "compute the number of closed loops in the input");
     CommonFlags.registerOutputFlag(flags);
     CommonFlags.registerInputFlag(flags);
     flags.setValidator(f -> {
@@ -73,13 +78,21 @@ public final class TransformCommand extends Command {
     if (flags.isSet(TITLECASE_FLAG)) {
       transforms.add(new TitlecaseTransform());
     }
+    if (flags.isSet(LOOPS_FLAG)) {
+      transforms.add(new LoopsTransform());
+    }
 
+    final boolean includeTransformName = flags.isSet(NAME_FLAG);
     try (final PrintStream out = CommonFlags.getOutput(flags)) {
       try (final BufferedReader reader = CommonFlags.getInput(flags)) {
         String line;
         while ((line = reader.readLine()) != null) {
           for (final Transform t : transforms) {
-            out.println(t.apply(line));
+            if (includeTransformName) {
+              out.println(t.getName() + ": " + t.apply(line));
+            } else {
+              out.println(t.apply(line));
+            }
           }
         }
       } catch (final IOException e) {

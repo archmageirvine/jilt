@@ -26,4 +26,9 @@ public class TitlecaseTransform implements Transform {
     }
     return sb.toString();
   }
+
+  @Override
+  public String getName() {
+    return "TITLE";
+  }
 }

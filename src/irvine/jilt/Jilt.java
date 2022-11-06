@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Locale;
 
 import irvine.language.Anagram;
+import irvine.language.Caesar;
 import irvine.util.StringUtils;
 
 /**
@@ -46,6 +47,8 @@ public final class Jilt {
     TRANSFORM(new TransformCommand()),
     /** Simple anagrams. */
     ANAGRAM(new Anagram()),
+    /** Caesar shifts. */
+    CAESAR(new Caesar()),
     ;
 
     private final Command mCommand;
