@@ -64,7 +64,7 @@ public class CliFlagsTest extends TestCase {
         "s2",
         "s3"}));
     assertEquals("unexpected arguments s1 s2 s3", mFlags.getParseMessage());
-    assertEquals("Error: unexpected arguments s1 s2 s3" + LS + LS + "Required flags: " + LS + "      --boolean=A BOOLEAN VALUE " + LS + LS + "Optional flags: " + LS + "  -h, --help                    Print help on command-line flag usage.", mFlags.getUsageString().trim());
+    assertEquals("Error: unexpected arguments s1 s2 s3" + LS + LS + "Required flags: " + LS + "      --boolean=A BOOLEAN VALUE " + LS + LS + "Optional flags: " + LS + "  -h, --help                    print help on command-line flag usage.", mFlags.getUsageString().trim());
   }
 
 
@@ -246,7 +246,7 @@ public class CliFlagsTest extends TestCase {
     final Flag<?> x = f.getFlag("help");
     assertNotNull(x);
     assertEquals(Character.valueOf('h'), x.getChar());
-    assertEquals("Print help on command-line flag usage.", x.getDescription());
+    assertEquals("print help on command-line flag usage.", x.getDescription());
   }
 
   public void testVariousKinds() {
@@ -276,7 +276,7 @@ public class CliFlagsTest extends TestCase {
     assertEquals("you must provide a value for HI", mFlags.getParseMessage());
     assertTrue(mFlags.setFlags(new String[] {"-l", "pox", "-j", "pox2", "--zz", "dog", "cat"}));
     assertEquals("", mFlags.getParseMessage());
-    assertEquals(LS + "Required flags: " + LS + "      --zz=HIX          therex" + LS + "  -j, --zzz=HIZ         therez" + LS + "      HI                there" + LS + LS + "Optional flags: " + LS + "      --aa              bb" + LS + "  -v, --cc              dd" + LS + "  -h, --help            Print help on command-line flag usage." + LS + "      --zzr=HIM         therem" + LS + "  -k, --zzx=HIH HIH HIH thereh thereh thereh thereh thereh thereh thereh thereh" + LS + "                        thereh thereh thereh thereh" + LS + "  -l, --zzy=HIO         thereo" + LS, mFlags.getUsageString());
+    assertEquals(LS + "Required flags: " + LS + "      --zz=HIX          therex" + LS + "  -j, --zzz=HIZ         therez" + LS + "      HI                there" + LS + LS + "Optional flags: " + LS + "      --aa              bb" + LS + "  -v, --cc              dd" + LS + "  -h, --help            print help on command-line flag usage." + LS + "      --zzr=HIM         therem" + LS + "  -k, --zzx=HIH HIH HIH thereh thereh thereh thereh thereh thereh thereh thereh" + LS + "                        thereh thereh thereh thereh" + LS + "  -l, --zzy=HIO         thereo" + LS, mFlags.getUsageString());
     assertEquals("cat", mFlags.getAnonymousValue(0).toString());
     try {
       mFlags.getAnonymousValue(1);
@@ -289,7 +289,7 @@ public class CliFlagsTest extends TestCase {
     mFlags.setDescription("flunky test");
     mFlags.setName("dogbreath");
     mFlags.setRemainderHeader("%%");
-    assertEquals("Usage: dogbreath [OPTION]... --zz HIX -j HIZ HI %%" + LS + LS + "Required flags: " + LS + "      --zz=HIX          therex" + LS + "  -j, --zzz=HIZ         therez" + LS + "      HI                there" + LS + LS + "Optional flags: " + LS + "      --aa              bb" + LS + "  -v, --cc              dd" + LS + "  -h, --help            Print help on command-line flag usage." + LS + "      --zzr=HIM         therem" + LS + "  -k, --zzx=HIH HIH HIH thereh thereh thereh thereh thereh thereh thereh thereh" + LS + "                        thereh thereh thereh thereh" + LS + "  -l, --zzy=HIO         thereo" + LS + LS + "flunky test", mFlags.getUsageString());
+    assertEquals("Usage: dogbreath [OPTION]... --zz HIX -j HIZ HI %%" + LS + LS + "Required flags: " + LS + "      --zz=HIX          therex" + LS + "  -j, --zzz=HIZ         therez" + LS + "      HI                there" + LS + LS + "Optional flags: " + LS + "      --aa              bb" + LS + "  -v, --cc              dd" + LS + "  -h, --help            print help on command-line flag usage." + LS + "      --zzr=HIM         therem" + LS + "  -k, --zzx=HIH HIH HIH thereh thereh thereh thereh thereh thereh thereh thereh" + LS + "                        thereh thereh thereh thereh" + LS + "  -l, --zzy=HIO         thereo" + LS + LS + "flunky test", mFlags.getUsageString());
     assertEquals("[OPTION]... --zz HIX -j HIZ HI", mFlags.getCompactFlagUsage());
     assertFalse(mFlags.setFlags(new String[] {"-l", "pox", "--help", "-j", "pox2=r", "--zz", "dog", "cat"}));
     assertEquals("", mFlags.getParseMessage());
@@ -468,8 +468,8 @@ public class CliFlagsTest extends TestCase {
     assertFalse(mFlags.setFlags(new String[] {"--xx", "v"}));
     assertEquals("Invalid value v for --xx. Value supplied is not in the set of allowed values.", mFlags.getParseMessage());
     final String oo = mFlags.getUsageString(1000).trim();
-    if (!("Error: Invalid value v for --xx. Value supplied is not in the set of allowed values." + LS + LS + "Required flags: " + LS + "  -x, --xx=KK mv Must be one of [value, pox]." + LS + LS + "Optional flags: " + LS + "  -h, --help  Print help on command-line flag usage.").equals(oo)) {
-      assertEquals("Error: Invalid value v for --xx. Value supplied is not in the set of allowed values." + LS + LS + "Required flags: " + LS + "  -x, --xx=KK mv Must be one of [pox, value]." + LS + LS + "Optional flags: " + LS + "  -h, --help  Print help on command-line flag usage.", oo);
+    if (!("Error: Invalid value v for --xx. Value supplied is not in the set of allowed values." + LS + LS + "Required flags: " + LS + "  -x, --xx=KK mv Must be one of [value, pox]." + LS + LS + "Optional flags: " + LS + "  -h, --help  print help on command-line flag usage.").equals(oo)) {
+      assertEquals("Error: Invalid value v for --xx. Value supplied is not in the set of allowed values." + LS + LS + "Required flags: " + LS + "  -x, --xx=KK mv Must be one of [pox, value]." + LS + LS + "Optional flags: " + LS + "  -h, --help  print help on command-line flag usage.", oo);
     }
     assertTrue(mFlags.setFlags(new String[] {"--xx", "value"}));
     assertEquals("", mFlags.getParseMessage());
@@ -507,7 +507,7 @@ public class CliFlagsTest extends TestCase {
       assertEquals("Exit with: 0", e.getMessage());
     }
     p.close();
-    assertEquals("Usage: Freddy [OPTION]..." + LS + LS + "Optional flags: " + LS + "  -h, --help Print help on command-line flag usage.", output.toString().trim());
+    assertEquals("Usage: Freddy [OPTION]..." + LS + LS + "Optional flags: " + LS + "  -h, --help print help on command-line flag usage.", output.toString().trim());
     output = new ByteArrayOutputStream();
     System.setErr(new PrintStream(output));
     p = new PrintStream(output);
@@ -554,7 +554,7 @@ public class CliFlagsTest extends TestCase {
     }
     final CliFlags cli = new CliFlags("hi");
     cli.register(f);
-    assertEquals("Usage: hi [OPTION]... -x KK" + LS + LS + "Required flags: " + LS + "  -x, --xx=KK mv Must be specified at least 2 times. May be specified up to 2" + LS + "              times. (Default is 42)" + LS + LS + "Optional flags: " + LS + "  -h, --help  Print help on command-line flag usage." + LS, cli.getUsageString());
+    assertEquals("Usage: hi [OPTION]... -x KK" + LS + LS + "Required flags: " + LS + "  -x, --xx=KK mv Must be specified at least 2 times. May be specified up to 2" + LS + "              times. (Default is 42)" + LS + LS + "Optional flags: " + LS + "  -h, --help  print help on command-line flag usage." + LS, cli.getUsageString());
     final Collection<?> c = f.getValues();
     assertTrue(c.contains(42));
     final Flag<Integer> f1 = new Flag<>('x', "xx", "mv", 3, 4, Integer.class, "kk", 42);
@@ -564,7 +564,7 @@ public class CliFlagsTest extends TestCase {
     assertEquals(0, f1.compareTo(f1));
     f = new Flag<>('x', "xx", "mv", 0, Integer.MAX_VALUE, Integer.class, "kk", 42);
     mFlags.register(f);
-    assertEquals(LS + "Optional flags: " + LS + "  -h, --help  Print help on command-line flag usage." + LS + "  -x, --xx=KK mv May be specified multiple times. (Default is 42)" + LS, mFlags.getUsageString());
+    assertEquals(LS + "Optional flags: " + LS + "  -h, --help  print help on command-line flag usage." + LS + "  -x, --xx=KK mv May be specified multiple times. (Default is 42)" + LS, mFlags.getUsageString());
     mFlags.setFlags(new String[] {"-x", "22"});
     final Iterator<FlagValue<?>> i = mFlags.getReceivedValues();
     assertTrue(i.hasNext());
