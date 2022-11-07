@@ -5,21 +5,10 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
-import irvine.filter.AlphabeticalFilter;
-import irvine.filter.DecreasingFilter;
-import irvine.filter.Filter;
-import irvine.filter.IncreasingFilter;
-import irvine.filter.LengthFilter;
-import irvine.filter.MaxLengthFilter;
-import irvine.filter.MinLengthFilter;
-import irvine.filter.PalindromeFilter;
-import irvine.filter.ReverseAlphabeticalFilter;
-import irvine.filter.SetFilter;
-import irvine.filter.TautonymFilter;
 import irvine.transform.LoopsTransform;
 import irvine.transform.LowercaseTransform;
+import irvine.transform.ScrabbleTransform;
 import irvine.transform.TitlecaseTransform;
 import irvine.transform.Transform;
 import irvine.transform.UppercaseTransform;
@@ -42,6 +31,7 @@ public final class TransformCommand extends Command {
   private static final String LOWERCASE_FLAG = "lowercase";
   private static final String TITLECASE_FLAG = "titlecase";
   private static final String LOOPS_FLAG = "loops";
+  private static final String SCRABBLE_FLAG = "scrabble";
 
   /**
    * Transform words.
@@ -55,6 +45,7 @@ public final class TransformCommand extends Command {
     flags.registerOptional('L', LOWERCASE_FLAG, "lowercase the input");
     flags.registerOptional('T', TITLECASE_FLAG, "titlecase the input");
     flags.registerOptional(LOOPS_FLAG, "compute the number of closed loops in the input");
+    flags.registerOptional(SCRABBLE_FLAG, "compute the raw Scrabble score of each input");
     CommonFlags.registerOutputFlag(flags);
     CommonFlags.registerInputFlag(flags);
     flags.setValidator(f -> {
@@ -80,6 +71,9 @@ public final class TransformCommand extends Command {
     }
     if (flags.isSet(LOOPS_FLAG)) {
       transforms.add(new LoopsTransform());
+    }
+    if (flags.isSet(SCRABBLE_FLAG)) {
+      transforms.add(new ScrabbleTransform());
     }
 
     final boolean includeTransformName = flags.isSet(NAME_FLAG);
