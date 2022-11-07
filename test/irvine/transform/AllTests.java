@@ -13,6 +13,7 @@ public class AllTests extends TestSuite {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(LoopsTransformTest.class);
     suite.addTestSuite(LowercaseTransformTest.class);
+    suite.addTestSuite(ScrabbleTransformTest.class);
     suite.addTestSuite(TitlecaseTransformTest.class);
     suite.addTestSuite(UppercaseTransformTest.class);
     return suite;
