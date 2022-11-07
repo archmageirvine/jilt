@@ -6,6 +6,7 @@ import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
 
+import irvine.transform.IdentityTransform;
 import irvine.transform.LoopsTransform;
 import irvine.transform.LowercaseTransform;
 import irvine.transform.ScrabbleTransform;
@@ -27,6 +28,7 @@ public final class TransformCommand extends Command {
 
   private static final String DESC = "Apply each specified transform, generating a line of output for each selected transform for each input line.";
   private static final String NAME_FLAG = "name";
+  private static final String IDENTITY_FLAG = "identity";
   private static final String UPPERCASE_FLAG = "uppercase";
   private static final String LOWERCASE_FLAG = "lowercase";
   private static final String TITLECASE_FLAG = "titlecase";
@@ -44,7 +46,8 @@ public final class TransformCommand extends Command {
     flags.registerOptional('U', UPPERCASE_FLAG, "uppercase the input");
     flags.registerOptional('L', LOWERCASE_FLAG, "lowercase the input");
     flags.registerOptional('T', TITLECASE_FLAG, "titlecase the input");
-    flags.registerOptional(LOOPS_FLAG, "compute the number of closed loops in the input");
+    flags.registerOptional(IDENTITY_FLAG, "the no operation transform leaving each input as is");
+    flags.registerOptional(LOOPS_FLAG, "compute the number of closed loops of each input");
     flags.registerOptional(SCRABBLE_FLAG, "compute the raw Scrabble score of each input");
     CommonFlags.registerOutputFlag(flags);
     CommonFlags.registerInputFlag(flags);
@@ -60,6 +63,9 @@ public final class TransformCommand extends Command {
     flags.setFlags(args);
 
     final List<Transform> transforms = new ArrayList<>();
+    if (flags.isSet(IDENTITY_FLAG)) {
+      transforms.add(new IdentityTransform());
+    }
     if (flags.isSet(UPPERCASE_FLAG)) {
       transforms.add(new UppercaseTransform());
     }
