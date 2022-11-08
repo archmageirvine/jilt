@@ -100,6 +100,36 @@ public final class Anagram extends Command {
   }
 
   /**
+   * Find anagrams matching a specified pattern.
+   * @param pattern anagram target
+   * @param words word list
+   * @param ranked true if the rank (position of solution in the dictionary) should be reported
+   * @return matches if any
+   */
+  public static ArrayList<String> findAnagrams(final String pattern, final List<String> words, final boolean ranked) {
+    final char[] target = makeTarget(pattern);
+    int rank = 0;
+    final ArrayList<String> results = new ArrayList<>();
+    for (final String current : words) {
+      if (check(target, current.toLowerCase(Locale.getDefault()))) {
+        results.add(ranked ? rank + " " + current : current);
+      }
+      ++rank;
+    }
+    return results;
+  }
+
+  /**
+   * Find anagrams matching a specified pattern.
+   * @param pattern anagram target
+   * @param words word list
+   * @return matches if any
+   */
+  public static ArrayList<String> findAnagrams(final String pattern, final List<String> words) {
+    return findAnagrams(pattern, words, false);
+  }
+
+  /**
    * Find anagrams matching specified pattern.
    * @param pattern anagram target
    * @param source input stream of target strings one per line

@@ -13,6 +13,7 @@ public class AllTests extends TestSuite {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(AnagramTest.class);
     suite.addTestSuite(CaesarTest.class);
+    suite.addTestSuite(ChainTest.class);
     return suite;
   }
 }
