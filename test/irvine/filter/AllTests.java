@@ -11,7 +11,9 @@ public class AllTests extends TestSuite {
 
   public static Test suite() {
     final TestSuite suite = new TestSuite();
+    suite.addTestSuite(AlphabetFilterTest.class);
     suite.addTestSuite(AlphabeticalFilterTest.class);
+    suite.addTestSuite(ContainsFilter.class);
     suite.addTestSuite(DecreasingFilterTest.class);
     suite.addTestSuite(DiplogramFilterTest.class);
     suite.addTestSuite(IncreasingFilterTest.class);

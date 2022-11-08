@@ -165,15 +165,15 @@ public final class Chain extends Command {
         return true;
       });
     flags.setFlags(args);
-    final String start = ((String) flags.getAnonymousValue(0)).toLowerCase(Locale.getDefault());
-    final String end = ((String) flags.getAnonymousValue(1)).toLowerCase(Locale.getDefault());
+    setAnagrams(flags.isSet(ANAGRAM_FLAG));
+    setIndels(flags.isSet(INDELS_FLAG));
     try {
       setWords(StringUtils.suckInWords(Dictionary.getDictionaryReader((String) flags.getValue(CommonFlags.DICTIONARY_FLAG)), Casing.LOWER));
     } catch (final IOException e) {
       throw new RuntimeException("Problem reading word list.", e);
     }
-    setAnagrams(flags.isSet(ANAGRAM_FLAG));
-    setIndels(flags.isSet(INDELS_FLAG));
+    final String start = ((String) flags.getAnonymousValue(0)).toLowerCase(Locale.getDefault());
+    final String end = ((String) flags.getAnonymousValue(1)).toLowerCase(Locale.getDefault());
     try (final PrintStream out = CommonFlags.getOutput(flags)) {
       out.println(solve(start, end));
     }
