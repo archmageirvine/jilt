@@ -21,12 +21,20 @@ public final class CommonFlags {
   /** Name of the dictionary flag. */
   public static final String DICTIONARY_FLAG = "dictionary";
 
-  /** Register the dictionary flag. */
+  /**
+   * Register the dictionary flag.
+   * @param flags where to register
+   * @return the flag
+   */
   public static CliFlags.Flag<String> registerDictionaryFlag(final CliFlags flags) {
     return flags.registerOptional('D', DICTIONARY_FLAG, String.class, "FILE", "override the default dictionary (with \"-\" for stdin)");
   }
 
-  /** Validation for dictionary flag. */
+  /**
+   * Validation for the dictionary flag.
+   * @param flags source of flags
+   * @return status
+   */
   public static boolean validateDictionary(final CliFlags flags) {
     if (flags.isSet(DICTIONARY_FLAG)) {
       final String dict = (String) flags.getValue(DICTIONARY_FLAG);
@@ -41,12 +49,20 @@ public final class CommonFlags {
   /** Output file name. */
   public static final String OUTPUT_FLAG = "output";
 
-  /** Register the output flag. */
+  /**
+   * Register the output flag.
+   * @param flags where to register
+   * @return the flag
+   */
   public static CliFlags.Flag<String> registerOutputFlag(final CliFlags flags) {
     return flags.registerOptional('o', OUTPUT_FLAG, String.class, "FILE", "where to write output (with \"-\" for stdout)", "-");
   }
 
-  /** Validation for output flag. */
+  /**
+   * Validation for the output flag.
+   * @param flags source of flags
+   * @return status
+   */
   public static boolean validateOutput(final CliFlags flags) {
     final String out = (String) flags.getValue(OUTPUT_FLAG);
     if (!"-".equals(out) && !new File(out).canWrite()) {
@@ -56,7 +72,11 @@ public final class CommonFlags {
     return true;
   }
 
-  /** Get the output stream based on the flags. */
+  /**
+   * Get the output stream.
+   * @param flags source of flags
+   * @return output stream
+   */
   public static PrintStream getOutput(final CliFlags flags) {
     final String out = (String) flags.getValue(OUTPUT_FLAG);
     try {
@@ -69,12 +89,20 @@ public final class CommonFlags {
   /** Output file name. */
   public static final String INPUT_FLAG = "input";
 
-  /** Register the input flag. */
+  /**
+   * Register the input flag.
+   * @param flags where to register
+   * @return the flag
+   */
   public static CliFlags.Flag<String> registerInputFlag(final CliFlags flags) {
     return flags.registerOptional('i', INPUT_FLAG, String.class, "FILE", "where to read from (with \"-\" for stdin)", "-");
   }
 
-  /** Validation for input flag. */
+  /**
+   * Validation for the input flag.
+   * @param flags source of flags
+   * @return status
+   */
   public static boolean validateInput(final CliFlags flags) {
     final String out = (String) flags.getValue(INPUT_FLAG);
     if (!"-".equals(out) && !new File(out).canRead()) {
@@ -84,7 +112,11 @@ public final class CommonFlags {
     return true;
   }
 
-  /** Get the output stream based on the flags. */
+  /**
+   * Get the input stream.
+   * @param flags source of flags
+   * @return input stream
+   */
   public static BufferedReader getInput(final CliFlags flags) {
     final String in = (String) flags.getValue(INPUT_FLAG);
     try {
