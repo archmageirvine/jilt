@@ -146,7 +146,7 @@ public final class Chain extends Command {
   }
 
   @Override
-  public void mainExec(final String[] args) {
+  public void mainExec(final String... args) {
     final CliFlags flags = new CliFlags(getDescription());
     flags.setDescription("Find the shortest word chain (if such a chain exists) from the first word to the second word.");
     CommonFlags.registerDictionaryFlag(flags);

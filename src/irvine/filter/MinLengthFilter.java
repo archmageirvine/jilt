@@ -8,6 +8,10 @@ public class MinLengthFilter implements Filter {
 
   private final int mLen;
 
+  /**
+   * Filter for minimum length.
+   * @param len minimum length
+   */
   public MinLengthFilter(final int len) {
     mLen = len;
   }

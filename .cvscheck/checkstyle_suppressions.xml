@@ -5,5 +5,6 @@
 <suppressions>
     <suppress checks="PackageHtml" files=".*test/.*"/>
     <suppress checks="JavadocMethod" files=".*Tests?.java"/>
+    <suppress checks="FileLength" files=".*CliFlags.java"/>
 </suppressions>
 

@@ -96,7 +96,7 @@ public final class Caesar extends Command {
               }
             }
           }
-        } catch (IOException e) {
+        } catch (final IOException e) {
           throw new RuntimeException("Problem reading input", e);
         }
       }

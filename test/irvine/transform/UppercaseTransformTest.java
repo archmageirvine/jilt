@@ -1,7 +1,5 @@
 package irvine.transform;
 
-import irvine.filter.Filter;
-import irvine.filter.PalindromeFilter;
 import junit.framework.TestCase;
 
 /**

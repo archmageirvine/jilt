@@ -8,6 +8,10 @@ public class LengthFilter implements Filter {
 
   private final int mLen;
 
+  /**
+   * Exact length filter.
+   * @param len length
+   */
   public LengthFilter(final int len) {
     mLen = len;
   }

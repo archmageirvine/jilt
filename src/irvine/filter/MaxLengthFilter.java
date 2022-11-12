@@ -8,6 +8,10 @@ public class MaxLengthFilter implements Filter {
 
   private final int mLen;
 
+  /**
+   * Filter to a maximum length.
+   * @param len maximum length
+   */
   public MaxLengthFilter(final int len) {
     mLen = len;
   }
