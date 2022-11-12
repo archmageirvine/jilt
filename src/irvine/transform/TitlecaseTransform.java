@@ -1,7 +1,5 @@
 package irvine.transform;
 
-import java.util.Locale;
-
 /**
  * Titlecase the input.
  * @author Sean A. Irvine

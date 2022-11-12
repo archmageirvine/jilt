@@ -1,21 +1,13 @@
 package irvine.language;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.io.PrintStream;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
 
 import irvine.jilt.Command;
 import irvine.jilt.CommonFlags;
 import irvine.jilt.Dictionary;
-import irvine.util.Casing;
 import irvine.util.CliFlags;
-import irvine.util.StringUtils;
 
 /**
  * Command to stream the dictionary.
