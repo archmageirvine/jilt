@@ -13,7 +13,7 @@ public class AllTests extends TestSuite {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(AlphabetFilterTest.class);
     suite.addTestSuite(AlphabeticalFilterTest.class);
-    suite.addTestSuite(ContainsFilter.class);
+    suite.addTestSuite(ContainsFilterTest.class);
     suite.addTestSuite(DecreasingFilterTest.class);
     suite.addTestSuite(DiplogramFilterTest.class);
     suite.addTestSuite(IncreasingFilterTest.class);
@@ -21,6 +21,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(MaxLengthFilterTest.class);
     suite.addTestSuite(MinLengthFilterTest.class);
     suite.addTestSuite(PalindromeFilterTest.class);
+    suite.addTestSuite(RegexFilterTest.class);
     suite.addTestSuite(ReverseAlphabeticalFilterTest.class);
     suite.addTestSuite(TautonymFilterTest.class);
     return suite;

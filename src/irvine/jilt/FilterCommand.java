@@ -18,6 +18,7 @@ import irvine.filter.LengthFilter;
 import irvine.filter.MaxLengthFilter;
 import irvine.filter.MinLengthFilter;
 import irvine.filter.PalindromeFilter;
+import irvine.filter.RegexFilter;
 import irvine.filter.ReverseAlphabeticalFilter;
 import irvine.filter.SetFilter;
 import irvine.filter.TautonymFilter;
@@ -47,6 +48,7 @@ public final class FilterCommand extends Command {
   private static final String TAUTONUM_FLAG = "tautonym";
   private static final String DIPLOGRAM_FLAG = "diplogram";
   private static final String CONTAINS_FLAG = "contains";
+  private static final String REGEX_FLAG = "regex";
   private static final String ALPHABET_FLAG = "alphabet";
   private static final String IN_DICT_FLAG = "in-dict";
   private static final String VOWELS_FLAG = "vowels";
@@ -96,6 +98,7 @@ public final class FilterCommand extends Command {
     flags.registerOptional(TAUTONUM_FLAG, Integer.class, "INT", "word is a tautonym with given number of repeats");
     flags.registerOptional(DIPLOGRAM_FLAG, Integer.class, "INT", "word is a diplogram with given number of repeats");
     flags.registerOptional('C', CONTAINS_FLAG, String.class, "STRING", "word contains the specified string.").setMaxCount(Integer.MAX_VALUE);
+    flags.registerOptional('e', REGEX_FLAG, String.class, "STRING", "word matches the specified regular expression.").setMaxCount(Integer.MAX_VALUE);
     flags.registerOptional('x', ALPHABET_FLAG, String.class, "STRING", "word consists entirely of characters in the specified string.");
     flags.setValidator(f -> {
       if (!CommonFlags.validateDictionary(f)) {
@@ -175,6 +178,9 @@ public final class FilterCommand extends Command {
     }
     for (final Object str : flags.getValues(CONTAINS_FLAG)) {
       filters.add(new ContainsFilter((String) str));
+    }
+    for (final Object str : flags.getValues(REGEX_FLAG)) {
+      filters.add(new RegexFilter((String) str));
     }
     if (flags.isSet(TAUTONUM_FLAG)) {
       filters.add(new TautonymFilter((Integer) flags.getValue(TAUTONUM_FLAG)));

@@ -6,6 +6,7 @@ import java.util.Locale;
 import irvine.language.Anagram;
 import irvine.language.Caesar;
 import irvine.language.Chain;
+import irvine.language.Dict;
 import irvine.util.StringUtils;
 
 /**
@@ -42,6 +43,8 @@ public final class Jilt {
   private enum Module {
     /** Dummy module that returns the list of possible modules. */
     HELP(new Help()),
+    /** Output the dictionary. */
+    DICT(new Dict()),
     /** Filtering by various simple criteria. */
     FILTER(new FilterCommand()),
     /** Transform the input. */
