@@ -18,6 +18,8 @@ import irvine.filter.LengthFilter;
 import irvine.filter.MaxLengthFilter;
 import irvine.filter.MinLengthFilter;
 import irvine.filter.PalindromeFilter;
+import irvine.filter.PatternFilter;
+import irvine.filter.PyramidFilter;
 import irvine.filter.RegexFilter;
 import irvine.filter.ReverseAlphabeticalFilter;
 import irvine.filter.SetFilter;
@@ -49,6 +51,8 @@ public final class FilterCommand extends Command {
   private static final String DIPLOGRAM_FLAG = "diplogram";
   private static final String CONTAINS_FLAG = "contains";
   private static final String REGEX_FLAG = "regex";
+  private static final String PATTERN_FLAG = "pattern";
+  private static final String PYRAMID_FLAG = "pyramid";
   private static final String ALPHABET_FLAG = "alphabet";
   private static final String IN_DICT_FLAG = "in-dict";
   private static final String VOWELS_FLAG = "vowels";
@@ -99,6 +103,8 @@ public final class FilterCommand extends Command {
     flags.registerOptional(DIPLOGRAM_FLAG, Integer.class, "INT", "word is a diplogram with given number of repeats");
     flags.registerOptional('C', CONTAINS_FLAG, String.class, "STRING", "word contains the specified string.").setMaxCount(Integer.MAX_VALUE);
     flags.registerOptional('e', REGEX_FLAG, String.class, "STRING", "word matches the specified regular expression.").setMaxCount(Integer.MAX_VALUE);
+    flags.registerOptional(PATTERN_FLAG, String.class, "STRING", "word matches the specified letter pattern.");
+    flags.registerOptional(PYRAMID_FLAG, String.class, "STRING", "word matches the specified frequency pattern.");
     flags.registerOptional('x', ALPHABET_FLAG, String.class, "STRING", "word consists entirely of characters in the specified string.");
     flags.setValidator(f -> {
       if (!CommonFlags.validateDictionary(f)) {
@@ -123,6 +129,10 @@ public final class FilterCommand extends Command {
           f.setParseMessage("--" + DIPLOGRAM_FLAG + " must be at least 1");
           return false;
         }
+      }
+      if (f.isSet(PYRAMID_FLAG) && !((String) f.getValue(PYRAMID_FLAG)).matches("[0-9]+")) {
+        f.setParseMessage("--" + PYRAMID_FLAG + " requires a numerical pattern like 221");
+        return false;
       }
       return true;
     });
@@ -181,6 +191,12 @@ public final class FilterCommand extends Command {
     }
     for (final Object str : flags.getValues(REGEX_FLAG)) {
       filters.add(new RegexFilter((String) str));
+    }
+    if (flags.isSet(PATTERN_FLAG)) {
+      filters.add(new PatternFilter((String) flags.getValue(PATTERN_FLAG)));
+    }
+    if (flags.isSet(PYRAMID_FLAG)) {
+      filters.add(new PyramidFilter((String) flags.getValue(PYRAMID_FLAG)));
     }
     if (flags.isSet(TAUTONUM_FLAG)) {
       filters.add(new TautonymFilter((Integer) flags.getValue(TAUTONUM_FLAG)));

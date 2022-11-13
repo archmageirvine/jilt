@@ -55,4 +55,22 @@ public final class StringUtils {
   public static List<String> suckInWords(final String file, final Casing casing) throws IOException {
     return suckInWords(IOUtils.getReader(file), casing);
   }
+
+  /**
+   * Compute the syndrome of a word where the syndrome is the count of each letter A through Z.
+   * @param word word
+   * @return syndrome
+   */
+  public static int[] syndrome(final String word) {
+    final int[] counts = new int[26];
+    for (int k = 0; k < word.length(); ++k) {
+      final char c = word.charAt(k);
+      if (c >= 'A' && c <= 'Z') {
+        ++counts[c - 'A'];
+      } else if (c >= 'a' && c <= 'z') {
+        ++counts[c - 'a'];
+      }
+    }
+    return counts;
+  }
 }

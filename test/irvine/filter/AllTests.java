@@ -21,6 +21,8 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(MaxLengthFilterTest.class);
     suite.addTestSuite(MinLengthFilterTest.class);
     suite.addTestSuite(PalindromeFilterTest.class);
+    suite.addTestSuite(PatternFilterTest.class);
+    suite.addTestSuite(PyramidFilterTest.class);
     suite.addTestSuite(RegexFilterTest.class);
     suite.addTestSuite(ReverseAlphabeticalFilterTest.class);
     suite.addTestSuite(TautonymFilterTest.class);
