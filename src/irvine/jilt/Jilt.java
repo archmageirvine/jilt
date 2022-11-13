@@ -7,6 +7,8 @@ import irvine.language.Anagram;
 import irvine.language.Caesar;
 import irvine.language.Chain;
 import irvine.language.Dict;
+import irvine.language.Equation;
+import irvine.language.Permute;
 import irvine.util.StringUtils;
 
 /**
@@ -51,8 +53,12 @@ public final class Jilt {
     TRANSFORM(new TransformCommand()),
     /** Simple anagrams. */
     ANAGRAM(new Anagram()),
+    /** Generate permutations. */
+    PERMUTE(new Permute()),
     /** Solve word chain problems. */
     CHAIN(new Chain()),
+    /** Solve word equation problems. */
+    EQUATION(new Equation()),
     /** Caesar shifts. */
     CAESAR(new Caesar()),
     ;

@@ -9,7 +9,7 @@ import junit.framework.TestCase;
 public class PatternFilterTest extends TestCase {
 
   public void testFilter() {
-    final Filter filter = new RegexFilter("11232");
+    final Filter filter = new PatternFilter("11232");
     assertFalse(filter.is(""));
     assertFalse(filter.is("112321"));
     assertTrue(filter.is("11232"));
