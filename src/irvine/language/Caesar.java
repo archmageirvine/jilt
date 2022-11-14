@@ -50,7 +50,6 @@ public final class Caesar extends Command {
   public void mainExec(final String... args) {
     final CliFlags flags = new CliFlags(getDescription());
     flags.setDescription("Can read from a stream or a command line string.");
-    CommonFlags.registerDictionaryFlag(flags);
     CommonFlags.registerInputFlag(flags);
     CommonFlags.registerOutputFlag(flags);
     flags.registerOptional('s', SHIFT_FLAG, Integer.class, "INT", "specific shift");

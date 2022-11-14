@@ -7,6 +7,7 @@ import irvine.crypto.Vampire;
 import irvine.language.Anagram;
 import irvine.language.Caesar;
 import irvine.language.Chain;
+import irvine.language.Demux;
 import irvine.language.Dict;
 import irvine.language.Equation;
 import irvine.language.Permute;
@@ -60,6 +61,8 @@ public final class Jilt {
     CHAIN(new Chain()),
     /** Solve word equation problems. */
     EQUATION(new Equation()),
+    /** Solve word multiplexing problems. */
+    DEMUX(new Demux()),
     /** Caesar shifts. */
     CAESAR(new Caesar()),
     /** Caesar shifts. */
