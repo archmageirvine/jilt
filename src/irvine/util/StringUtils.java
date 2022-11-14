@@ -73,4 +73,83 @@ public final class StringUtils {
     }
     return counts;
   }
+
+  static final char[] APPEND_CHAR = new char[65536];
+  static {
+    for (char c = '0'; c <= '9'; ++c) {
+      APPEND_CHAR[c] = c;
+    }
+    for (char c = 'a'; c <= 'z'; ++c) {
+      APPEND_CHAR[c] = c;
+    }
+    for (char c = 'A'; c <= 'Z'; ++c) {
+      APPEND_CHAR[c] = (char) (c - 'A' + 'a');
+    }
+    APPEND_CHAR['.'] = '\uFFFF';
+    APPEND_CHAR[','] = '\uFFFF';
+    APPEND_CHAR[':'] = '\uFFFF';
+    APPEND_CHAR[';'] = '\uFFFF';
+    APPEND_CHAR['?'] = '\uFFFF';
+    APPEND_CHAR['!'] = '\uFFFF';
+    APPEND_CHAR['$'] = '\uFFFF';
+    APPEND_CHAR['%'] = '\uFFFF';
+    APPEND_CHAR['"'] = '\uFFFF';
+    APPEND_CHAR['`'] = '\uFFFF';
+    APPEND_CHAR['\''] = '\uFFFF';
+    APPEND_CHAR['\u0092'] = '\uFFFF'; // an apostrophe in some codes
+    APPEND_CHAR[' '] = (char) 1;
+    APPEND_CHAR['\n'] = (char) 1;
+    APPEND_CHAR['\t'] = (char) 1;
+    APPEND_CHAR['\r'] = (char) 1;
+    APPEND_CHAR['\f'] = (char) 1;
+    APPEND_CHAR['\u000B'] = (char) 1;
+    APPEND_CHAR['/'] = (char) 1;
+    APPEND_CHAR['~'] = (char) 1;
+    APPEND_CHAR['='] = (char) 1;
+    APPEND_CHAR['('] = (char) 1;
+    APPEND_CHAR[')'] = (char) 1;
+    APPEND_CHAR['{'] = (char) 1;
+    APPEND_CHAR['}'] = (char) 1;
+    APPEND_CHAR['['] = (char) 1;
+    APPEND_CHAR[']'] = (char) 1;
+  }
+
+  /**
+   * Clean up a word by making it lower case and discarding characters which
+   * are not letters or digits.  If the word is sufficiently dirty then the
+   * empty string is returned.
+   *
+   * @param s word to clean
+   * @return cleaned word
+   */
+  public static String clean(final String s) {
+    // For efficiency test if word already clean and just return string
+    boolean clean = true;
+    for (int k = 0; k < s.length(); ++k) {
+      final char d = s.charAt(k);
+      if (d >= 'A' && d <= 'Z') {
+        clean = false;
+      } else {
+        final char c = APPEND_CHAR[s.charAt(k)];
+        if (c == 0) {
+          return "";
+        } else if (c == '\uFFFF') {
+          clean = false;
+        }
+      }
+    }
+    if (clean) {
+      return s;
+    }
+    // There is at least one character that needs to change
+    final StringBuilder sb = new StringBuilder();
+    for (int k = 0; k < s.length(); ++k) {
+      final char c = APPEND_CHAR[s.charAt(k)];
+      if (c != '\uFFFF') {
+        sb.append(c);
+      }
+    }
+    return sb.toString();
+  }
+
 }

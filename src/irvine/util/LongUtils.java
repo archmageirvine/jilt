@@ -4,7 +4,7 @@ package irvine.util;
  * Long utilities.
  * @author Sean A. Irvine
  */
-public class LongUtils {
+public final class LongUtils {
 
   private LongUtils() { }
 

@@ -6,6 +6,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintStream;
 
+import irvine.entropy.Entropy;
+import irvine.entropy.FourGramAlphabetModel;
 import irvine.util.CliFlags;
 import irvine.util.IOUtils;
 
@@ -86,7 +88,7 @@ public final class CommonFlags {
     }
   }
 
-  /** Output file name. */
+  /** Input file name. */
   public static final String INPUT_FLAG = "input";
 
   /**
@@ -123,6 +125,51 @@ public final class CommonFlags {
       return IOUtils.getReader(in);
     } catch (final IOException e) {
       throw new RuntimeException("Could not read from \"" + in + "\")");
+    }
+  }
+
+  /** Model file name. */
+  public static final String MODEL_FLAG = "model";
+
+  /**
+   * Register the model flag.
+   * @param flags where to register
+   * @return the flag
+   */
+  public static CliFlags.Flag<String> registerModelFlag(final CliFlags flags) {
+    return flags.registerOptional('m', MODEL_FLAG, String.class, "FILE", "path to entropy model file");
+  }
+
+  /**
+   * Validation for the model flag.
+   * @param flags source of flags
+   * @return status
+   */
+  public static boolean validateModel(final CliFlags flags) {
+    if (flags.isSet(MODEL_FLAG)) {
+      final String model = (String) flags.getValue(MODEL_FLAG);
+      if (!"-".equals(model) && !new File(model).canRead()) {
+        flags.setParseMessage("Specified model file \"" + model + "\" is not readable.");
+        return false;
+      }
+    }
+    return true;
+  }
+
+  /**
+   * Get the model.
+   * @param flags source of flags
+   * @return entropy model
+   */
+  public static Entropy getEntropyModel(final CliFlags flags) {
+    try {
+      if (flags.isSet(MODEL_FLAG)) {
+        return FourGramAlphabetModel.loadModel((String) flags.getValue(MODEL_FLAG));
+      } else {
+        return FourGramAlphabetModel.loadModel();
+      }
+    } catch (final IOException e) {
+      throw new RuntimeException("Could to load entropy model.", e);
     }
   }
 }

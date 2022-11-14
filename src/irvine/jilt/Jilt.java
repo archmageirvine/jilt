@@ -3,6 +3,7 @@ package irvine.jilt;
 import java.util.Arrays;
 import java.util.Locale;
 
+import irvine.crypto.Vampire;
 import irvine.language.Anagram;
 import irvine.language.Caesar;
 import irvine.language.Chain;
@@ -61,6 +62,8 @@ public final class Jilt {
     EQUATION(new Equation()),
     /** Caesar shifts. */
     CAESAR(new Caesar()),
+    /** Caesar shifts. */
+    VAMPIRE(new Vampire()),
     ;
 
     private final Command mCommand;

@@ -7,7 +7,7 @@ import java.util.Map;
  * Integer utilities.
  * @author Sean A. Irvine
  */
-public class CollectionUtils {
+public final class CollectionUtils {
 
   private CollectionUtils() { }
 
