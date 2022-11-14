@@ -19,6 +19,11 @@ import irvine.util.Permutation;
  */
 public final class Equation extends Command {
 
+  // RFE:
+  //   - more operations -, /
+  //   - support for constant numbers 3 * ABC, etc.
+  //   -
+
   private static final String EQUALS = "=";
   private static final String ADD = "+";
   private static final String MULTIPLY = "*";
