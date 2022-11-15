@@ -1,6 +1,8 @@
 #!/bin/bash
 #
 # JILT launcher script for Linux.
+# This version of the launcher is suitable for those developing with IntelliJ.
+# For a version included in a release see resources/jilt
 
 export CLASSPATH=$(dirname "$0")/out/production/jilt
 

@@ -1,0 +1,5 @@
+#!/bin/bash
+#
+# JILT launcher script for Linux.
+
+java -jar $(dirname "$0")/jilt.jar "$@"
