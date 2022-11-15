@@ -27,7 +27,7 @@ public final class Anagram extends Command {
 
   /** Construct the module. */
   public Anagram() {
-    super("Find simple anagrams");
+    super("Find anagrams");
   }
 
   /** Symbol used for a dit. */
@@ -191,8 +191,10 @@ public final class Anagram extends Command {
   private static final String FIRST_LIST_FLAG = "first";
   private static final String SECOND_LIST_FLAG = "second";
   private static final String RANK_FLAG = "rank";
+  private static final String MAX_WORDS_FLAG = "max-words";
+  private static final String MIN_LENGTH_FLAG = "min-length";
 
-  private static final String DESC = "The anagram module can be used to find simple single word anagrams including cases where the query pattern contains unknown letters. For example, \"anagram cat\" will find the words \"act\" and \"cat\"; similarly, \"anagram c.t\" will find all anagrams of \"c\", \"t\", and one other letter. With the options -A and -B, anagram can be used to split an anagram across two word lists. This is useful, for example, in trying to solve anagrams of personal names where -A is a file containing first names and -B is a file containing surnames.";
+  private static final String DESC = "The anagram module can be used to find simple single word anagrams including cases where the query pattern contains unknown letters. For example, \"anagram cat\" will find the words \"act\" and \"cat\"; similarly, \"anagram c.t\" will find all anagrams of \"c\", \"t\", and one other letter. With the options -A and -B, anagram can be used to split an anagram across two word lists. This is useful, for example, in trying to solve anagrams of personal names where -A is a file containing first names and -B is a file containing surnames. With -m larger than 1, this module can also find multiword anagrams, but performance is much lower and long patterns or numbers of words can result in very slow execution.";
 
   /**
    * Find anagrams.
@@ -206,6 +208,8 @@ public final class Anagram extends Command {
     flags.registerRequired(String.class, "PATTERN", "pattern to anagram (with unknown letters denoted by \".\")");
     flags.registerOptional('A', FIRST_LIST_FLAG, String.class, "FILE", "first list of words (with \"-\" for stdin)");
     flags.registerOptional('B', SECOND_LIST_FLAG, String.class, "FILE", "second list of words (with \"-\" for stdin)");
+    flags.registerOptional('m', MAX_WORDS_FLAG, Integer.class, "INT", "maximum number of words in the solution", 1);
+    flags.registerOptional('M', MIN_LENGTH_FLAG, Integer.class, "INT", "minimum length of word in multiple word solution", 3);
     flags.registerOptional(RANK_FLAG, "report the rank of the solution");
     flags.setValidator(f -> {
       if (!CommonFlags.validateDictionary(f)) {
@@ -216,6 +220,10 @@ public final class Anagram extends Command {
       }
       if (f.isSet(FIRST_LIST_FLAG) != f.isSet(SECOND_LIST_FLAG)) {
         f.setParseMessage("--" + FIRST_LIST_FLAG + " (-A) and --" + SECOND_LIST_FLAG + " (-B) must be used together or not at all.");
+        return false;
+      }
+      if (f.isSet(FIRST_LIST_FLAG) && f.isSet(MAX_WORDS_FLAG)) {
+        f.setParseMessage("Setting -A and -B lists incompatible with use of -m.");
         return false;
       }
       if (f.isSet(FIRST_LIST_FLAG)) {
@@ -234,15 +242,40 @@ public final class Anagram extends Command {
           return false;
         }
       }
+      final int minLength = (Integer) f.getValue(MIN_LENGTH_FLAG);
+      if (minLength < 1) {
+        f.setParseMessage("Minimum word length must be positive.");
+        return false;
+      }
+      final int maxWords = (Integer) f.getValue(MAX_WORDS_FLAG);
+      if (maxWords < 1) {
+        f.setParseMessage("Maximum number of words must be positive.");
+        return false;
+      }
       return true;
     });
     flags.setFlags(args);
 
     final String pattern = (String) flags.getAnonymousValue(0);
     final boolean ranked = flags.isSet(RANK_FLAG);
+    final int minWordLength = (Integer) flags.getValue(MIN_LENGTH_FLAG);
+    final int maxWords = (Integer) flags.getValue(MAX_WORDS_FLAG);
 
     try (final PrintStream out = CommonFlags.getOutput(flags)) {
-      if (flags.isSet(FIRST_LIST_FLAG)) {
+      if (maxWords > 1) {
+        // Multiple word anagrams
+        final MultiwordAnagram ma = new MultiwordAnagram(out, minWordLength);
+        // Load in allowable words
+        try (final BufferedReader reader = Dictionary.getDictionaryReader((String) flags.getValue(CommonFlags.DICTIONARY_FLAG))) {
+          String line;
+          while ((line = reader.readLine()) != null) {
+            ma.addWord(line);
+          }
+        } catch (final IOException e) {
+          throw new RuntimeException("I/O problem with dictionary", e);
+        }
+        ma.search(pattern, maxWords);
+      } else if (flags.isSet(FIRST_LIST_FLAG)) {
         // We are doing a two word list match
         try {
           final List<String> list1 = StringUtils.suckInWords((String) flags.getValue(FIRST_LIST_FLAG), Casing.LOWER);

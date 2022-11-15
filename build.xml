@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<project name="JILT" default="release">
+
+  <property name="src.dir" value="src"/>
+  <property name="test.dir" value="test"/>
+  <property name="build.dir" value="build.tmp"/>
+  <property name="lib.dir" value="lib"/>
+
+  <target name="compile-src" description="Compile the source">
+    <mkdir dir="${build.dir}/classes"/>
+    <javac srcdir="${src.dir}" destdir="${build.dir}/classes" source="1.10" includeantruntime="false">
+      <classpath>
+        <fileset dir="${lib.dir}" includes="**/*.jar" />
+      </classpath>
+      <compilerarg value="-Xlint:unchecked" />
+    </javac>
+  </target>
+
+  <target name="compile-test" description="Compile the tests">
+    <javac srcdir="${test.dir}" source="1.10" destdir="${build.dir}/classes" includeantruntime="false">
+      <classpath>
+        <pathelement path="${src.dir}"/>
+        <pathelement path="${internal.dir}"/>
+        <fileset dir="${lib.dir}" includes="**/*.jar" />
+      </classpath>
+      <compilerarg value="-Xlint:unchecked" />
+    </javac>
+  </target>
+
+  <target name="jar" description="Build a jar" depends="compile-src,compile-test">
+    <jar destfile="${build.dir}/jilt.jar" update="false">
+      <fileset dir="${build.dir}/classes"/>
+      <fileset dir="${src.dir}" includes="irvine/resources/**"/>
+      <zipfileset src="${lib.dir}/junit.jar" excludes="META-INF/**"/>
+      <manifest>
+        <attribute name="Main-Class" value="irvine.jilt.Jilt"/>
+        <attribute name="Implementation-Title" value="JILT"/>
+        <attribute name="Implementation-Version" value="1.0"/>
+        <attribute name="Implementation-Vendor" value="Sean A. Irvine"/>
+      </manifest>
+    </jar>
+  </target>
+
+  <target name="release" description="Make a release of JILT" depends="jar">
+    <property name="outdir" value="jilt" />
+    <zip destfile="${build.dir}/jilt.zip" duplicate="fail" >
+      <zipfileset fullpath="${outdir}/jilt.jar" dir="${build.dir}" includes="jilt.jar"/>
+      <zipfileset fullpath="${outdir}/jilt" dir="resources" includes="jilt" filemode="755"/>
+      <zipfileset fullpath="${outdir}/jilt.bat" dir="resources" includes="jilt.bat" filemode="755"/>
+      <zipfileset fullpath="${outdir}/README.md" dir="." includes="README.md"/>
+    </zip>
+  </target>
+</project>
