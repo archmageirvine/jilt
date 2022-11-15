@@ -9,6 +9,7 @@ import irvine.language.Caesar;
 import irvine.language.Chain;
 import irvine.language.Demux;
 import irvine.language.Dict;
+import irvine.language.Entropy;
 import irvine.language.Equation;
 import irvine.language.Permute;
 import irvine.util.StringUtils;
@@ -63,9 +64,11 @@ public final class Jilt {
     EQUATION(new Equation()),
     /** Solve word multiplexing problems. */
     DEMUX(new Demux()),
+    /** Compute entropy. */
+    ENTROPY(new Entropy()),
     /** Caesar shifts. */
     CAESAR(new Caesar()),
-    /** Caesar shifts. */
+    /** Solve simple substitutions. */
     VAMPIRE(new Vampire()),
     ;
 
