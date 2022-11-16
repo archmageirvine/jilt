@@ -19,11 +19,18 @@ echo 1) Open windows command prompt
 echo    e.g. on Windows Vista / 7, press start, search "cmd.exe" and press enter
 echo.  
 echo 2) Type "%~dp0%jilt.bat" to execute JILT
-echo.  
-GOTO :no 
- 
+echo.
+GOTO :no
+
 :start
 IF /I "%PROCESSOR_ARCHITECTURE%" NEQ "AMD64" GOTO :no64bit
+
+:no64bit
+echo JILT requires a 64 bit version of Windows
+
+:no
+IF DEFINED PAUSE_ON_CLOSE pause
+exit /b 1
 
 java -jar %JILT_JAR% %*
 

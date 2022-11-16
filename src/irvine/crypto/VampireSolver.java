@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.TreeSet;
 
 import irvine.entropy.Entropy;
+import irvine.util.DoubleUtils;
 
 /**
  * Program to attempt automated solution of simple substitution ciphers.
@@ -57,7 +58,7 @@ public class VampireSolver {
     mOut = out;
   }
 
-  static String cleanCryptogram(final BufferedReader reader, final boolean isDitHandling) throws IOException {
+  static String cleanCryptogram(final BufferedReader reader, final boolean isDitHandling, final boolean ignoreWhitespace) throws IOException {
     final StringBuilder sb = new StringBuilder();
     boolean wasSpace = true;
     int c;
@@ -81,6 +82,9 @@ public class VampireSolver {
         if (c != ' ' && c != '\0' && (c < 'A' || c > 'Z')) {
           continue;
         }
+      }
+      if (ignoreWhitespace && Character.isWhitespace(c)) {
+        continue;
       }
       sb.append((char) c);
     }
@@ -143,10 +147,11 @@ public class VampireSolver {
    * Read in the ciphertext to be analysed. Handles the
    * reduction to 27 letters and dit handling if necessary.
    * @param reader stream providing cryptogram
+   * @param ignoreWhitespace should whitespace in input be ignored
    * @exception IOException if an I/O problem occurs
    */
-  public void setCryptogram(final BufferedReader reader) throws IOException {
-    mCrypt = cleanCryptogram(reader, isDitHandling());
+  public void setCryptogram(final BufferedReader reader, final boolean ignoreWhitespace) throws IOException {
+    mCrypt = cleanCryptogram(reader, isDitHandling(), ignoreWhitespace);
     message("Cryptogram: " + mCrypt);
     message("Cryptogram score: " + mModel.entropy(mCrypt));
   }
@@ -278,7 +283,7 @@ public class VampireSolver {
   void print(final Node n, final boolean flag) {
     final char[] map = n.getPermutation();
     final StringBuilder sb = new StringBuilder();
-    sb.append(n.getScore()).append(' ');
+    sb.append(DoubleUtils.NF3.format(n.getScore())).append(' ');
     for (int k = 0; k < mCrypt.length(); ++k) {
       final char x = map[mCrypt.charAt(k)];
       sb.append(x == 0 ? '.' : x);

@@ -25,6 +25,7 @@ public class Vampire extends Command {
   private static final String QUIET_FLAG = "quiet";
   private static final String DIT_FLAG = "dits";
   private static final String FIX_FLAG = "fix";
+  private static final String SPACE_FLAG = "ignore-spaces";
 
   /**
    * Construct a simple substitution solver.
@@ -38,13 +39,14 @@ public class Vampire extends Command {
     final CliFlags flags = new CliFlags(getDescription());
     CommonFlags.registerOutputFlag(flags);
     CommonFlags.registerInputFlag(flags);
-    CommonFlags.getEntropyModel(flags);
+    CommonFlags.registerModelFlag(flags);
     final Flag<Integer> retainFlag = flags.registerOptional('a', "retain", Integer.class, "INT", "maximum number of hypotheses to maintain at each stage", 1000);
     final Flag<Integer> resultsFlag = flags.registerOptional('r', "results", Integer.class, "INT", "maximum number of answers to print.", 5);
     flags.registerOptional('f', FIX_FLAG, String.class, "pair", "fix a pair of symbols.").setMaxCount(Integer.MAX_VALUE);
     flags.registerOptional('d', DIT_FLAG, "indicates that \".\" should be treated as a dit rather than a period. No attempt is made to resolve such symbols");
     flags.registerOptional('q', QUIET_FLAG, "print only the answer");
     flags.registerOptional('p', PERMUTATION_FLAG, "print the permutation for the top solution");
+    flags.registerOptional('s', SPACE_FLAG, "ignore whitespace in input");
     flags.setValidator(f -> {
         if (!CommonFlags.validateOutput(f)) {
           return false;
@@ -87,7 +89,7 @@ public class Vampire extends Command {
       }
 
       try (final BufferedReader r = CommonFlags.getInput(flags)) {
-        vampire.setCryptogram(r);
+        vampire.setCryptogram(r, flags.isSet(SPACE_FLAG));
       } catch (final IOException e) {
         throw new RuntimeException("Problem with cryptogram file.", e);
       }
