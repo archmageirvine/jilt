@@ -27,6 +27,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(ShuffleTest.class);
     suite.addTestSuite(SortTest.class);
     suite.addTestSuite(StringUtilsTest.class);
+    suite.addTestSuite(TrieTest.class);
     suite.addTestSuite(WrappingStringBufferTest.class);
     return suite;
   }

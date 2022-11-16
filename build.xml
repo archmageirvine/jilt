@@ -8,7 +8,7 @@
 
   <target name="compile-src" description="Compile the source">
     <mkdir dir="${build.dir}/classes"/>
-    <javac srcdir="${src.dir}" destdir="${build.dir}/classes" source="1.10" includeantruntime="false">
+    <javac srcdir="${src.dir}" destdir="${build.dir}/classes" includeantruntime="false">
       <classpath>
         <fileset dir="${lib.dir}" includes="**/*.jar" />
       </classpath>
@@ -17,7 +17,7 @@
   </target>
 
   <target name="compile-test" description="Compile the tests">
-    <javac srcdir="${test.dir}" source="1.10" destdir="${build.dir}/classes" includeantruntime="false">
+    <javac srcdir="${test.dir}" destdir="${build.dir}/classes" includeantruntime="false">
       <classpath>
         <pathelement path="${src.dir}"/>
         <pathelement path="${internal.dir}"/>

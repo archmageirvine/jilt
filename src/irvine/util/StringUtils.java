@@ -118,7 +118,6 @@ public final class StringUtils {
    * Clean up a word by making it lower case and discarding characters which
    * are not letters or digits.  If the word is sufficiently dirty then the
    * empty string is returned.
-   *
    * @param s word to clean
    * @return cleaned word
    */

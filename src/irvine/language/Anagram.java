@@ -208,8 +208,8 @@ public final class Anagram extends Command {
     flags.registerRequired(String.class, "PATTERN", "pattern to anagram (with unknown letters denoted by \".\")");
     flags.registerOptional('A', FIRST_LIST_FLAG, String.class, "FILE", "first list of words (with \"-\" for stdin)");
     flags.registerOptional('B', SECOND_LIST_FLAG, String.class, "FILE", "second list of words (with \"-\" for stdin)");
-    flags.registerOptional('m', MAX_WORDS_FLAG, Integer.class, "INT", "maximum number of words in the solution", 1);
-    flags.registerOptional('M', MIN_LENGTH_FLAG, Integer.class, "INT", "minimum length of word in multiple word solution", 3);
+    flags.registerOptional('M', MAX_WORDS_FLAG, Integer.class, "INT", "maximum number of words in the solution", 1);
+    flags.registerOptional('m', MIN_LENGTH_FLAG, Integer.class, "INT", "minimum length of word in multiple word solution", 3);
     flags.registerOptional(RANK_FLAG, "report the rank of the solution");
     flags.setValidator(f -> {
       if (!CommonFlags.validateDictionary(f)) {

@@ -128,7 +128,7 @@ public class Vigenere {
   }
 
   private void dictionary(final String cipher) throws IOException {
-    TreeSet<Node> best = new TreeSet<>();
+    final TreeSet<Node> best = new TreeSet<>();
     try (final BufferedReader r = new BufferedReader(new InputStreamReader(System.in))) {
       String key;
       while ((key = r.readLine()) != null) {

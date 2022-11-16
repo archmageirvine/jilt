@@ -12,6 +12,7 @@ import irvine.language.Dict;
 import irvine.language.Entropy;
 import irvine.language.Equation;
 import irvine.language.Permute;
+import irvine.language.WordSearch;
 import irvine.util.StringUtils;
 
 /**
@@ -60,6 +61,8 @@ public final class Jilt {
     PERMUTE(new Permute()),
     /** Solve word chain problems. */
     CHAIN(new Chain()),
+    /** Solve grid word search problems. */
+    WORDSEARCH(new WordSearch()),
     /** Solve word equation problems. */
     EQUATION(new Equation()),
     /** Solve word multiplexing problems. */
@@ -98,7 +101,13 @@ public final class Jilt {
       return;
     }
     final String module = args[0];
-    final Module mod = Module.valueOf(module.toUpperCase(Locale.getDefault()));
+    final Module mod;
+    try {
+      mod = Module.valueOf(module.toUpperCase(Locale.getDefault()));
+    } catch (final IllegalArgumentException e) {
+      System.err.println("No module named \"" + module + "\" is available.");
+      return;
+    }
     mod.getCommand().mainExec(Arrays.copyOfRange(args, 1, args.length));
   }
 }
