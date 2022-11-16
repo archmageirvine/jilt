@@ -47,4 +47,71 @@ in the cryptogram file are not properly a part of the message.  Note
 also that in this case, the correct solution is not the "best"
 solution found.
 
+## Finding anagrams
 
+To find anagrams of a word:
+
+```
+> jilt anagram cat
+act
+cat
+```
+
+There are options available to find multiple word anagrams, override
+the word list, support unknown letters in the anagram, and so on.
+
+## Finding words with particular properties
+
+The filter module provides a great many options for selecting words
+with various properties. In general, a word must pass all the selected
+filters to be output.
+
+Here we find all the palindromes of length 7 in JILT's standard dictionary:
+
+```
+> jilt dict | jilt filter --palindrome --length 7
+deified
+hadedah
+halalah
+reifier
+repaper
+reviver
+rotator
+seities
+sememes
+```
+
+## Solve letter equations
+
+Currently the support for this kind of problem is not as complete as
+it could be. In these problems it is assumed that each letter denotes
+a single digit and each digit is represented by only a particular
+letter.
+
+All solutions will be printed.
+
+In the following example, there are two equations which much be satisfied.
+
+```
+> jilt equation "EAST + WEST + SOUTH + NORTH = EARTH" "W^N=WHEN"
+A = 7, R = 8, S = 2, T = 5, E = 9, U = 3, W = 4, H = 0, N = 6, O = 1.
+```
+
+Note the use of quotes to ensure each equation is seen as a separate parameter.
+
+## Solve word chain problems
+
+A word chain problem asks for the shortest sequence of words that can
+transform one word into another. Options are available to select the
+exact set of allowed operations.
+
+```
+> jilt chain horse truck
+[horse, hoise, poise, prise, price, trice, truce, truck]
+```
+
+## Other
+
+There are other modules for finding words in a grid (wordsearch),
+generating permutations of letters, transforming words in various ways
+and so.
