@@ -23,7 +23,9 @@ Example:
 
 ```
 > cat cryptogram.txt
-RA PJIA JS C RUSGADLBP RUDPG FXCF JE LBPP UL ZACBFK, NXCDT CSG CGIASFBDA. FXADA JE SU ASG FU FXA CGIASFBDAE FXCF RA NCS XCIA JL USPK RA EAAV FXAT RJFX UBD AKAE UOAS. (MCRCXCDPCP SAXDB)
+RA PJIA JS C RUSGADLBP RUDPG FXCF JE LBPP UL ZACBFK, NXCDT CSG
+CGIASFBDA. FXADA JE SU ASG FU FXA CGIASFBDAE FXCF RA NCS XCIA JL USPK
+RA EAAV FXAT RJFX UBD AKAE UOAS. (MCRCXCDPCP SAXDB)
 
 > jilt vampire -q -r 1 -i cryptogram.txt
 274.068 we live in a wonderful world that is full of beauty charm and adventure there is no end to the adventures that we can have if only we seek them with our eyes open jawaharlal nehru

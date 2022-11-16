@@ -9,7 +9,9 @@ import java.util.List;
 import irvine.transform.IdentityTransform;
 import irvine.transform.LoopsTransform;
 import irvine.transform.LowercaseTransform;
+import irvine.transform.ReverseTransform;
 import irvine.transform.ScrabbleTransform;
+import irvine.transform.SortTransform;
 import irvine.transform.TitlecaseTransform;
 import irvine.transform.Transform;
 import irvine.transform.UppercaseTransform;
@@ -34,6 +36,8 @@ public final class TransformCommand extends Command {
   private static final String TITLECASE_FLAG = "titlecase";
   private static final String LOOPS_FLAG = "loops";
   private static final String SCRABBLE_FLAG = "scrabble";
+  private static final String SORT_FLAG = "sort";
+  private static final String REVERSE_FLAG = "reverse";
 
   /**
    * Transform words.
@@ -49,6 +53,8 @@ public final class TransformCommand extends Command {
     flags.registerOptional(IDENTITY_FLAG, "the no operation transform leaving each input as is");
     flags.registerOptional(LOOPS_FLAG, "compute the number of closed loops of each input");
     flags.registerOptional(SCRABBLE_FLAG, "compute the raw Scrabble score of each input");
+    flags.registerOptional(SORT_FLAG, "sort the letters of each input");
+    flags.registerOptional('r', REVERSE_FLAG, "reverse each input");
     CommonFlags.registerOutputFlag(flags);
     CommonFlags.registerInputFlag(flags);
     flags.setValidator(f -> {
@@ -80,6 +86,12 @@ public final class TransformCommand extends Command {
     }
     if (flags.isSet(SCRABBLE_FLAG)) {
       transforms.add(new ScrabbleTransform());
+    }
+    if (flags.isSet(REVERSE_FLAG)) {
+      transforms.add(new ReverseTransform());
+    }
+    if (flags.isSet(SORT_FLAG)) {
+      transforms.add(new SortTransform());
     }
 
     final boolean includeTransformName = flags.isSet(NAME_FLAG);
