@@ -49,6 +49,8 @@ in the cryptogram file are not properly a part of the message.  Note
 also that in this case, the correct solution is not the "best"
 solution found.
 
+A similar module is available for solving Vigenere ciphers.
+
 ## Finding anagrams
 
 To find anagrams of a word:

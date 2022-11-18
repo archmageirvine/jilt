@@ -1,21 +1,24 @@
 package irvine.crypto;
 
+import java.io.PrintStream;
+
 import irvine.entropy.Entropy;
 
 /**
  * Crack a Beaufort cipher.
  * @author Sean A. Irvine
  */
-public class Beaufort extends Vigenere {
+public class BeaufortSolver extends VigenereSolver {
 
   /**
    * Construct a solver.
+   * @param out output stream
    * @param model the model
    * @param reverse assume reverse Vigenere
    * @param includeKeyEntropy should the key entropy be included in scoring
    */
-  public Beaufort(final Entropy model, final boolean reverse, final boolean includeKeyEntropy) {
-    super(model, reverse, includeKeyEntropy);
+  public BeaufortSolver(final PrintStream out, final Entropy model, final boolean reverse, final boolean includeKeyEntropy) {
+    super(out, model, reverse, includeKeyEntropy);
   }
 
   @Override

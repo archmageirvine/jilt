@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Locale;
 
 import irvine.crypto.Vampire;
+import irvine.crypto.Vigenere;
 import irvine.language.Anagram;
 import irvine.language.Caesar;
 import irvine.language.Chain;
@@ -71,8 +72,10 @@ public final class Jilt {
     ENTROPY(new Entropy()),
     /** Caesar shifts. */
     CAESAR(new Caesar()),
-    /** Solve simple substitutions. */
+    /** Solve simple substitution chiphers. */
     VAMPIRE(new Vampire()),
+    /** Solve Vigenere and Beaufort ciphers. */
+    VIGENERE(new Vigenere()),
     ;
 
     private final Command mCommand;

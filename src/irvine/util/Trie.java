@@ -36,6 +36,11 @@ public class Trie {
     return mChildren;
   }
 
+  /**
+   * Get the child node for a particular character.
+   * @param c character
+   * @return node
+   */
   public Trie getChild(final char c) {
     return mChildren.get(c);
   }
