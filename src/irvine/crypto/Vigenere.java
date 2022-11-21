@@ -79,7 +79,7 @@ public class Vigenere extends Command {
       vigenere.setMaximumHypothesisCount(retainFlag.getValue());
       vigenere.setMaximumAnswers(resultsFlag.getValue());
 
-      String cipher;
+      final String cipher;
       try (final BufferedReader r = CommonFlags.getInput(flags)) {
         cipher = IOUtils.readAll(r).replaceAll("\\s+", "");
       } catch (final IOException e) {

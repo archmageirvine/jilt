@@ -119,3 +119,11 @@ exact set of allowed operations.
 There are other modules for finding words in a grid (wordsearch),
 generating permutations of letters, transforming words in various ways
 and so.
+
+## Miscellaneous examples
+
+Find all words for which after reversing the letters remain a word:
+
+```
+> jilt dict | jilt transform --reverse | jilt filter --in-dict
+```

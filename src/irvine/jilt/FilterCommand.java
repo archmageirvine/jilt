@@ -47,7 +47,7 @@ public final class FilterCommand extends Command {
   private static final String MIN_LENGTH_FLAG = "min-length";
   private static final String MAX_LENGTH_FLAG = "max-length";
   private static final String PALINDROME_FLAG = "palindrome";
-  private static final String TAUTONUM_FLAG = "tautonym";
+  private static final String TAUTONYM_FLAG = "tautonym";
   private static final String DIPLOGRAM_FLAG = "diplogram";
   private static final String CONTAINS_FLAG = "contains";
   private static final String REGEX_FLAG = "regex";
@@ -62,6 +62,8 @@ public final class FilterCommand extends Command {
   private static final String KB3_FLAG = "qwerty3";
   private static final String FIRST_FLAG = "first";
   private static final String SECOND_FLAG = "second";
+  private static final String VERTICAL_FLAG = "vertical";
+  private static final String HORIZONTAL_FLAG = "horizontal";
 
   private boolean is(final List<Filter> filters, final String word) {
     for (final Filter f : filters) {
@@ -93,13 +95,15 @@ public final class FilterCommand extends Command {
     flags.registerOptional(KB1_FLAG, "word consists entirely of letters from \"qwertyuiop\"");
     flags.registerOptional(KB2_FLAG, "word consists entirely of letters from \"asdfghjkl\"");
     flags.registerOptional(KB3_FLAG, "word consists entirely of letters from \"zxcvbnm\"");
+    flags.registerOptional(VERTICAL_FLAG, "word consists entirely of vertically symmetric letters");
+    flags.registerOptional(HORIZONTAL_FLAG, "word consists entirely of horizontally symmetric letters");
     flags.registerOptional('f', FIRST_FLAG, "word consists entirely of letters from \"abcdefghijklm\"");
     flags.registerOptional('s', SECOND_FLAG, "word consists entirely of letters from \"nopqrstuvwxyz\"");
     flags.registerOptional('L', LONGEST_FLAG, "among the possible results report only a longest match");
     flags.registerOptional('l', LENGTH_FLAG, Integer.class, "INT", "exact word length");
     flags.registerOptional('m', MIN_LENGTH_FLAG, Integer.class, "INT", "minimum word length");
     flags.registerOptional('M', MAX_LENGTH_FLAG, Integer.class, "INT", "maximum word length");
-    flags.registerOptional(TAUTONUM_FLAG, Integer.class, "INT", "word is a tautonym with given number of repeats");
+    flags.registerOptional(TAUTONYM_FLAG, Integer.class, "INT", "word is a tautonym with given number of repeats");
     flags.registerOptional(DIPLOGRAM_FLAG, Integer.class, "INT", "word is a diplogram with given number of repeats");
     flags.registerOptional('C', CONTAINS_FLAG, String.class, "STRING", "word contains the specified string.").setMaxCount(Integer.MAX_VALUE);
     flags.registerOptional('e', REGEX_FLAG, String.class, "STRING", "word matches the specified regular expression.").setMaxCount(Integer.MAX_VALUE);
@@ -116,10 +120,10 @@ public final class FilterCommand extends Command {
       if (!CommonFlags.validateInput(f)) {
         return false;
       }
-      if (f.isSet(TAUTONUM_FLAG)) {
-        final int repeats = (Integer) f.getValue(TAUTONUM_FLAG);
+      if (f.isSet(TAUTONYM_FLAG)) {
+        final int repeats = (Integer) f.getValue(TAUTONYM_FLAG);
         if (repeats < 1) {
-          f.setParseMessage("--" + TAUTONUM_FLAG + " must be at least 1");
+          f.setParseMessage("--" + TAUTONYM_FLAG + " must be at least 1");
           return false;
         }
       }
@@ -186,6 +190,12 @@ public final class FilterCommand extends Command {
     if (flags.isSet(SECOND_FLAG)) {
       filters.add(new AlphabetFilter("nopqrstuvwxyzNOPQRSTUVWXYZ"));
     }
+    if (flags.isSet(VERTICAL_FLAG)) {
+      filters.add(new AlphabetFilter("BCDEHIKOXclox"));
+    }
+    if (flags.isSet(HORIZONTAL_FLAG)) {
+      filters.add(new AlphabetFilter("AHIMOTUVEXYilmovwx"));
+    }
     for (final Object str : flags.getValues(CONTAINS_FLAG)) {
       filters.add(new ContainsFilter((String) str));
     }
@@ -198,8 +208,8 @@ public final class FilterCommand extends Command {
     if (flags.isSet(PYRAMID_FLAG)) {
       filters.add(new PyramidFilter((String) flags.getValue(PYRAMID_FLAG)));
     }
-    if (flags.isSet(TAUTONUM_FLAG)) {
-      filters.add(new TautonymFilter((Integer) flags.getValue(TAUTONUM_FLAG)));
+    if (flags.isSet(TAUTONYM_FLAG)) {
+      filters.add(new TautonymFilter((Integer) flags.getValue(TAUTONYM_FLAG)));
     }
     if (flags.isSet(DIPLOGRAM_FLAG)) {
       filters.add(new DiplogramFilter((Integer) flags.getValue(DIPLOGRAM_FLAG)));
