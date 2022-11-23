@@ -1,7 +1,5 @@
 package irvine.language;
 
-import java.io.IOException;
-
 import irvine.StandardIoTestCase;
 
 /**
@@ -10,7 +8,7 @@ import irvine.StandardIoTestCase;
  */
 public class MultiwordAnagramTest extends StandardIoTestCase {
 
-  public void test() throws IOException {
+  public void test() {
     final MultiwordAnagram ma = new MultiwordAnagram(System.out, 2);
     ma.addWord("marilyn");
     ma.addWord("MUNROE");

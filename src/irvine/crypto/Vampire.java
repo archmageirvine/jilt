@@ -9,7 +9,6 @@ import irvine.entropy.UniwordModel;
 import irvine.jilt.Command;
 import irvine.jilt.CommonFlags;
 import irvine.util.CliFlags;
-import irvine.util.CliFlags.Flag;
 
 /**
  * Program to attempt automated solution of simple substitution ciphers.
@@ -26,6 +25,8 @@ public class Vampire extends Command {
   private static final String DIT_FLAG = "dits";
   private static final String FIX_FLAG = "fix";
   private static final String SPACE_FLAG = "ignore-spaces";
+  private static final String RETAIN_FLAG = "retain";
+  private static final String RESULTS_FLAG = "results";
 
   /**
    * Construct a simple substitution solver.
@@ -40,8 +41,8 @@ public class Vampire extends Command {
     CommonFlags.registerOutputFlag(flags);
     CommonFlags.registerInputFlag(flags);
     CommonFlags.registerModelFlag(flags);
-    final Flag<Integer> retainFlag = flags.registerOptional('a', "retain", Integer.class, "INT", "maximum number of hypotheses to maintain at each stage", 1000);
-    final Flag<Integer> resultsFlag = flags.registerOptional('r', "results", Integer.class, "INT", "maximum number of answers to print", 5);
+    flags.registerOptional('a', RETAIN_FLAG, Integer.class, "INT", "maximum number of hypotheses to maintain at each stage", 1000);
+    flags.registerOptional('r', RESULTS_FLAG, Integer.class, "INT", "maximum number of answers to print", 5);
     flags.registerOptional('f', FIX_FLAG, String.class, "pair", "fix a pair of symbols.").setMaxCount(Integer.MAX_VALUE);
     flags.registerOptional('d', DIT_FLAG, "indicates that \".\" should be treated as a dit rather than a period. No attempt is made to resolve such symbols");
     flags.registerOptional('q', QUIET_FLAG, "print only the answer");
@@ -57,17 +58,17 @@ public class Vampire extends Command {
         if (!CommonFlags.validateModel(f)) {
           return false;
         }
-        if (retainFlag.getValue() < 1) {
-          f.setParseMessage("--retain should be positive.");
+        if ((Integer) f.getValue(RETAIN_FLAG) < 1) {
+          f.setParseMessage("--" + RETAIN_FLAG + " should be positive.");
           return false;
         }
-        if (resultsFlag.getValue() < 1) {
-          f.setParseMessage("--results should be positive.");
+        if ((Integer) f.getValue(RESULTS_FLAG) < 1) {
+          f.setParseMessage("--" + RESULTS_FLAG + " should be positive.");
           return false;
         }
         for (final Object pairs : flags.getValues(FIX_FLAG)) {
           if (((String) pairs).length() != 2) {
-            f.setParseMessage("--" + FIX_FLAG + " must give a pair of sumbols (for example, --" + FIX_FLAG + " AZ).");
+            f.setParseMessage("--" + FIX_FLAG + " must give a pair of symbols (for example, --" + FIX_FLAG + " AZ).");
             return false;
           }
         }
@@ -81,8 +82,8 @@ public class Vampire extends Command {
       final VampireSolver vampire = new VampireSolver(out, model, UniwordModel.defaultEnglishModel(), flags.isSet(PERMUTATION_FLAG));
       vampire.setDitHandling(flags.isSet(DIT_FLAG));
       vampire.setVerbose(!flags.isSet(QUIET_FLAG));
-      vampire.setMaximumHypothesisCount(retainFlag.getValue());
-      vampire.setMaximumAnswers(resultsFlag.getValue());
+      vampire.setMaximumHypothesisCount((Integer) flags.getValue(RETAIN_FLAG));
+      vampire.setMaximumAnswers((Integer) flags.getValue(RESULTS_FLAG));
       for (final Object fix : flags.getValues(FIX_FLAG)) {
         final String p = (String) fix;
         vampire.fixPair(p.charAt(0), p.charAt(1));

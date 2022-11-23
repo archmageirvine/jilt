@@ -9,7 +9,6 @@ public interface Entropy {
   /**
    * Return an estimate of the entropy of the given string.  The implementation
    * is free to use whatever tactic it likes to make this estimate.
-   *
    * @param text text to compute entropy of
    * @return entropy
    */

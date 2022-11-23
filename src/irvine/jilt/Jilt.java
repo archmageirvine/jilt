@@ -12,6 +12,7 @@ import irvine.language.Demux;
 import irvine.language.Dict;
 import irvine.language.Entropy;
 import irvine.language.Equation;
+import irvine.language.Morse;
 import irvine.language.Permute;
 import irvine.language.WordSearch;
 import irvine.util.StringUtils;
@@ -56,6 +57,8 @@ public final class Jilt {
     FILTER(new FilterCommand()),
     /** Transform the input. */
     TRANSFORM(new TransformCommand()),
+    /** Morse encoding and decoding. */
+    MORSE(new Morse()),
     /** Simple anagrams. */
     ANAGRAM(new Anagram()),
     /** Generate permutations. */
@@ -72,7 +75,7 @@ public final class Jilt {
     ENTROPY(new Entropy()),
     /** Caesar shifts. */
     CAESAR(new Caesar()),
-    /** Solve simple substitution chiphers. */
+    /** Solve simple substitution ciphers. */
     VAMPIRE(new Vampire()),
     /** Solve Vigenere and Beaufort ciphers. */
     VIGENERE(new Vigenere()),

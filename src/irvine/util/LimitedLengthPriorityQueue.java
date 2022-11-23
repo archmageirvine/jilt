@@ -115,4 +115,12 @@ public class LimitedLengthPriorityQueue<T extends Comparable<T>> extends TreeSet
     }
     return map;
   }
+
+  /**
+   * Return the maximum size of this priority queue.
+   * @return maximum size
+   */
+  public int maxSize() {
+    return mMaximumLength;
+  }
 }
