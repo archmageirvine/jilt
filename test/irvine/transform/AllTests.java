@@ -16,6 +16,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(ReverseTransformTest.class);
     suite.addTestSuite(ScrabbleTransformTest.class);
     suite.addTestSuite(SortTransformTest.class);
+    suite.addTestSuite(SumTransformTest.class);
     suite.addTestSuite(TitlecaseTransformTest.class);
     suite.addTestSuite(UppercaseTransformTest.class);
     return suite;

@@ -12,6 +12,7 @@ import irvine.transform.LowercaseTransform;
 import irvine.transform.ReverseTransform;
 import irvine.transform.ScrabbleTransform;
 import irvine.transform.SortTransform;
+import irvine.transform.SumTransform;
 import irvine.transform.TitlecaseTransform;
 import irvine.transform.Transform;
 import irvine.transform.UppercaseTransform;
@@ -38,6 +39,8 @@ public final class TransformCommand extends Command {
   private static final String SCRABBLE_FLAG = "scrabble";
   private static final String SORT_FLAG = "sort";
   private static final String REVERSE_FLAG = "reverse";
+  private static final String SUM0_FLAG = "sum0";
+  private static final String SUM1_FLAG = "sum1";
 
   /**
    * Transform words.
@@ -55,6 +58,8 @@ public final class TransformCommand extends Command {
     flags.registerOptional(SCRABBLE_FLAG, "compute the raw Scrabble score of each input");
     flags.registerOptional(SORT_FLAG, "sort the letters of each input");
     flags.registerOptional('r', REVERSE_FLAG, "reverse each input");
+    flags.registerOptional(SUM0_FLAG, "sum of letters in input 0=A, ..., 25=Z");
+    flags.registerOptional(SUM1_FLAG, "sum of letters in input 1=A, ..., 26=Z");
     CommonFlags.registerOutputFlag(flags);
     CommonFlags.registerInputFlag(flags);
     flags.setValidator(f -> {
@@ -92,6 +97,12 @@ public final class TransformCommand extends Command {
     }
     if (flags.isSet(SORT_FLAG)) {
       transforms.add(new SortTransform());
+    }
+    if (flags.isSet(SUM0_FLAG)) {
+      transforms.add(new SumTransform(0));
+    }
+    if (flags.isSet(SUM1_FLAG)) {
+      transforms.add(new SumTransform(1));
     }
 
     final boolean includeTransformName = flags.isSet(NAME_FLAG);
