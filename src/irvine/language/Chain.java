@@ -32,12 +32,14 @@ public final class Chain extends Command {
 
   private static final String ANAGRAM_FLAG = "anagram";
   private static final String INDELS_FLAG = "indels";
+  private static final String SLIDE_FLAG = "slide";
   private static final int UNASSIGNED = -1;
 
   private List<String> mWords = null;
   private Map<String, Integer> mWordToIndex = null;
   private boolean mIndels = false;
   private boolean mAnagrams = false;
+  private int mSlide = 0;
   private final Queue<Integer> mSearchQueue = new LinkedList<>();
 
   void setWords(final List<String> words) {
@@ -56,6 +58,10 @@ public final class Chain extends Command {
     mAnagrams = anagrams;
   }
 
+  void setSlide(final int slide) {
+    mSlide = slide;
+  }
+
   private void updateWord(final int wordNumber, final String word, final int[] parent) {
     final Integer j = mWordToIndex.get(word);
     if (j != null && parent[j] == UNASSIGNED) {
@@ -69,45 +75,54 @@ public final class Chain extends Command {
     while (!mSearchQueue.isEmpty() && parent[end] == UNASSIGNED) {
       final int wordNumber = mSearchQueue.poll();
       final String word = mWords.get(wordNumber);
-      for (int k = 0; k < word.length(); ++k) {
-        final char c = word.charAt(k);
-        if (mAnagrams) {
-          for (final String a : Anagram.findAnagrams(word.substring(0, k) + Anagram.DIT + word.substring(k + 1), mWords)) {
-            updateWord(wordNumber, a, parent);
-          }
-        } else {
-          for (char replacement = 'a'; replacement <= 'z'; ++replacement) {
-            if (replacement != c) {
-              updateWord(wordNumber, word.substring(0, k) + replacement + word.substring(k + 1), parent);
-            }
+      if (mSlide > 0) {
+        final String prefix = word.substring(mSlide);
+        for (final String w : mWords) {
+          if (w.length() == word.length() && !w.equals(word) && w.startsWith(prefix)) {
+            updateWord(wordNumber, w, parent);
           }
         }
-        if (mIndels) {
-          // Deletion
-          final String deletion = word.substring(0, k) + word.substring(k + 1);
+      } else {
+        for (int k = 0; k < word.length(); ++k) {
+          final char c = word.charAt(k);
           if (mAnagrams) {
-            for (final String a : Anagram.findAnagrams(deletion, mWords)) {
-              updateWord(wordNumber, a, parent);
-            }
-          } else {
-            updateWord(wordNumber, deletion, parent);
-          }
-          // Insertion
-          if (mAnagrams) {
-            for (final String a : Anagram.findAnagrams(word + Anagram.DIT, mWords)) {
+            for (final String a : Anagram.findAnagrams(word.substring(0, k) + Anagram.DIT + word.substring(k + 1), mWords)) {
               updateWord(wordNumber, a, parent);
             }
           } else {
             for (char replacement = 'a'; replacement <= 'z'; ++replacement) {
-              updateWord(wordNumber, word.substring(0, k) + replacement + word.substring(k), parent);
+              if (replacement != c) {
+                updateWord(wordNumber, word.substring(0, k) + replacement + word.substring(k + 1), parent);
+              }
+            }
+          }
+          if (mIndels) {
+            // Deletion
+            final String deletion = word.substring(0, k) + word.substring(k + 1);
+            if (mAnagrams) {
+              for (final String a : Anagram.findAnagrams(deletion, mWords)) {
+                updateWord(wordNumber, a, parent);
+              }
+            } else {
+              updateWord(wordNumber, deletion, parent);
+            }
+            // Insertion
+            if (mAnagrams) {
+              for (final String a : Anagram.findAnagrams(word + Anagram.DIT, mWords)) {
+                updateWord(wordNumber, a, parent);
+              }
+            } else {
+              for (char replacement = 'a'; replacement <= 'z'; ++replacement) {
+                updateWord(wordNumber, word.substring(0, k) + replacement + word.substring(k), parent);
+              }
             }
           }
         }
-      }
-      if (mIndels && !mAnagrams) {
-        // Handle one remaining special case of appending a letter to the end
-        for (char replacement = 'a'; replacement <= 'z'; ++replacement) {
-          updateWord(wordNumber, word + replacement, parent);
+        if (mIndels && !mAnagrams) {
+          // Handle one remaining special case of appending a letter to the end
+          for (char replacement = 'a'; replacement <= 'z'; ++replacement) {
+            updateWord(wordNumber, word + replacement, parent);
+          }
         }
       }
     }
@@ -153,20 +168,49 @@ public final class Chain extends Command {
     CommonFlags.registerOutputFlag(flags);
     flags.registerOptional('A', ANAGRAM_FLAG, "allow anagrams");
     flags.registerOptional('I', INDELS_FLAG, "allow insertions and deletions");
+    flags.registerOptional('s', SLIDE_FLAG, Integer.class, "INT", "delete specified number of letters and slide left");
     flags.registerRequired(String.class, "word", "Starting word");
     flags.registerRequired(String.class, "word", "Finishing word");
     flags.setValidator(f -> {
-        if (!CommonFlags.validateDictionary(f)) {
+      if (!CommonFlags.validateDictionary(f)) {
+        return false;
+      }
+      if (!CommonFlags.validateOutput(f)) {
+        return false;
+      }
+      final String start = ((String) f.getAnonymousValue(0)).toLowerCase(Locale.getDefault());
+      final String end = ((String) f.getAnonymousValue(1)).toLowerCase(Locale.getDefault());
+      if (start.length() != end.length() && !f.isSet(INDELS_FLAG)) {
+        f.setParseMessage("Differing word lengths require --" + INDELS_FLAG + " to be set");
+        return false;
+      }
+      if (f.isSet(SLIDE_FLAG)) {
+        final int slide = (Integer) f.getValue(SLIDE_FLAG);
+        if (slide < 1) {
+          f.setParseMessage("--" + SLIDE_FLAG + " must be positive.");
           return false;
         }
-        if (!CommonFlags.validateOutput(f)) {
+        if (slide > start.length()) {
+          f.setParseMessage("--" + SLIDE_FLAG + " cannot exceed word length.");
           return false;
         }
-        return true;
-      });
+        if (f.isSet(ANAGRAM_FLAG)) {
+          f.setParseMessage("Cannot set --" + ANAGRAM_FLAG + " in conjunction with --" + SLIDE_FLAG + ".");
+          return false;
+        }
+        if (f.isSet(INDELS_FLAG)) {
+          f.setParseMessage("Cannot set --" + ANAGRAM_FLAG + " in conjunction with --" + SLIDE_FLAG + ".");
+          return false;
+        }
+      }
+      return true;
+    });
     flags.setFlags(args);
     setAnagrams(flags.isSet(ANAGRAM_FLAG));
     setIndels(flags.isSet(INDELS_FLAG));
+    if (flags.isSet(SLIDE_FLAG)) {
+      setSlide((Integer) flags.getValue(SLIDE_FLAG));
+    }
     try {
       setWords(StringUtils.suckInWords(Dictionary.getDictionaryReader((String) flags.getValue(CommonFlags.DICTIONARY_FLAG)), Casing.LOWER));
     } catch (final IOException e) {

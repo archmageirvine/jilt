@@ -127,14 +127,24 @@ public class FourGramAlphabetModel implements Entropy, Serializable {
   }
 
   /**
+   * Load a model resource.
+   * @param resource the Java package location of the model
+   * @return the model
+   * @exception IOException if an I/O error occurs
+   */
+  public static FourGramAlphabetModel loadModelResource(final String resource) throws IOException {
+    try (final InputStream is = FourGramAlphabetModel.class.getClassLoader().getResourceAsStream(resource)) {
+      return loadModel(is);
+    }
+  }
+
+  /**
    * Load the default model.
    * @return the model
    * @exception IOException if an I/O error occurs
    */
   public static FourGramAlphabetModel loadModel() throws IOException {
-    try (final InputStream is = FourGramAlphabetModel.class.getClassLoader().getResourceAsStream(DEFAULT_MODEL)) {
-      return loadModel(is);
-    }
+    return loadModelResource(DEFAULT_MODEL);
   }
 
   /**

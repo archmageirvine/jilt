@@ -3,6 +3,8 @@ package irvine.jilt;
 import java.util.Arrays;
 import java.util.Locale;
 
+import irvine.crypto.PlayfairCommand;
+import irvine.crypto.Playmate;
 import irvine.crypto.Vampire;
 import irvine.crypto.Vigenere;
 import irvine.language.Anagram;
@@ -79,6 +81,10 @@ public final class Jilt {
     VAMPIRE(new Vampire()),
     /** Solve Vigenere and Beaufort ciphers. */
     VIGENERE(new Vigenere()),
+    /** Encode and decode Playfair ciphers. */
+    PLAYFAIR(new PlayfairCommand()),
+    /** Solve Playfair ciphers. */
+    PLAYMATE(new Playmate()),
     ;
 
     private final Command mCommand;

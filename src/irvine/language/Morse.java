@@ -25,7 +25,7 @@ public final class Morse extends Command {
 
   /** Construct the module. */
   public Morse() {
-    super("encode or decode Morse code");
+    super("Encode or decode Morse code");
   }
 
   private static final String HARD_FLAG = "hard";
