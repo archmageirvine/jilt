@@ -9,7 +9,7 @@ import junit.framework.TestCase;
 public class ScrabbleTransformTest extends TestCase {
 
   public void test1() {
-    final ScrabbleTransform t = new ScrabbleTransform();
+    final Transform t = new ScrabbleTransform();
     assertEquals("0", t.apply(null));
     assertEquals("0", t.apply(""));
     assertEquals("0", t.apply(" "));
@@ -22,7 +22,7 @@ public class ScrabbleTransformTest extends TestCase {
   }
 
   public void test2() {
-    final ScrabbleTransform t = new ScrabbleTransform();
+    final Transform t = new ScrabbleTransform();
     assertEquals("10", t.apply("z"));
     assertEquals("10", t.apply("Z"));
     assertEquals("1", t.apply("A"));

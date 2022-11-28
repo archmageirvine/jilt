@@ -13,7 +13,6 @@ public class AllTests extends TestSuite {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(AutospaceTest.class);
     suite.addTestSuite(CrackHomophonicTest.class);
-    suite.addTestSuite(HamadPlayfairTest.class);
     suite.addTestSuite(NodeTest.class);
     suite.addTestSuite(PlayfairSolverTest.class);
     suite.addTestSuite(PlayfairTest.class);

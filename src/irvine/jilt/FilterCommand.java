@@ -24,6 +24,8 @@ import irvine.filter.RegexFilter;
 import irvine.filter.ReverseAlphabeticalFilter;
 import irvine.filter.SetFilter;
 import irvine.filter.TautonymFilter;
+import irvine.filter.TelephoneFilter;
+import irvine.filter.TelephoneSumFilter;
 import irvine.util.CliFlags;
 
 /**
@@ -64,6 +66,8 @@ public final class FilterCommand extends Command {
   private static final String SECOND_FLAG = "second";
   private static final String VERTICAL_FLAG = "vertical";
   private static final String HORIZONTAL_FLAG = "horizontal";
+  private static final String TELEPHONE_FLAG = "telephone";
+  private static final String TELEPHONE_SUM_FLAG = "telephone-sum";
 
   private boolean is(final List<Filter> filters, final String word) {
     for (final Filter f : filters) {
@@ -110,6 +114,8 @@ public final class FilterCommand extends Command {
     flags.registerOptional(PATTERN_FLAG, String.class, "STRING", "word matches the specified letter pattern.");
     flags.registerOptional(PYRAMID_FLAG, String.class, "STRING", "word matches the specified frequency pattern.");
     flags.registerOptional('x', ALPHABET_FLAG, String.class, "STRING", "word consists entirely of characters in the specified string.");
+    flags.registerOptional('t', TELEPHONE_FLAG, String.class, "INT", "word matches the specified number when dialed.");
+    flags.registerOptional(TELEPHONE_SUM_FLAG, String.class, "INT", "word matches the specified sum of digits when dialed.");
     flags.setValidator(f -> {
       if (!CommonFlags.validateDictionary(f)) {
         return false;
@@ -195,6 +201,12 @@ public final class FilterCommand extends Command {
     }
     if (flags.isSet(HORIZONTAL_FLAG)) {
       filters.add(new AlphabetFilter("AHIMOTUVEXYilmovwx"));
+    }
+    if (flags.isSet(TELEPHONE_FLAG)) {
+      filters.add(new TelephoneFilter((String) flags.getValue(TELEPHONE_FLAG)));
+    }
+    if (flags.isSet(TELEPHONE_SUM_FLAG)) {
+      filters.add(new TelephoneSumFilter((String) flags.getValue(TELEPHONE_SUM_FLAG)));
     }
     for (final Object str : flags.getValues(CONTAINS_FLAG)) {
       filters.add(new ContainsFilter((String) str));

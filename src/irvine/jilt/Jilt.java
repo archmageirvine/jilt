@@ -5,6 +5,7 @@ import java.util.Locale;
 
 import irvine.crypto.PlayfairCommand;
 import irvine.crypto.Playmate;
+import irvine.crypto.Telephone;
 import irvine.crypto.Vampire;
 import irvine.crypto.Vigenere;
 import irvine.language.Anagram;
@@ -85,6 +86,8 @@ public final class Jilt {
     PLAYFAIR(new PlayfairCommand()),
     /** Solve Playfair ciphers. */
     PLAYMATE(new Playmate()),
+    /** Solve telephone encodings. */
+    TELEPHONE(new Telephone()),
     ;
 
     private final Command mCommand;

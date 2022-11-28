@@ -249,7 +249,7 @@ public final class Morse extends Command {
     flags.registerOptional(DEEP_FLAG, "attempt to decode via the entropy model");
     flags.registerOptional(HARD_FLAG, "attempt to decode via the dictionary");
     flags.registerOptional(START_FLAG, "include start of transmission marker on each output when encoding");
-    flags.registerOptional(RESULTS_FLAG, Integer.class, "INT", "maximum number of answers to print when --" +HARD_FLAG + " is used", 30);
+    flags.registerOptional(RESULTS_FLAG, Integer.class, "INT", "maximum number of answers to print when --" + HARD_FLAG + " is used", 30);
     flags.setValidator(f -> {
       if (!CommonFlags.validateInput(f)) {
         return false;

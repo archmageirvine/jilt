@@ -23,6 +23,9 @@ public class PlayfairCommand extends Command {
   private static final String EIGHT_FLAG = "8x8";
   private static final String SCD_FLAG = "scd";
 
+  /**
+   * The command for encoding and decoding Playfair with a known key.
+   */
   public PlayfairCommand() {
     super("Encode and decode Playfair ciphers with a known key");
   }
@@ -114,7 +117,7 @@ public class PlayfairCommand extends Command {
     try (final PrintStream out = CommonFlags.getOutput(flags)) {
       try (final BufferedReader r = CommonFlags.getInput(flags)) {
         out.println(playfair.transform(r, !flags.isSet(DECODE_FLAG)));
-      } catch (IOException e) {
+      } catch (final IOException e) {
         throw new RuntimeException("Problem reading input.", e);
       }
     }

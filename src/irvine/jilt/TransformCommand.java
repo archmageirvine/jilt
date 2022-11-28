@@ -13,6 +13,8 @@ import irvine.transform.ReverseTransform;
 import irvine.transform.ScrabbleTransform;
 import irvine.transform.SortTransform;
 import irvine.transform.SumTransform;
+import irvine.transform.TelephoneSumTransform;
+import irvine.transform.TelephoneTransform;
 import irvine.transform.TitlecaseTransform;
 import irvine.transform.Transform;
 import irvine.transform.UppercaseTransform;
@@ -37,6 +39,8 @@ public final class TransformCommand extends Command {
   private static final String TITLECASE_FLAG = "titlecase";
   private static final String LOOPS_FLAG = "loops";
   private static final String SCRABBLE_FLAG = "scrabble";
+  private static final String TELEPHONE_FLAG = "telephone";
+  private static final String TELEPHONE_SUM_FLAG = "telephone-sum";
   private static final String SORT_FLAG = "sort";
   private static final String REVERSE_FLAG = "reverse";
   private static final String SUM0_FLAG = "sum0";
@@ -56,6 +60,8 @@ public final class TransformCommand extends Command {
     flags.registerOptional(IDENTITY_FLAG, "the no operation transform leaving each input as is");
     flags.registerOptional(LOOPS_FLAG, "compute the number of closed loops of each input");
     flags.registerOptional(SCRABBLE_FLAG, "compute the raw Scrabble score of each input");
+    flags.registerOptional('t', TELEPHONE_FLAG, "type each input on a telephone");
+    flags.registerOptional(TELEPHONE_SUM_FLAG, "type each input on a telephone and sum the digits");
     flags.registerOptional(SORT_FLAG, "sort the letters of each input");
     flags.registerOptional('r', REVERSE_FLAG, "reverse each input");
     flags.registerOptional(SUM0_FLAG, "sum of letters in input 0=A, ..., 25=Z");
@@ -91,6 +97,12 @@ public final class TransformCommand extends Command {
     }
     if (flags.isSet(SCRABBLE_FLAG)) {
       transforms.add(new ScrabbleTransform());
+    }
+    if (flags.isSet(TELEPHONE_FLAG)) {
+      transforms.add(new TelephoneTransform());
+    }
+    if (flags.isSet(TELEPHONE_SUM_FLAG)) {
+      transforms.add(new TelephoneSumTransform());
     }
     if (flags.isSet(REVERSE_FLAG)) {
       transforms.add(new ReverseTransform());

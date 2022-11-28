@@ -26,6 +26,8 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(RegexFilterTest.class);
     suite.addTestSuite(ReverseAlphabeticalFilterTest.class);
     suite.addTestSuite(TautonymFilterTest.class);
+    suite.addTestSuite(TelephoneFilterTest.class);
+    suite.addTestSuite(TelephoneSumFilterTest.class);
     return suite;
   }
 }
