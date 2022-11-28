@@ -67,7 +67,7 @@ public class Autospace {
           final double e = mModel.entropy(t);
           newQ.add(e, t);
           if (e < bestKnown) {
-            System.out.println("New best: " + Math.round(e) + " " + t);
+            //System.out.println("New best: " + Math.round(e) + " " + t);
             improvmentDetected = true;
             bestKnown = e;
           }
