@@ -169,8 +169,8 @@ public final class Chain extends Command {
     flags.registerOptional('A', ANAGRAM_FLAG, "allow anagrams");
     flags.registerOptional('I', INDELS_FLAG, "allow insertions and deletions");
     flags.registerOptional('s', SLIDE_FLAG, Integer.class, "INT", "delete specified number of letters and slide left");
-    flags.registerRequired(String.class, "word", "Starting word");
-    flags.registerRequired(String.class, "word", "Finishing word");
+    flags.registerRequired(String.class, "word", "starting word");
+    flags.registerRequired(String.class, "word", "finishing word");
     flags.setValidator(f -> {
       if (!CommonFlags.validateDictionary(f)) {
         return false;

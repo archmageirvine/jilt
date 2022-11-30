@@ -16,6 +16,7 @@ import irvine.language.Dict;
 import irvine.language.Entropy;
 import irvine.language.Equation;
 import irvine.language.Frequency;
+import irvine.language.Ladder;
 import irvine.language.Morse;
 import irvine.language.Permute;
 import irvine.language.WordSearch;
@@ -69,13 +70,15 @@ public final class Jilt {
     PERMUTE(new Permute()),
     /** Solve word chain problems. */
     CHAIN(new Chain()),
+    /** Solve word ladder problems. */
+    LADDER(new Ladder()),
     /** Solve grid word search problems. */
     WORDSEARCH(new WordSearch()),
     /** Solve word equation problems. */
     EQUATION(new Equation()),
     /** Solve word multiplexing problems. */
     DEMUX(new Demux()),
-    /** Solve word multiplexing problems. */
+    /** Compute letter frequencies. */
     FREQ(new Frequency()),
     /** Compute entropy. */
     ENTROPY(new Entropy()),

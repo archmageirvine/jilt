@@ -7,6 +7,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.Locale;
 
@@ -106,7 +107,7 @@ public final class Anagram extends Command {
    * @param ranked true if the rank (position of solution in the dictionary) should be reported
    * @return matches if any
    */
-  public static ArrayList<String> findAnagrams(final String pattern, final List<String> words, final boolean ranked) {
+  public static ArrayList<String> findAnagrams(final String pattern, final Collection<String> words, final boolean ranked) {
     final char[] target = makeTarget(pattern);
     int rank = 0;
     final ArrayList<String> results = new ArrayList<>();
@@ -125,7 +126,7 @@ public final class Anagram extends Command {
    * @param words word list
    * @return matches if any
    */
-  public static ArrayList<String> findAnagrams(final String pattern, final List<String> words) {
+  public static ArrayList<String> findAnagrams(final String pattern, final Collection<String> words) {
     return findAnagrams(pattern, words, false);
   }
 
