@@ -42,12 +42,7 @@ public final class Permute extends Command {
     final CliFlags flags = new CliFlags(getDescription());
     CommonFlags.registerOutputFlag(flags);
     flags.registerRequired(String.class, "STRING", "string to generate permutations of");
-    flags.setValidator(f -> {
-      if (!CommonFlags.validateOutput(f)) {
-        return false;
-      }
-      return true;
-    });
+    flags.setValidator(f -> CommonFlags.validateOutput(f));
     flags.setFlags(args);
     final String s = (String) flags.getAnonymousValue(0);
     final Map<Character, Integer> code = toCode(s);

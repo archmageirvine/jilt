@@ -251,27 +251,15 @@ public final class Morse extends Command {
     flags.registerOptional(START_FLAG, "include start of transmission marker on each output when encoding");
     flags.registerOptional(RESULTS_FLAG, Integer.class, "INT", "maximum number of answers to print when --" + HARD_FLAG + " is used", 30);
     flags.setValidator(f -> {
-      if (!CommonFlags.validateInput(f)) {
-        return false;
-      }
-      if (!CommonFlags.validateOutput(f)) {
-        return false;
-      }
-      if (!CommonFlags.validateModel(f)) {
-        return false;
-      }
-      if (!CommonFlags.validateDictionary(f)) {
-        return false;
-      }
-      if ((Integer) f.getValue(RESULTS_FLAG) < 1) {
-        f.setParseMessage("--" + RESULTS_FLAG + " should be positive.");
-        return false;
-      }
       if (f.isSet(DEEP_FLAG) && f.isSet(HARD_FLAG)) {
         f.setParseMessage("At most one of --" + DEEP_FLAG + " and --" + HARD_FLAG + " can be used.");
         return false;
       }
-      return true;
+      return CommonFlags.validateInput(f)
+        && CommonFlags.validateOutput(f)
+        && CommonFlags.validateModel(f)
+        && CommonFlags.validateDictionary(f)
+        && CommonFlags.checkPositive(f, RESULTS_FLAG);
     });
     flags.setFlags(args);
 

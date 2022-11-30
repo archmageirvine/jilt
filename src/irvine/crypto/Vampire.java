@@ -49,32 +49,18 @@ public class Vampire extends Command {
     flags.registerOptional('p', PERMUTATION_FLAG, "print the permutation for the top solution");
     flags.registerOptional('s', SPACE_FLAG, "ignore whitespace in input");
     flags.setValidator(f -> {
-        if (!CommonFlags.validateOutput(f)) {
+      for (final Object pairs : flags.getValues(FIX_FLAG)) {
+        if (((String) pairs).length() != 2) {
+          f.setParseMessage("--" + FIX_FLAG + " must give a pair of symbols (for example, --" + FIX_FLAG + " AZ).");
           return false;
         }
-        if (!CommonFlags.validateInput(f)) {
-          return false;
-        }
-        if (!CommonFlags.validateModel(f)) {
-          return false;
-        }
-        if ((Integer) f.getValue(RETAIN_FLAG) < 1) {
-          f.setParseMessage("--" + RETAIN_FLAG + " should be positive.");
-          return false;
-        }
-        if ((Integer) f.getValue(RESULTS_FLAG) < 1) {
-          f.setParseMessage("--" + RESULTS_FLAG + " should be positive.");
-          return false;
-        }
-        for (final Object pairs : flags.getValues(FIX_FLAG)) {
-          if (((String) pairs).length() != 2) {
-            f.setParseMessage("--" + FIX_FLAG + " must give a pair of symbols (for example, --" + FIX_FLAG + " AZ).");
-            return false;
-          }
-        }
-        return true;
       }
-    );
+      return CommonFlags.validateOutput(f)
+        && CommonFlags.validateInput(f)
+        && CommonFlags.validateModel(f)
+        && CommonFlags.checkPositive(f, RETAIN_FLAG)
+        && CommonFlags.checkPositive(f, RESULTS_FLAG);
+    });
     flags.setFlags(args);
 
     final Entropy model = CommonFlags.getEntropyModel(flags);

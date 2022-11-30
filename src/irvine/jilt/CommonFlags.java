@@ -172,4 +172,18 @@ public final class CommonFlags {
       throw new RuntimeException("Could to load entropy model.", e);
     }
   }
+
+  /**
+   * Check that the specified flag (if set) is positive.
+   * @param flags flags object
+   * @param flag specific flag name
+   * @return true iff the check passes
+   */
+  public static boolean checkPositive(final CliFlags flags, final String flag) {
+    if (flags.isSet(flag) && (Integer) flags.getValue(flag) < 1) {
+      flags.setParseMessage("--" + flag + " should be positive.");
+      return false;
+    }
+    return true;
+  }
 }

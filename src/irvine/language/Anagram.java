@@ -242,17 +242,8 @@ public final class Anagram extends Command {
           return false;
         }
       }
-      final int minLength = (Integer) f.getValue(MIN_LENGTH_FLAG);
-      if (minLength < 1) {
-        f.setParseMessage("Minimum word length must be positive.");
-        return false;
-      }
-      final int maxWords = (Integer) f.getValue(MAX_WORDS_FLAG);
-      if (maxWords < 1) {
-        f.setParseMessage("Maximum number of words must be positive.");
-        return false;
-      }
-      return true;
+      return CommonFlags.checkPositive(f, MIN_LENGTH_FLAG)
+        && CommonFlags.checkPositive(f, MAX_WORDS_FLAG);
     });
     flags.setFlags(args);
 

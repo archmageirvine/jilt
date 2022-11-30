@@ -39,27 +39,14 @@ public final class Entropy extends Command {
     final CliFlags.Flag<String> textFlag = flags.registerRequired(String.class, "TEXT", "text to generate Caesar shifts of");
     textFlag.setMinCount(0);
     flags.setValidator(f -> {
-      if (!CommonFlags.validateInput(f)) {
-        return false;
-      }
-      if (!CommonFlags.validateOutput(f)) {
-        return false;
-      }
-      if (!CommonFlags.validateModel(f)) {
-        return false;
-      }
-      if (f.isSet(RESULTS_FLAG)) {
-        final int count = (Integer) f.getValue(RESULTS_FLAG);
-        if (count < 1) {
-          f.setParseMessage("--" + RESULTS_FLAG + " must be positive.");
-          return false;
-        }
-      }
       if (f.isSet(BEST_FLAG) && f.isSet(RESULTS_FLAG)) {
         f.setParseMessage("Only one of --" + BEST_FLAG + " and --" + RESULTS_FLAG + " can be selected.");
         return false;
       }
-      return true;
+      return CommonFlags.validateInput(f)
+        && CommonFlags.validateOutput(f)
+        && CommonFlags.validateModel(f)
+        && CommonFlags.checkPositive(f, RESULTS_FLAG);
     });
     flags.setFlags(args);
 

@@ -165,12 +165,7 @@ public final class Equation extends Command {
     CommonFlags.registerOutputFlag(flags);
     final CliFlags.Flag<String> textFlag = flags.registerRequired(String.class, "EQN", "equation.");
     textFlag.setMaxCount(Integer.MAX_VALUE);
-    flags.setValidator(f -> {
-      if (!CommonFlags.validateOutput(f)) {
-        return false;
-      }
-      return true;
-    });
+    flags.setValidator(f -> CommonFlags.validateOutput(f));
     flags.setFlags(args);
     // todo validate equations
 

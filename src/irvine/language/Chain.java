@@ -185,11 +185,10 @@ public final class Chain extends Command {
         return false;
       }
       if (f.isSet(SLIDE_FLAG)) {
-        final int slide = (Integer) f.getValue(SLIDE_FLAG);
-        if (slide < 1) {
-          f.setParseMessage("--" + SLIDE_FLAG + " must be positive.");
+        if (!CommonFlags.checkPositive(f, SLIDE_FLAG)) {
           return false;
         }
+        final int slide = (Integer) f.getValue(SLIDE_FLAG);
         if (slide > start.length()) {
           f.setParseMessage("--" + SLIDE_FLAG + " cannot exceed word length.");
           return false;

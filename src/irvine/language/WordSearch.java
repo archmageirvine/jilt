@@ -79,9 +79,7 @@ public final class WordSearch extends Command {
       if (!CommonFlags.validateOutput(f)) {
         return false;
       }
-      final int minLength = (Integer) f.getValue(MIN_LENGTH_FLAG);
-      if (minLength < 1) {
-        f.setParseMessage("Minimum word length must be positive.");
+      if (!CommonFlags.checkPositive(f, MIN_LENGTH_FLAG)) {
         return false;
       }
       int len = -1;

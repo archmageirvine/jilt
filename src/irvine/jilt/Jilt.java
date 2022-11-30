@@ -15,6 +15,7 @@ import irvine.language.Demux;
 import irvine.language.Dict;
 import irvine.language.Entropy;
 import irvine.language.Equation;
+import irvine.language.Frequency;
 import irvine.language.Morse;
 import irvine.language.Permute;
 import irvine.language.WordSearch;
@@ -74,6 +75,8 @@ public final class Jilt {
     EQUATION(new Equation()),
     /** Solve word multiplexing problems. */
     DEMUX(new Demux()),
+    /** Solve word multiplexing problems. */
+    FREQ(new Frequency()),
     /** Compute entropy. */
     ENTROPY(new Entropy()),
     /** Caesar shifts. */

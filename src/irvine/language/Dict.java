@@ -28,15 +28,8 @@ public final class Dict extends Command {
     final CliFlags flags = new CliFlags(getDescription());
     CommonFlags.registerDictionaryFlag(flags);
     CommonFlags.registerOutputFlag(flags);
-    flags.setValidator(f -> {
-      if (!CommonFlags.validateDictionary(f)) {
-        return false;
-      }
-      if (!CommonFlags.validateOutput(f)) {
-        return false;
-      }
-      return true;
-    });
+    flags.setValidator(f -> CommonFlags.validateDictionary(f)
+      && CommonFlags.validateOutput(f));
     flags.setFlags(args);
 
     try (final PrintStream out = CommonFlags.getOutput(flags)) {
@@ -46,7 +39,7 @@ public final class Dict extends Command {
           out.println(line);
         }
       } catch (final IOException e) {
-        throw new RuntimeException("I/O problem with dictionary", e);
+        throw new RuntimeException("Problem reading dictionary", e);
       }
     }
   }

@@ -78,26 +78,11 @@ public final class Telephone extends Command {
     CommonFlags.registerModelFlag(flags);
     flags.registerOptional('a', RETAIN_FLAG, Integer.class, "INT", "maximum number of hypotheses to maintain at each stage", 1000);
     flags.registerOptional('r', RESULTS_FLAG, Integer.class, "INT", "maximum number of answers to print", 10);
-    flags.setValidator(f -> {
-      if (!CommonFlags.validateInput(f)) {
-        return false;
-      }
-      if (!CommonFlags.validateOutput(f)) {
-        return false;
-      }
-      if (!CommonFlags.validateModel(f)) {
-        return false;
-      }
-      if ((Integer) f.getValue(RETAIN_FLAG) < 1) {
-        f.setParseMessage("--" + RETAIN_FLAG + " should be positive.");
-        return false;
-      }
-      if ((Integer) f.getValue(RESULTS_FLAG) < 1) {
-        f.setParseMessage("--" + RESULTS_FLAG + " should be positive.");
-        return false;
-      }
-      return true;
-    });
+    flags.setValidator(f -> CommonFlags.validateInput(f)
+      && CommonFlags.validateOutput(f)
+      && CommonFlags.validateModel(f)
+      && CommonFlags.checkPositive(f, RESULTS_FLAG)
+      && CommonFlags.checkPositive(f, RETAIN_FLAG));
     final int retain = (Integer) flags.getValue(RETAIN_FLAG);
     final int results = (Integer) flags.getValue(RESULTS_FLAG);
     try (final PrintStream out = CommonFlags.getOutput(flags)) {

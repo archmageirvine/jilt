@@ -8,7 +8,6 @@ import irvine.entropy.Entropy;
 import irvine.jilt.Command;
 import irvine.jilt.CommonFlags;
 import irvine.util.CliFlags;
-import irvine.util.CliFlags.Flag;
 import irvine.util.IOUtils;
 
 /**
@@ -22,6 +21,8 @@ public class Vigenere extends Command {
   private static final String KEY_ENTROPY_FLAG = "key-entropy";
   private static final String REVERSE_FLAG = "reverse";
   private static final String BEAUFORT_FLAG = "beaufort";
+  private static final String RETAIN_FLAG = "retain";
+  private static final String RESULTS_FLAG = "results";
 
   /**
    * Construct a simple substitution solver.
@@ -37,38 +38,24 @@ public class Vigenere extends Command {
     CommonFlags.registerOutputFlag(flags);
     CommonFlags.registerInputFlag(flags);
     CommonFlags.registerModelFlag(flags);
-    final Flag<Integer> retainFlag = flags.registerOptional('a', "retain", Integer.class, "INT", "maximum number of hypotheses to maintain at each stage", 1000);
-    final Flag<Integer> resultsFlag = flags.registerOptional('r', "results", Integer.class, "INT", "maximum number of answers to print", 5);
+    flags.registerOptional('a', RETAIN_FLAG, Integer.class, "INT", "maximum number of hypotheses to maintain at each stage", 1000);
+    flags.registerOptional('r', RESULTS_FLAG, Integer.class, "INT", "maximum number of answers to print", 5);
     flags.registerOptional('k', KEY_LENGTH_FLAG, Integer.class, "int", "length of key", 6);
     flags.registerOptional(REVERSE_FLAG, "assume a reverse Vigenere cipher");
     flags.registerOptional(KEY_ENTROPY_FLAG, "Include the entropy of the key in the scoring");
     flags.registerOptional('K', KEYS_FLAG, String.class, "FILE", "dictionary attack using keys in given file (or \"-\" for standard input)");
     flags.registerOptional('b', BEAUFORT_FLAG, "assume a Beaufort cipher");
     flags.setValidator(f -> {
-        if (!CommonFlags.validateOutput(f)) {
-          return false;
-        }
-        if (!CommonFlags.validateInput(f)) {
-          return false;
-        }
-        if (!CommonFlags.validateModel(f)) {
-          return false;
-        }
-        if (retainFlag.getValue() < 1) {
-          f.setParseMessage("--retain should be positive.");
-          return false;
-        }
-        if (resultsFlag.getValue() < 1) {
-          f.setParseMessage("--results should be positive.");
-          return false;
-        }
       if (f.isSet(REVERSE_FLAG) && f.isSet(BEAUFORT_FLAG)) {
         f.setParseMessage("Cannot use --" + REVERSE_FLAG + " with --" + BEAUFORT_FLAG + ".");
         return false;
       }
-        return true;
-      }
-    );
+      return CommonFlags.validateOutput(f)
+        && CommonFlags.validateInput(f)
+        && CommonFlags.validateModel(f)
+        && CommonFlags.checkPositive(f, RETAIN_FLAG)
+        && CommonFlags.checkPositive(f, RESULTS_FLAG);
+    });
     flags.setFlags(args);
 
     final Entropy model = CommonFlags.getEntropyModel(flags);
@@ -76,8 +63,8 @@ public class Vigenere extends Command {
       final VigenereSolver vigenere = flags.isSet(BEAUFORT_FLAG)
         ? new BeaufortSolver(out, model, flags.isSet(REVERSE_FLAG), flags.isSet(KEY_ENTROPY_FLAG))
         : new VigenereSolver(out, model, flags.isSet(REVERSE_FLAG), flags.isSet(KEY_ENTROPY_FLAG));
-      vigenere.setMaximumHypothesisCount(retainFlag.getValue());
-      vigenere.setMaximumAnswers(resultsFlag.getValue());
+      vigenere.setMaximumHypothesisCount((Integer) flags.getValue(RETAIN_FLAG));
+      vigenere.setMaximumAnswers((Integer) flags.getValue(RESULTS_FLAG));
 
       final String cipher;
       try (final BufferedReader r = CommonFlags.getInput(flags)) {
@@ -88,7 +75,7 @@ public class Vigenere extends Command {
 
       if (flags.isSet(KEYS_FLAG)) {
         // For this mode it only makes sense to retain as many answers as will be displayed
-        vigenere.setMaximumHypothesisCount(resultsFlag.getValue());
+        vigenere.setMaximumHypothesisCount((Integer) flags.getValue(RESULTS_FLAG));
         try (final BufferedReader r = IOUtils.getReader((String) flags.getValue(KEYS_FLAG))) {
           vigenere.dictionaryAttack(r, cipher);
         } catch (final IOException e) {
