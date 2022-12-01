@@ -3,6 +3,7 @@ package irvine.language;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -89,11 +90,33 @@ public final class Ladder extends Command {
   private final List<Set<String>> mWordsByLength = new ArrayList<>();
   private final List<Collection<String>> mExtensions = new ArrayList<>();
 
+  private static String sort(final String s) {
+    final char[] c = s.toCharArray();
+    Arrays.sort(c);
+    return new String(c);
+  }
+
+  private static Map<String, List<String>> patterns(final Set<String> keys) {
+    final Map<String, List<String>> patterns = new HashMap<>();
+    for (final String k : keys) {
+      final String pattern = sort(k);
+      final List<String> values = patterns.get(pattern);
+      if (values == null) {
+        final ArrayList<String> v = new ArrayList<>();
+        v.add(k);
+        patterns.put(pattern, v);
+      } else {
+        values.add(k);
+      }
+    }
+    return patterns;
+  }
+
   void initUp() {
     final int[] maxChainLength = new int[mWords.size()];
-    int k = 0;
+    int j = 0;
     for (final String w : mWords) {
-      mWordToIndex.put(w, k++);
+      mWordToIndex.put(w, j++);
       while (w.length() >= mWordsByLength.size()) {
         mWordsByLength.add(new HashSet<>());
       }
@@ -102,42 +125,51 @@ public final class Ladder extends Command {
     }
     // Consider shorter and shorter words build the extensions as we go
     for (int len = mWordsByLength.size() - 2; len > 0; --len) {
-      System.out.println("Doing init for len=" + len);
       final Set<String> longer = mWordsByLength.get(len + 1);
-      for (final String w : mWordsByLength.get(len)) {
-        final int wi = mWordToIndex.get(w);
-        int best = -1;
+      final Set<String> shorter = mWordsByLength.get(len);
+      final Map<String, List<String>> patterns = mAnagrams ? patterns(shorter) : null;
+      for (final String word : longer) {
+        final int wordIndex = mWordToIndex.get(word);
+        final int wordChainLength = maxChainLength[wordIndex] + 1;
         if (mAnagrams) {
-          for (final String a : Anagram.findAnagrams(w + ".", longer)) {
-            final int ai = mWordToIndex.get(a);
-            if (maxChainLength[ai] >= best) {
-              if (maxChainLength[ai] > best) {
-                mExtensions.set(wi, new TreeSet<>());
-                best = maxChainLength[ai];
-              }
-              mExtensions.get(wi).add(a);
-            }
-          }
-        } else {
-          for (int j = 0; j <= w.length(); ++j) {
-            // Most of the time 'a' .. 'z' would suffice, but we allow unusual use cases here
-            for (char c = ' '; c <= '~'; ++c) {
-              final String a = w.substring(0, j) + c + w.substring(j);
-              if (longer.contains(a)) {
-                final int ai = mWordToIndex.get(a);
-                if (maxChainLength[ai] >= best) {
-                  if (maxChainLength[ai] > best) {
-                    mExtensions.set(wi, new TreeSet<>());
-                    best = maxChainLength[ai];
+          final String key = sort(word);
+          for (int k = 0; k < key.length(); ++k) {
+            if (k == 0 || key.charAt(k) != key.charAt(k - 1)) {
+              final String w = key.substring(0, k) + key.substring(k + 1);
+              final List<String> matches = patterns.get(w);
+              if (matches != null) {
+                for (final String a : matches) {
+                  final int wi = mWordToIndex.get(a);
+                  final int wcl = maxChainLength[wi];
+                  if (wordChainLength >= wcl) {
+                    final Collection<String> ext = mExtensions.get(wi);
+                    if (wordChainLength > wcl) {
+                      ext.clear();
+                      maxChainLength[wi] = wordChainLength;
+                    }
+                    ext.add(word);
                   }
-                  mExtensions.get(wi).add(a);
                 }
               }
             }
           }
+        } else {
+          for (int k = 0; k < word.length(); ++k) {
+            final String w = word.substring(0, k) + word.substring(k + 1);
+            if (shorter.contains(w)) {
+              final int wi = mWordToIndex.get(w);
+              final int wcl = maxChainLength[wi];
+              if (wordChainLength >= wcl) {
+                final Collection<String> ext = mExtensions.get(wi);
+                if (wordChainLength > wcl) {
+                  ext.clear();
+                  maxChainLength[wi] = wordChainLength;
+                }
+                ext.add(word);
+              }
+            }
+          }
         }
-        maxChainLength[wi] = best + 1;
-       //System.out.println(w + " :: " + maxChainLength[wi] + " " + mExtensions.get(wi));
       }
     }
   }
