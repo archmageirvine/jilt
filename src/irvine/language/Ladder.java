@@ -2,8 +2,15 @@ package irvine.language;
 
 import java.io.IOException;
 import java.io.PrintStream;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Locale;
+import java.util.Map;
 import java.util.Set;
+import java.util.TreeSet;
 
 import irvine.jilt.Command;
 import irvine.jilt.CommonFlags;
@@ -31,6 +38,10 @@ public final class Ladder extends Command {
   private boolean mLeft = false;
   private boolean mRight = false;
   private int mLength = 0;
+
+  void setWords(final Set<String> words) {
+    mWords = words;
+  }
 
   void setAnagrams(final boolean anagrams) {
     mAnagrams = anagrams;
@@ -74,57 +85,73 @@ public final class Ladder extends Command {
     }
   }
 
-//  private final Map<String, Integer> mWordToIndex = new HashMap<>();
-//  private final List<Set<String>> mWordsByLength = new ArrayList<>();
-//  private int[] mMaxChainLength = null;
-//  private List<List<String>> mExtensions = new ArrayList<>();
-//
-//  private void initUp() {
-//    mMaxChainLength = new int[mWords.size()];
-//    int k = 0;
-//    for (final String w : mWords) {
-//      mWordToIndex.put(w, k++);
-//      while (w.length() >= mWordsByLength.size()) {
-//        mWordsByLength.add(new HashSet<>());
-//      }
-//      mWordsByLength.get(w.length()).add(w);
-//    }
-//  }
+  private final Map<String, Integer> mWordToIndex = new HashMap<>();
+  private final List<Set<String>> mWordsByLength = new ArrayList<>();
+  private final List<Collection<String>> mExtensions = new ArrayList<>();
 
-  // todo this up solver is crappy and slow, better to do some kind of precompute by length
-  private void solveUp(final PrintStream out, final String word, final String result, final int k) {
-    if (mAnagrams) {
-      // This is actually simpler to code -- just add one more unknown letter
-      for (final String a : Anagram.findAnagrams(word + ".", mWords)) {
-        solveUp(out, a, result + " -> " + a);
+  void initUp() {
+    final int[] maxChainLength = new int[mWords.size()];
+    int k = 0;
+    for (final String w : mWords) {
+      mWordToIndex.put(w, k++);
+      while (w.length() >= mWordsByLength.size()) {
+        mWordsByLength.add(new HashSet<>());
       }
-    } else {
-      // Most of the time 'a' .. 'z' would suffice, but we allow unusual use cases here
-      for (char c = ' '; c <= '~'; ++c) {
-        final String w = word.substring(0, k) + c + word.substring(k);
-        if (mWords.contains(w)) {
-          solveUp(out, w, result + " -> " + w);
+      mWordsByLength.get(w.length()).add(w);
+      mExtensions.add(new TreeSet<>());
+    }
+    // Consider shorter and shorter words build the extensions as we go
+    for (int len = mWordsByLength.size() - 2; len > 0; --len) {
+      System.out.println("Doing init for len=" + len);
+      final Set<String> longer = mWordsByLength.get(len + 1);
+      for (final String w : mWordsByLength.get(len)) {
+        final int wi = mWordToIndex.get(w);
+        int best = -1;
+        if (mAnagrams) {
+          for (final String a : Anagram.findAnagrams(w + ".", longer)) {
+            final int ai = mWordToIndex.get(a);
+            if (maxChainLength[ai] >= best) {
+              if (maxChainLength[ai] > best) {
+                mExtensions.set(wi, new TreeSet<>());
+                best = maxChainLength[ai];
+              }
+              mExtensions.get(wi).add(a);
+            }
+          }
+        } else {
+          for (int j = 0; j <= w.length(); ++j) {
+            // Most of the time 'a' .. 'z' would suffice, but we allow unusual use cases here
+            for (char c = ' '; c <= '~'; ++c) {
+              final String a = w.substring(0, j) + c + w.substring(j);
+              if (longer.contains(a)) {
+                final int ai = mWordToIndex.get(a);
+                if (maxChainLength[ai] >= best) {
+                  if (maxChainLength[ai] > best) {
+                    mExtensions.set(wi, new TreeSet<>());
+                    best = maxChainLength[ai];
+                  }
+                  mExtensions.get(wi).add(a);
+                }
+              }
+            }
+          }
         }
+        maxChainLength[wi] = best + 1;
+       //System.out.println(w + " :: " + maxChainLength[wi] + " " + mExtensions.get(wi));
       }
     }
   }
 
-  private void solveUp(final PrintStream out, final String word, final String result) {
-    if (word.length() > mLength) {
-      // New record length
-      mLength = word.length();
-      out.println(result);
-    }
-    if (mLeft) {
-      solveUp(out, word, result, 0);
-      if (mRight) {
-        solveUp(out, word, result, word.length() - 1);
-      }
-    } else if (mRight) {
-      solveUp(out, word, result, word.length() - 1);
-    } else {
-      for (int k = 0; k <= word.length(); ++k) {
-        solveUp(out, word, result, k);
+  void solveUp(final PrintStream out, final String word, final String result) {
+    final Integer i = mWordToIndex.get(word);
+    if (i != null) {
+      final Collection<String> ext = mExtensions.get(i);
+      if (ext.isEmpty()) {
+        out.println(result);
+      } else {
+        for (final String e : mExtensions.get(i)) {
+          solveUp(out, e, result + " -> " + e);
+        }
       }
     }
   }
@@ -132,7 +159,7 @@ public final class Ladder extends Command {
   @Override
   public void mainExec(final String... args) {
     final CliFlags flags = new CliFlags(getDescription());
-    flags.setDescription("By default one letter anywhere in the word is deleted at each step. By using -L and -R this can be restrict to deleting letters from the left, right, or both ends of the word. With -A the remaining letters are anagrammed to find potential solutions. If -u is select, then print longer and longer words, incrementally printing the longest solutions as they are found.");
+    flags.setDescription("By default one letter anywhere in the word is deleted at each step. By using -L and -R this can be restrict to deleting letters from the left, right, or both ends of the word. With -A the remaining letters are anagrammed to find potential solutions. If -u is select, then print longer and longer words.");
     CommonFlags.registerDictionaryFlag(flags);
     CommonFlags.registerOutputFlag(flags);
     flags.registerOptional('A', ANAGRAM_FLAG, "allow anagrams at each step");
@@ -150,15 +177,16 @@ public final class Ladder extends Command {
     final String start = ((String) flags.getAnonymousValue(0)).toLowerCase(Locale.getDefault());
     try {
       if (up) {
-        mWords = Dictionary.getWordSet(Dictionary.getDictionaryReader((String) flags.getValue(CommonFlags.DICTIONARY_FLAG)), start.length() + 1, Integer.MAX_VALUE);
+        setWords(Dictionary.getWordSet(Dictionary.getDictionaryReader((String) flags.getValue(CommonFlags.DICTIONARY_FLAG)), start.length(), Integer.MAX_VALUE));
       } else {
-        mWords = Dictionary.getWordSet(Dictionary.getDictionaryReader((String) flags.getValue(CommonFlags.DICTIONARY_FLAG)), 1, start.length() - 1);
+        setWords(Dictionary.getWordSet(Dictionary.getDictionaryReader((String) flags.getValue(CommonFlags.DICTIONARY_FLAG)), 1, start.length() - 1));
       }
     } catch (final IOException e) {
       throw new RuntimeException("Problem reading word list.", e);
     }
     try (final PrintStream out = CommonFlags.getOutput(flags)) {
       if (up) {
+        initUp();
         solveUp(out, start, start);
       } else {
         solveDown(out, start, start);

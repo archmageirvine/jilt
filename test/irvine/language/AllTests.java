@@ -14,6 +14,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(AnagramTest.class);
     suite.addTestSuite(CaesarTest.class);
     suite.addTestSuite(ChainTest.class);
+    suite.addTestSuite(LadderTest.class);
     suite.addTestSuite(MorseTest.class);
     suite.addTestSuite(MultiwordAnagramTest.class);
     return suite;

@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class ChainTest extends TestCase {
 
   public void test() {
-    final List<String> words = new ArrayList<>(5);
+    final List<String> words = new ArrayList<>();
     words.add("cat");
     words.add("car");
     words.add("xxx");
@@ -35,7 +35,7 @@ public class ChainTest extends TestCase {
   }
 
   public void testSlide() {
-    final List<String> words = new ArrayList<>(5);
+    final List<String> words = new ArrayList<>();
     words.add("west");
     words.add("star");
     words.add("area");
