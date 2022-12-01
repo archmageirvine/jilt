@@ -199,8 +199,15 @@ public final class Ladder extends Command {
     flags.registerOptional('R', RIGHT_FLAG, "truncate letters from the right");
     flags.registerOptional('u', UP_FLAG, "form longer and longer words rather than shorter words");
     flags.registerRequired(String.class, "word", "starting word");
-    flags.setValidator(f -> CommonFlags.validateDictionary(f)
-      && CommonFlags.validateOutput(f));
+    flags.setValidator(f -> {
+      if (f.isSet(UP_FLAG) && (f.isSet(LEFT_FLAG) || f.isSet(RIGHT_FLAG))) {
+        // todo the following probably could be added easy enough, if a bit fiddly
+        f.setParseMessage("Searching up with -L and/or -R not currently supported");
+        return false;
+      }
+      return CommonFlags.validateDictionary(f)
+        && CommonFlags.validateOutput(f);
+    });
     flags.setFlags(args);
     setAnagrams(flags.isSet(ANAGRAM_FLAG));
     setLeft(flags.isSet(LEFT_FLAG));
