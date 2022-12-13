@@ -38,7 +38,6 @@ public final class Ladder extends Command {
   private boolean mAnagrams = false;
   private boolean mLeft = false;
   private boolean mRight = false;
-  private int mLength = 0;
 
   void setWords(final Set<String> words) {
     mWords = words;

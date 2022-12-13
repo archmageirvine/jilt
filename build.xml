@@ -47,9 +47,9 @@
       <zipfileset fullpath="${outdir}/jilt.jar" dir="${build.dir}" includes="jilt.jar"/>
       <zipfileset fullpath="${outdir}/jilt" dir="resources" includes="jilt" filemode="755"/>
       <zipfileset fullpath="${outdir}/jilt.bat" dir="resources" includes="jilt.bat" filemode="755"/>
-      <zipfileset fullpath="${outdir}/models" dir="models" includes="*.model"/>
-      <zipfileset fullpath="${outdir}/lists" dir="lists" includes="*.lst"/>
       <zipfileset fullpath="${outdir}/README.md" dir="." includes="README.md"/>
+      <zipfileset prefix="${outdir}/models" dir="models" includes="*.model"/>
+      <zipfileset prefix="${outdir}/lists" dir="lists" includes="*.lst"/>
     </zip>
   </target>
 
