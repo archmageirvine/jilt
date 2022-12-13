@@ -49,7 +49,7 @@ in the cryptogram file are not properly a part of the message.  Note
 also that in this case, the correct solution is not the "best"
 solution found.
 
-A similar module is available for solving Vigenere ciphers.
+Similar modules are available for solving Playfair and Vigenere ciphers.
 
 ## Finding anagrams
 
@@ -113,6 +113,9 @@ exact set of allowed operations.
 > jilt chain horse truck
 [horse, hoise, poise, prise, price, trice, truce, truck]
 ```
+
+The similar `ladder` module can be used to solve related problems where
+the words get shorter or longer by one letter at each step.
 
 ## Other
 
