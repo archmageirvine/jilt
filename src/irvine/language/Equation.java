@@ -20,13 +20,14 @@ import irvine.util.Permutation;
 public final class Equation extends Command {
 
   // RFE:
-  //   - more operations -, /
   //   - support for constant numbers 3 * ABC, etc.
   //   -
 
   private static final String EQUALS = "=";
   private static final String ADD = "+";
+  private static final String SUBTRACT = "-";
   private static final String MULTIPLY = "*";
+  private static final String DIVIDE = "/";
   private static final String POW = "^";
 
   private static final class Node {
@@ -68,9 +69,17 @@ public final class Equation extends Command {
     if (add >= 0) {
       return new Node(ADD, parse(s.substring(0, add).trim()), parse(s.substring(add + 1).trim()));
     }
+    final int subtract = s.lastIndexOf(SUBTRACT);
+    if (subtract >= 0) {
+      return new Node(SUBTRACT, parse(s.substring(0, subtract).trim()), parse(s.substring(subtract + 1).trim()));
+    }
     final int multiply = s.indexOf(MULTIPLY);
     if (multiply >= 0) {
       return new Node(MULTIPLY, parse(s.substring(0, multiply).trim()), parse(s.substring(multiply + 1).trim()));
+    }
+    final int divide = s.indexOf(DIVIDE);
+    if (divide >= 0) {
+      return new Node(DIVIDE, parse(s.substring(0, divide).trim()), parse(s.substring(divide + 1).trim()));
     }
     final int pow = s.indexOf(POW);
     if (pow >= 0) {
@@ -112,7 +121,6 @@ public final class Equation extends Command {
   private static final class InconsistentException extends Exception { }
 
   private long eval(final Node equation, final Map<Character, Integer> code, final int[] p) throws InconsistentException {
-    // todo more operations
     // Note: there is no overflow check here which could be a problem!
     switch (equation.mS) {
       case EQUALS:
@@ -120,12 +128,26 @@ public final class Equation extends Command {
         return eval(equation.mLeft, code, p) == eval(equation.mRight, code, p) ? 0 : 1;
       case ADD:
         return eval(equation.mLeft, code, p) + eval(equation.mRight, code, p);
+      case SUBTRACT:
+        return eval(equation.mLeft, code, p) - eval(equation.mRight, code, p);
       case MULTIPLY:
         return eval(equation.mLeft, code, p) * eval(equation.mRight, code, p);
+      case DIVIDE:
+        // For now we limit to exact integer divisions
+        final long left = eval(equation.mLeft, code, p);
+        final long right = eval(equation.mRight, code, p);
+        if (left % right == 0) {
+          return left / right;
+        }
+        throw new InconsistentException();
       case POW:
         return LongUtils.pow(eval(equation.mLeft, code, p), eval(equation.mRight, code, p));
       default:
         // Assume a literal
+        if (Character.isDigit(equation.mS.charAt(0))) {
+          return Long.parseLong(equation.mS);
+        }
+        // Assume a variable
         if (p[code.get(equation.mS.charAt(0))] == 0) {
           throw new InconsistentException();
         }
