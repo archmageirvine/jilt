@@ -19,10 +19,6 @@ import irvine.util.Permutation;
  */
 public final class Equation extends Command {
 
-  // RFE:
-  //   - support for constant numbers 3 * ABC, etc.
-  //   -
-
   private static final String EQUALS = "=";
   private static final String ADD = "+";
   private static final String SUBTRACT = "-";
@@ -136,7 +132,7 @@ public final class Equation extends Command {
         // For now we limit to exact integer divisions
         final long left = eval(equation.mLeft, code, p);
         final long right = eval(equation.mRight, code, p);
-        if (left % right == 0) {
+        if (right != 0 && left % right == 0) {
           return left / right;
         }
         throw new InconsistentException();
