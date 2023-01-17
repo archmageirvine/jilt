@@ -4,10 +4,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashSet;
+import java.util.Locale;
 import java.util.Objects;
 import java.util.Set;
 import java.util.zip.GZIPInputStream;
 
+import irvine.util.Casing;
 import irvine.util.IOUtils;
 
 /**
@@ -48,17 +50,36 @@ public final class Dictionary {
    * @param reader source of words
    * @param minLength minimum length
    * @param maxLength maximum length
+   * @param casing case handling
    * @return set of words
    * @throws IOException if an I/O problem occurs
    */
-  public static Set<String> getWordSet(final BufferedReader reader, final int minLength, final int maxLength) throws IOException {
+  public static Set<String> getWordSet(final BufferedReader reader, final int minLength, final int maxLength, final Casing casing) throws IOException {
     final HashSet<String> res = new HashSet<>();
     String line;
     while ((line = reader.readLine()) != null) {
       if (line.length() >= minLength && line.length() <= maxLength) {
-        res.add(line);
+        if (casing == Casing.UPPER) {
+          res.add(line.toUpperCase(Locale.getDefault()));
+        } else if (casing == Casing.LOWER) {
+          res.add(line.toLowerCase(Locale.getDefault()));
+        } else {
+          res.add(line);
+        }
       }
     }
     return res;
+  }
+
+  /**
+   * Retrieve all the words with specified length bounds.
+   * @param reader source of words
+   * @param minLength minimum length
+   * @param maxLength maximum length
+   * @return set of words
+   * @throws IOException if an I/O problem occurs
+   */
+  public static Set<String> getWordSet(final BufferedReader reader, final int minLength, final int maxLength) throws IOException {
+    return getWordSet(reader, minLength, maxLength, Casing.NONE);
   }
 }

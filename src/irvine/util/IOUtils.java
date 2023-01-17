@@ -72,7 +72,7 @@ public final class IOUtils {
   public static String readAll(final Reader input) throws IOException {
     final char[] b = new char[BUFFER_LENGTH];
     final StringWriter str = new StringWriter(BUFFER_LENGTH);
-    try {
+    try (str) {
       while (true) {
         final int length = input.read(b);
         if (length == EOF) {
@@ -83,8 +83,6 @@ public final class IOUtils {
           str.write(b, 0, length);
         }
       }
-    } finally {
-      str.close();
     }
     return str.toString();
   }

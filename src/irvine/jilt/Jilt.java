@@ -20,6 +20,7 @@ import irvine.language.Ladder;
 import irvine.language.Morse;
 import irvine.language.Permute;
 import irvine.language.WordSearch;
+import irvine.language.Wordle;
 import irvine.util.StringUtils;
 
 /**
@@ -94,6 +95,8 @@ public final class Jilt {
     PLAYMATE(new Playmate()),
     /** Solve telephone encodings. */
     TELEPHONE(new Telephone()),
+    /** Solve Wordle. */
+    WORDLE(new Wordle()),
     ;
 
     private final Command mCommand;
