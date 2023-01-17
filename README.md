@@ -117,6 +117,64 @@ exact set of allowed operations.
 The similar `ladder` module can be used to solve related problems where
 the words get shorter or longer by one letter at each step.
 
+## Wordle
+
+Wordle is a popular word game developed in 2022 by Josh Wardle, see
+[here](https://www.nytimes.com/games/wordle/index.html)
+
+The player has to guess a five letter word and the responses give clues
+as to correct letters and wrong letters. The JILT module `wordle` can
+be used to get suggestions as to what should be played as the next
+guesses given the state of any previous guesses.
+
+At the start we have made no guesses, so:
+
+```
+> jilt wordle
+Remaining words: 12478
+Best: TARES -4.30
+```
+
+The above says in the absence of any information and using the default
+dictionary, the best word to guess is `TARES`. If you have access to the
+actual Wordle dictionary, you can specify that instead with `-D`.
+
+In this example, when we play `TARES` we get told that `A` and `R` are
+correct letters but in the wrong positions and that the other letters
+do not occur. We use 1 to indicate a correct letter and 0 for a wrong
+letter:
+
+```
+> jilt wordle TARES 01100
+Remaining words: 240
+Best: GRAIL -3.17
+```
+
+We are down to 240 remaining possible words. In our, example we learn
+that `A` is now in correct position, but `R` is still in the wrong
+position, and none of the other new letters occur. So, using 2 to
+indicate a correctly placed letter:
+
+```
+> jilt wordle TARES 01100 GRAIL 01200
+Remaining words: 24
+Best: HOARD -2.28
+```
+
+We play `HOARD` and discover that `ARD` is correct and that `H` also
+occurs in the word (which actually means `H` must be the second letter).
+We continue:
+
+```
+> jilt wordle TARES 01100 GRAIL 01200 HOARD 10222
+```
+
+There is a single remaining word `CHARD`, which is indeed correct.
+
+The `wordle` module supports other variants of the game where multiple
+words are simultaneously solved for (dordle, qordle, etc.) or where
+the word length is something other than 5.
+
 ## Other
 
 There are other modules for finding words in a grid (wordsearch),
