@@ -55,7 +55,7 @@ public final class Wordle extends Command {
 
   private static boolean isPossibleWorld(final String word, final String[] guesses, final int box, final int mod) {
     for (int k = 0; k < guesses.length; k += mod) {
-      if (guesses[k + 1 + box].length() != 5) {
+      if (guesses[k + 1 + box].length() != word.length()) {
         throw new RuntimeException("Invalid syndrome: " + guesses[k + 1 + box]);
       }
       if (!syndrome(word, guesses[k]).equals(guesses[k + 1 + box])) {
@@ -114,7 +114,7 @@ public final class Wordle extends Command {
         final double inv = 1.0 / n;
         final Map<String, Integer> counts = new HashMap<>();
         for (final String possible : pos) {
-          final String s = Wordle.syndrome(possible, word);
+          final String s = syndrome(possible, word);
           counts.merge(s, 1, Integer::sum);
         }
         // Compute the entropy
