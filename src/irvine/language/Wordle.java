@@ -76,7 +76,7 @@ public final class Wordle extends Command {
 
   private static void entropySolver(final int wordCount, final Set<String> words, final Collection<String> guesses) {
     // Determine number of boxes to solve
-    int mod = wordCount + 1;
+    final int mod = wordCount + 1;
     // Guesses should be (word, pattern) pairs, possibly empty
     if ((guesses.size() % mod) != 0) {
       throw new RuntimeException("Expected (word pattern)*");
@@ -189,7 +189,7 @@ public final class Wordle extends Command {
       @SuppressWarnings("unchecked")
       final Collection<String> guesses = (Collection<String>) flags.getAnonymousValues(0);
       entropySolver((int) flags.getValue(WORDS_FLAG), words, guesses);
-    } catch (IOException e) {
+    } catch (final IOException e) {
       throw new RuntimeException(e);
     }
   }
