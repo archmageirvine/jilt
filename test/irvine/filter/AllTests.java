@@ -16,6 +16,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(ContainsFilterTest.class);
     suite.addTestSuite(DecreasingFilterTest.class);
     suite.addTestSuite(DiplogramFilterTest.class);
+    suite.addTestSuite(DistinctFilterTest.class);
     suite.addTestSuite(IncreasingFilterTest.class);
     suite.addTestSuite(LengthFilterTest.class);
     suite.addTestSuite(MaxLengthFilterTest.class);

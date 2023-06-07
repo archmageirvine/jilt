@@ -139,7 +139,7 @@ public class VampireSolver {
    * @param plain equivalent plain character
    */
   public void fixPair(final char crypt, final char plain) {
-    mPermute[crypt] = plain;
+    mPermute[Character.toUpperCase(crypt)] = Character.toLowerCase(plain);
   }
 
 

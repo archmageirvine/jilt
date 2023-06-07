@@ -11,11 +11,14 @@ public class AllTests extends TestSuite {
 
   public static Test suite() {
     final TestSuite suite = new TestSuite();
+    suite.addTestSuite(AddTransformTest.class);
+    suite.addTestSuite(LetterTransformTest.class);
     suite.addTestSuite(LoopsTransformTest.class);
     suite.addTestSuite(LowercaseTransformTest.class);
     suite.addTestSuite(ReverseTransformTest.class);
     suite.addTestSuite(ScrabbleTransformTest.class);
     suite.addTestSuite(SortTransformTest.class);
+    suite.addTestSuite(SubtractTransformTest.class);
     suite.addTestSuite(SumTransformTest.class);
     suite.addTestSuite(TelephoneSumTransformTest.class);
     suite.addTestSuite(TelephoneTransformTest.class);

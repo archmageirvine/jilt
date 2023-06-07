@@ -12,6 +12,7 @@ import irvine.filter.AlphabeticalFilter;
 import irvine.filter.ContainsFilter;
 import irvine.filter.DecreasingFilter;
 import irvine.filter.DiplogramFilter;
+import irvine.filter.DistinctFilter;
 import irvine.filter.Filter;
 import irvine.filter.IncreasingFilter;
 import irvine.filter.LengthFilter;
@@ -41,6 +42,7 @@ public final class FilterCommand extends Command {
 
   private static final String DESC = "Filter words based on a variety of simple criteria.";
   private static final String LONGEST_FLAG = "longest";
+  private static final String SHORTEST_FLAG = "shortest";
   private static final String ALPHABETICAL_FLAG = "alphabetical";
   private static final String REVERSE_ALPHABETICAL_FLAG = "reverse";
   private static final String INCREASING_FLAG = "increasing";
@@ -68,6 +70,7 @@ public final class FilterCommand extends Command {
   private static final String HORIZONTAL_FLAG = "horizontal";
   private static final String TELEPHONE_FLAG = "telephone";
   private static final String TELEPHONE_SUM_FLAG = "telephone-sum";
+  private static final String DISTINCT_FLAG = "distinct";
 
   private boolean is(final List<Filter> filters, final String word) {
     for (final Filter f : filters) {
@@ -101,9 +104,11 @@ public final class FilterCommand extends Command {
     flags.registerOptional(KB3_FLAG, "word consists entirely of letters from \"zxcvbnm\"");
     flags.registerOptional(VERTICAL_FLAG, "word consists entirely of vertically symmetric letters");
     flags.registerOptional(HORIZONTAL_FLAG, "word consists entirely of horizontally symmetric letters");
+    flags.registerOptional(DISTINCT_FLAG, "every letter in the word is different");
     flags.registerOptional('f', FIRST_FLAG, "word consists entirely of letters from \"abcdefghijklm\"");
     flags.registerOptional('s', SECOND_FLAG, "word consists entirely of letters from \"nopqrstuvwxyz\"");
     flags.registerOptional('L', LONGEST_FLAG, "among the possible results report only a longest match");
+    flags.registerOptional('S', SHORTEST_FLAG, "among the possible results report only a shortest match");
     flags.registerOptional('l', LENGTH_FLAG, Integer.class, "INT", "exact word length");
     flags.registerOptional('m', MIN_LENGTH_FLAG, Integer.class, "INT", "minimum word length");
     flags.registerOptional('M', MAX_LENGTH_FLAG, Integer.class, "INT", "maximum word length");
@@ -144,6 +149,10 @@ public final class FilterCommand extends Command {
         f.setParseMessage("--" + PYRAMID_FLAG + " requires a numerical pattern like 221");
         return false;
       }
+      if (f.isSet(LONGEST_FLAG) && flags.isSet(SHORTEST_FLAG)) {
+        f.setParseMessage("--" + LONGEST_FLAG + " is incompatible with --" + SHORTEST_FLAG);
+        return false;
+      }
       return true;
     });
     flags.setFlags(args);
@@ -171,6 +180,9 @@ public final class FilterCommand extends Command {
     }
     if (flags.isSet(DECREASING_FLAG)) {
       filters.add(new DecreasingFilter());
+    }
+    if (flags.isSet(DISTINCT_FLAG)) {
+      filters.add(new DistinctFilter());
     }
     if (flags.isSet(ALPHABET_FLAG)) {
       filters.add(new AlphabetFilter((String) flags.getValue(ALPHABET_FLAG)));
@@ -245,7 +257,21 @@ public final class FilterCommand extends Command {
               longest = word;
             }
           }
-          out.println(longest);
+          if (longest != null) {
+            out.println(longest);
+          }
+        } else if (flags.isSet(SHORTEST_FLAG)) {
+          String shortest = null;
+          String line;
+          while ((line = reader.readLine()) != null) {
+            final String word = line.toLowerCase(Locale.getDefault());
+            if (is(filters, word) && (shortest == null || word.length() < shortest.length())) {
+              shortest = word;
+            }
+          }
+          if (shortest != null) {
+            out.println(shortest);
+          }
         } else {
           String line;
           while ((line = reader.readLine()) != null) {

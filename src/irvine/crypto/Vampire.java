@@ -43,7 +43,7 @@ public class Vampire extends Command {
     CommonFlags.registerModelFlag(flags);
     flags.registerOptional('a', RETAIN_FLAG, Integer.class, "INT", "maximum number of hypotheses to maintain at each stage", 1000);
     flags.registerOptional('r', RESULTS_FLAG, Integer.class, "INT", "maximum number of answers to print", 5);
-    flags.registerOptional('f', FIX_FLAG, String.class, "pair", "fix a pair of symbols.").setMaxCount(Integer.MAX_VALUE);
+    flags.registerOptional('f', FIX_FLAG, String.class, "pair", "fix a pair of symbols (ciphertext then plaintext).").setMaxCount(Integer.MAX_VALUE);
     flags.registerOptional('d', DIT_FLAG, "indicates that \".\" should be treated as a dit rather than a period. No attempt is made to resolve such symbols");
     flags.registerOptional('q', QUIET_FLAG, "print only the answer");
     flags.registerOptional('p', PERMUTATION_FLAG, "print the permutation for the top solution");
