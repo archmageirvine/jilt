@@ -18,6 +18,7 @@ public class AllTests extends TestSuite {
     suite.addTest(irvine.language.AllTests.suite());
     suite.addTest(irvine.transform.AllTests.suite());
     suite.addTest(irvine.util.AllTests.suite());
+    suite.addTest(irvine.wordsmith.AllTests.suite());
     return suite;
   }
 }

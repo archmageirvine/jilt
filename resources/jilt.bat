@@ -32,7 +32,7 @@ echo JILT requires a 64 bit version of Windows
 IF DEFINED PAUSE_ON_CLOSE pause
 exit /b 1
 
-java -jar %JILT_JAR% %*
+java -Dlists.dir="%~dp0lists" -jar %JILT_JAR% %*
 
 :exit_zero
 exit /b 0

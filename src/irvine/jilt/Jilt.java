@@ -22,6 +22,7 @@ import irvine.language.Permute;
 import irvine.language.WordSearch;
 import irvine.language.Wordle;
 import irvine.util.StringUtils;
+import irvine.wordsmith.Wordsmith;
 
 /**
  * Main launcher for JILT, calling individual modules as required.
@@ -73,6 +74,8 @@ public final class Jilt {
     CHAIN(new Chain()),
     /** Solve word ladder problems. */
     LADDER(new Ladder()),
+    /** General explanation solver. */
+    WORDSMITH(new Wordsmith()),
     /** Solve grid word search problems. */
     WORDSEARCH(new WordSearch()),
     /** Solve word equation problems. */

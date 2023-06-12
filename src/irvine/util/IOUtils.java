@@ -63,7 +63,6 @@ public final class IOUtils {
 
   /**
    * Read all of a Reader into a String.
-   *
    * @param input Reader being read.
    * @return a String containing the contents of the input stream.
    * @exception IOException If there is a problem during reading.
@@ -110,5 +109,4 @@ public final class IOUtils {
     final InputStream is = IOUtils.class.getClassLoader().getResourceAsStream(resource);
     return new BufferedReader(new InputStreamReader(resource.endsWith(".gz") ? new GZIPInputStream(is) : is));
   }
-
 }

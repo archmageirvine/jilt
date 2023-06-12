@@ -4,6 +4,7 @@
 # This version of the launcher is suitable for those developing with IntelliJ.
 # For a version included in a release see resources/jilt
 
-export CLASSPATH=$(dirname "$0")/out/production/jilt
+dir="$(dirname "$0")"
+export CLASSPATH="${dir}/out/production/jilt"
 
-java irvine.jilt.Jilt "$@"
+java -Dlists.dir="${dir}/lists" irvine.jilt.Jilt "$@"

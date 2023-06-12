@@ -2,4 +2,5 @@
 #
 # JILT launcher script for Linux.
 
-java -jar $(dirname "$0")/jilt.jar "$@"
+dir="$(dirname "$0")"
+java -Dlists.dir="${dir}/lists" -jar "${dir}/jilt.jar" "$@"
