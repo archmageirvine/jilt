@@ -11,6 +11,7 @@ import irvine.filter.AlphabetFilter;
 import irvine.filter.AlphabeticalFilter;
 import irvine.filter.ContainsFilter;
 import irvine.filter.DecreasingFilter;
+import irvine.filter.DeltaFilter;
 import irvine.filter.DiplogramFilter;
 import irvine.filter.DistinctFilter;
 import irvine.filter.Filter;
@@ -24,6 +25,7 @@ import irvine.filter.PyramidFilter;
 import irvine.filter.RegexFilter;
 import irvine.filter.ReverseAlphabeticalFilter;
 import irvine.filter.SetFilter;
+import irvine.filter.SubstringFilter;
 import irvine.filter.TautonymFilter;
 import irvine.filter.TelephoneFilter;
 import irvine.filter.TelephoneSumFilter;
@@ -71,6 +73,8 @@ public final class FilterCommand extends Command {
   private static final String TELEPHONE_FLAG = "telephone";
   private static final String TELEPHONE_SUM_FLAG = "telephone-sum";
   private static final String DISTINCT_FLAG = "distinct";
+  private static final String DELTA_FLAG = "delta";
+  private static final String SUBSTRING_FLAG = "substring";
 
   private boolean is(final List<Filter> filters, final String word) {
     for (final Filter f : filters) {
@@ -114,13 +118,15 @@ public final class FilterCommand extends Command {
     flags.registerOptional('M', MAX_LENGTH_FLAG, Integer.class, "INT", "maximum word length");
     flags.registerOptional(TAUTONYM_FLAG, Integer.class, "INT", "word is a tautonym with given number of repeats");
     flags.registerOptional(DIPLOGRAM_FLAG, Integer.class, "INT", "word is a diplogram with given number of repeats");
-    flags.registerOptional('C', CONTAINS_FLAG, String.class, "STRING", "word contains the specified string.").setMaxCount(Integer.MAX_VALUE);
-    flags.registerOptional('e', REGEX_FLAG, String.class, "STRING", "word matches the specified regular expression.").setMaxCount(Integer.MAX_VALUE);
-    flags.registerOptional(PATTERN_FLAG, String.class, "STRING", "word matches the specified letter pattern.");
-    flags.registerOptional(PYRAMID_FLAG, String.class, "STRING", "word matches the specified frequency pattern.");
-    flags.registerOptional('x', ALPHABET_FLAG, String.class, "STRING", "word consists entirely of characters in the specified string.");
-    flags.registerOptional('t', TELEPHONE_FLAG, String.class, "INT", "word matches the specified number when dialed.");
-    flags.registerOptional(TELEPHONE_SUM_FLAG, String.class, "INT", "word matches the specified sum of digits when dialed.");
+    flags.registerOptional('C', CONTAINS_FLAG, String.class, "STRING", "word contains the specified string").setMaxCount(Integer.MAX_VALUE);
+    flags.registerOptional('e', REGEX_FLAG, String.class, "STRING", "word matches the specified regular expression").setMaxCount(Integer.MAX_VALUE);
+    flags.registerOptional(PATTERN_FLAG, String.class, "STRING", "word matches the specified letter pattern");
+    flags.registerOptional(PYRAMID_FLAG, String.class, "STRING", "word matches the specified frequency pattern");
+    flags.registerOptional('x', ALPHABET_FLAG, String.class, "STRING", "word consists entirely of characters in the specified string");
+    flags.registerOptional('t', TELEPHONE_FLAG, String.class, "INT", "word matches the specified number when dialed");
+    flags.registerOptional(TELEPHONE_SUM_FLAG, String.class, "INT", "word matches the specified sum of digits when dialed");
+    flags.registerOptional(DELTA_FLAG, String.class, "STRING", "word has exactly one letter different from the specified word");
+    flags.registerOptional(SUBSTRING_FLAG, String.class, "STRING", "word is a substring of the specified word");
     flags.setValidator(f -> {
       if (!CommonFlags.validateDictionary(f)) {
         return false;
@@ -219,6 +225,12 @@ public final class FilterCommand extends Command {
     }
     if (flags.isSet(TELEPHONE_SUM_FLAG)) {
       filters.add(new TelephoneSumFilter((String) flags.getValue(TELEPHONE_SUM_FLAG)));
+    }
+    if (flags.isSet(DELTA_FLAG)) {
+      filters.add(new DeltaFilter((String) flags.getValue(DELTA_FLAG)));
+    }
+    if (flags.isSet(SUBSTRING_FLAG)) {
+      filters.add(new SubstringFilter((String) flags.getValue(SUBSTRING_FLAG)));
     }
     for (final Object str : flags.getValues(CONTAINS_FLAG)) {
       filters.add(new ContainsFilter((String) str));

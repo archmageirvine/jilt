@@ -14,6 +14,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(AlphabetFilterTest.class);
     suite.addTestSuite(AlphabeticalFilterTest.class);
     suite.addTestSuite(ContainsFilterTest.class);
+    suite.addTestSuite(DeltaFilterTest.class);
     suite.addTestSuite(DecreasingFilterTest.class);
     suite.addTestSuite(DiplogramFilterTest.class);
     suite.addTestSuite(DistinctFilterTest.class);
@@ -26,6 +27,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(PyramidFilterTest.class);
     suite.addTestSuite(RegexFilterTest.class);
     suite.addTestSuite(ReverseAlphabeticalFilterTest.class);
+    suite.addTestSuite(SubstringFilterTest.class);
     suite.addTestSuite(TautonymFilterTest.class);
     suite.addTestSuite(TelephoneFilterTest.class);
     suite.addTestSuite(TelephoneSumFilterTest.class);
