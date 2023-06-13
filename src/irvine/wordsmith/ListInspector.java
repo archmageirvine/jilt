@@ -27,7 +27,7 @@ public class ListInspector implements Inspector {
     }
 
     // This list contains every word in the list.
-    final StringBuilder res = new StringBuilder("All words are in ").append(mList.getName());
+    final StringBuilder res = new StringBuilder("All words are ").append(mList.getDescription());
     // See if we can get a deeper explanation by looking at associated data
     final List<List<String>> satellite = new ArrayList<>();
     int numSatelliteFields = Integer.MAX_VALUE;
@@ -41,24 +41,30 @@ public class ListInspector implements Inspector {
     final Inspector alpha = new AlphabeticalInspector();
     final Inspector reverse = new ReverseAlphabeticalInspector();
     for (int k = 0; k < numSatelliteFields; ++k) {
+      boolean sawEmpty = false;
       final String[] vec = new String[words.length];
       for (int j = 0; j < vec.length; ++j) {
         vec[j] = satellite.get(j).get(k);
+        if (vec[j].isEmpty()) {
+          sawEmpty = true;
+        }
       }
-      if (mVerbose) {
-        System.out.println("Checking associated data: " + Arrays.toString(vec));
-      }
-      final String c = cons.inspect(vec);
-      if (c != null) {
-        res.append("\nEvery word is associated with: ").append(vec[0]);
-      } else {
-        final String a = alpha.inspect(vec);
-        if (a != null) {
-          res.append("\nAssociated words are in alphabetical order:\n").append(Arrays.toString(vec));
+      if (!sawEmpty) {
+        if (mVerbose) {
+          System.out.println("Checking associated data: " + Arrays.toString(vec));
+        }
+        final String c = cons.inspect(vec);
+        if (c != null) {
+          res.append("\nEvery word is associated with: ").append(vec[0]);
         } else {
-          final String r = reverse.inspect(vec);
-          if (r != null) {
-            res.append("\nAssociated words are in reverse alphabetical order:\n").append(Arrays.toString(vec));
+          final String a = alpha.inspect(vec);
+          if (a != null) {
+            res.append("\nAssociated words are in alphabetical order:\n").append(Arrays.toString(vec));
+          } else {
+            final String r = reverse.inspect(vec);
+            if (r != null) {
+              res.append("\nAssociated words are in reverse alphabetical order:\n").append(Arrays.toString(vec));
+            }
           }
         }
       }

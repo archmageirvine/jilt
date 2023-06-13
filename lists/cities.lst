@@ -1,3491 +1,3488 @@
-Aachen (Germany)
-Aalborg (Denmark)
-Abadan (Iran)
-Abaetetuba (Brazil)
-Abakan (Russia)
-Aba (Nigeria)
-Abbotabad (Pakistan)
-Abbotsford (Canada)
-Abeokuta (Nigeria)
-Aberdeen (UK)
-Abidjan (Ivory Coast)
-Abiko (Japan)
-Abilene (US)
-Abohar (India)
-Abu Dhabi (UAE)
-Abuja (Nigeria)
-Acapulco (Mexico)
-Acarigua (Venezuela)
-Accra (Ghana)
-Acheng (China)
-Achinsk (Russia)
-A Coru\~na (Spain)
-Adana (Turkey)
-Adapazar{\i} (Turkey)
-Addis Ababa (Ethiopia)
-Adelaide (Australia)
-Aden (Yemen)
-Adhamiyah (Iraq)
-Ad{\i}yaman (Turkey)
-Ado-Ekiti (Nigeria)
-Adoni (India)
-Afyon (Turkey)
-Agadir (Morocco)
-Agartala (India)
-Ageo (Japan)
-Agra (India)
-Aguascalientes (Mexico)
-Ahmedabad (India)
-Ahmednagar (India)
-Ahome (Mexico)
-Ahuachap\'an (El Salvador)
-Ahvaz (Iran)
-Ain Beida (Algeria)
-Aix-en-Provence (France)
-Aizawl (India)
-Aizuwakamatsu (Japan)
-Ajmer (India)
-Akashi (Japan)
-Akesu (China)
-Akishima (Japan)
-Akita (Japan)
-Akola (India)
-Akron (US)
-Aksaray (Turkey)
-Aktau (Kazakhstan)
-Aktobe (Kazakhstan)
-Alagoinhas (Brazil)
-Al Ain (UAE)
-Alajuela (Costa Rica)
-Alanya (Turkey)
-Al 'Arish (Egypt)
-Albacete (Spain)
-Albuquerque (US)
-Albury-Wodonga (Australia)
-Alcal\'a de Henares (Spain)
-Alchevsk (Ukraine)
-Alcorc\'on (Spain)
-Aleppo (Syria)
-Aletay (China)
-Alexandra (SA)
-Alexandria (Egypt)
-Alexandria (US)
-Al-Fashir (Sudan)
-Algeciras (Spain)
-Algiers (Algeria)
-Al-Hasakah (Syria)
-Alicante (Spain)
-Aligarh (India)
-Alipurduar (India)
-Allahabad (India)
-Allappuzha (India)
-Allentown (US)
-Almada (Portugal)
-Almaty (Kazakhstan)
-Almere (Netherlands)
-Almer\'{\i}a (Spain)
-Almetyevsk (Russia)
-Al Minya (Egypt)
-Alor Setar (Malaysia)
-Al Qadarif (Sudan)
-Al-Ubayyid (Sudan)
-Alvorada (Brazil)
-Alwar (India)
-Amadora (Portugal)
-Amagasaki (Japan)
-Amarah (Iraq)
-Amarillo (US)
-Ambala (India)
-Ambato (Ecuador)
-Ambon (Indonesia)
-Americana (Brazil)
-Amersfoort (Netherlands)
-Amiens (France)
-Amman (Jordan)
-Amol (Iran)
-Amravati (India)
-Amritsar (India)
-Amroha (India)
-Amsterdam (Netherlands)
-Anaheim (US)
-Anand (India)
-Ananindeua (Brazil)
-An\'apolis (Brazil)
-Anchorage (US)
-Anda (China)
-Andijan (Uzbekistan)
-Andimeshk (Iran)
-Andong (South Korea)
-Angarsk (Russia)
-Angeles City (Philippines)
-Angers (France)
-Angren (Uzbekistan)
-Anj\=o (Japan)
-Ankang (China)
-Ankara (Turkey)
-Anlu (China)
-Annaba (Algeria)
-Ann Arbor (US)
-Anqing (China)
-Ansan (South Korea)
-Anshan (China)
-Anshun (China)
-Antakya (Turkey)
-Antalya (Turkey)
-Antananarivo (Madagascar)
-Antipolo City (Philippines)
-Antofagasta (Chile)
-Antwerp (Belgium)
-Anyang (China)
-Anyang (South Korea)
-Aomori (Japan)
-Aparecida de Goi\^ania (Brazil)
-Apeldoorn (Netherlands)
-Apopa (El Salvador)
-Apucarana (Brazil)
-Aracaju (Brazil)
-Ara\c catuba (Brazil)
-Arad (Romania)
-Aragua\'{\i}na (Brazil)
-Arak (Iran)
-Arapiraca (Brazil)
-Araraquara (Brazil)
-Araras (Brazil)
-Araure (Venezuela)
-Arayat (Philippines)
-Arcot (India)
-Ardabil (Iran)
-Arecibo (Puerto Rico)
-Arequipa (Peru)
-Argenteuil (France)
-\AA rhus (Denmark)
-Arica (Chile)
-Arkhangelsk (Russia)
-Arlington (US)
-Armavir (Russia)
-Armenia (Colombia)
-Arnhem (Netherlands)
-Arrah (India)
-Ar Raqqah (Syria)
-Arusha (Tanzania)
-Arvada (US)
-Arzamas (Russia)
-Asahikawa (Japan)
-Asaka (Japan)
-Asansol (India)
-A\c sgabat (Turkmenistan)
-Ashdod (Israel)
-Ashikaga (Japan)
-Asmara (Eritrea)
-Astana (Kazakhstan)
-Astrakhan (Russia)
-Asunci\'on (Paraguay)
-Aswan (Egypt)
-Asyut (Egypt)
-Athens (Greece)
-Athens (US)
-Atibaia (Brazil)
-Atlanta (US)
-Atsugi (Japan)
-Atushi (China)
-Atyrau (Kazakhstan)
-Auckland (NZ)
-Augsburg (Germany)
-Augusta (US)
-Aurangabad (India)
-Aurora (US)
-Austin (US)
-Avellaneda (Argentina)
-Avignon (France)
-Ayacucho (Peru)
-Ayd{\i}n (Turkey)
-Bab Ezzouar (Algeria)
-Babol (Iran)
-Babruysk (Belarus)
-Bac\u au (Romania)
-Bacolod (Philippines)
-Bacoor (Philippines)
-Badajoz (Spain)
-Badalona (Spain)
-Bafoussam (Cameroon)
-Bag\'e (Brazil)
-Baghdad (Iraq)
-Bago City (Philippines)
-Bago (Myanmar)
-Baguio (Philippines)
-Baharampur (India)
-Bahawalnagar (Pakistan)
-Bahawalpur (Pakistan)
-Bah\'{\i}a Blanca (Argentina)
-Bahir Dar (Ethiopia)
-Bahraich (India)
-Baia Mare (Romania)
-Baicheng (China)
-Baidoa (Somalia)
-Baise (China)
-Baishan (China)
-Baiyin (China)
-Bakersfield (US)
-Baku (Azerbaijan)
-Balakovo (Russia)
-Balashikha (Russia)
-Baleshwar (India)
-Bal{\i}kesir (Turkey)
-Balikpapan (Indonesia)
-Baliuag (Philippines)
-Bally (India)
-B\u al\cb ti (Moldova)
-Baltimore (US)
-Balurghat (India)
-Bamako (Mali)
-Bamenda (Cameroon)
-Banda Aceh (Indonesia)
-Bandar Abbas (Iran)
-Band{\i}rma (Turkey)
-Bandung (Indonesia)
-Bangalore (India)
-Bangkok (Thailand)
-Bangui (Central African Republic)
-Banha (Egypt)
-Bani Suwayf (Egypt)
-Banja Luka (Bosnia and Herzegovina)
-Banjarmasin (Indonesia)
-Banjul (Gambia)
-Bankura (India)
-Baoding (China)
-Baoji (China)
-Baoshan (China)
-Baotou (China)
-Barakaldo (Spain)
-Baraki (Algeria)
-Baranagar (India)
-Baranovichi (Belarus)
-Barbacena (Brazil)
-Barcelona (Spain)
-Barcelona (Venezuela)
-Bardhaman (India)
-Bareilly (India)
-Bari (Italy)
-Barika (Algeria)
-Barinas (Venezuela)
-Barisal (Bangladesh)
-Barnaul (Russia)
-Barquisimeto (Venezuela)
-Barrackpur (India)
-Barra Mansa (Brazil)
-Barrancabermeja (Colombia)
-Barranquilla (Colombia)
-Barreiras (Brazil)
-Barretos (Brazil)
-Barrie (Canada)
-Barueri (Brazil)
-Baruta (Venezuela)
-Barysaw (Belarus)
-Basel (Switzerland)
-Basirhat (India)
-Basra (Iraq)
-Batala (India)
-Batam (Indonesia)
-Batangas City (Philippines)
-Bataysk (Russia)
-Bathinda (India)
-Bath (UK)
-Batman (Turkey)
-Batna (Algeria)
-Baton Rouge (US)
-Battambang (Cambodia)
-Batumi (Georgia)
-Bat Yam (Israel)
-Bauru (Brazil)
-Bayambang (Philippines)
-Bayamo (Cuba)
-Bayam\'on (Puerto Rico)
-Bayannur (China)
-Bayawan (Philippines)
-Baybay (Philippines)
-Bazhou (China)
-Beau-Bassin (Mauritius)
-Beaumont (US)
-Beauvais (France)
-Beawar (India)
-B\'echar (Algeria)
-Beed (India)
-Beersheba (Israel)
-Bei'an (China)
-Beihai (China)
-Beijing (China)
-Beipiao (China)
-Beirut (Lebanon)
-B\'eja\"{\i}a (Algeria)
-Bel\'em (Brazil)
-Belfast (UK)
-Belford Roxo (Brazil)
-Belgaum (India)
-Belgorod (Russia)
-Belgrade (Serbia)
-Bellary (India)
-Bellevue (US)
-Bello (Colombia)
-Belo Horizonte (Brazil)
-Bengbu (China)
-Benghazi (Libya)
-Benguela (Angola)
-Beni Mellal (Morocco)
-Benito Ju\'arez (Mexico)
-Benoni (SA)
-Benxi (China)
-Beppu (Japan)
-Berbera (Somalia)
-Berdyansk (Ukraine)
-Berezniki (Russia)
-Bergamo (Italy)
-Bergen (Norway)
-Bergisch Gladbach (Germany)
-Berhampur (India)
-Berkeley (US)
-Berlin (Germany)
-Bern (Switzerland)
-Besan\c con (France)
-Betim (Brazil)
-Bettiah (India)
-Bhadravati (India)
-Bhagalpur (India)
-Bhalwal (Pakistan)
-Bharatpur (India)
-Bharatpur (Nepal)
-Bharuch (India)
-Bhatpara (India)
-Bhavnagar (India)
-Bhilai (India)
-Bhilwara (India)
-Bhimavaram (India)
-Bhind (India)
-Bhiwandi (India)
-Bhiwani (India)
-Bhopal (India)
-Bhubaneswar (India)
-Bhuj (India)
-Bhusawal (India)
-Bia{\l}ystok (Poland)
-Bidar (India)
-Bielefeld (Germany)
-Bielsko-Bia{\l}a (Poland)
-Bihar Sharif (India)
-Bijapur (India)
-Bikaner (India)
-Bilaspur (India)
-Bila Tserkva (Ukraine)
-Bilbao (Spain)
-Billings (US)
-Binangonan (Philippines)
-Bi\~nan (Philippines)
-Binzhou (China)
-Biratnagar (Nepal)
-Birjand (Iran)
-Birmingham (UK)
-Birmingham (US)
-Bishkek (Kyrgyzstan)
-Biskra (Algeria)
-Bislig (Philippines)
-Bissau (Guinea-Bissau)
-Biysk (Russia)
-Bizerte (Tunisia)
-Blackburn (UK)
-Blackpool (UK)
-Blagoveshchensk (Russia)
-Blantyre (Malawi)
-Blida (Algeria)
-Bloemfontein (SA)
-Blumenau (Brazil)
-Bnei Brak (Israel)
-Boa Vista (Brazil)
-Bobo-Dioulasso (Burkina Faso)
-Bocaue (Philippines)
-Bochum (Germany)
-Bogor (Indonesia)
-Bogota (Colombia)
-Bogra (Bangladesh)
-Boise (US)
-Bojnord (Iran)
-Bokaro Steel City (India)
-Boksburg (SA)
-Bole (China)
-Bologna (Italy)
-Bolton (UK)
-Boma (DR Congo)
-Bonn (Germany)
-Bordeaux (France)
-Bordj Bou Arr\'eridj (Algeria)
-Bordj El Kiffan (Algeria)
-Borujerd (Iran)
-Bosaso (Somalia)
-Boston (US)
-Boto\cb sani (Romania)
-Botou (China)
-Botshabelo (SA)
-Bottrop (Germany)
-Botucatu (Brazil)
-Bouak\'e (Ivory Coast)
-Boulder (US)
-Boulogne-Billancourt (France)
-Bourg-en-Bresse (France)
-Bournemouth (UK)
-Bou Sa\^ada (Algeria)
-Bozhou (China)
-Bradford (UK)
-Bragan\c ca Paulista (Brazil)
-Braga (Portugal)
-Br\u aila (Romania)
-Brampton (Canada)
-Bras\'{\i}lia (Brazil)
-Bra\cb sov (Romania)
-Bratislava (Slovakia)
-Bratsk (Russia)
-Braunschweig (Germany)
-Brazzaville (Congo)
-Breda (Netherlands)
-Bremen (Germany)
-Bremerhaven (Germany)
-Brescia (Italy)
-Brest (Belarus)
-Brest (France)
-Bridgeport (US)
-Brighton (UK)
-Brisbane (Australia)
-Bristol (UK)
-Brno (Czech Republic)
-Brownsville (US)
-Bruges (Belgium)
-Brussels (Belgium)
-Bryansk (Russia)
-Bucaramanga (Colombia)
-Bucharest (Romania)
-Bucheon (South Korea)
-Budapest (Hungary)
-Budaun (India)
-Buenaventura (Colombia)
-Buenos Aires (Argentina)
-Buffalo (US)
-Buga (Colombia)
-Bujumbura (Burundi)
-Bukan (Iran)
-Bukavu (DR Congo)
-Bukhara (Uzbekistan)
-Bulandshahr (India)
-Bulawayo (Zimbabwe)
-Bu\^on Ma Thu{\mak\char'265}t (Vietnam)
-Burao (Somalia)
-Burbank (US)
-Burewala (Pakistan)
-Burgas (Bulgaria)
-Burgos (Spain)
-Burhanpur (India)
-Burlington (Canada)
-Burnaby (Canada)
-Bursa (Turkey)
-Bury (UK)
-Busan (South Korea)
-Bushehr (Iran)
-Butuan (Philippines)
-Buz\u au (Romania)
-Bydgoszcz (Poland)
-Bytom (Poland)
-Cabanatuan City (Philippines)
-Cabimas (Venezuela)
-Cabo de Santo Agostinho (Brazil)
-Cabo Frio (Brazil)
-Cabuyao City (Philippines)
-Cachoeirinha (Brazil)
-Cachoeiro de Itapemirim (Brazil)
-Cadiz City (Philippines)
-C\'adiz (Spain)
-Caen (France)
-Cagayan de Oro (Philippines)
-Cagliari (Italy)
-Caguas (Puerto Rico)
-Cainta (Philippines)
-Cairns (Australia)
-Cairo (Egypt)
-Cajamarca (Peru)
-Calabar (Nigeria)
-Calais (France)
-Calama (Chile)
-Calamba City (Philippines)
-Calapan City (Philippines)
-Calbayog (Philippines)
-Calgary (Canada)
-Cali (Colombia)
-Caloocan (Philippines)
-Cama\c cari (Brazil)
-Camag\"uey (Cuba)
-Camaragibe (Brazil)
-Cambridge (Canada)
-Cambridge (UK)
-Cambridge (US)
-Campeche (Mexico)
-C{\vaqc}m Ph{\mak\char'344} (Vietnam)
-Campina Grande (Brazil)
-Campinas (Brazil)
-Campo Grande (Brazil)
-Campos dos Goytacazes (Brazil)
-Canberra (Australia)
-Candelaria (Philippines)
-Cangzhou (China)
-Canoas (Brazil)
-C{\vaac}n Th{\uaa\char"A1} (Vietnam)
-Cape Breton (Canada)
-Cape Coral (US)
-Cape Town (SA)
-Cap-Ha\"{\i}tien (Haiti)
-Caracas (Venezuela)
-Carapicu\'{\i}ba (Brazil)
-Carcar (Philippines)
-Cardiff (UK)
-Cariacica (Brazil)
-Carlisle (UK)
-Carolina (Puerto Rico)
-Carrefour (Haiti)
-Carrollton (US)
-Cartagena de Indias (Colombia)
-Cartagena (Spain)
-Cartago (Colombia)
-Cartago (Costa Rica)
-Caruaru (Brazil)
-Car\'upano (Venezuela)
-Casablanca (Morocco)
-Cascavel (Brazil)
-Castanhal (Brazil)
-Castell\'on de la Plana (Spain)
-Catanduva (Brazil)
-Catania (Italy)
-Catia La Mar (Venezuela)
-Cauayan City (Philippines)
-Caucaia (Brazil)
-Cavite City (Philippines)
-Caxias (Brazil)
-Caxias do Sul (Brazil)
-Cayenne (French Guiana)
-Cebu City (Philippines)
-Cedar Rapids (US)
-Celaya (Mexico)
-Chandannagar (India)
-Chandigarh (India)
-Chandler (US)
-Chandrapur (India)
-Changchun (China)
-Changde (China)
-Changji (China)
-Changsha (China)
-Changshi (China)
-Changwon (South Korea)
-Changzhi (China)
-Changzhou (China)
-Chaohu (China)
-Chaoyang (China)
-Chaozhou (China)
-Chapec\'o (Brazil)
-Charikar (Afghanistan)
-Charleroi (Belgium)
-Charlotte (US)
-Chatham-Kent (Canada)
-Chattanooga (US)
-Cheboksary (Russia)
-Chelyabinsk (Russia)
-Chemnitz (Germany)
-Chengde (China)
-Chengdu (China)
-Chengzhou (China)
-Chennai (India)
-Cheonan (South Korea)
-Cheongju (South Korea)
-Cherepovets (Russia)
-Cherkasy (Ukraine)
-Cherkessk (Russia)
-Chernihiv (Ukraine)
-Chernivtsi (Ukraine)
-Cherthala (India)
-Chhapra (India)
-Ch\'{\i}a (Colombia)
-Chiang Mai (Thailand)
-Chiayi (Taiwan)
-Chiba (Japan)
-Chibi City (China)
-Chicago (US)
-Chiclayo (Peru)
-Chifeng (China)
-Chigasaki (Japan)
-Chihuahua (Mexico)
-Chikmagalur (India)
-Chill\'an (Chile)
-Chilpancingo (Mexico)
-Chimalhuac\'an (Mexico)
-Chimbote (Peru)
-Chinandega (Nicaragua)
-Chincha Alta (Peru)
-Chingola (Zambia)
-Chiniot (Pakistan)
-Chirala (India)
-Chirchiq (Uzbekistan)
-Chishtian (Pakistan)
-Chi\c sin\u au (Moldova)
-Chita (Russia)
-Chitradurga (India)
-Chittagong (Bangladesh)
-Chittoor (India)
-Chitungwiza (Zimbabwe)
-Chizhou (China)
-Chlef (Algeria)
-Ch\=ofu (Japan)
-Choloma (Honduras)
-Choluteca (Honduras)
-Chonburi (Thailand)
-Chongjin (North Korea)
-Chongqing (China)
-Chorz\'ow (Poland)
-Christchurch (NZ)
-Chula Vista (US)
-Chuncheon (South Korea)
-Chungju (South Korea)
-Chuxiong City (China)
-Chuzhou (China)
-Cienfuegos (Cuba)
-Cincinnati (US)
-Cirebon (Indonesia)
-Ciudad Acu\~na (Mexico)
-Ciudad Apodaca (Mexico)
-Ciudad Bol\'{\i}var (Venezuela)
-Ciudad del Este (Paraguay)
-Ciudad Delgado (El Salvador)
-Ciudad Guayana (Venezuela)
-Ciudad Ju\'arez (Mexico)
-Ciudad L\'opez Mateos (Mexico)
-Ciudad Losada (Venezuela)
-Ciudad Madero (Mexico)
-Ciudad Nezahualc\'oyotl (Mexico)
-Ciudad Obreg\'on (Mexico)
-Ciudad Victoria (Mexico)
-Cixi (China)
-Clarksville (US)
-Clearwater (US)
-Clermont-Ferrand (France)
-Cleveland (US)
-Cluj-Napoca (Romania)
-Coacalco (Mexico)
-Coatzacoalcos (Mexico)
-Cochabamba (Bolivia)
-Cod\'o (Brazil)
-Coimbatore (India)
-Coimbra (Portugal)
-Colatina (Brazil)
-Colchester (UK)
-Colima (Mexico)
-Cologne (Germany)
-Colombo (Brazil)
-Colombo (Sri Lanka)
-Col\'on (Panama)
-Colorado Springs (US)
-Columbia (US)
-Columbus (US)
-Comilla (Bangladesh)
-Comodoro Rivadavia (Argentina)
-Conakry (Guinea)
-Concepci\'on (Chile)
-Concordia (Argentina)
-Concord (US)
-Constan\c ta (Romania)
-Constantine (Algeria)
-Contagem (Brazil)
-Copenhagen (Denmark)
-Copiap\'o (Chile)
-Coquimbo (Chile)
-Coquitlam (Canada)
-Coral Springs (US)
-Corby (England)
-C\'ordoba (Argentina)
-C\'ordoba (Mexico)
-C\'ordoba (Spain)
-Cork (Ireland)
-\c Corlu (Turkey)
-Corona (US)
-Coro (Venezuela)
-Corpus Christi (US)
-Corrientes (Argentina)
-\c Corum (Turkey)
-Costa Mesa (US)
-Cotabato City (Philippines)
-Cotia (Brazil)
-Cotonou (Benin)
-Cottbus (Germany)
-Coventry (UK)
-Craiova (Romania)
-Crato (Brazil)
-Crawley (UK)
-Crici\'uma (Brazil)
-Cuautitl\'an (Mexico)
-Cuautla (Mexico)
-Cubat\~ao (Brazil)
-C\'ucuta (Colombia)
-Cuddalore (India)
-Cuenca (Ecuador)
-Cuernavaca (Mexico)
-Cuiab\'a (Brazil)
-Culiac\'an (Mexico)
-Cuman\'a (Venezuela)
-Curic\'o (Chile)
-Curitiba (Brazil)
-Cusco (Peru)
-Cuttack (India)
-Cz\k estochowa (Poland)
-Dabgram (India)
-D\k abrowa G\'ornicza (Poland)
-Dadu (Pakistan)
-Daegu (South Korea)
-Daejeon (South Korea)
-Dagupan (Philippines)
-Dait\=o (Japan)
-Dakar (Senegal)
-Da Lat (Vietnam)
-Dalian (China)
-Dali (China)
-Dallas (US)
-Daloa (Ivory Coast)
-Daly City (US)
-Damanhur (Egypt)
-Damascus (Syria)
-Dammam (Saudi Arabia)
-Damoh (India)
-Da Nang (Vietnam)
-Danao City (Philippines)
-Dandong (China)
-Dangyang (China)
-Danjiangkou (China)
-Danyang (China)
-Daqing (China)
-Daraga (Philippines)
-Darbhanga (India)
-Dar Es Salaam (Tanzania)
-Darlington (UK)
-Darmstadt (Germany)
-Darwin (Australia)
-Daska (Pakistan)
-Dasmari\~nas (Philippines)
-Da\c soguz (Turkmenistan)
-Datong (China)
-Daugavpils (Latvia)
-Davangere (India)
-Davao City (Philippines)
-Dayton (US)
-Dazhou (China)
-Debrecen (Hungary)
-Dehiwala-Mount Lavinia (Sri Lanka)
-Dehradun (India)
-Deir ez Zor (Syria)
-Delhi (India)
-Delmas (Haiti)
-Dengzhou (China)
-Denizli (Turkey)
-Denpasar (Indonesia)
-Denver (US)
-Dera Ghazi Khan (Pakistan)
-Derbent (Russia)
-Derby (UK)
-Derince (Turkey)
-Des Moines (US)
-Dessie (Ethiopia)
-Detroit (US)
-Dewas (India)
-Deyang (China)
-Dezful (Iran)
-Dezhou (China)
-Dhaka (Bangladesh)
-Dhanbad (India)
-Dhule (India)
-Diadema (Brazil)
-Diaobingshan (China)
-Dibrugarh (India)
-Digos City (Philippines)
-Dijon (France)
-Dili (Timor-Leste)
-Dimitrovgrad (Russia)
-Dinajpur (Bangladesh)
-Dindigul (India)
-Dingzhou (China)
-Dipolog City (Philippines)
-Dire Dawa (Ethiopia)
-Divin\'opolis (Brazil)
-Diwaniyah (Iraq)
-Diyarbak{\i}r (Turkey)
-Djelfa (Algeria)
-Djibouti (Djibouti)
-Dniprodzerzhinsk (Ukraine)
-Dnipropetrovsk (Ukraine)
-Doboj (Bosnia and Herzegovina)
-Dobrich (Bulgaria)
-Dodoma (Tanzania)
-Doha (Qatar)
-Donetsk (Ukraine)
-Dongchuan (China)
-Dongguan (China)
-Dongtai (China)
-Dongyang (China)
-Dongying (China)
-Dordrecht (Netherlands)
-Dortmund (Germany)
-Dos Quebradas (Colombia)
-Douala (Cameroon)
-Dourados (Brazil)
-Downey (US)
-Dresden (Germany)
-Drobeta-Turnu Severin (Romania)
-Dubai (UAE)
-Dublin (Ireland)
-Dudley (UK)
-Duisburg (Germany)
-Duitama (Colombia)
-Dujiangyan (China)
-Dumaguete City (Philippines)
-Dundee (UK)
-Dunedin (NZ)
-Dunhua (China)
-Dunhuang (China)
-Dunkerque (France)
-Duque de Caxias (Brazil)
-Durango (Mexico)
-Durban (SA)
-Durgapur (India)
-Durg (India)
-Durham (US)
-Durr\"es (Albania)
-Dushanbe (Tajikistan)
-D\"usseldorf (Germany)
-Duyun (China)
-Dzerzhinsk (Russia)
-Eastbourne (UK)
-Ebetsu (Japan)
-Ebina (Japan)
-Ecatepec (Mexico)
-Ed\'ea (Cameroon)
-Ede (Netherlands)
-Ede (Nigeria)
-Edinburgh (UK)
-Edirne (Turkey)
-Edmonton (Canada)
-Eilat (Israel)
-Eindhoven (Netherlands)
-Ekibastuz (Kazakhstan)
-El Aai\'un (Western Sahara)
-El Alto (Bolivia)
-Elaz{\i}\u g (Turkey)
-Elbl\k ag (Poland)
-Elche (Spain)
-Eldoret (Kenya)
-Elektrostal (Russia)
-El Eulma (Algeria)
-Elista (Russia)
-Elizabeth (US)
-El Jadida (Morocco)
-Elk Grove (US)
-El Khroub (Algeria)
-El-Mahalla El-Kubra (Egypt)
-El Monte (US)
-El Oued (Algeria)
-El Paso (US)
-El Progreso (Honduras)
-Eluru (India)
-Emeishan (China)
-Emmen (Netherlands)
-Engels (Russia)
-English Bazar (India)
-Enschede (Netherlands)
-Ensenada (Mexico)
-Enshi (China)
-Enugu (Nigeria)
-Envigado (Colombia)
-Erbil (Iraq)
-Erfurt (Germany)
-Erie (US)
-Erlangen (Germany)
-Erode (India)
-Erzincan (Turkey)
-Erzurum (Turkey)
-Escondido (US)
-Esenler (Turkey)
-Esfahan (Iran)
-Eski\c sehir (Turkey)
-Esmeraldas (Ecuador)
-Espoo (Finland)
-Essen (Germany)
-Etawah (India)
-Eugene (US)
-Eujeongbu (South Korea)
-Evansville (US)
-Exeter (UK)
-Ezhou (China)
-Faisalabad (Pakistan)
-Faizabad (India)
-Faridabad (India)
-Farrukhabad (India)
-Fatehpur (India)
-Fayetteville (US)
-Fayyum (Egypt)
-Feira de Santana (Brazil)
-Fengcheng (China)
-Fenghua (China)
-Fergana (Uzbekistan)
-Ferrara (Italy)
-Ferraz de Vasconcelos (Brazil)
-Fes (Morocco)
-Firozabad (India)
-Flint (US)
-Florence (Italy)
-Florencia (Colombia)
-Florian\'opolis (Brazil)
-Floridablanca (Colombia)
-Foc\c sani (Romania)
-Foggia (Italy)
-Fontana (US)
-Forl\`{\i} (Italy)
-Formosa (Argentina)
-Fortaleza (Brazil)
-Fort Collins (US)
-Fort-de-France (Martinique)
-Fort Lauderdale (US)
-Fort Wayne (US)
-Fort Worth (US)
-Foshan (China)
-Foz do Igua\c cu (Brazil)
-Franca (Brazil)
-Francisco Morato (Brazil)
-Francistown (Botswana)
-Franco da Rocha (Brazil)
-Frankfurt am Main (Germany)
-Freetown (Sierra Leone)
-Freiburg im Breisgau (Germany)
-Fremont (US)
-Fresno (US)
-Fu'an (China)
-Fuchu (Japan)
-Fuenlabrada (Spain)
-Fujieda (Japan)
-Fuji (Japan)
-Fujimi (Japan)
-Fujin City (China)
-Fujinomiya (Japan)
-Fujisawa (Japan)
-Fukui (Japan)
-Fukuoka (Japan)
-Fukushima (Japan)
-Fukuya (Japan)
-Fukuyama (Japan)
-Fuling (China)
-Fullerton (US)
-Funabashi (Japan)
-Funchal (Portugal)
-F\"urth (Germany)
-Fushun (China)
-Fuxin (China)
-Fuyang (China)
-Fuzhou (China)
-Gab\`es (Tunisia)
-Gaborone (Botswana)
-Gadag-Betgeri (India)
-Gala\cb ti (Romania)
-Gandhidham (India)
-Gandhinagar (India)
-Ganganagar (India)
-Gangneung (South Korea)
-Ganzhou (China)
-Gaocheng (China)
-Garanhuns (Brazil)
-Garden Grove (US)
-Garland (US)
-Garoua (Cameroon)
-Gary (US)
-Gateshead (UK)
-Gatineau (Canada)
-Gaya (India)
-Gaza City (Palestine)
-Gaziantep (Turkey)
-Gda\'nsk (Poland)
-Gdynia (Poland)
-Gebze (Turkey)
-Geelong (Australia)
-Gejiu (China)
-Geleen-Sittard (Netherlands)
-Gelsenkirchen (Germany)
-G\schwa nc\schwa  (Azerbaijan)
-General Santos City (Philippines)
-Geneva (Switzerland)
-Genova (Italy)
-Georgetown (Guyana)
-George Town (Malaysia)
-Gera (Germany)
-Germiston (SA)
-Getafe (Spain)
-Gharda\"{\i}a (Algeria)
-Ghaziabad (India)
-Ghazni (Afghanistan)
-Ghent (Belgium)
-Gifu (Japan)
-Gij\'on (Spain)
-Gilbert (US)
-Gingoog City (Philippines)
-Girardot (Colombia)
-Giresun (Turkey)
-Giza (Egypt)
-Glasgow (UK)
-Glazov (Russia)
-Glendale (US)
-Gliwice (Poland)
-Gloucester (UK)
-Godhra (India)
-Godoy Cruz (Ecuador)
-Goi\^ania (Brazil)
-Gojra (India)
-Gold Coast (Australia)
-Goma (DR Congo)
-G\'omez Palacio (Mexico)
-Gonbad-e Qabus (Iran)
-Gondar (Ethiopia)
-Gondiya (India)
-Gongzhuling (China)
-Gorakhpur (India)
-Gorgan (Iran)
-Gorz\'ow Wielkopolski (Poland)
-Gothenburg (Sweden)
-G\"ottingen (Germany)
-Governador Valadares (Brazil)
-Granada (Nicaragua)
-Granada (Spain)
-Grand Prairie (US)
-Grand Rapids (US)
-Gravata\'{\i} (Brazil)
-Graz (Austria)
-Green Bay (US)
-Greensboro (US)
-Grenoble (France)
-Groningen (Netherlands)
-Grozny (Russia)
-Grudzi\k adz (Poland)
-Guadalajara (Mexico)
-Guadalupe (Mexico)
-Guanare (Venezuela)
-Guanghan (China)
-Guangshui (China)
-Guangyuan (China)
-Guangzhou (China)
-Guant\'anamo (Cuba)
-Guarapuava (Brazil)
-Guaratinguet\'a (Brazil)
-Guarenas (Venezuela)
-Guaruj\'a (Brazil)
-Guarulhos (Brazil)
-Guatemala City (Guatemala)
-Guayaquil (Ecuador)
-Guaymas (Mexico)
-Guaynabo (Puerto Rico)
-Gudivada (India)
-Gu\'ediawaye (Senegal)
-Guelma (Algeria)
-Guelph (Canada)
-Guigang (China)
-Guilin (China)
-Guiyang (China)
-Gujiao (China)
-Gujranwala (Pakistan)
-Gujrat City (India)
-Gulbarga (India)
-Gumi (South Korea)
-Guna (India)
-Gunsan (South Korea)
-Guntakul (India)
-Guntur (India)
-Gurgaon (India)
-Guri (South Korea)
-Guruvayur (India)
-Guwahati (India)
-Gwalior (India)
-Gwangju (South Korea)
-Gweru (Zimbabwe)
-Gyeongju (South Korea)
-Gy\H or (Hungary)
-Gyumri (Armenia)
-Haarlem (Netherlands)
-Habikino (Japan)
-Habra (India)
-Hachinohe (Japan)
-Hachi\=oji (Japan)
-Hadano (Japan)
-Haeju (North Korea)
-Hafizabad (Pakistan)
-Hagen (Germany)
-Haicheng (China)
-Haifa (Israel)
-Haikou (China)
-Hailun (China)
-Haining City (China)
-Haiphong (Vietnam)
-Hakodate (Japan)
-Haldia (India)
-Haldwani-cum-Kathgodam (India)
-Halifax (Canada)
-Halle (Germany)
-Ha Long (Vietnam)
-Hamadan (Iran)
-Hamamatsu (Japan)
-Hama (Syria)
-Hamburg (Germany)
-Hamhung (North Korea)
-Hami City (China)
-Hamilton (Canada)
-Hamilton (NZ)
-Hamm (Germany)
-Hanam (South Korea)
-Hancheng (China)
-Handa (Japan)
-Handan (China)
-Hangzhou (China)
-Hanoi (Vietnam)
-Hanover (Germany)
-Hanzhong (China)
-Haora (India)
-Hapur (India)
-Harare (Zimbabwe)
-Harbin (China)
-Hargeisa (Somalia)
-Haridwar (India)
-Hartford (US)
-Hassan (India)
-Hathras (India)
-Hat Yai (Thailand)
-Havana (Cuba)
-Hayward (US)
-Hebi (China)
-Hebron (Palestine)
-Hechi (China)
-Heerlen-Kerkrade (Netherlands)
-Hefei (China)
-Hegang (China)
-Heidelberg (Germany)
-Heihe (China)
-Heilbronn (Germany)
-Helsingborg (Sweden)
-Helsinki (Finland)
-Henderson (US)
-Hengshui (China)
-Hengyang (China)
-Heraklion (Greece)
-Herat (Afghanistan)
-Hermosillo (Mexico)
-Herne (Germany)
-Heshan (China)
-Hetian (China)
-Heyuan (China)
-Heze (China)
-Hialeah (US)
-Higashihiroshima (Japan)
-Higashikurume (Japan)
-Higashimurayama (Japan)
-Higashi\=osaka (Japan)
-Hikone (Japan)
-Hildesheim (Germany)
-Hilla (Iraq)
-Himamaylan City (Philippines)
-Himeji (Japan)
-Hindupur (India)
-Hino (Japan)
-Hirakata (Japan)
-Hiratsuka (Japan)
-Hirosaki (Japan)
-Hiroshima (Japan)
-Hisar (India)
-Hitachi (Japan)
-Hitachinaka (Japan)
-Hobart (Australia)
-Ho Chi Minh City (Vietnam)
-Hofu (Japan)
-Holgu\'{\i}n (Cuba)
-Holon (Israel)
-Homs (Syria)
-Homyel (Belarus)
-Honghu (China)
-Hong Kong (Hong Kong)
-Honolulu (US)
-Horlivka (Ukraine)
-Hortol\^andia (Brazil)
-Hoshiarpur (India)
-Hospet (India)
-Hospitalet de Llobregat (Spain)
-Houghly-Chinsura (India)
-Houma (China)
-Houston (US)
-Hoya (Japan)
-Hrodna (Belarus)
-Hsinchu (Taiwan)
-Huadian (China)
-Huaian (China)
-Huaibei (China)
-Huaihua (China)
-Huainan (China)
-Huaiyin (China)
-Huambo (Angola)
-Huancayo (Peru)
-Huanghua (China)
-Huangshan (China)
-Huangshi (China)
-Huangyan (China)
-Hu\'anuco (Peru)
-Huaraz (Peru)
-Huaying (China)
-Hubli-Dharwad (India)
-Hudaida (Yemen)
-Huddersfield (UK)
-Hu{\veqc} (Vietnam)
-Huelva (Spain)
-Huhehaote (China)
-Huixian (China)
-Huizhou (China)
-Huludao (China)
-Hulunbuir (China)
-Hunchun (China)
-Huntington Beach (US)
-Huntsville (US)
-Huozhou (China)
-Huzhou (China)
-Hyderabad (India)
-Hyderabad (Pakistan)
-Hyesan (North Korea)
-Ia\c si (Romania)
-Ibadan (Nigeria)
-Ibagu\'e (Colombia)
-Ibaraki (Japan)
-Ibarra (Ecuador)
-Ibirit\'e (Brazil)
-Ica (Peru)
-Ichalakaranji (India)
-Ichihara (Japan)
-Ichikawa (Japan)
-Ichinomiya (Japan)
-Ife (Nigeria)
-Iida (Japan)
-Ikeda (Japan)
-Ikere-Ekiti (Nigeria)
-Ikoma (Japan)
-Iksan (South Korea)
-Ilagan (Philippines)
-Ilam (Iran)
-Ila (Nigeria)
-Ilesa (Nigeria)
-Ilh\'eus (Brazil)
-Iligan (Philippines)
-Iloilo City (Philippines)
-Ilopango (El Salvador)
-Ilorin (Nigeria)
-Imabari (Japan)
-Imbaba (Egypt)
-Imperatriz (Brazil)
-Imphal (India)
-Inazawa (Japan)
-Inchon (South Korea)
-Indaiatuba (Brazil)
-Independence (US)
-Indianapolis (US)
-Indore (India)
-Ineg\"ol (Turkey)
-Inglewood (US)
-Ingolstadt (Germany)
-Innsbruck (Austria)
-Ipatinga (Brazil)
-Ipoh (Malaysia)
-Ipswich (UK)
-Iquique (Chile)
-Iquitos (Peru)
-Irapuato (Mexico)
-Irbid (Jordan)
-Iriga (Philippines)
-Irkutsk (Russia)
-Iruma (Japan)
-Irvine (US)
-Irving (US)
-Ise (Japan)
-Isesaki (Japan)
-Ishinomaki (Japan)
-\.Iskenderun (Turkey)
-Islamabad (Pakistan)
-Islam Shahr (Iran)
-Isma\"{\i}lia (Egypt)
-Isparta (Turkey)
-\.Istanbul (Turkey)
-Itabora\'{\i} (Brazil)
-Itabuna (Brazil)
-Itag\"u\'{\i} (Brazil)
-Itaituba (Brazil)
-Itaja\'{\i} (Brazil)
-Itami (Japan)
-Itapecerica da Serra (Brazil)
-Itapetininga (Brazil)
-Itapevi (Brazil)
-Itaquaquecetuba (Brazil)
-Itu (Brazil)
-Ivano-Frankivsk (Ukraine)
-Ivanovo (Russia)
-Iwaki (Japan)
-Iwakuni (Japan)
-Iwatsuki (Japan)
-Iwo (Nigeria)
-Ixtapaluca (Mexico)
-Izhevsk (Russia)
-\.Izmir (Turkey)
-\.Izmit (Turkey)
-Izumi (Japan)
-Jabalpur (India)
-Jaboatao dos Guarapes (Brazil)
-Jacare\'{\i} (Brazil)
-Jackson (US)
-Jacksonville (US)
-Jacobabad (Pakistan)
-Ja\'en (Spain)
-Jaffna (Sri Lanka)
-Jaipur (India)
-Jakarta (Indonesia)
-Jalalabad (Afghanistan)
-Jalandhar (India)
-Jalgaon (India)
-Jalna (India)
-Jalpaiguri (India)
-Jamalpur (Bangladesh)
-Jambi (Indonesia)
-Jamnagar (India)
-Jamshedpur (India)
-Jaragu\'a do Sul (Brazil)
-Jaranwala (Pakistan)
-Jastrz\k ebie Zdr\'oj (Poland)
-Ja\'u (Brazil)
-Jaunpur (India)
-Jayapura (Indonesia)
-Jeddah (Saudi Arabia)
-Jena (Germany)
-Jeongju (South Korea)
-Jeonju (South Korea)
-Jequi\'e (Brazil)
-Jerez de la Frontera (Spain)
-Jersey City (US)
-Jerusalem (Israel)
-Jessore (Bangladesh)
-Jhang (Pakistan)
-Jhansi (India)
-Jhelum (Pakistan)
-Jiagedaqi (China)
-Jiamusi (China)
-Ji'an (China)
-Jiangmen (China)
-Jiangshan (China)
-Jiangyin (China)
-Jiangyou (China)
-Jiaohe (China)
-Jiaojiang (China)
-Jiaozhou City (China)
-Jiaozuo (China)
-Jiaxing (China)
-Jiayuguan (China)
-Jieshou (China)
-Jijel (Algeria)
-Jimma (Ethiopia)
-Jimo (China)
-Jinan (China)
-Jinchang (China)
-Jincheng (China)
-Jingdezhen (China)
-Jingmen (China)
-Jingzhou (China)
-Jinhua (China)
-Jining (China)
-Jinshi City (China)
-Jinzhong (China)
-Jinzhou (China)
-Jishou (China)
-Jiujiang (China)
-Jiuquan (China)
-Jiutai (China)
-Jiutepec (Mexico)
-Jixi (China)
-Jiyuan (China)
-Jizzakh (Uzbekistan)
-Jo\~ao Pessoa (Brazil)
-Jodhpur (India)
-Joetsu (Japan)
-Johannesburg (SA)
-Johor Bahru (Malaysia)
-Joinville (Brazil)
-Joliet (US)
-J\"onk\"oping (Sweden)
-Jorhat (India)
-Jos (Nigeria)
-Juazeiro (Brazil)
-Juazeiro do Norte (Brazil)
-Juba (South Sudan)
-Juiz de Fora (Brazil)
-Juliaca (Peru)
-Junagadh (India)
-Jundia\'{\i} (Brazil)
-Jyv\"askyl\"a (Finland)
-Kabankalan (Philippines)
-Kabul (Afghanistan)
-Kabwe (Zambia)
-Kadhimiya (Iraq)
-Kadoma (Japan)
-Kaduna (Nigeria)
-Kaesong (North Korea)
-Kafr Dawar (Egypt)
-Kagoshima (Japan)
-Kahramanmara\c s (Turkey)
-Kaifeng (China)
-Kaili (China)
-Kairouan (Tunisia)
-Kaiserslautern (Germany)
-Kaiyuan (China)
-Kakamigahara (Japan)
-Kakinada (India)
-Kakogawa (Japan)
-Kaliningrad (Russia)
-Kalisz (Poland)
-Kallithea (Greece)
-Kaluga (Russia)
-Kalyan (India)
-Kamagaya (Japan)
-Kamakura (Japan)
-Kamarhati (India)
-Kamensk-Uralsky (Russia)
-Kamianets-Podilskyi (Ukraine)
-Kamoke (Pakistan)
-Kampala (Uganda)
-Kampong Cham (Cambodia)
-Kamptee (India)
-Kamyshin (Russia)
-Kananga (DR Congo)
-Kanazawa (Japan)
-Kanchipuram (India)
-Kanchrapara (India)
-Kandahar (Afghanistan)
-Kandy (Sri Lanka)
-Kanggye (Myanmar)
-Kanhangad (India)
-Kannur (India)
-Kano (Nigeria)
-Kanpur (India)
-Kansas City (US)
-Kansk (Russia)
-Kaohsiung (Taiwan)
-Kaolack (Senegal)
-Karachi (Pakistan)
-Karaganda (Kazakhstan)
-Karaikkudi (India)
-Karaj (Iran)
-Karaman (Turkey)
-Karamay (China)
-Karbala (Iraq)
-Karimnagar (India)
-Kariya (Japan)
-Karlsruhe (Germany)
-Karnal (India)
-Karur (India)
-Kashan (Iran)
-Kashgar (China)
-Kashihara (Japan)
-Kashiwa (Japan)
-Kassala (Sudan)
-Kassel (Germany)
-Kasugai (Japan)
-kasuga (Japan)
-Kasukabe (Japan)
-Kasur (Pakistan)
-Kathlehong (SA)
-Kathmandu (Nepal)
-Katihar (India)
-Katowice (Poland)
-Kaunas (Lithuania)
-Kawachinagano (Japan)
-Kawagoe (Japan)
-Kawaguchi (Japan)
-Kawanishi (Japan)
-Kawasaki (Japan)
-Kayseri (Turkey)
-Kazan (Russia)
-Kecskem\'et (Hungary)
-Kediri (Indonesia)
-Keelung (Taiwan)
-Kelowna (Canada)
-Kemerovo (Russia)
-Kempton Park (SA)
-Kenitra (Morocco)
-Kerch (Ukraine)
-Kerman (Iran)
-Kermanshah (Iran)
-Khabarovsk (Russia)
-Khairpur (Pakistan)
-Khammam (India)
-Khandwa (India)
-Khanewal (Pakistan)
-Khanpur (Pakistan)
-Kharagpur (India)
-Kharkiv (Ukraine)
-Khartoum North (Sudan)
-Khartoum (Sudan)
-Khasavyurt (Russia)
-Khayelitsha (SA)
-Khenchela (Algeria)
-Kherson (Ukraine)
-Khimki (Russia)
-Khmelnytskyi (Ukraine)
-Khomeini Shahr (Iran)
-Khon Kaen (Thailand)
-Khoramabad (Iran)
-Khoramshahr (Iran)
-Khouribga (Morocco)
-Khoy (Iran)
-Khulna (Bangladesh)
-Kidapawan City (Philippines)
-Kielce (Poland)
-Kiel (Germany)
-Kiev (Ukraine)
-Kigali (Rwanda)
-Kikwit (DR Congo)
-Kimberley (SA)
-Kimhae (South Korea)
-Kingston (Canada)
-Kingston (Jamaica)
-Kingston upon Hull (UK)
-Kinshasa (DR Congo)
-K{\i}r{\i}kkale (Turkey)
-Kirkuk (Iraq)
-Kirovohrad (Ukraine)
-Kiryu (Japan)
-Kisangani (DR Congo)
-Kisarazu (Japan)
-Kiselyovsk (Russia)
-Kishiwada (Japan)
-Kislovodsk (Russia)
-Kismayo (Somalia)
-Kisumu (Kenya)
-Kitakyushu (Japan)
-Kitami (Japan)
-Kitchener (Canada)
-Kitwe (Zambia)
-K{\i}z{\i}ltepe (Turkey)
-Klaip\.eda (Lithuania)
-Klang (Malaysia)
-Knoxville (US)
-Kobe (Japan)
-Koblenz (Germany)
-Kochi (India)
-K\=ochi (Japan)
-Kodaira (Japan)
-Kofu (Japan)
-Koganei (Japan)
-Kohat (Pakistan)
-Kokand (Uzbekistan)
-Kokshetau (Kazakhstan)
-Kokubunji (Japan)
-Kolar (India)
-Kolhapur (India)
-Kolkata (India)
-Kollam (India)
-Kolomna (Russia)
-Kolwezi (DR Congo)
-Komaki (Japan)
-Komatsu (Japan)
-Komsomolsk-on-Amur (Russia)
-Konya (Turkey)
-Korba (India)
-Korhogo (Ivory Coast)
-Koriyama (Japan)
-Korla (China)
-Korolyov (Russia)
-Koronadal City (Philippines)
-Koshigaya (Japan)
-Ko\v sice (Slovakia)
-Kostanay (Kazakhstan)
-Kosti (Sudan)
-Kostroma (Russia)
-Koszalin (Poland)
-Kota Bharu (Malaysia)
-Kota (India)
-Kota Kinabalu (Malaysia)
-Kothagudem (India)
-Kottayam (India)
-Kovrov (Russia)
-Kozhikode (India)
-Kragujevac (Serbia)
-Krak\'ow (Poland)
-Kraljevo (Serbia)
-Kramatorsk (Ukraine)
-Krasnodar (Russia)
-Krasnoyarsk (Russia)
-Krasnyi Luch (Ukraine)
-Krefeld (Germany)
-Kremenchuk (Ukraine)
-Krishnanagar (India)
-Kru\v sevac (Serbia)
-Kryvyi Rih (Ukraine)
-Kuala Lumpur (Malaysia)
-Kuala Terengganu (Malaysia)
-Kuantan (Malaysia)
-Kuching (Malaysia)
-Kumagaya (Japan)
-Kumamoto (Japan)
-Kumasi (Ghana)
-Kumbakonam (India)
-Kunduz (Afghanistan)
-Kunming (China)
-Kunshan (China)
-Kuopio (Finland)
-Kurashiki (Japan)
-Kure (Japan)
-Kurgan (Russia)
-Kurnool (India)
-Kursk (Russia)
-Kurume (Japan)
-Kusatsu (Japan)
-Kushiro (Japan)
-K\"utahya (Turkey)
-Kutaisi (Georgia)
-Kut (Iraq)
-Kuwait City (Kuwait)
-Kuwana (Japan)
-Kuytun (China)
-Kwekwe (Zimbabwe)
-Kyoto (Japan)
-Kyzylorda (Kazakhstan)
-Kyzyl (Russia)
-La Ceiba (Honduras)
-Lafayette (US)
-Lages (Brazil)
-Laghouat (Algeria)
-Lagos (Nigeria)
-Lahore (Pakistan)
-Lahti (Finland)
-Laiwu (China)
-Laiyang (China)
-Laizhou (China)
-Lakewood (US)
-Lalitpur (India)
-Lancaster (US)
-Langfang (China)
-Lansing (US)
-Lan\'us (Argentina)
-Lanxi (China)
-Lanzhou (China)
-Laoag City (Philippines)
-Laohekou (China)
-La Paz (Bolivia)
-La Paz (Mexico)
-La Plata (Argentina)
-Lapu-Lapu City (Philippines)
-Laredo (US)
-La Rioja (Argentina)
-Larissa (Greece)
-Larkana (Pakistan)
-Larnaca (Cyprus)
-La Serena (Chile)
-Las Palmas de Gran Canaria (Spain)
-Las Vegas (US)
-Latakia (Syria)
-Latina (Italy)
-Latur (India)
-Launceston (Australia)
-Lauro de Freitas (Brazil)
-Lausanne (Switzerland)
-Laval (Canada)
-La Victoria (Venezuela)
-Leeds (UK)
-Legan\'es (Spain)
-Legazpi City (Philippines)
-Legnica (Poland)
-Le Havre (France)
-Leicester (UK)
-Leiden (Netherlands)
-Leipzig (Germany)
-Leiyang (China)
-Leling (China)
-Le Mans (France)
-Lengshuijiang (China)
-Lengshuitan (China)
-Leninsk-Kuznetsky (Russia)
-Lens (France)
-Le\'on (Mexico)
-Le\'on (Nicaragua)
-Le\'on (Spain)
-Leshan (China)
-Leskovac (Serbia)
-Leverkusen (Germany)
-Lexington (US)
-Lhasa (China)
-Lianyuan (China)
-Lianyungang (China)
-Liaocheng (China)
-Liaoyang (China)
-Liaoyuan (China)
-Libreville (Gabon)
-Lichuan (China)
-Lida (Belarus)
-Li\`ege (Belgium)
-Ligao City (Philippines)
-Likasi (DR Congo)
-Liling (China)
-Lille (France)
-Lilongwe (Malawi)
-Lima (Peru)
-Limassol (Cyprus)
-Limeira (Brazil)
-Limerick (Ireland)
-Limoges (France)
-Lincoln (US)
-Linfen (China)
-Linhai (China)
-Linhares (Brazil)
-Link\"oping (Sweden)
-Linqing (China)
-Linxia (China)
-Linyi (China)
-Linz (Austria)
-Lipa City (Philippines)
-Lipetsk (Russia)
-Lisbon (Portugal)
-Lishui (China)
-Little Rock (US)
-Liupanshui (China)
-Liuzhou (China)
-Liverpool (UK)
-Livonia (US)
-Livorno (Italy)
-Ljubljana (Slovenia)
-Lleida (Spain)
-Lobito (Angola)
-Logro\~no (Spain)
-Loja (Ecuador)
-Lomas de Zamora (Argentina)
-Lom\'e (Togo)
-London (Canada)
-London (UK)
-Londrina (Brazil)
-Long Beach (US)
-Longjing (China)
-Longkou (China)
-Longueuil (Canada)
-Longxuyen (Vietnam)
-Longyan (China)
-Los \'Angeles (Chile)
-Los Angeles (US)
-Los Mochis (Mexico)
-Los Teques (Venezuela)
-Loudi (China)
-Louisville (US)
-Lowell (US)
-Lu'an (China)
-Luanda (Angola)
-Luanshya (Zambia)
-Lubbock (US)
-L\"ubeck (Germany)
-Lublin (Poland)
-Lubumbashi (DR Congo)
-Lucena City (Philippines)
-Lucerne (Switzerland)
-Lucknow (India)
-Ludhiana (India)
-Ludwigshafen am Rhein (Germany)
-Luhansk (Ukraine)
-Luj\'an de Cuyo (Argentina)
-Luohe (China)
-Luoyang (China)
-Lusaka (Zambia)
-Luton (UK)
-Lutsk (Ukraine)
-Luxembourg (Luxembourg)
-Luxor (Egypt)
-Luzhou (China)
-Luzi\^ania (Brazil)
-Lviv (Ukraine)
-Lyon (France)
-Lysychansk (Ukraine)
-Lyubertsy (Russia)
-Ma'anshan (China)
-Maastricht (Netherlands)
-Mabalacat (Philippines)
-Maca\'e (Brazil)
-Macap\'a (Brazil)
-Macau (Macau)
-Macei\'o (Brazil)
-Machakos (Kenya)
-Machala (Ecuador)
-Macheng (China)
-Machida (Japan)
-Machilipatnam (India)
-Madison (US)
-Madiun (Indonesia)
-Madrid (Spain)
-Madurai (India)
-Maebashi (Japan)
-Magadan (Russia)
-Magangu\'e (Colombia)
-Magdeburg (Germany)
-Mag\'e (Brazil)
-Magelang (Indonesia)
-Magnitogorsk (Russia)
-Mahabad (Iran)
-Mahbubnagar (India)
-Maicao (Colombia)
-Maidstone (UK)
-Maiduguri (Nigeria)
-Mainz (Germany)
-Makati (Philippines)
-Makhachkala (Russia)
-Makiivka (Ukraine)
-Malabo (Equatorial Guinea)
-M\'alaga (Spain)
-Malang (Indonesia)
-Malappuram (India)
-Malasiqui (Philippines)
-Malatya (Turkey)
-Malaybalay City (Philippines)
-Malayer (Iran)
-Malegaon (India)
-Malita (Philippines)
-Malm\"o (Sweden)
-Malolos City (Philippines)
-Manado (Indonesia)
-Managua (Nicaragua)
-Manama (Bahrain)
-Manaus (Brazil)
-Manavgat (Turkey)
-Manchester (UK)
-Manchester (US)
-Mandalay (Burkina Faso)
-Mandaluyong City (Philippines)
-Mandaue City (Philippines)
-Mandya (India)
-Mangalore (India)
-Mangaung (SA)
-Mangora (Pakistan)
-Manila (Philippines)
-Manisa (Turkey)
-Manizales (Colombia)
-Mannheim (Germany)
-Manta (Ecuador)
-Manzhouli (China)
-Maoming (China)
-Maputo (Mozambique)
-Maraba (Brazil)
-Maracaibo (Venezuela)
-Maracanau (Brazil)
-Maracay (Venezuela)
-Maradi (Niger)
-Maraqeh (Iran)
-Marawi City (Philippines)
-Mardan (Pakistan)
-Mar del Plata (Argentina)
-Margilan (Uzbekistan)
-Maribor (Slovenia)
-Marilao (Philippines)
-Mar\'{\i}lia (Brazil)
-Maring\'a (Brazil)
-Mariupol (Ukraine)
-Mariveles (Philippines)
-Markham (Canada)
-Marrakech (Morocco)
-Marseille (France)
-Marvdasht (Iran)
-Masan (South Korea)
-Masaya (Nicaragua)
-Maseru (Lesotho)
-Mashhad (Iran)
-Masjed Soleyman (Iran)
-Matadi (DR Congo)
-Matamoros (Mexico)
-Matanzas (Cuba)
-Matar\'o (Spain)
-Mathura (India)
-Mati (Philippines)
-Matsubara (Japan)
-Matsudo (Japan)
-Matsue (Japan)
-Matsumoto (Japan)
-Matsusaka (Japan)
-Matsuyama (Japan)
-Matur\'{\i}n (Venezuela)
-Mau\'a (Brazil)
-Maunath Bhanjan (India)
-Mawlamyaing (Moulmein) (Burkina Faso)
-Mayag\"uez (Puerto Rico)
-Maykop (Russia)
-Mazari Sharif (Afghanistan)
-Mazatl\'an (Mexico)
-Mazyr (Belarus)
-Mbabane (Swaziland)
-Mbandaka (DR Congo)
-Mbeya (Tanzania)
-Mbour (Senegal)
-Mbuji-Mayi (DR Congo)
-McAllen (US)
-Mecca (Saudi Arabia)
-Medan (Indonesia)
-Medea (Algeria)
-Medell\'{\i}n (Colombia)
-Medina (Saudi Arabia)
-Medinipur (India)
-Meerut (India)
-Mehsana (India)
-Meihekou (China)
-Meizhou (China)
-Mejicanos (El Salvador)
-Mekele (Ethiopia)
-Meknes (Morocco)
-Melbourne (Australia)
-Melitopol (Ukraine)
-Memphis (US)
-Mendoza (Argentina)
-Merca (Somalia)
-M\'erida (Mexico)
-M\'erida (Venezuela)
-Mersin (Turkey)
-Mesa (US)
-Mesquite (US)
-Messad (Algeria)
-Messina (Italy)
-Metepec (Mexico)
-Metz (France)
-Mexicali (Mexico)
-Mexico City (Mexico)
-Mexico (Mexico)
-Meycauayan City (Philippines)
-Mezhdurechensk (Russia)
-Miami Gardens (US)
-Miami (US)
-Mianyang (China)
-Miass (Russia)
-Michurinsk (Russia)
-Middlesbrough (UK)
-Midsayap (Philippines)
-Milagro (Ecuador)
-Milan (Italy)
-Milton Keynes (UK)
-Miluo (China)
-Milwaukee (US)
-Minatitl\'an (Mexico)
-Minglanilla (Philippines)
-Minneapolis (US)
-Minoh (Japan)
-Minsk (Belarus)
-Mirpur Khas (Pakistan)
-Mirzapur-cum-Vindhyachal (India)
-Misato (Japan)
-Mishan (China)
-Mishima (Japan)
-Miskolc (Hungary)
-Misrata (Libya)
-Mississauga (Canada)
-Mitaka (Japan)
-Mito (Japan)
-Miyakonojo (Japan)
-Miyazaki (Japan)
-Mobile (US)
-Modena (Italy)
-Modesto (US)
-Modinagar (India)
-Moers (Germany)
-Mogadishu (Somalia)
-Moga (India)
-Mogi das Cruzes (Brazil)
-Mogi Gua\c cu (Brazil)
-Mogilev (Mahilyow) (Belarus)
-Mogpo (South Korea)
-Mombasa (Kenya)
-M\"onchengladbach (Germany)
-Monclova (Mexico)
-Moncton (Canada)
-Monrovia (Liberia)
-Monter\'{\i}a (Colombia)
-Monterrey (Mexico)
-Montes Claros (Brazil)
-Montevideo (Uruguay)
-Montgomery (US)
-Montpellier (France)
-Montreal (Canada)
-Montreuil (France)
-Monywa (Myanmar)
-Monza (Italy)
-Moradabad (India)
-Moratuwa (Sri Lanka)
-Morelia (Mexico)
-Morena (India)
-Moreno Valley (US)
-Moriguchi (Japan)
-Morioka (Japan)
-Morogoro (Tanzania)
-Morvi (India)
-Moscow (Russia)
-Mossor\'o (Brazil)
-Mostaganem (Algeria)
-Mostar (Bosnia and Herzegovina)
-M\'ostoles (Spain)
-Mosul (Iraq)
-M'Sila (Algeria)
-Mudanjiang (China)
-Mufulira (Zambia)
-M\"ulheim an der Ruhr (Germany)
-Mulhouse (France)
-Multan (Pakistan)
-Mumbai (India)
-Munger (India)
-Munich (Germany)
-M\"unster (Germany)
-Muntinlupa City (Philippines)
-Murcia (Spain)
-Murfreesboro (US)
-Muridke (Pakistan)
-Murmansk (Russia)
-Murom (Russia)
-Muroran (Japan)
-Murwara (India)
-Musashino (Japan)
-Muscat (Oman)
-Mushin (Nigeria)
-Mutare (Zimbabwe)
-Muzaffargharh (Pakistan)
-Muzaffarnagar (India)
-Muzaffarpur (India)
-Mwanza (Tanzania)
-Mykolaiv (Ukraine)
-Mymensingh (Bangladesh)
-Mysore (India)
-Mytho (Vietnam)
-Mytishchi (Russia)
-Nabadwip (India)
-Naberezhnye Chelny (Russia)
-Nadiad (India)
-Nagano (Japan)
-Nagaoka (Japan)
-Naga (Philippines)
-Nagareyama (Japan)
-Nagasaki (Japan)
-Nagercoil (India)
-Nagoya (Japan)
-Nagpur (India)
-Naha (Japan)
-Naihati (India)
-Nairobi (Kenya)
-Najafabad (Iran)
-Najaf (Iraq)
-Nakhodka (Russia)
-Nakhon Pathom (Thailand)
-Nakhon Ratchasima (Thailand)
-Nakhon Sawan (Thailand)
-Nakhon Si Thammarat (Thailand)
-Nakuru (Kenya)
-Nalchik (Russia)
-Nam \Eth{\mak\char'270}nh (Vietnam)
-Namangan (Uzbekistan)
-Nampo (North Korea)
-Nampula (Mozambique)
-Namur (Belgium)
-Nanchang (China)
-Nanchong (China)
-Nancy (France)
-Nanded (India)
-Nandyal (India)
-Nanjing (China)
-Nanning (China)
-Nanping (China)
-Nantes (France)
-Nantong (China)
-Nanyang (China)
-Naperville (US)
-Napier-Hastings (NZ)
-Naples (Italy)
-Nara (Japan)
-Narashino (Japan)
-Narayanganj (Bangladesh)
-Nashik (India)
-Nashville (US)
-Nasiriyah (Iraq)
-Nassau (Bahamas)
-Nasugbu (Philippines)
-Natal (Brazil)
-Naucalpan (Mexico)
-Navapolatsk (Belarus)
-Navi Mumbai (India)
-Navoiy (Uzbekistan)
-Navotas (Philippines)
-Navsari (India)
-Nawabganj (Bangladesh)
-Nawabshah (Pakistan)
-Nazilli (Turkey)
-N'Djamena (Chad)
-Ndola (Zambia)
-Neftekamsk (Russia)
-Nefteyugansk (Russia)
-Neijiang (China)
-Neiva (Colombia)
-Nellore (India)
-Netanya (Israel)
-Neuqu\'en (Argentina)
-Neuss (Germany)
-Nevinnomyssk (Russia)
-Newark (US)
-Newcastle (Australia)
-Newcastle upon Tyne (UK)
-New Delhi (India)
-New Haven (US)
-New Orleans (US)
-Newport (UK)
-New York (US)
-Neyagawa (Japan)
-Neyveli (India)
-Nha Trang (Vietnam)
-Niamey (Niger)
-Nice (France)
-Nicosia (Cyprus)
-Niigata (Japan)
-Niihama (Japan)
-Niiza (Japan)
-Nijmegen (Netherlands)
-Nikopol (Ukraine)
-Nil\'opolis (Brazil)
-N\^{\i}mes (France)
-Ningbo (China)
-Ningde (China)
-Nishapur (Iran)
-Nishinomiya (Japan)
-Nishio (Japan)
-Ni\v s (Serbia)
-Niter\'oi (Brazil)
-Nizamabad (India)
-Nizhnekamsk (Russia)
-Nizhnevartovsk (Russia)
-Nizhny Novgorod (Russia)
-Nizhny Tagil (Russia)
-Nobeoka (Japan)
-Noda (Japan)
-Nogales (Mexico)
-Noginsk (Russia)
-Noida (India)
-Nonthaburi (Thailand)
-Norilsk (Russia)
-Norman (US)
-Norrk\"oping (Sweden)
-Northampton (UK)
-North Las Vegas (US)
-Norwalk (US)
-Norwich (UK)
-Norzagaray (Philippines)
-Nossa Senhora do Socorro (Brazil)
-Nottingham (UK)
-Nouakchott (Mauritania)
-Nova Friburgo (Brazil)
-Nova Igua\c cu (Brazil)
-Novara (Italy)
-Novi Sad (Serbia)
-Novocheboksarsk (Russia)
-Novocherkassk (Russia)
-Novo Hamburgo (Brazil)
-Novokuybyshevsk (Russia)
-Novokuznetsk (Russia)
-Novomoskovsk (Russia)
-Novorossiysk (Russia)
-Novoshakhtinsk (Russia)
-Novosibirsk (Russia)
-Novotroitsk (Russia)
-Novy Urengoy (Russia)
-Noyabrsk (Russia)
-Nuevo Laredo (Mexico)
-Nukus (Uzbekistan)
-Numazu (Japan)
-Nuremberg (Germany)
-Nyala (Sudan)
-Ny\'{\i}regyh\'aza (Hungary)
-Oakland (US)
-Oakville (Canada)
-Oaxaca de Ju\'arez (Mexico)
-Oberhausen (Germany)
-Obihiro (Japan)
-Obninsk (Russia)
-Oceanside (US)
-Odawara (Japan)
-Odense (Denmark)
-Odessa (Ukraine)
-Odintsovo (Russia)
-Offenbach am Main (Germany)
-\=Ogaki (Japan)
-Ogbomosho (Nigeria)
-\=Oita (Japan)
-Okara (Pakistan)
-Okayama (Japan)
-Okazaki (Japan)
-Okene (Nigeria)
-Okinawa (Japan)
-Oklahoma City (US)
-Oktyabrsky (Russia)
-Oldenburg (Germany)
-Oldham (UK)
-Olinda (Brazil)
-Olmaliq (Uzbekistan)
-Olomouc (Czech Republic)
-Olongapo (Philippines)
-Olsztyn (Poland)
-Omaha (US)
-Omdurman (Sudan)
-Omsk (Russia)
-\=Omuta (Japan)
-Ongole (India)
-Onitsha (Nigeria)
-Ontario (US)
-Opole (Poland)
-Oradea (Romania)
-Oral (Kazakhstan)
-Oran (Algeria)
-Orange (US)
-Ordos City (China)
-Ordu (Turkey)
-\"Orebro (Sweden)
-Orekhovo-Zuyevo (Russia)
-Orenburg (Russia)
-Orizaba (Mexico)
-Orlando (US)
-Orl\'eans (France)
-Ormoc (Philippines)
-Orsha (Belarus)
-Orsk (Russia)
-Oruro (Bolivia)
-Or Yehuda (Israel)
-Oryol (Russia)
-Osaka (Japan)
-Osasco (Brazil)
-Oshawa (Canada)
-Osh (Kyrgyzstan)
-Oshogbo (Nigeria)
-Osijek (Croatia)
-Oslo (Norway)
-Osmaniye (Turkey)
-Osnabr\"uck (Germany)
-Osorno (Chile)
-Ostrava (Czech Republic)
-\=Ota (Japan)
-Otaru (Japan)
-\=Otsu (Japan)
-Ottawa (Canada)
-Ouagadougou (Burkina Faso)
-Ouargla (Algeria)
-Oujda (Morocco)
-Oulu (Finland)
-Ourense (Spain)
-Overland (US)
-Oviedo (Spain)
-Oxford (UK)
-Oxnard (US)
-Oyama (Japan)
-Oyo (Nigeria)
-Ozamiz (Philippines)
-Paarl (SA)
-Pabna (Bangladesh)
-Pachuca (Mexico)
-Padang (Indonesia)
-Paderborn (Germany)
-Padua (Italy)
-Pagadian City (Philippines)
-Pago Pago (US)
-Paita (Peru)
-Pakalongan (Indonesia)
-Pakan Baru (Indonesia)
-Pakpattan (Pakistan)
-Palakkad (India)
-Palangkaraya (Indonesia)
-Palembang (Indonesia)
-Palermo (Italy)
-Pali (India)
-Palma de Mallorca (Spain)
-Palmas (Brazil)
-Palmdale (US)
-Palmira (Colombia)
-Palu (Indonesia)
-Pamplona (Spain)
-Panabo City (Philippines)
-Panama City (Panama)
-Pan\v cevo (Serbia)
-Panev\.e\v zys (Lithuania)
-Panihati (India)
-Panipat (India)
-Panjin (China)
-Panzhihua (China)
-Papeete (France)
-Paradise (US)
-Parakou (Benin)
-Paramaribo (Suriname)
-Paran\'a (Argentina)
-Paranagu\'a (Brazil)
-Parang (Philippines)
-Parbhani (India)
-Pardubice (Czech Republic)
-Paris (France)
-Parla (Spain)
-Pasadena (US)
-Patna (India)
-Patos de Minas (Brazil)
-Patras (Greece)
-Patratu (India)
-Paulista (Brazil)
-Pavlodar (Kazakhstan)
-Pavlohrad (Ukraine)
-P\'ecs (Hungary)
-Pelotas (Brazil)
-Pematang Siantar (Indonesia)
-Pembroke Pines (US)
-Penza (Russia)
-Peoria (US)
-Pereira (Colombia)
-Peristeri (Greece)
-Perm (Russia)
-Perpignan (France)
-Perth (Australia)
-Perugia (Italy)
-Pervouralsk (Russia)
-Pescara (Italy)
-Peshawar (Pakistan)
-Petah Tikva (Israel)
-Petaling Jaya (Malaysia)
-Petare (Venezuela)
-Peterborough (UK)
-Petrolina (Brazil)
-Petropavl (Kazakhstan)
-Petropavlovsk-Kamchatsky (Russia)
-Petr\'opolis (Brazil)
-Petrozavodsk (Russia)
-Pforzheim (Germany)
-Philadelphia (US)
-Phnom Penh (Cambodia)
-Phoenix (US)
-Phuket (Thailand)
-Phusro (India)
-Phyongsong (North Korea)
-Piatra Neam\c t (Romania)
-Pietermaritzburg (SA)
-Pikine (Senegal)
-Pilibhit (India)
-Pinar del R\'{\i}o (Cuba)
-Pindamonhangaba (Brazil)
-Pingdingshan (China)
-Pingdu (China)
-Pingliang (China)
-Pingxiang (China)
-Pinhais (Brazil)
-Pinsk (Belarus)
-Piracicaba (Brazil)
-Piraeus (Greece)
-Pir Mahal (Pakistan)
-Pite\c sti (Romania)
-Pittsburgh (US)
-Piura (Peru)
-Plano (US)
-Pleven (Bulgaria)
-P{\l}ock (Poland)
-Ploie\c sti (Romania)
-Plovdiv (Bulgaria)
-Plymouth (UK)
-Plze\v n (Czech Republic)
-Po\c cos de Caldas (Brazil)
-Podgorica (Montenegro)
-Podolsk (Russia)
-Pohang (South Korea)
-Pointe-Noire (Congo)
-Pollachi (India)
-Polomolok (Philippines)
-Poltava (Ukraine)
-Pomona (US)
-Ponce (US)
-Pondicherry (India)
-Ponta Grossa (Brazil)
-Pontianak (Indonesia)
-Poole (UK)
-Popay\'an (Colombia)
-Porac (Philippines)
-Porbandar (India)
-Port-au-Prince (Haiti)
-Port Elizabeth (SA)
-Port Harcourt (Nigeria)
-Portland (US)
-Port Louis (Mauritius)
-Port Moresby (Papua New Guinea)
-Porto Alegre (Brazil)
-Porto Novo (Benin)
-Porto (Portugal)
-Porto Velho (Brazil)
-Portoviejo (Ecuador)
-Port Said (Egypt)
-Portsmouth (UK)
-Port Sudan (Sudan)
-Posadas (Argentina)
-Potos\'{\i} (Bolivia)
-Potsdam (Germany)
-Pouso Alegre (Brazil)
-Poza Rica de Hidalgo (Mexico)
-Pozna\'n (Poland)
-Prague (Czech Republic)
-Praia (Cape Verde)
-Praia Grande (Brazil)
-Prato (Italy)
-Presidente Prudente (Brazil)
-Preston (UK)
-Pretoria (SA)
-Prijedor (Bosnia and Herzegovina)
-Pri\v stina (Kosovo)
-Probolinggo (Indonesia)
-Proddatur (India)
-Prokopyevsk (Russia)
-Providence (US)
-Provo (US)
-Pskov (Russia)
-Pucallpa (Peru)
-Puebla de Zaragoza (Mexico)
-Pueblo (US)
-Puente Alto (Chile)
-Puerto Cabello (Venezuela)
-Puerto Montt (Chile)
-Puerto Princesa City (Philippines)
-Puli Khumri (Afghanistan)
-Pune (India)
-Puno (Peru)
-Punta Arenas (Chile)
-Punto Fijo (Venezuela)
-Puri (India)
-Purnia (India)
-Putian (China)
-Puyang (China)
-Pyatigorsk (Russia)
-Pyongyang (North Korea)
-Q\=a'em Shahr (Iran)
-Qamishli (Syria)
-Qarchak (Iran)
-Qazvin (Iran)
-Qianjiang (China)
-Qidong (China)
-Qingdao (China)
-Qingtongxia (China)
-Qingyang (China)
-Qingyuan (China)
-Qingzhou (China)
-Qinhuangdao (China)
-Qinyang (China)
-Qinzhou (China)
-Qiqihaer (China)
-Qitaihe (China)
-Qom (Iran)
-Quanzhou (China)
-Quebec City (Canada)
-Queimados (Brazil)
-Quer\'etaro (Mexico)
-Quetta (Pakistan)
-Quevedo (Ecuador)
-Quezon City (Philippines)
-Qufu (China)
-Quilmes (Argentina)
-Quilpu\'e (Chile)
-Qui Nhon (Vietnam)
-Quito (Ecuador)
-Qujing (China)
-Quzhou (China)
-Rabat (Morocco)
-R\d ach Gi\'a (Vietnam)
-Radom (Poland)
-Raebareli (India)
-Rahim Yar Khan (Pakistan)
-Raichur (India)
-Raiganj (India)
-Raipur (India)
-Rajahmundry (India)
-Rajapalayam (India)
-Rajkot (India)
-Rajnandgaon (India)
-Rajshahi (Bangladesh)
-Raleigh (US)
-Ramadi (Iraq)
-Ramagundam (India)
-Ramat Gan (Israel)
-R\^amnicu V\^alcea (Romania)
-Rampur (India)
-Ranaghat (India)
-Rancagua (Chile)
-Ranchi (India)
-Rancho Cucamonga (US)
-Rangpur (Bangladesh)
-Raniganj (India)
-Rasht (Iran)
-Ratlam (India)
-Ravenna (Italy)
-Rawalpindi (Pakistan)
-Rayong (Thailand)
-Reading (UK)
-Recife (Brazil)
-Recklinghausen (Germany)
-Regensburg (Germany)
-Reggio Calabria (Italy)
-Regina (Canada)
-Rehovot (Israel)
-Reims (France)
-Relizane (Algeria)
-Remscheid (Germany)
-Rennes (France)
-Reno (US)
-Renqiu (China)
-Resende (Brazil)
-Resistencia (Argentina)
-Reutlingen (Germany)
-Rewa (India)
-Reykjav\'{\i}k (Iceland)
-Reynosa (Mexico)
-Ribeir\~ao das Neves (Brazil)
-Ribeir\~ao Pires (Brazil)
-Ribeir\~ao Preto (Brazil)
-Richmond (Canada)
-Richmond Hill (Canada)
-Richmond (US)
-Riga (Latvia)
-Rijeka (Croatia)
-Rimini (Italy)
-Riobamba (Ecuador)
-Rio Branco (Brazil)
-Rio Claro (Brazil)
-Rio Cuarto (Argentina)
-Rio de Janeiro (Brazil)
-Rio Grande (Brazil)
-Rio Verde (Brazil)
-Rishon LeZion (Israel)
-Riverside (US)
-Rivne (Ukraine)
-Riyadh (Saudi Arabia)
-Rizhao (China)
-Rochester (US)
-Rockford (US)
-Rodriguez (Philippines)
-Rohtak (India)
-Rome (Italy)
-Rondon\'opolis (Brazil)
-Rongcheng (China)
-Roodepoort (SA)
-Rosario (Argentina)
-Rostock (Germany)
-Rostov-on-Don (Russia)
-Rotherham (UK)
-Rotterdam (Netherlands)
-Rouen (France)
-Rourkela (India)
-Roxas (Philippines)
-Rubtsovsk (Russia)
-Ruda \'Sl\k aska (Poland)
-Rudny (Kazakhstan)
-Rui'an (China)
-Ruichang (China)
-Ruse (Bulgaria)
-Russeifa (Jordan)
-Rustavi (Georgia)
-Ruzhou (China)
-Ryazan (Russia)
-Rybinsk (Russia)
-Rybnik (Poland)
-Rzesz\'ow (Poland)
-Saanich (Canada)
-Saarbr\"ucken (Germany)
-Sabadell (Spain)
-Sab\'ara (Brazil)
-Sabha (Libya)
-Sabzewar (Iran)
-Sacramento (US)
-Sadiqabad (Pakistan)
-Safi (Morocco)
-Saga (Japan)
-Sagamihara (Japan)
-Sagar (India)
-Sagay City (Philippines)
-Saguenay (Canada)
-Saharanpur (India)
-Sahiwal (Pakistan)
-Saida (Algeria)
-Saidpur (Bangladesh)
-Saint-Denis (R\'eunion)
-Saint-\'Etienne (France)
-Saint John (Canada)
-Saint Louis (Senegal)
-Saint-Paul (R\'eunion)
-Saint Petersburg (Russia)
-Saitama (Japan)
-Sakai (Japan)
-Sakata (Japan)
-Sakura (Japan)
-Salamanca (Mexico)
-Salamanca (Spain)
-Salavat (Russia)
-Salem (India)
-Sal\'e (Morocco)
-Salem (US)
-Salerno (Italy)
-Salihorsk (Belarus)
-Salinas (US)
-Salta (Argentina)
-Saltillo (Mexico)
-Salt Lake City (US)
-Salvador (Brazil)
-Salzburg (Austria)
-Salzgitter (Germany)
-Samara (Russia)
-Samarinda (Indonesia)
-Samarkand (Uzbekistan)
-Sambalpur (India)
-Sambhal (India)
-Samsun (Turkey)
-Sana'a (Yemen)
-Sanandaj (Iran)
-San Antonio (US)
-San Bernardino (US)
-San Bernardo (Chile)
-San Buenaventura (US)
-San Carlos City (Philippines)
-San Crist\'obal de Las Casas (Mexico)
-San Crist\'obal (Dominican Republic)
-Sancti Sp\'{\i}ritus (Cuba)
-Sanda (Japan)
-Sandakan (Malaysia)
-San Diego (US)
-San Fernando City (Philippines)
-San Fernando del Valle de Catamarca (Argentina)
-San Francisco (US)
-Sangli (India)
-San Jose City (Philippines)
-San Jos\'e (Costa Rica)
-San Jose del Monte City (Philippines)
-San Jose (Philippines)
-San Jose (US)
-San Juan (Argentina)
-San Juan City (Philippines)
-San Juan (Puerto Rico)
-\c Sanl{\i}urfa (Turkey)
-San Lorenzo (Paraguay)
-San Luis (Argentina)
-San Luis Potos\'{\i} (Mexico)
-San Martin (El Salvador)
-San Mateo (Philippines)
-Sanmenxia (China)
-San Miguel de Tucum\'an (Argentina)
-San Miguel (El Salvador)
-San Miguelito (Panama)
-San Miguel (Philippines)
-Sanming (China)
-San Nicol\'as (Argentina)
-San Nicol\'as de los Garzas (Mexico)
-San Pablo City (Philippines)
-San Pedro de Macoris (Dominican Republic)
-San Pedro (Philippines)
-San Pedro Sula (Honduras)
-San Rafael (Argentina)
-San Salvador de Jujuy (Argentina)
-San Salvador (El Salvador)
-San Sebasti\'an (Spain)
-Santa Ana (US)
-Santa B\'arbara d'Oeste (Brazil)
-Santa Clara (Cuba)
-Santa Clara (US)
-Santa Clarita (US)
-Santa Coloma de Gramanet (Spain)
-Santa Cruz de la Sierra (Bolivia)
-Santa Cruz de Tenerife (Spain)
-Santa Cruz do Sul (Brazil)
-Santa Cruz (Philippines)
-Santa Fe (Argentina)
-Santa Fe de Bogot\'a (Colombia)
-Santa Luzia (Brazil)
-Santa Maria (Philippines)
-Santa Maria (US)
-Santa Marta (Colombia)
-Santander (Spain)
-Santar\'em (Brazil)
-Santa Rita (Brazil)
-Santa Rosa City (Philippines)
-Santa Rosa (US)
-Santiago (Chile)
-Santiago City (Philippines)
-Santiago de Cuba (Cuba)
-Santiago del Estero (Argentina)
-Santiago de los Caballeros (Dominican Republic)
-Santipur (India)
-Santo Andr\'e (Brazil)
-Santo Domingo de los Colorados (Ecuador)
-Santo Domingo (Dominican Republic)
-Santos (Brazil)
-Santo Tomas (Philippines)
-Sanya (China)
-S\~ao Bernardo do Campo (Brazil)
-S\~ao Caetano do Sul (Brazil)
-S\~ao Carlos (Brazil)
-S\~ao Gon\c calo (Brazil)
-S\~ao Jo\~ao de Meriti (Brazil)
-S\~ao Jos\'e (Brazil)
-S\~ao Jos\'e de Ribamar (Brazil)
-S\~ao Jos\'e do Rio Preto (Brazil)
-S\~ao Jos\'e dos Campos (Brazil)
-S\~ao Jos\'e dos Pinhais (Brazil)
-S\~ao Leopoldo (Brazil)
-S\~ao Lu\'{\i}s (Brazil)
-S\~ao Paulo (Brazil)
-S\~ao Vicente (Brazil)
-Sapporo (Japan)
-Sapucaia do Sul (Brazil)
-Saqez (Iran)
-Saraburi (Thailand)
-Sarajevo (Bosnia and Herzegovina)
-Saransk (Russia)
-Sarapul (Russia)
-Saratov (Russia)
-Sar-e Pol (Afghanistan)
-Sargodha (Pakistan)
-Sariaya (Philippines)
-Sari (Iran)
-Sariwon (North Korea)
-Sasebo (Japan)
-Saskatoon (Canada)
-Sassari (Italy)
-Satna (India)
-Satu Mare (Romania)
-Savannah (US)
-Sayama (Japan)
-Schwerin (Germany)
-Scottsdale (US)
-Seam Reab (Cambodia)
-Seattle (US)
-Sekondi-Takoradi (Ghana)
-Seleyang Baru (Malaysia)
-Semarang (Indonesia)
-Semipalatinsk (Kazakhstan)
-Sendai (Japan)
-Seongnam (South Korea)
-Seoul (South Korea)
-Serampore (India)
-Seremban (Malaysia)
-Sergiyev Posad (Russia)
-Serpukhov (Russia)
-Serra (Brazil)
-Sertaozinho (Brazil)
-Sete Lagoas (Brazil)
-Setif (Algeria)
-Seto (Japan)
-Sevastopol (Ukraine)
-Severodvinsk (Russia)
-Seversk (Russia)
-Seville (Spain)
-Sfax (Tunisia)
-Shah Alam (Malaysia)
-Shahe (China)
-Shahjahanpur (India)
-Shahrak-e Gharb (Iran)
-Shahrekord (Iran)
-Shahrud (Iran)
-Shakhty (Russia)
-Shanghai (China)
-Shangluo (China)
-Shangqiu (China)
-Shangrao (China)
-Shangzhi (China)
-Shantou (China)
-Shanwei (China)
-Shaoguan (China)
-Shaowu (China)
-Shaoxing (China)
-Shaoyang (China)
-Sharjah (UAE)
-Shchyolkovo (Russia)
-Sheberghan (Afghanistan)
-Sheffield (UK)
-Sheikhu Pura (Pakistan)
-Shenyang (China)
-Shenzhen (China)
-Sheopur (India)
-Sherbrooke (Canada)
-Shibin el-Kom (Egypt)
-Shihezi (China)
-Shihung (South Korea)
-Shijiazhuang (China)
-Shikarpur (Pakistan)
-Shillong (India)
-Shimizu (Japan)
-Shimla (India)
-Shimoga (India)
-Shimonoseki (Japan)
-Shinyanga (Tanzania)
-Shiraz (Iran)
-Shishi City (China)
-Shishou (China)
-Shivpuri (India)
-Shiyan (China)
-Shizuishan (China)
-Shizuoka (Japan)
-Shkod\"er (Albania)
-Shreveport (US)
-Shuangcheng (China)
-Shuangyashan (China)
-Shubra al Khaymah (Egypt)
-Shuozhou (China)
-Shymkent (Kazakhstan)
-Sialkote (Pakistan)
-\v Siauliai (Lithuania)
-Sibiu (Romania)
-Sibu (Malaysia)
-Sidi-bel-Abb\`es (Algeria)
-Siegen (Germany)
-Sieverodonetsk (Ukraine)
-Siirt (Turkey)
-Sikar (India)
-Silang (Philippines)
-Silay City (Philippines)
-Silchar (India)
-Siliguri (India)
-Simferopol (Ukraine)
-Simi Valley (US)
-Sincelejo (Colombia)
-Singapore (Singapore)
-Sinuiji (North Korea)
-Sioux Falls (US)
-Siping (China)
-Sirjan (Iran)
-Sirsa (India)
-Sitapur (India)
-Sittwe (Myanmar)
-Sivakasi (India)
-Sivas (Turkey)
-Siverek (Turkey)
-Skikda (Algeria)
-Skopje (Macedonia)
-Sliven (Bulgaria)
-Slough (UK)
-Sloviansk (Ukraine)
-S{\l}upsk (Poland)
-Smederevo (Serbia)
-Smolensk (Russia)
-Soacha (Colombia)
-Sobral (Brazil)
-Sochi (Russia)
-Sofia (Bulgaria)
-Sogamoso (Colombia)
-Soka (Japan)
-Solapur (India)
-Soledad (Colombia)
-Solihull (UK)
-Solikamsk (Russia)
-Solingen (Germany)
-Songkhla (Thailand)
-Songyuan (China)
-Sonipat (India)
-Sorocaba (Brazil)
-Sorsogon City (Philippines)
-Sosnowiec (Poland)
-Souk Ahras (Algeria)
-Southampton (UK)
-South Bend (US)
-South Dum Dum (India)
-Southend on Sea (UK)
-Soweto (SA)
-Soyapango (El Salvador)
-Split (Croatia)
-Spokane (US)
-Springfield (US)
-Springs (SA)
-Srinagar (India)
-Stakhanov (Ukraine)
-Stamford (US)
-Stara Zagora (Bulgaria)
-Starsy Oskol (Russia)
-Stavanger (Norway)
-Stavropol (Russia)
-St.~Catharines (Canada)
-Sterling Heights (US)
-Sterlitamak (Russia)
-St Helens (UK)
-St.~John's (Canada)
-St Louis (US)
-Stockholm (Sweden)
-Stockport (UK)
-Stockton (US)
-Stoke-on-Trent (UK)
-St Paul (US)
-St Petersburg (US)
-Strasbourg (France)
-Stuttgart (Germany)
-Subotica (Serbia)
-Suceava (Romania)
-Sucre (Bolivia)
-Suez (Egypt)
-Suhaj (Egypt)
-Suihua (China)
-Suining (China)
-Suita (Japan)
-Suizhou (China)
-Sukabumi (Indonesia)
-Sukkur (Pakistan)
-Sulamaniya (Iraq)
-Sullana (Peru)
-Sultanbeyli (Turkey)
-Sultan Kudarat (Philippines)
-Sumar\'e (Brazil)
-Sumgait (Azerbaijan)
-Sumy (Ukraine)
-Suncheon (South Korea)
-Sunderland (UK)
-Sundsvall (Sweden)
-Sungai Petani (Malaysia)
-Sunnyvale (US)
-Sunshine Coast (Australia)
-Suqian (China)
-Surabaya (Indonesia)
-Surakarta (Indonesia)
-Surat (India)
-Surat Thani (Thailand)
-Surgut (Russia)
-Surigao City (Philippines)
-Surrey (Canada)
-Sutton Coldfield (UK)
-Suva (Fiji)
-Suwon (South Korea)
-Suzano (Brazil)
-Suzhou (China)
-Suzuka (Japan)
-Swansea (UK)
-Swindon (UK)
-Sydney (Australia)
-Syktyvkar (Russia)
-Syracuse (Italy)
-Syracuse (US)
-Syzran (Russia)
-Szczecin (Poland)
-Szeged (Hungary)
-Sz\'ekesfeh\'erv\'ar (Hungary)
-Tabaco City (Philippines)
-Tabo\~ao da Serra (Brazil)
-Tabriz (Iran)
-Tacheng (China)
-Tachikawa (Japan)
-Tacloban City (Philippines)
-Tacna (Peru)
-Tacoma (US)
-Taebaek (South Korea)
-Taganrog (Russia)
-Taguig City (Philippines)
-Tagum City (Philippines)
-Taian (China)
-Taichung (Taiwan)
-Ta'if (Saudi Arabia)
-Tainan City (Taiwan)
-Taipei (Taiwan)
-Taiping (Malaysia)
-Taiyuan (China)
-Taizhou (China)
-Taiz (Yemen)
-Tajimi (Japan)
-Takamatsu (Japan)
-Takaoka (Japan)
-Takarazuka (Japan)
-Takasaki (Japan)
-Takatsuki (Japan)
-Talara (Peru)
-Talavera (Philippines)
-Talca (Chile)
-Talcahuano (Chile)
-Talisay City (Philippines)
-Tallahassee (US)
-Tallinn (Estonia)
-Taloqan (Afghanistan)
-Tama (Japan)
-Tamale (Ghana)
-Tambov (Russia)
-Tampa (US)
-Tampere (Finland)
-Tampico (Mexico)
-Tanauan City (Philippines)
-Tandil (Argentina)
-Tandoadam (Pakistan)
-Tangail (Bangladesh)
-Tanga (Tanzania)
-Tangier (Morocco)
-Tangshan (China)
-Tanjung Pinang (Indonesia)
-Tanta (Egypt)
-Tanza (Philippines)
-Taonan (China)
-Tapachula (Mexico)
-Taranto (Italy)
-Tarapoto (Peru)
-Taraz (Kazakhstan)
-T\^argu-Mure\c s (Romania)
-Tarija (Bolivia)
-Tarlac City (Philippines)
-Tarn\'ow (Poland)
-Tarragona (Spain)
-Tarsus (Turkey)
-Tartu (Estonia)
-Tashkent (Uzbekistan)
-Taubat\'e (Burkina Faso)
-Taunggyi (Myanmar)
-Tauranga (NZ)
-Taytay (Philippines)
-Tbilisi (Georgia)
-Tebessa (Algeria)
-Tegal (Indonesia)
-Tegucigalpa (Honduras)
-Tehran (Iran)
-Tehuac\'an (Mexico)
-Teixeira de Freitas (Brazil)
-Tekirda\u g (Turkey)
-Tel Aviv (Israel)
-Telford (UK)
-Tembisa (SA)
-Temirtau (Kazakhstan)
-Tempe (US)
-Temuco (Chile)
-Tenali (India)
-Tengzhou (China)
-Te\'ofilo Otoni (Brazil)
-Tepic (Mexico)
-Teresina (Brazil)
-Teres\'opolis (Brazil)
-Termez (Uzbekistan)
-Terni (Italy)
-Ternopil (Ukraine)
-Terrassa (Spain)
-T\'etouan (Monaco)
-Thai Nguyen (Vietnam)
-Thalassery (India)
-Thane (India)
-Thanjavur (India)
-The Hague (Netherlands)
-Thessaloniki (Greece)
-Thi\`es (Senegal)
-Thimphu (Bhutan)
-Thiruvananthapuram (India)
-Thousand Oaks (US)
-Thrissur (India)
-Thunder Bay (Canada)
-Tianjin (China)
-Tianmen (China)
-Tianshui (China)
-Tiaret (Algeria)
-Tieli (China)
-Tieling (China)
-Tijuana (Mexico)
-Tilburg (Netherlands)
-Timi\c soara (Romania)
-Timon (Brazil)
-Tirana (Albania)
-Tiruchchirappalli (India)
-Tirunelveli (India)
-Tirupati (India)
-Tiruppur (India)
-Tiruvannamalai (India)
-Titagarh (India)
-Tlalnepantla (Mexico)
-Tlalpan (Mexico)
-Tlaquepaque (Mexico)
-Tlaxcala (Mexico)
-Tlemoen (Algeria)
-Tobolsk (Russia)
-Toda (Japan)
-Tokat (Turkey)
-Tokorozawa (Japan)
-Tokushima (Japan)
-Tokuyama (Japan)
-Tokyo (Japan)
-Toledo (Brazil)
-Toledo City (Philippines)
-Toledo (US)
-Toluca (Mexico)
-Tolyatti (Russia)
-Tomakomai (Japan)
-Tomsk (Russia)
-Tondabayashi (Japan)
-Tongchuan (China)
-Tonghua (China)
-Tongi (Bangladesh)
-Tongjiang (China)
-Tongliao (China)
-Tongling (China)
-Tongren (China)
-Tonk (India)
-Toowoomba (Australia)
-Topeka (US)
-Toronto (Canada)
-Torrance (US)
-Torre\'on (Mexico)
-Toru\'n (Poland)
-Tottori (Japan)
-Touggourt (Algeria)
-Toulon (France)
-Toulouse (France)
-Tours (France)
-Townsville (Australia)
-Toyama (Japan)
-Toyohashi (Japan)
-Toyokawa (Japan)
-Toyonaka (Japan)
-Toyota (Japan)
-Trabzon (Turkey)
-Trento (Italy)
-Trieste (Italy)
-Tripoli (Lebanon)
-Tripoli (Libya)
-Trois-Rivi\`eres (Canada)
-Trondheim (Norway)
-Trujillo (Peru)
-Tsuchiura (Japan)
-Tsu (Japan)
-Tsukuba (Japan)
-Tsuruoka (Japan)
-Tucson (US)
-Tuguegarao City (Philippines)
-Tula (Russia)
-Tulsa (US)
-Tulua (Colombia)
-Tulufan (China)
-Tumbes (Ecuador)
-Tumen (China)
-Tumkur (India)
-Tunis (Tunisia)
-Tunja (Colombia)
-Turgutlu (Turkey)
-Turhal (Turkey)
-Turin (Italy)
-Turkmenabat (Turkmenistan)
-Turku (Finland)
-Turmero (Venezuela)
-Tuticorin (India)
-Tuxtla Guti\'errez (Mexico)
-Tuzla (Bosnia and Herzegovina)
-Tver (Russia)
-Tychy (Poland)
-Tyumen (Russia)
-Ube (Japan)
-Uberaba (Brazil)
-Uberl\^andia (Brazil)
-Ubon Ratchathani (Thailand)
-Udaipur (India)
-Udon Thani (Thailand)
-Udupi (India)
-Ueda (Japan)
-Ufa (Russia)
-Uji (Japan)
-Ujjain (India)
-Ujung Pandang (Indonesia)
-Ukhta (Russia)
-Ulan Bator (Mongolia)
-Ulan Hot (China)
-Ulanqab (China)
-Ulan-Ude (Russia)
-Ulhasnagar (India)
-Ulm (Germany)
-Ulsan (South Korea)
-Ulyanovsk (Russia)
-Ume\aa  (Sweden)
-Umlazi (SA)
-Unnao (India)
-Uppsala (Sweden)
-Urasoe (Japan)
-Urawa (Japan)
-Urayasu (Japan)
-Urdaneta (Philippines)
-Urgench (Uzbekistan)
-Urmia (Iran)
-Uruapan (Mexico)
-Uruguaiana (Brazil)
-\"Ur\"umqi (China)
-U\c sak (Turkey)
-Usolye-Sibirskoye (Russia)
-Ussuriysk (Russia)
-Ust-Ilimsk (Russia)
-Ust-Kamenogorsk (Russia)
-Utrecht (Netherlands)
-Utsunomiya (Japan)
-Uzhhorod (Ukraine)
-Vadodara (India)
-Valdivia (Chile)
-Valencia (Philippines)
-Valencia (Spain)
-Valencia (Venezuela)
-Valenciennes (France)
-Valera (Venezuela)
-Valladolid (Spain)
-Valle de Chalco (Mexico)
-Valledupar (Colombia)
-Vallejo (US)
-Valparai (India)
-Valpara\'{\i}so (Chile)
-Valsad (India)
-Vanadzor (Armenia)
-Vancouver (Canada)
-Vancouver (US)
-Vantaa (Finland)
-Van (Turkey)
-Varamin (Iran)
-Varanasi (India)
-Varginha (Brazil)
-Varna (Bulgaria)
-V\'arzea Grande (Brazil)
-V\"aster\aa s (Sweden)
-Vatakara (India)
-Vaughan (Canada)
-Velikiye Luki (Russia)
-Veliky Novgorod (Russia)
-Vellore (India)
-Venice (Italy)
-Veracruz (Mexico)
-Vereeniging (SA)
-Verona (Italy)
-Viam\~ao (Brazil)
-Vicente L\'opez (Argentina)
-Vicenza (Italy)
-Victoria (Canada)
-Victoria de Las Tunas (Cuba)
-Vienna (Austria)
-Vientiane (Laos)
-Vigo (Spain)
-Vijayawada (India)
-Vila Nova de Gaia (Portugal)
-Vila Velha (Brazil)
-Villahermosa (Mexico)
-Villa Nicol\'as Romero (Mexico)
-Villavicencio (Colombia)
-Villeurbanne (France)
-Vilnius (Lithuania)
-Vi\~na del Mar (Chile)
-Vinh (Vietnam)
-Vinnytsia (Ukraine)
-Viran\c sehir (Turkey)
-Visakhapatnam (India)
-Vitebsk (Belarus)
-Vit\'oria (Brazil)
-Vit\'oria da Conquista (Brazil)
-Vit\'oria de Santo Ant\~ao (Brazil)
-Vitoria-Gasteiz (Spain)
-Vizianagaram (India)
-Vladikavkaz (Russia)
-Vladimir (Russia)
-Vladivostok (Russia)
-Volgodonsk (Russia)
-Volgograd (Russia)
-Vologda (Russia)
-Volos (Greece)
-Volta Redonda (Brazil)
-Volzhsky (Russia)
-Voronezh (Russia)
-Votkinsk (Russia)
-V\~ung T\`au (Vietnam)
-Waco (US)
-Wadhwan (India)
-Wad Madani (Sudan)
-Wafangdian (China)
-Wagh Wagh (Australia)
-Wah Cantonment (Pakistan)
-Wakayama (Japan)
-Wa{\l}brzych (Poland)
-Walsall (UK)
-Wanzhou District (China)
-Warangal (India)
-Wardha (India)
-Warren (US)
-Warrington (UK)
-Warsaw (Poland)
-Washington (US)
-Waterbury (US)
-Watford (UK)
-Weifang (China)
-Weihai (China)
-Weihui (China)
-Weinan (China)
-Wellington (NZ)
-Wendeng (China)
-Wenzhou (China)
-West Bromwich (UK)
-West Covina (US)
-Westminster (US)
-West Valley Cit (US)
-Whitby (Canada)
-Wichita Falls (US)
-Wichita (US)
-Wiesbaden (Germany)
-Willemstad (Netherlands)
-Windhoek (Namibia)
-Windsor (Canada)
-Winnipeg (Canada)
-Winston-Salem (US)
-Winterthur (Switzerland)
-Witten (Germany)
-W{\l}oc{\l}awek (Poland)
-Wolfsburg (Germany)
-Wollongong (Australia)
-Wolverhampton (UK)
-Wonju (South Korea)
-Wonsan (North Korea)
-Worcester (US)
-Wroc{\l}aw (Poland)
-Wu'an (China)
-Wuhai (China)
-Wuhan (China)
-Wuhu (China)
-Wuppertal (Germany)
-W\"urzburg (Germany)
-Wuwei (China)
-Wuxi (China)
-Wuxue (China)
-Wuyishan (China)
-Wuzhong (China)
-Wuzhou (China)
-Xalapa (Mexico)
-Xiamen (China)
-Xian (China)
-Xiangfan (China)
-Xiangtan (China)
-Xianning (China)
-Xiantao (China)
-Xianyang (China)
-Xiaogan (China)
-Xiaoshan (China)
-Xichang (China)
-Xilinhaote (China)
-Xingcheng (China)
-Xinghua (China)
-Xingtai (China)
-Xingyi (China)
-Xining (China)
-Xinji (China)
-Xintai (China)
-Xinxiang (China)
-Xinyang (China)
-Xinyi (China)
-Xinyu (China)
-Xinzhou (China)
-Xochimilco (Mexico)
-Xuancheng (China)
-Xuchang (China)
-Yachiyo (Japan)
-Yaizu (Japan)
-Yakeshi (China)
-Yakutsk (Russia)
-Yamagata (Japan)
-Yamaguchi (Japan)
-Yamato (Japan)
-Yamoussoukro (Ivory Coast)
-Yamuna Nagar (India)
-Yan'an (China)
-Yancheng (China)
-Yangjiang (China)
-Yangon (Rangoon) (Myanmar)
-Yangquan (China)
-Yangzhou (China)
-Yanji (China)
-Yantai (China)
-Yao (Japan)
-Yaound\'e (Cameroon)
-Yaroslavl (Russia)
-Yatsushiro (Japan)
-Yavatmal (India)
-Yazd (Iran)
-Yekaterinburg (Russia)
-Yelets (Russia)
-Yenakiieve (Ukraine)
-Yeosu (South Korea)
-Yerevan (Armenia)
-Yibin (China)
-Yichang (China)
-Yichun (China)
-Yidu (China)
-Yima (China)
-Yinchuan (China)
-Yingcheng (China)
-Yingkou (China)
-Yingtan (China)
-Yining (China)
-Yiwu (China)
-Yixing (China)
-Yiyang (China)
-Yizheng (China)
-Yogyakarta (Indonesia)
-Yokkaichi (Japan)
-Yokohama (Japan)
-Yokosuka (Japan)
-Yonago (Japan)
-Yong'an (China)
-Yongzhou (China)
-Yonkers (US)
-York (UK)
-Yoshkar-Ola (Russia)
-Yuanjiang (China)
-Yueyang (China)
-Yulin (China)
-Yumen (China)
-Yuncheng (China)
-Yuxi (China)
-Yuyao (China)
-Yuzhno-Sakhalinsk (Russia)
-Yuzhou (China)
-Zaanstad (Netherlands)
-Zabol (Iran)
-Zabrze (Poland)
-Zacatecas (Mexico)
-Zagazig (Egypt)
-Zagreb (Croatia)
-Zahedan (Iran)
-Zama (Japan)
-Zamboanga City (Philippines)
-Zamora de Hidalgo (Mexico)
-Zanjan (Iran)
-Zanzibar City (Tanzania)
-Zaoyang (China)
-Zaozhuang (China)
-Zapopan (Mexico)
-Zaporizhia (Ukraine)
-Zaragoza (Spain)
-Z\'arate (Argentina)
-Zaria (Nigeria)
-Zarqa (Jordan)
-Zelenodolsk (Russia)
-Zelenograd (Russia)
-Zenica (Bosnia and Herzegovina)
-Zhalantun (China)
-Zhangjiagang (China)
-Zhangjiajie (China)
-Zhangjiakou (China)
-Zhangshu (China)
-Zhangye (China)
-Zhangzhou (China)
-Zhanjiang (China)
-Zhaodong (China)
-Zhaoqing (China)
-Zhaotong (China)
-Zheleznodorozhny (Russia)
-Zhengzhou (China)
-Zhenjiang (China)
-Zhongshan (China)
-Zhoukou (China)
-Zhoushan (China)
-Zhucheng (China)
-Zhuhai (China)
-Zhuji (China)
-Zhukovsky (Russia)
-Zhumadian (China)
-Zhuozhou (China)
-Zhuzhou (China)
-Zhytomyr (Ukraine)
-Zibo (China)
-Zielona G\'ora (Poland)
-Zigong (China)
-Ziguinchor (Senegal)
-Zinder (Niger)
-Zixing (China)
-Zlatoust (Russia)
-Zoetermeer (Netherlands)
-Zrenjanin (Serbia)
-Zunyi (China)
-Z\"urich (Switzerland)
-Zuwarah (Libya)
-Zwickau (Germany)
-Zwolle (Netherlands)
+#@cities
+Aachen,Germany
+Aalborg,Denmark
+Abadan,Iran
+Abaetetuba,Brazil
+Abakan,Russia
+Aba,Nigeria
+Abbotabad,Pakistan
+Abbotsford,Canada
+Abeokuta,Nigeria
+Aberdeen,United Kingdom
+Abidjan,Ivory Coast
+Abiko,Japan
+Abilene,United States
+Abohar,India
+Abu Dhabi,UAE
+Abuja,Nigeria
+Acapulco,Mexico
+Acarigua,Venezuela
+Accra,Ghana
+Acheng,China
+Achinsk,Russia
+A Coruna,Spain
+Adana,Turkey
+Adapazari,Turkey
+Addis Ababa,Ethiopia
+Adelaide,Australia
+Aden,Yemen
+Adhamiyah,Iraq
+Adiyaman,Turkey
+Ado-Ekiti,Nigeria
+Adoni,India
+Afyon,Turkey
+Agadir,Morocco
+Agartala,India
+Ageo,Japan
+Agra,India
+Aguascalientes,Mexico
+Ahmedabad,India
+Ahmednagar,India
+Ahome,Mexico
+Ahuachapan,El Salvador
+Ahvaz,Iran
+Ain Beida,Algeria
+Aix-en-Provence,France
+Aizawl,India
+Aizuwakamatsu,Japan
+Ajmer,India
+Akashi,Japan
+Akesu,China
+Akishima,Japan
+Akita,Japan
+Akola,India
+Akron,United States
+Aksaray,Turkey
+Aktau,Kazakhstan
+Aktobe,Kazakhstan
+Alagoinhas,Brazil
+Al Ain,UAE
+Alajuela,Costa Rica
+Alanya,Turkey
+Al 'Arish,Egypt
+Albacete,Spain
+Albuquerque,United States
+Albury-Wodonga,Australia
+Alcala de Henares,Spain
+Alchevsk,Ukraine
+Alcorcon,Spain
+Aleppo,Syria
+Aletay,China
+Alexandra,SA
+Alexandria,Egypt
+Alexandria,United States
+Al-Fashir,Sudan
+Algeciras,Spain
+Algiers,Algeria
+Al-Hasakah,Syria
+Alicante,Spain
+Aligarh,India
+Alipurduar,India
+Allahabad,India
+Allappuzha,India
+Allentown,United States
+Almada,Portugal
+Almaty,Kazakhstan
+Almere,Netherlands
+Almeria,Spain
+Almetyevsk,Russia
+Al Minya,Egypt
+Alor Setar,Malaysia
+Al Qadarif,Sudan
+Al-Ubayyid,Sudan
+Alvorada,Brazil
+Alwar,India
+Amadora,Portugal
+Amagasaki,Japan
+Amarah,Iraq
+Amarillo,United States
+Ambala,India
+Ambato,Ecuador
+Ambon,Indonesia
+Americana,Brazil
+Amersfoort,Netherlands
+Amiens,France
+Amman,Jordan
+Amol,Iran
+Amravati,India
+Amritsar,India
+Amroha,India
+Amsterdam,Netherlands
+Anaheim,United States
+Anand,India
+Ananindeua,Brazil
+Anapolis,Brazil
+Anchorage,United States
+Anda,China
+Andijan,Uzbekistan
+Andimeshk,Iran
+Andong,South Korea
+Angarsk,Russia
+Angeles City,Philippines
+Angers,France
+Angren,Uzbekistan
+Anjo,Japan
+Ankang,China
+Ankara,Turkey
+Anlu,China
+Annaba,Algeria
+Ann Arbor,United States
+Anqing,China
+Ansan,South Korea
+Anshan,China
+Anshun,China
+Antakya,Turkey
+Antalya,Turkey
+Antananarivo,Madagascar
+Antipolo City,Philippines
+Antofagasta,Chile
+Antwerp,Belgium
+Anyang,China
+Anyang,South Korea
+Aomori,Japan
+Aparecida de Goiania,Brazil
+Apeldoorn,Netherlands
+Apopa,El Salvador
+Apucarana,Brazil
+Aracaju,Brazil
+Aracatuba,Brazil
+Arad,Romania
+Araguaina,Brazil
+Arak,Iran
+Arapiraca,Brazil
+Araraquara,Brazil
+Araras,Brazil
+Araure,Venezuela
+Arayat,Philippines
+Arcot,India
+Ardabil,Iran
+Arecibo,Puerto Rico
+Arequipa,Peru
+Argenteuil,France
+AArhus,Denmark
+Arica,Chile
+Arkhangelsk,Russia
+Arlington,United States
+Armavir,Russia
+Armenia,Colombia
+Arnhem,Netherlands
+Arrah,India
+Ar Raqqah,Syria
+Arusha,Tanzania
+Arvada,United States
+Arzamas,Russia
+Asahikawa,Japan
+Asaka,Japan
+Asansol,India
+Asgabat,Turkmenistan
+Ashdod,Israel
+Ashikaga,Japan
+Asmara,Eritrea
+Astana,Kazakhstan
+Astrakhan,Russia
+Asuncion,Paraguay
+Aswan,Egypt
+Asyut,Egypt
+Athens,Greece
+Athens,United States
+Atibaia,Brazil
+Atlanta,United States
+Atsugi,Japan
+Atushi,China
+Atyrau,Kazakhstan
+Auckland,NZ
+Augsburg,Germany
+Augusta,United States
+Aurangabad,India
+Aurora,United States
+Austin,United States
+Avellaneda,Argentina
+Avignon,France
+Ayacucho,Peru
+Aydin,Turkey
+Bab Ezzouar,Algeria
+Babol,Iran
+Babruysk,Belarus
+Bacau,Romania
+Bacolod,Philippines
+Bacoor,Philippines
+Badajoz,Spain
+Badalona,Spain
+Bafoussam,Cameroon
+Bage,Brazil
+Baghdad,Iraq
+Bago City,Philippines
+Bago,Myanmar
+Baguio,Philippines
+Baharampur,India
+Bahawalnagar,Pakistan
+Bahawalpur,Pakistan
+Bahia Blanca,Argentina
+Bahir Dar,Ethiopia
+Bahraich,India
+Baia Mare,Romania
+Baicheng,China
+Baidoa,Somalia
+Baise,China
+Baishan,China
+Baiyin,China
+Bakersfield,United States
+Baku,Azerbaijan
+Balakovo,Russia
+Balashikha,Russia
+Baleshwar,India
+Balikesir,Turkey
+Balikpapan,Indonesia
+Baliuag,Philippines
+Bally,India
+Balti,Moldova
+Baltimore,United States
+Balurghat,India
+Bamako,Mali
+Bamenda,Cameroon
+Banda Aceh,Indonesia
+Bandar Abbas,Iran
+Bandirma,Turkey
+Bandung,Indonesia
+Bangalore,India
+Bangkok,Thailand
+Bangui,Central African Republic
+Banha,Egypt
+Bani Suwayf,Egypt
+Banja Luka,Bosnia and Herzegovina
+Banjarmasin,Indonesia
+Banjul,Gambia
+Bankura,India
+Baoding,China
+Baoji,China
+Baoshan,China
+Baotou,China
+Barakaldo,Spain
+Baraki,Algeria
+Baranagar,India
+Baranovichi,Belarus
+Barbacena,Brazil
+Barcelona,Spain
+Barcelona,Venezuela
+Bardhaman,India
+Bareilly,India
+Bari,Italy
+Barika,Algeria
+Barinas,Venezuela
+Barisal,Bangladesh
+Barnaul,Russia
+Barquisimeto,Venezuela
+Barrackpur,India
+Barra Mansa,Brazil
+Barrancabermeja,Colombia
+Barranquilla,Colombia
+Barreiras,Brazil
+Barretos,Brazil
+Barrie,Canada
+Barueri,Brazil
+Baruta,Venezuela
+Barysaw,Belarus
+Basel,Switzerland
+Basirhat,India
+Basra,Iraq
+Batala,India
+Batam,Indonesia
+Batangas City,Philippines
+Bataysk,Russia
+Bathinda,India
+Bath,United Kingdom
+Batman,Turkey
+Batna,Algeria
+Baton Rouge,United States
+Battambang,Cambodia
+Batumi,Georgia
+Bat Yam,Israel
+Bauru,Brazil
+Bayambang,Philippines
+Bayamo,Cuba
+Bayamon,Puerto Rico
+Bayannur,China
+Bayawan,Philippines
+Baybay,Philippines
+Bazhou,China
+Beau-Bassin,Mauritius
+Beaumont,United States
+Beauvais,France
+Beawar,India
+Bechar,Algeria
+Beed,India
+Beersheba,Israel
+Bei'an,China
+Beihai,China
+Beijing,China
+Beipiao,China
+Beirut,Lebanon
+Bejaia,Algeria
+Belem,Brazil
+Belfast,United Kingdom
+Belford Roxo,Brazil
+Belgaum,India
+Belgorod,Russia
+Belgrade,Serbia
+Bellary,India
+Bellevue,United States
+Bello,Colombia
+Belo Horizonte,Brazil
+Bengbu,China
+Benghazi,Libya
+Benguela,Angola
+Beni Mellal,Morocco
+Benito Juarez,Mexico
+Benoni,SA
+Benxi,China
+Beppu,Japan
+Berbera,Somalia
+Berdyansk,Ukraine
+Berezniki,Russia
+Bergamo,Italy
+Bergen,Norway
+Bergisch Gladbach,Germany
+Berhampur,India
+Berkeley,United States
+Berlin,Germany
+Bern,Switzerland
+Besancon,France
+Betim,Brazil
+Bettiah,India
+Bhadravati,India
+Bhagalpur,India
+Bhalwal,Pakistan
+Bharatpur,India
+Bharatpur,Nepal
+Bharuch,India
+Bhatpara,India
+Bhavnagar,India
+Bhilai,India
+Bhilwara,India
+Bhimavaram,India
+Bhind,India
+Bhiwandi,India
+Bhiwani,India
+Bhopal,India
+Bhubaneswar,India
+Bhuj,India
+Bhusawal,India
+Bialystok,Poland
+Bidar,India
+Bielefeld,Germany
+Bielsko-Biala,Poland
+Bihar Sharif,India
+Bijapur,India
+Bikaner,India
+Bilaspur,India
+Bila Tserkva,Ukraine
+Bilbao,Spain
+Billings,United States
+Binangonan,Philippines
+Binan,Philippines
+Binzhou,China
+Biratnagar,Nepal
+Birjand,Iran
+Birmingham,United Kingdom
+Birmingham,United States
+Bishkek,Kyrgyzstan
+Biskra,Algeria
+Bislig,Philippines
+Bissau,Guinea-Bissau
+Biysk,Russia
+Bizerte,Tunisia
+Blackburn,United Kingdom
+Blackpool,United Kingdom
+Blagoveshchensk,Russia
+Blantyre,Malawi
+Blida,Algeria
+Bloemfontein,SA
+Blumenau,Brazil
+Bnei Brak,Israel
+Boa Vista,Brazil
+Bobo-Dioulasso,Burkina Faso
+Bocaue,Philippines
+Bochum,Germany
+Bogor,Indonesia
+Bogota,Colombia
+Bogra,Bangladesh
+Boise,United States
+Bojnord,Iran
+Bokaro Steel City,India
+Boksburg,SA
+Bole,China
+Bologna,Italy
+Bolton,United Kingdom
+Boma,DR Congo
+Bonn,Germany
+Bordeaux,France
+Bordj Bou Arreridj,Algeria
+Bordj El Kiffan,Algeria
+Borujerd,Iran
+Bosaso,Somalia
+Boston,United States
+Botosani,Romania
+Botou,China
+Botshabelo,SA
+Bottrop,Germany
+Botucatu,Brazil
+Bouake,Ivory Coast
+Boulder,United States
+Boulogne-Billancourt,France
+Bourg-en-Bresse,France
+Bournemouth,United Kingdom
+Bou Saada,Algeria
+Bozhou,China
+Bradford,United Kingdom
+Braganca Paulista,Brazil
+Braga,Portugal
+Braila,Romania
+Brampton,Canada
+Brasilia,Brazil
+Brasov,Romania
+Bratislava,Slovakia
+Bratsk,Russia
+Braunschweig,Germany
+Brazzaville,Congo
+Breda,Netherlands
+Bremen,Germany
+Bremerhaven,Germany
+Brescia,Italy
+Brest,Belarus
+Brest,France
+Bridgeport,United States
+Brighton,United Kingdom
+Brisbane,Australia
+Bristol,United Kingdom
+Brno,Czech Republic
+Brownsville,United States
+Bruges,Belgium
+Brussels,Belgium
+Bryansk,Russia
+Bucaramanga,Colombia
+Bucharest,Romania
+Bucheon,South Korea
+Budapest,Hungary
+Budaun,India
+Buenaventura,Colombia
+Buenos Aires,Argentina
+Buffalo,United States
+Buga,Colombia
+Bujumbura,Burundi
+Bukan,Iran
+Bukavu,DR Congo
+Bukhara,Uzbekistan
+Bulandshahr,India
+Bulawayo,Zimbabwe
+Burao,Somalia
+Burbank,United States
+Burewala,Pakistan
+Burgas,Bulgaria
+Burgos,Spain
+Burhanpur,India
+Burlington,Canada
+Burnaby,Canada
+Bursa,Turkey
+Bury,United Kingdom
+Busan,South Korea
+Bushehr,Iran
+Butuan,Philippines
+Buzau,Romania
+Bydgoszcz,Poland
+Bytom,Poland
+Cabanatuan City,Philippines
+Cabimas,Venezuela
+Cabo de Santo Agostinho,Brazil
+Cabo Frio,Brazil
+Cabuyao City,Philippines
+Cachoeirinha,Brazil
+Cachoeiro de Itapemirim,Brazil
+Cadiz City,Philippines
+Cadiz,Spain
+Caen,France
+Cagayan de Oro,Philippines
+Cagliari,Italy
+Caguas,Puerto Rico
+Cainta,Philippines
+Cairns,Australia
+Cairo,Egypt
+Cajamarca,Peru
+Calabar,Nigeria
+Calais,France
+Calama,Chile
+Calamba City,Philippines
+Calapan City,Philippines
+Calbayog,Philippines
+Calgary,Canada
+Cali,Colombia
+Caloocan,Philippines
+Camacari,Brazil
+Camaguey,Cuba
+Camaragibe,Brazil
+Cambridge,Canada
+Cambridge,United Kingdom
+Cambridge,United States
+Campeche,Mexico
+Campina Grande,Brazil
+Campinas,Brazil
+Campo Grande,Brazil
+Campos dos Goytacazes,Brazil
+Canberra,Australia
+Candelaria,Philippines
+Cangzhou,China
+Canoas,Brazil
+Cape Breton,Canada
+Cape Coral,United States
+Cape Town,SA
+Cap-Haitien,Haiti
+Caracas,Venezuela
+Carapicuiba,Brazil
+Carcar,Philippines
+Cardiff,United Kingdom
+Cariacica,Brazil
+Carlisle,United Kingdom
+Carolina,Puerto Rico
+Carrefour,Haiti
+Carrollton,United States
+Cartagena de Indias,Colombia
+Cartagena,Spain
+Cartago,Colombia
+Cartago,Costa Rica
+Caruaru,Brazil
+Carupano,Venezuela
+Casablanca,Morocco
+Cascavel,Brazil
+Castanhal,Brazil
+Castellon de la Plana,Spain
+Catanduva,Brazil
+Catania,Italy
+Catia La Mar,Venezuela
+Cauayan City,Philippines
+Caucaia,Brazil
+Cavite City,Philippines
+Caxias,Brazil
+Caxias do Sul,Brazil
+Cayenne,French Guiana
+Cebu City,Philippines
+Cedar Rapids,United States
+Celaya,Mexico
+Chandannagar,India
+Chandigarh,India
+Chandler,United States
+Chandrapur,India
+Changchun,China
+Changde,China
+Changji,China
+Changsha,China
+Changshi,China
+Changwon,South Korea
+Changzhi,China
+Changzhou,China
+Chaohu,China
+Chaoyang,China
+Chaozhou,China
+Chapeco,Brazil
+Charikar,Afghanistan
+Charleroi,Belgium
+Charlotte,United States
+Chatham-Kent,Canada
+Chattanooga,United States
+Cheboksary,Russia
+Chelyabinsk,Russia
+Chemnitz,Germany
+Chengde,China
+Chengdu,China
+Chengzhou,China
+Chennai,India
+Cheonan,South Korea
+Cheongju,South Korea
+Cherepovets,Russia
+Cherkasy,Ukraine
+Cherkessk,Russia
+Chernihiv,Ukraine
+Chernivtsi,Ukraine
+Cherthala,India
+Chhapra,India
+Chia,Colombia
+Chiang Mai,Thailand
+Chiayi,Taiwan
+Chiba,Japan
+Chibi City,China
+Chicago,United States
+Chiclayo,Peru
+Chifeng,China
+Chigasaki,Japan
+Chihuahua,Mexico
+Chikmagalur,India
+Chillan,Chile
+Chilpancingo,Mexico
+Chimalhuacan,Mexico
+Chimbote,Peru
+Chinandega,Nicaragua
+Chincha Alta,Peru
+Chingola,Zambia
+Chiniot,Pakistan
+Chirala,India
+Chirchiq,Uzbekistan
+Chishtian,Pakistan
+Chisinau,Moldova
+Chita,Russia
+Chitradurga,India
+Chittagong,Bangladesh
+Chittoor,India
+Chitungwiza,Zimbabwe
+Chizhou,China
+Chlef,Algeria
+Chofu,Japan
+Choloma,Honduras
+Choluteca,Honduras
+Chonburi,Thailand
+Chongjin,North Korea
+Chongqing,China
+Chorzow,Poland
+Christchurch,NZ
+Chula Vista,United States
+Chuncheon,South Korea
+Chungju,South Korea
+Chuxiong City,China
+Chuzhou,China
+Cienfuegos,Cuba
+Cincinnati,United States
+Cirebon,Indonesia
+Ciudad Acuna,Mexico
+Ciudad Apodaca,Mexico
+Ciudad Bolivar,Venezuela
+Ciudad del Este,Paraguay
+Ciudad Delgado,El Salvador
+Ciudad Guayana,Venezuela
+Ciudad Juarez,Mexico
+Ciudad Lopez Mateos,Mexico
+Ciudad Losada,Venezuela
+Ciudad Madero,Mexico
+Ciudad Nezahualcoyotl,Mexico
+Ciudad Obregon,Mexico
+Ciudad Victoria,Mexico
+Cixi,China
+Clarksville,United States
+Clearwater,United States
+Clermont-Ferrand,France
+Cleveland,United States
+Cluj-Napoca,Romania
+Coacalco,Mexico
+Coatzacoalcos,Mexico
+Cochabamba,Bolivia
+Codo,Brazil
+Coimbatore,India
+Coimbra,Portugal
+Colatina,Brazil
+Colchester,United Kingdom
+Colima,Mexico
+Cologne,Germany
+Colombo,Brazil
+Colombo,Sri Lanka
+Colon,Panama
+Colorado Springs,United States
+Columbia,United States
+Columbus,United States
+Comilla,Bangladesh
+Comodoro Rivadavia,Argentina
+Conakry,Guinea
+Concepcion,Chile
+Concordia,Argentina
+Concord,United States
+Constanta,Romania
+Constantine,Algeria
+Contagem,Brazil
+Copenhagen,Denmark
+Copiapo,Chile
+Coquimbo,Chile
+Coquitlam,Canada
+Coral Springs,United States
+Corby,England
+Cordoba,Argentina
+Cordoba,Mexico
+Cordoba,Spain
+Cork,Ireland
+Corlu,Turkey
+Corona,United States
+Coro,Venezuela
+Corpus Christi,United States
+Corrientes,Argentina
+Corum,Turkey
+Costa Mesa,United States
+Cotabato City,Philippines
+Cotia,Brazil
+Cotonou,Benin
+Cottbus,Germany
+Coventry,United Kingdom
+Craiova,Romania
+Crato,Brazil
+Crawley,United Kingdom
+Criciuma,Brazil
+Cuautitlan,Mexico
+Cuautla,Mexico
+Cubatao,Brazil
+Cucuta,Colombia
+Cuddalore,India
+Cuenca,Ecuador
+Cuernavaca,Mexico
+Cuiaba,Brazil
+Culiacan,Mexico
+Cumana,Venezuela
+Curico,Chile
+Curitiba,Brazil
+Cusco,Peru
+Cuttack,India
+Czestochowa,Poland
+Dabgram,India
+Dabrowa Gornicza,Poland
+Dadu,Pakistan
+Daegu,South Korea
+Daejeon,South Korea
+Dagupan,Philippines
+Daito,Japan
+Dakar,Senegal
+Da Lat,Vietnam
+Dalian,China
+Dali,China
+Dallas,United States
+Daloa,Ivory Coast
+Daly City,United States
+Damanhur,Egypt
+Damascus,Syria
+Dammam,Saudi Arabia
+Damoh,India
+Da Nang,Vietnam
+Danao City,Philippines
+Dandong,China
+Dangyang,China
+Danjiangkou,China
+Danyang,China
+Daqing,China
+Daraga,Philippines
+Darbhanga,India
+Dar Es Salaam,Tanzania
+Darlington,United Kingdom
+Darmstadt,Germany
+Darwin,Australia
+Daska,Pakistan
+Dasmarinas,Philippines
+Dasoguz,Turkmenistan
+Datong,China
+Daugavpils,Latvia
+Davangere,India
+Davao City,Philippines
+Dayton,United States
+Dazhou,China
+Debrecen,Hungary
+Dehiwala-Mount Lavinia,Sri Lanka
+Dehradun,India
+Deir ez Zor,Syria
+Delhi,India
+Delmas,Haiti
+Dengzhou,China
+Denizli,Turkey
+Denpasar,Indonesia
+Denver,United States
+Dera Ghazi Khan,Pakistan
+Derbent,Russia
+Derby,United Kingdom
+Derince,Turkey
+Des Moines,United States
+Dessie,Ethiopia
+Detroit,United States
+Dewas,India
+Deyang,China
+Dezful,Iran
+Dezhou,China
+Dhaka,Bangladesh
+Dhanbad,India
+Dhule,India
+Diadema,Brazil
+Diaobingshan,China
+Dibrugarh,India
+Digos City,Philippines
+Dijon,France
+Dili,Timor-Leste
+Dimitrovgrad,Russia
+Dinajpur,Bangladesh
+Dindigul,India
+Dingzhou,China
+Dipolog City,Philippines
+Dire Dawa,Ethiopia
+Divinopolis,Brazil
+Diwaniyah,Iraq
+Diyarbakir,Turkey
+Djelfa,Algeria
+Djibouti,Djibouti
+Dniprodzerzhinsk,Ukraine
+Dnipropetrovsk,Ukraine
+Doboj,Bosnia and Herzegovina
+Dobrich,Bulgaria
+Dodoma,Tanzania
+Doha,Qatar
+Donetsk,Ukraine
+Dongchuan,China
+Dongguan,China
+Dongtai,China
+Dongyang,China
+Dongying,China
+Dordrecht,Netherlands
+Dortmund,Germany
+Dos Quebradas,Colombia
+Douala,Cameroon
+Dourados,Brazil
+Downey,United States
+Dresden,Germany
+Drobeta-Turnu Severin,Romania
+Dubai,UAE
+Dublin,Ireland
+Dudley,United Kingdom
+Duisburg,Germany
+Duitama,Colombia
+Dujiangyan,China
+Dumaguete City,Philippines
+Dundee,United Kingdom
+Dunedin,NZ
+Dunhua,China
+Dunhuang,China
+Dunkerque,France
+Duque de Caxias,Brazil
+Durango,Mexico
+Durban,SA
+Durgapur,India
+Durg,India
+Durham,United States
+Durres,Albania
+Dushanbe,Tajikistan
+Dusseldorf,Germany
+Duyun,China
+Dzerzhinsk,Russia
+Eastbourne,United Kingdom
+Ebetsu,Japan
+Ebina,Japan
+Ecatepec,Mexico
+Edea,Cameroon
+Ede,Netherlands
+Ede,Nigeria
+Edinburgh,United Kingdom
+Edirne,Turkey
+Edmonton,Canada
+Eilat,Israel
+Eindhoven,Netherlands
+Ekibastuz,Kazakhstan
+El Aaiun,Western Sahara
+El Alto,Bolivia
+Elazig,Turkey
+Elblag,Poland
+Elche,Spain
+Eldoret,Kenya
+Elektrostal,Russia
+El Eulma,Algeria
+Elista,Russia
+Elizabeth,United States
+El Jadida,Morocco
+Elk Grove,United States
+El Khroub,Algeria
+El-Mahalla El-Kubra,Egypt
+El Monte,United States
+El Oued,Algeria
+El Paso,United States
+El Progreso,Honduras
+Eluru,India
+Emeishan,China
+Emmen,Netherlands
+Engels,Russia
+English Bazar,India
+Enschede,Netherlands
+Ensenada,Mexico
+Enshi,China
+Enugu,Nigeria
+Envigado,Colombia
+Erbil,Iraq
+Erfurt,Germany
+Erie,United States
+Erlangen,Germany
+Erode,India
+Erzincan,Turkey
+Erzurum,Turkey
+Escondido,United States
+Esenler,Turkey
+Esfahan,Iran
+Eskisehir,Turkey
+Esmeraldas,Ecuador
+Espoo,Finland
+Essen,Germany
+Etawah,India
+Eugene,United States
+Eujeongbu,South Korea
+Evansville,United States
+Exeter,United Kingdom
+Ezhou,China
+Faisalabad,Pakistan
+Faizabad,India
+Faridabad,India
+Farrukhabad,India
+Fatehpur,India
+Fayetteville,United States
+Fayyum,Egypt
+Feira de Santana,Brazil
+Fengcheng,China
+Fenghua,China
+Fergana,Uzbekistan
+Ferrara,Italy
+Ferraz de Vasconcelos,Brazil
+Fes,Morocco
+Firozabad,India
+Flint,United States
+Florence,Italy
+Florencia,Colombia
+Florianopolis,Brazil
+Floridablanca,Colombia
+Focsani,Romania
+Foggia,Italy
+Fontana,United States
+Forli,Italy
+Formosa,Argentina
+Fortaleza,Brazil
+Fort Collins,United States
+Fort-de-France,Martinique
+Fort Lauderdale,United States
+Fort Wayne,United States
+Fort Worth,United States
+Foshan,China
+Foz do Iguacu,Brazil
+Franca,Brazil
+Francisco Morato,Brazil
+Francistown,Botswana
+Franco da Rocha,Brazil
+Frankfurt am Main,Germany
+Freetown,Sierra Leone
+Freiburg im Breisgau,Germany
+Fremont,United States
+Fresno,United States
+Fu'an,China
+Fuchu,Japan
+Fuenlabrada,Spain
+Fujieda,Japan
+Fuji,Japan
+Fujimi,Japan
+Fujin City,China
+Fujinomiya,Japan
+Fujisawa,Japan
+Fukui,Japan
+Fukuoka,Japan
+Fukushima,Japan
+Fukuya,Japan
+Fukuyama,Japan
+Fuling,China
+Fullerton,United States
+Funabashi,Japan
+Funchal,Portugal
+Furth,Germany
+Fushun,China
+Fuxin,China
+Fuyang,China
+Fuzhou,China
+Gabes,Tunisia
+Gaborone,Botswana
+Gadag-Betgeri,India
+Galati,Romania
+Gandhidham,India
+Gandhinagar,India
+Ganganagar,India
+Gangneung,South Korea
+Ganzhou,China
+Gaocheng,China
+Garanhuns,Brazil
+Garden Grove,United States
+Garland,United States
+Garoua,Cameroon
+Gary,United States
+Gateshead,United Kingdom
+Gatineau,Canada
+Gaya,India
+Gaza City,Palestine
+Gaziantep,Turkey
+Gdansk,Poland
+Gdynia,Poland
+Gebze,Turkey
+Geelong,Australia
+Gejiu,China
+Geleen-Sittard,Netherlands
+Gelsenkirchen,Germany
+Gence,Azerbaijan
+General Santos City,Philippines
+Geneva,Switzerland
+Genova,Italy
+Georgetown,Guyana
+George Town,Malaysia
+Gera,Germany
+Germiston,SA
+Getafe,Spain
+Ghardaia,Algeria
+Ghaziabad,India
+Ghazni,Afghanistan
+Ghent,Belgium
+Gifu,Japan
+Gijon,Spain
+Gilbert,United States
+Gingoog City,Philippines
+Girardot,Colombia
+Giresun,Turkey
+Giza,Egypt
+Glasgow,United Kingdom
+Glazov,Russia
+Glendale,United States
+Gliwice,Poland
+Gloucester,United Kingdom
+Godhra,India
+Godoy Cruz,Ecuador
+Goiania,Brazil
+Gojra,India
+Gold Coast,Australia
+Goma,DR Congo
+Gomez Palacio,Mexico
+Gonbad-e Qabus,Iran
+Gondar,Ethiopia
+Gondiya,India
+Gongzhuling,China
+Gorakhpur,India
+Gorgan,Iran
+Gorzow Wielkopolski,Poland
+Gothenburg,Sweden
+Gottingen,Germany
+Governador Valadares,Brazil
+Granada,Nicaragua
+Granada,Spain
+Grand Prairie,United States
+Grand Rapids,United States
+Gravatai,Brazil
+Graz,Austria
+Green Bay,United States
+Greensboro,United States
+Grenoble,France
+Groningen,Netherlands
+Grozny,Russia
+Grudziadz,Poland
+Guadalajara,Mexico
+Guadalupe,Mexico
+Guanare,Venezuela
+Guanghan,China
+Guangshui,China
+Guangyuan,China
+Guangzhou,China
+Guantanamo,Cuba
+Guarapuava,Brazil
+Guaratingueta,Brazil
+Guarenas,Venezuela
+Guaruja,Brazil
+Guarulhos,Brazil
+Guatemala City,Guatemala
+Guayaquil,Ecuador
+Guaymas,Mexico
+Guaynabo,Puerto Rico
+Gudivada,India
+Guediawaye,Senegal
+Guelma,Algeria
+Guelph,Canada
+Guigang,China
+Guilin,China
+Guiyang,China
+Gujiao,China
+Gujranwala,Pakistan
+Gujrat City,India
+Gulbarga,India
+Gumi,South Korea
+Guna,India
+Gunsan,South Korea
+Guntakul,India
+Guntur,India
+Gurgaon,India
+Guri,South Korea
+Guruvayur,India
+Guwahati,India
+Gwalior,India
+Gwangju,South Korea
+Gweru,Zimbabwe
+Gyeongju,South Korea
+Gyor,Hungary
+Gyumri,Armenia
+Haarlem,Netherlands
+Habikino,Japan
+Habra,India
+Hachinohe,Japan
+Hachioji,Japan
+Hadano,Japan
+Haeju,North Korea
+Hafizabad,Pakistan
+Hagen,Germany
+Haicheng,China
+Haifa,Israel
+Haikou,China
+Hailun,China
+Haining City,China
+Haiphong,Vietnam
+Hakodate,Japan
+Haldia,India
+Haldwani-cum-Kathgodam,India
+Halifax,Canada
+Halle,Germany
+Ha Long,Vietnam
+Hamadan,Iran
+Hamamatsu,Japan
+Hama,Syria
+Hamburg,Germany
+Hamhung,North Korea
+Hami City,China
+Hamilton,Canada
+Hamilton,NZ
+Hamm,Germany
+Hanam,South Korea
+Hancheng,China
+Handa,Japan
+Handan,China
+Hangzhou,China
+Hanoi,Vietnam
+Hanover,Germany
+Hanzhong,China
+Haora,India
+Hapur,India
+Harare,Zimbabwe
+Harbin,China
+Hargeisa,Somalia
+Haridwar,India
+Hartford,United States
+Hassan,India
+Hathras,India
+Hat Yai,Thailand
+Havana,Cuba
+Hayward,United States
+Hebi,China
+Hebron,Palestine
+Hechi,China
+Heerlen-Kerkrade,Netherlands
+Hefei,China
+Hegang,China
+Heidelberg,Germany
+Heihe,China
+Heilbronn,Germany
+Helsingborg,Sweden
+Helsinki,Finland
+Henderson,United States
+Hengshui,China
+Hengyang,China
+Heraklion,Greece
+Herat,Afghanistan
+Hermosillo,Mexico
+Herne,Germany
+Heshan,China
+Hetian,China
+Heyuan,China
+Heze,China
+Hialeah,United States
+Higashihiroshima,Japan
+Higashikurume,Japan
+Higashimurayama,Japan
+Higashiosaka,Japan
+Hikone,Japan
+Hildesheim,Germany
+Hilla,Iraq
+Himamaylan City,Philippines
+Himeji,Japan
+Hindupur,India
+Hino,Japan
+Hirakata,Japan
+Hiratsuka,Japan
+Hirosaki,Japan
+Hiroshima,Japan
+Hisar,India
+Hitachi,Japan
+Hitachinaka,Japan
+Hobart,Australia
+Ho Chi Minh City,Vietnam
+Hofu,Japan
+Holguin,Cuba
+Holon,Israel
+Homs,Syria
+Homyel,Belarus
+Honghu,China
+Hong Kong,Hong Kong
+Honolulu,United States
+Horlivka,Ukraine
+Hortolandia,Brazil
+Hoshiarpur,India
+Hospet,India
+Hospitalet de Llobregat,Spain
+Houghly-Chinsura,India
+Houma,China
+Houston,United States
+Hoya,Japan
+Hrodna,Belarus
+Hsinchu,Taiwan
+Huadian,China
+Huaian,China
+Huaibei,China
+Huaihua,China
+Huainan,China
+Huaiyin,China
+Huambo,Angola
+Huancayo,Peru
+Huanghua,China
+Huangshan,China
+Huangshi,China
+Huangyan,China
+Huanuco,Peru
+Huaraz,Peru
+Huaying,China
+Hubli-Dharwad,India
+Hudaida,Yemen
+Huddersfield,United Kingdom
+Huc,Vietnam
+Huelva,Spain
+Huhehaote,China
+Huixian,China
+Huizhou,China
+Huludao,China
+Hulunbuir,China
+Hunchun,China
+Huntington Beach,United States
+Huntsville,United States
+Huozhou,China
+Huzhou,China
+Hyderabad,India
+Hyderabad,Pakistan
+Hyesan,North Korea
+Iasi,Romania
+Ibadan,Nigeria
+Ibague,Colombia
+Ibaraki,Japan
+Ibarra,Ecuador
+Ibirite,Brazil
+Ica,Peru
+Ichalakaranji,India
+Ichihara,Japan
+Ichikawa,Japan
+Ichinomiya,Japan
+Ife,Nigeria
+Iida,Japan
+Ikeda,Japan
+Ikere-Ekiti,Nigeria
+Ikoma,Japan
+Iksan,South Korea
+Ilagan,Philippines
+Ilam,Iran
+Ila,Nigeria
+Ilesa,Nigeria
+Ilheus,Brazil
+Iligan,Philippines
+Iloilo City,Philippines
+Ilopango,El Salvador
+Ilorin,Nigeria
+Imabari,Japan
+Imbaba,Egypt
+Imperatriz,Brazil
+Imphal,India
+Inazawa,Japan
+Inchon,South Korea
+Indaiatuba,Brazil
+Independence,United States
+Indianapolis,United States
+Indore,India
+Inegol,Turkey
+Inglewood,United States
+Ingolstadt,Germany
+Innsbruck,Austria
+Ipatinga,Brazil
+Ipoh,Malaysia
+Ipswich,United Kingdom
+Iquique,Chile
+Iquitos,Peru
+Irapuato,Mexico
+Irbid,Jordan
+Iriga,Philippines
+Irkutsk,Russia
+Iruma,Japan
+Irvine,United States
+Irving,United States
+Ise,Japan
+Isesaki,Japan
+Ishinomaki,Japan
+Iskenderun,Turkey
+Islamabad,Pakistan
+Islam Shahr,Iran
+Ismailia,Egypt
+Isparta,Turkey
+Istanbul,Turkey
+Itaborai,Brazil
+Itabuna,Brazil
+Itagui,Brazil
+Itaituba,Brazil
+Itajai,Brazil
+Itami,Japan
+Itapecerica da Serra,Brazil
+Itapetininga,Brazil
+Itapevi,Brazil
+Itaquaquecetuba,Brazil
+Itu,Brazil
+Ivano-Frankivsk,Ukraine
+Ivanovo,Russia
+Iwaki,Japan
+Iwakuni,Japan
+Iwatsuki,Japan
+Iwo,Nigeria
+Ixtapaluca,Mexico
+Izhevsk,Russia
+Izmir,Turkey
+Izmit,Turkey
+Izumi,Japan
+Jabalpur,India
+Jaboatao dos Guarapes,Brazil
+Jacarei,Brazil
+Jackson,United States
+Jacksonville,United States
+Jacobabad,Pakistan
+Jaen,Spain
+Jaffna,Sri Lanka
+Jaipur,India
+Jakarta,Indonesia
+Jalalabad,Afghanistan
+Jalandhar,India
+Jalgaon,India
+Jalna,India
+Jalpaiguri,India
+Jamalpur,Bangladesh
+Jambi,Indonesia
+Jamnagar,India
+Jamshedpur,India
+Jaragua do Sul,Brazil
+Jaranwala,Pakistan
+Jastrzebie Zdroj,Poland
+Jau,Brazil
+Jaunpur,India
+Jayapura,Indonesia
+Jeddah,Saudi Arabia
+Jena,Germany
+Jeongju,South Korea
+Jeonju,South Korea
+Jequie,Brazil
+Jerez de la Frontera,Spain
+Jersey City,United States
+Jerusalem,Israel
+Jessore,Bangladesh
+Jhang,Pakistan
+Jhansi,India
+Jhelum,Pakistan
+Jiagedaqi,China
+Jiamusi,China
+Ji'an,China
+Jiangmen,China
+Jiangshan,China
+Jiangyin,China
+Jiangyou,China
+Jiaohe,China
+Jiaojiang,China
+Jiaozhou City,China
+Jiaozuo,China
+Jiaxing,China
+Jiayuguan,China
+Jieshou,China
+Jijel,Algeria
+Jimma,Ethiopia
+Jimo,China
+Jinan,China
+Jinchang,China
+Jincheng,China
+Jingdezhen,China
+Jingmen,China
+Jingzhou,China
+Jinhua,China
+Jining,China
+Jinshi City,China
+Jinzhong,China
+Jinzhou,China
+Jishou,China
+Jiujiang,China
+Jiuquan,China
+Jiutai,China
+Jiutepec,Mexico
+Jixi,China
+Jiyuan,China
+Jizzakh,Uzbekistan
+Joao Pessoa,Brazil
+Jodhpur,India
+Joetsu,Japan
+Johannesburg,SA
+Johor Bahru,Malaysia
+Joinville,Brazil
+Joliet,United States
+Jonkoping,Sweden
+Jorhat,India
+Jos,Nigeria
+Juazeiro,Brazil
+Juazeiro do Norte,Brazil
+Juba,South Sudan
+Juiz de Fora,Brazil
+Juliaca,Peru
+Junagadh,India
+Jundiai,Brazil
+Jyvaskyla,Finland
+Kabankalan,Philippines
+Kabul,Afghanistan
+Kabwe,Zambia
+Kadhimiya,Iraq
+Kadoma,Japan
+Kaduna,Nigeria
+Kaesong,North Korea
+Kafr Dawar,Egypt
+Kagoshima,Japan
+Kahramanmaras,Turkey
+Kaifeng,China
+Kaili,China
+Kairouan,Tunisia
+Kaiserslautern,Germany
+Kaiyuan,China
+Kakamigahara,Japan
+Kakinada,India
+Kakogawa,Japan
+Kaliningrad,Russia
+Kalisz,Poland
+Kallithea,Greece
+Kaluga,Russia
+Kalyan,India
+Kamagaya,Japan
+Kamakura,Japan
+Kamarhati,India
+Kamensk-Uralsky,Russia
+Kamianets-Podilskyi,Ukraine
+Kamoke,Pakistan
+Kampala,Uganda
+Kampong Cham,Cambodia
+Kamptee,India
+Kamyshin,Russia
+Kananga,DR Congo
+Kanazawa,Japan
+Kanchipuram,India
+Kanchrapara,India
+Kandahar,Afghanistan
+Kandy,Sri Lanka
+Kanggye,Myanmar
+Kanhangad,India
+Kannur,India
+Kano,Nigeria
+Kanpur,India
+Kansas City,United States
+Kansk,Russia
+Kaohsiung,Taiwan
+Kaolack,Senegal
+Karachi,Pakistan
+Karaganda,Kazakhstan
+Karaikkudi,India
+Karaj,Iran
+Karaman,Turkey
+Karamay,China
+Karbala,Iraq
+Karimnagar,India
+Kariya,Japan
+Karlsruhe,Germany
+Karnal,India
+Karur,India
+Kashan,Iran
+Kashgar,China
+Kashihara,Japan
+Kashiwa,Japan
+Kassala,Sudan
+Kassel,Germany
+Kasugai,Japan
+kasuga,Japan
+Kasukabe,Japan
+Kasur,Pakistan
+Kathlehong,SA
+Kathmandu,Nepal
+Katihar,India
+Katowice,Poland
+Kaunas,Lithuania
+Kawachinagano,Japan
+Kawagoe,Japan
+Kawaguchi,Japan
+Kawanishi,Japan
+Kawasaki,Japan
+Kayseri,Turkey
+Kazan,Russia
+Kecskemet,Hungary
+Kediri,Indonesia
+Keelung,Taiwan
+Kelowna,Canada
+Kemerovo,Russia
+Kempton Park,SA
+Kenitra,Morocco
+Kerch,Ukraine
+Kerman,Iran
+Kermanshah,Iran
+Khabarovsk,Russia
+Khairpur,Pakistan
+Khammam,India
+Khandwa,India
+Khanewal,Pakistan
+Khanpur,Pakistan
+Kharagpur,India
+Kharkiv,Ukraine
+Khartoum North,Sudan
+Khartoum,Sudan
+Khasavyurt,Russia
+Khayelitsha,SA
+Khenchela,Algeria
+Kherson,Ukraine
+Khimki,Russia
+Khmelnytskyi,Ukraine
+Khomeini Shahr,Iran
+Khon Kaen,Thailand
+Khoramabad,Iran
+Khoramshahr,Iran
+Khouribga,Morocco
+Khoy,Iran
+Khulna,Bangladesh
+Kidapawan City,Philippines
+Kielce,Poland
+Kiel,Germany
+Kiev,Ukraine
+Kigali,Rwanda
+Kikwit,DR Congo
+Kimberley,SA
+Kimhae,South Korea
+Kingston,Canada
+Kingston,Jamaica
+Kingston upon Hull,United Kingdom
+Kinshasa,DR Congo
+Kirikkale,Turkey
+Kirkuk,Iraq
+Kirovohrad,Ukraine
+Kiryu,Japan
+Kisangani,DR Congo
+Kisarazu,Japan
+Kiselyovsk,Russia
+Kishiwada,Japan
+Kislovodsk,Russia
+Kismayo,Somalia
+Kisumu,Kenya
+Kitakyushu,Japan
+Kitami,Japan
+Kitchener,Canada
+Kitwe,Zambia
+Kiziltepe,Turkey
+Klaipeda,Lithuania
+Klang,Malaysia
+Knoxville,United States
+Kobe,Japan
+Koblenz,Germany
+Kochi,India
+Kochi,Japan
+Kodaira,Japan
+Kofu,Japan
+Koganei,Japan
+Kohat,Pakistan
+Kokand,Uzbekistan
+Kokshetau,Kazakhstan
+Kokubunji,Japan
+Kolar,India
+Kolhapur,India
+Kolkata,India
+Kollam,India
+Kolomna,Russia
+Kolwezi,DR Congo
+Komaki,Japan
+Komatsu,Japan
+Komsomolsk-on-Amur,Russia
+Konya,Turkey
+Korba,India
+Korhogo,Ivory Coast
+Koriyama,Japan
+Korla,China
+Korolyov,Russia
+Koronadal City,Philippines
+Koshigaya,Japan
+Kosice,Slovakia
+Kostanay,Kazakhstan
+Kosti,Sudan
+Kostroma,Russia
+Koszalin,Poland
+Kota Bharu,Malaysia
+Kota,India
+Kota Kinabalu,Malaysia
+Kothagudem,India
+Kottayam,India
+Kovrov,Russia
+Kozhikode,India
+Kragujevac,Serbia
+Krakow,Poland
+Kraljevo,Serbia
+Kramatorsk,Ukraine
+Krasnodar,Russia
+Krasnoyarsk,Russia
+Krasnyi Luch,Ukraine
+Krefeld,Germany
+Kremenchuk,Ukraine
+Krishnanagar,India
+Krusevac,Serbia
+Kryvyi Rih,Ukraine
+Kuala Lumpur,Malaysia
+Kuala Terengganu,Malaysia
+Kuantan,Malaysia
+Kuching,Malaysia
+Kumagaya,Japan
+Kumamoto,Japan
+Kumasi,Ghana
+Kumbakonam,India
+Kunduz,Afghanistan
+Kunming,China
+Kunshan,China
+Kuopio,Finland
+Kurashiki,Japan
+Kure,Japan
+Kurgan,Russia
+Kurnool,India
+Kursk,Russia
+Kurume,Japan
+Kusatsu,Japan
+Kushiro,Japan
+Kutahya,Turkey
+Kutaisi,Georgia
+Kut,Iraq
+Kuwait City,Kuwait
+Kuwana,Japan
+Kuytun,China
+Kwekwe,Zimbabwe
+Kyoto,Japan
+Kyzylorda,Kazakhstan
+Kyzyl,Russia
+La Ceiba,Honduras
+Lafayette,United States
+Lages,Brazil
+Laghouat,Algeria
+Lagos,Nigeria
+Lahore,Pakistan
+Lahti,Finland
+Laiwu,China
+Laiyang,China
+Laizhou,China
+Lakewood,United States
+Lalitpur,India
+Lancaster,United States
+Langfang,China
+Lansing,United States
+Lanus,Argentina
+Lanxi,China
+Lanzhou,China
+Laoag City,Philippines
+Laohekou,China
+La Paz,Bolivia
+La Paz,Mexico
+La Plata,Argentina
+Lapu-Lapu City,Philippines
+Laredo,United States
+La Rioja,Argentina
+Larissa,Greece
+Larkana,Pakistan
+Larnaca,Cyprus
+La Serena,Chile
+Las Palmas de Gran Canaria,Spain
+Las Vegas,United States
+Latakia,Syria
+Latina,Italy
+Latur,India
+Launceston,Australia
+Lauro de Freitas,Brazil
+Lausanne,Switzerland
+Laval,Canada
+La Victoria,Venezuela
+Leeds,United Kingdom
+Leganes,Spain
+Legazpi City,Philippines
+Legnica,Poland
+Le Havre,France
+Leicester,United Kingdom
+Leiden,Netherlands
+Leipzig,Germany
+Leiyang,China
+Leling,China
+Le Mans,France
+Lengshuijiang,China
+Lengshuitan,China
+Leninsk-Kuznetsky,Russia
+Lens,France
+Leon,Mexico
+Leon,Nicaragua
+Leon,Spain
+Leshan,China
+Leskovac,Serbia
+Leverkusen,Germany
+Lexington,United States
+Lhasa,China
+Lianyuan,China
+Lianyungang,China
+Liaocheng,China
+Liaoyang,China
+Liaoyuan,China
+Libreville,Gabon
+Lichuan,China
+Lida,Belarus
+Liege,Belgium
+Ligao City,Philippines
+Likasi,DR Congo
+Liling,China
+Lille,France
+Lilongwe,Malawi
+Lima,Peru
+Limassol,Cyprus
+Limeira,Brazil
+Limerick,Ireland
+Limoges,France
+Lincoln,United States
+Linfen,China
+Linhai,China
+Linhares,Brazil
+Linkoping,Sweden
+Linqing,China
+Linxia,China
+Linyi,China
+Linz,Austria
+Lipa City,Philippines
+Lipetsk,Russia
+Lisbon,Portugal
+Lishui,China
+Little Rock,United States
+Liupanshui,China
+Liuzhou,China
+Liverpool,United Kingdom
+Livonia,United States
+Livorno,Italy
+Ljubljana,Slovenia
+Lleida,Spain
+Lobito,Angola
+Logrono,Spain
+Loja,Ecuador
+Lomas de Zamora,Argentina
+Lome,Togo
+London,Canada
+London,United Kingdom
+Londrina,Brazil
+Long Beach,United States
+Longjing,China
+Longkou,China
+Longueuil,Canada
+Longxuyen,Vietnam
+Longyan,China
+Los Angeles,Chile
+Los Angeles,United States
+Los Mochis,Mexico
+Los Teques,Venezuela
+Loudi,China
+Louisville,United States
+Lowell,United States
+Lu'an,China
+Luanda,Angola
+Luanshya,Zambia
+Lubbock,United States
+Lubeck,Germany
+Lublin,Poland
+Lubumbashi,DR Congo
+Lucena City,Philippines
+Lucerne,Switzerland
+Lucknow,India
+Ludhiana,India
+Ludwigshafen am Rhein,Germany
+Luhansk,Ukraine
+Lujan de Cuyo,Argentina
+Luohe,China
+Luoyang,China
+Lusaka,Zambia
+Luton,United Kingdom
+Lutsk,Ukraine
+Luxembourg,Luxembourg
+Luxor,Egypt
+Luzhou,China
+Luziania,Brazil
+Lviv,Ukraine
+Lyon,France
+Lysychansk,Ukraine
+Lyubertsy,Russia
+Ma'anshan,China
+Maastricht,Netherlands
+Mabalacat,Philippines
+Macae,Brazil
+Macapa,Brazil
+Macau,Macau
+Maceio,Brazil
+Machakos,Kenya
+Machala,Ecuador
+Macheng,China
+Machida,Japan
+Machilipatnam,India
+Madison,United States
+Madiun,Indonesia
+Madrid,Spain
+Madurai,India
+Maebashi,Japan
+Magadan,Russia
+Magangue,Colombia
+Magdeburg,Germany
+Mage,Brazil
+Magelang,Indonesia
+Magnitogorsk,Russia
+Mahabad,Iran
+Mahbubnagar,India
+Maicao,Colombia
+Maidstone,United Kingdom
+Maiduguri,Nigeria
+Mainz,Germany
+Makati,Philippines
+Makhachkala,Russia
+Makiivka,Ukraine
+Malabo,Equatorial Guinea
+Malaga,Spain
+Malang,Indonesia
+Malappuram,India
+Malasiqui,Philippines
+Malatya,Turkey
+Malaybalay City,Philippines
+Malayer,Iran
+Malegaon,India
+Malita,Philippines
+Malmo,Sweden
+Malolos City,Philippines
+Manado,Indonesia
+Managua,Nicaragua
+Manama,Bahrain
+Manaus,Brazil
+Manavgat,Turkey
+Manchester,United Kingdom
+Manchester,United States
+Mandalay,Burkina Faso
+Mandaluyong City,Philippines
+Mandaue City,Philippines
+Mandya,India
+Mangalore,India
+Mangaung,SA
+Mangora,Pakistan
+Manila,Philippines
+Manisa,Turkey
+Manizales,Colombia
+Mannheim,Germany
+Manta,Ecuador
+Manzhouli,China
+Maoming,China
+Maputo,Mozambique
+Maraba,Brazil
+Maracaibo,Venezuela
+Maracanau,Brazil
+Maracay,Venezuela
+Maradi,Niger
+Maraqeh,Iran
+Marawi City,Philippines
+Mardan,Pakistan
+Mar del Plata,Argentina
+Margilan,Uzbekistan
+Maribor,Slovenia
+Marilao,Philippines
+Marilia,Brazil
+Maringa,Brazil
+Mariupol,Ukraine
+Mariveles,Philippines
+Markham,Canada
+Marrakech,Morocco
+Marseille,France
+Marvdasht,Iran
+Masan,South Korea
+Masaya,Nicaragua
+Maseru,Lesotho
+Mashhad,Iran
+Masjed Soleyman,Iran
+Matadi,DR Congo
+Matamoros,Mexico
+Matanzas,Cuba
+Mataro,Spain
+Mathura,India
+Mati,Philippines
+Matsubara,Japan
+Matsudo,Japan
+Matsue,Japan
+Matsumoto,Japan
+Matsusaka,Japan
+Matsuyama,Japan
+Maturin,Venezuela
+Maua,Brazil
+Maunath Bhanjan,India
+Mawlamyaing,Moulmein,Burkina Faso
+Mayaguez,Puerto Rico
+Maykop,Russia
+Mazari Sharif,Afghanistan
+Mazatlan,Mexico
+Mazyr,Belarus
+Mbabane,Swaziland
+Mbandaka,DR Congo
+Mbeya,Tanzania
+Mbour,Senegal
+Mbuji-Mayi,DR Congo
+McAllen,United States
+Mecca,Saudi Arabia
+Medan,Indonesia
+Medea,Algeria
+Medellin,Colombia
+Medina,Saudi Arabia
+Medinipur,India
+Meerut,India
+Mehsana,India
+Meihekou,China
+Meizhou,China
+Mejicanos,El Salvador
+Mekele,Ethiopia
+Meknes,Morocco
+Melbourne,Australia
+Melitopol,Ukraine
+Memphis,United States
+Mendoza,Argentina
+Merca,Somalia
+Merida,Mexico
+Merida,Venezuela
+Mersin,Turkey
+Mesa,United States
+Mesquite,United States
+Messad,Algeria
+Messina,Italy
+Metepec,Mexico
+Metz,France
+Mexicali,Mexico
+Mexico City,Mexico
+Mexico,Mexico
+Meycauayan City,Philippines
+Mezhdurechensk,Russia
+Miami Gardens,United States
+Miami,United States
+Mianyang,China
+Miass,Russia
+Michurinsk,Russia
+Middlesbrough,United Kingdom
+Midsayap,Philippines
+Milagro,Ecuador
+Milan,Italy
+Milton Keynes,United Kingdom
+Miluo,China
+Milwaukee,United States
+Minatitlan,Mexico
+Minglanilla,Philippines
+Minneapolis,United States
+Minoh,Japan
+Minsk,Belarus
+Mirpur Khas,Pakistan
+Mirzapur-cum-Vindhyachal,India
+Misato,Japan
+Mishan,China
+Mishima,Japan
+Miskolc,Hungary
+Misrata,Libya
+Mississauga,Canada
+Mitaka,Japan
+Mito,Japan
+Miyakonojo,Japan
+Miyazaki,Japan
+Mobile,United States
+Modena,Italy
+Modesto,United States
+Modinagar,India
+Moers,Germany
+Mogadishu,Somalia
+Moga,India
+Mogi das Cruzes,Brazil
+Mogi Guacu,Brazil
+Mogilev,Mahilyow,Belarus
+Mogpo,South Korea
+Mombasa,Kenya
+Monchengladbach,Germany
+Monclova,Mexico
+Moncton,Canada
+Monrovia,Liberia
+Monteria,Colombia
+Monterrey,Mexico
+Montes Claros,Brazil
+Montevideo,Uruguay
+Montgomery,United States
+Montpellier,France
+Montreal,Canada
+Montreuil,France
+Monywa,Myanmar
+Monza,Italy
+Moradabad,India
+Moratuwa,Sri Lanka
+Morelia,Mexico
+Morena,India
+Moreno Valley,United States
+Moriguchi,Japan
+Morioka,Japan
+Morogoro,Tanzania
+Morvi,India
+Moscow,Russia
+Mossoro,Brazil
+Mostaganem,Algeria
+Mostar,Bosnia and Herzegovina
+Mostoles,Spain
+Mosul,Iraq
+M'Sila,Algeria
+Mudanjiang,China
+Mufulira,Zambia
+Mulheim an der Ruhr,Germany
+Mulhouse,France
+Multan,Pakistan
+Mumbai,India
+Munger,India
+Munich,Germany
+Munster,Germany
+Muntinlupa City,Philippines
+Murcia,Spain
+Murfreesboro,United States
+Muridke,Pakistan
+Murmansk,Russia
+Murom,Russia
+Muroran,Japan
+Murwara,India
+Musashino,Japan
+Muscat,Oman
+Mushin,Nigeria
+Mutare,Zimbabwe
+Muzaffargharh,Pakistan
+Muzaffarnagar,India
+Muzaffarpur,India
+Mwanza,Tanzania
+Mykolaiv,Ukraine
+Mymensingh,Bangladesh
+Mysore,India
+Mytho,Vietnam
+Mytishchi,Russia
+Nabadwip,India
+Naberezhnye Chelny,Russia
+Nadiad,India
+Nagano,Japan
+Nagaoka,Japan
+Naga,Philippines
+Nagareyama,Japan
+Nagasaki,Japan
+Nagercoil,India
+Nagoya,Japan
+Nagpur,India
+Naha,Japan
+Naihati,India
+Nairobi,Kenya
+Najafabad,Iran
+Najaf,Iraq
+Nakhodka,Russia
+Nakhon Pathom,Thailand
+Nakhon Ratchasima,Thailand
+Nakhon Sawan,Thailand
+Nakhon Si Thammarat,Thailand
+Nakuru,Kenya
+Nalchik,Russia
+Namangan,Uzbekistan
+Nampo,North Korea
+Nampula,Mozambique
+Namur,Belgium
+Nanchang,China
+Nanchong,China
+Nancy,France
+Nanded,India
+Nandyal,India
+Nanjing,China
+Nanning,China
+Nanping,China
+Nantes,France
+Nantong,China
+Nanyang,China
+Naperville,United States
+Napier-Hastings,NZ
+Naples,Italy
+Nara,Japan
+Narashino,Japan
+Narayanganj,Bangladesh
+Nashik,India
+Nashville,United States
+Nasiriyah,Iraq
+Nassau,Bahamas
+Nasugbu,Philippines
+Natal,Brazil
+Naucalpan,Mexico
+Navapolatsk,Belarus
+Navi Mumbai,India
+Navoiy,Uzbekistan
+Navotas,Philippines
+Navsari,India
+Nawabganj,Bangladesh
+Nawabshah,Pakistan
+Nazilli,Turkey
+N'Djamena,Chad
+Ndola,Zambia
+Neftekamsk,Russia
+Nefteyugansk,Russia
+Neijiang,China
+Neiva,Colombia
+Nellore,India
+Netanya,Israel
+Neuquen,Argentina
+Neuss,Germany
+Nevinnomyssk,Russia
+Newark,United States
+Newcastle,Australia
+Newcastle upon Tyne,United Kingdom
+New Delhi,India
+New Haven,United States
+New Orleans,United States
+Newport,United Kingdom
+New York,United States
+Neyagawa,Japan
+Neyveli,India
+Nha Trang,Vietnam
+Niamey,Niger
+Nice,France
+Nicosia,Cyprus
+Niigata,Japan
+Niihama,Japan
+Niiza,Japan
+Nijmegen,Netherlands
+Nikopol,Ukraine
+Nilopolis,Brazil
+Nimes,France
+Ningbo,China
+Ningde,China
+Nishapur,Iran
+Nishinomiya,Japan
+Nishio,Japan
+Nis,Serbia
+Niteroi,Brazil
+Nizamabad,India
+Nizhnekamsk,Russia
+Nizhnevartovsk,Russia
+Nizhny Novgorod,Russia
+Nizhny Tagil,Russia
+Nobeoka,Japan
+Noda,Japan
+Nogales,Mexico
+Noginsk,Russia
+Noida,India
+Nonthaburi,Thailand
+Norilsk,Russia
+Norman,United States
+Norrkoping,Sweden
+Northampton,United Kingdom
+North Las Vegas,United States
+Norwalk,United States
+Norwich,United Kingdom
+Norzagaray,Philippines
+Nossa Senhora do Socorro,Brazil
+Nottingham,United Kingdom
+Nouakchott,Mauritania
+Nova Friburgo,Brazil
+Nova Iguacu,Brazil
+Novara,Italy
+Novi Sad,Serbia
+Novocheboksarsk,Russia
+Novocherkassk,Russia
+Novo Hamburgo,Brazil
+Novokuybyshevsk,Russia
+Novokuznetsk,Russia
+Novomoskovsk,Russia
+Novorossiysk,Russia
+Novoshakhtinsk,Russia
+Novosibirsk,Russia
+Novotroitsk,Russia
+Novy Urengoy,Russia
+Noyabrsk,Russia
+Nuevo Laredo,Mexico
+Nukus,Uzbekistan
+Numazu,Japan
+Nuremberg,Germany
+Nyala,Sudan
+Nyiregyhaza,Hungary
+Oakland,United States
+Oakville,Canada
+Oaxaca de Juarez,Mexico
+Oberhausen,Germany
+Obihiro,Japan
+Obninsk,Russia
+Oceanside,United States
+Odawara,Japan
+Odense,Denmark
+Odessa,Ukraine
+Odintsovo,Russia
+Offenbach am Main,Germany
+Ogaki,Japan
+Ogbomosho,Nigeria
+Oita,Japan
+Okara,Pakistan
+Okayama,Japan
+Okazaki,Japan
+Okene,Nigeria
+Okinawa,Japan
+Oklahoma City,United States
+Oktyabrsky,Russia
+Oldenburg,Germany
+Oldham,United Kingdom
+Olinda,Brazil
+Olmaliq,Uzbekistan
+Olomouc,Czech Republic
+Olongapo,Philippines
+Olsztyn,Poland
+Omaha,United States
+Omdurman,Sudan
+Omsk,Russia
+Omuta,Japan
+Ongole,India
+Onitsha,Nigeria
+Ontario,United States
+Opole,Poland
+Oradea,Romania
+Oral,Kazakhstan
+Oran,Algeria
+Orange,United States
+Ordos City,China
+Ordu,Turkey
+Orebro,Sweden
+Orekhovo-Zuyevo,Russia
+Orenburg,Russia
+Orizaba,Mexico
+Orlando,United States
+Orleans,France
+Ormoc,Philippines
+Orsha,Belarus
+Orsk,Russia
+Oruro,Bolivia
+Or Yehuda,Israel
+Oryol,Russia
+Osaka,Japan
+Osasco,Brazil
+Oshawa,Canada
+Osh,Kyrgyzstan
+Oshogbo,Nigeria
+Osijek,Croatia
+Oslo,Norway
+Osmaniye,Turkey
+Osnabruck,Germany
+Osorno,Chile
+Ostrava,Czech Republic
+Ota,Japan
+Otaru,Japan
+Otsu,Japan
+Ottawa,Canada
+Ouagadougou,Burkina Faso
+Ouargla,Algeria
+Oujda,Morocco
+Oulu,Finland
+Ourense,Spain
+Overland,United States
+Oviedo,Spain
+Oxford,United Kingdom
+Oxnard,United States
+Oyama,Japan
+Oyo,Nigeria
+Ozamiz,Philippines
+Paarl,SA
+Pabna,Bangladesh
+Pachuca,Mexico
+Padang,Indonesia
+Paderborn,Germany
+Padua,Italy
+Pagadian City,Philippines
+Pago Pago,United States
+Paita,Peru
+Pakalongan,Indonesia
+Pakan Baru,Indonesia
+Pakpattan,Pakistan
+Palakkad,India
+Palangkaraya,Indonesia
+Palembang,Indonesia
+Palermo,Italy
+Pali,India
+Palma de Mallorca,Spain
+Palmas,Brazil
+Palmdale,United States
+Palmira,Colombia
+Palu,Indonesia
+Pamplona,Spain
+Panabo City,Philippines
+Panama City,Panama
+Pancevo,Serbia
+Panevezys,Lithuania
+Panihati,India
+Panipat,India
+Panjin,China
+Panzhihua,China
+Papeete,France
+Paradise,United States
+Parakou,Benin
+Paramaribo,Suriname
+Parana,Argentina
+Paranagua,Brazil
+Parang,Philippines
+Parbhani,India
+Pardubice,Czech Republic
+Paris,France
+Parla,Spain
+Pasadena,United States
+Patna,India
+Patos de Minas,Brazil
+Patras,Greece
+Patratu,India
+Paulista,Brazil
+Pavlodar,Kazakhstan
+Pavlohrad,Ukraine
+Pecs,Hungary
+Pelotas,Brazil
+Pematang Siantar,Indonesia
+Pembroke Pines,United States
+Penza,Russia
+Peoria,United States
+Pereira,Colombia
+Peristeri,Greece
+Perm,Russia
+Perpignan,France
+Perth,Australia
+Perugia,Italy
+Pervouralsk,Russia
+Pescara,Italy
+Peshawar,Pakistan
+Petah Tikva,Israel
+Petaling Jaya,Malaysia
+Petare,Venezuela
+Peterborough,United Kingdom
+Petrolina,Brazil
+Petropavl,Kazakhstan
+Petropavlovsk-Kamchatsky,Russia
+Petropolis,Brazil
+Petrozavodsk,Russia
+Pforzheim,Germany
+Philadelphia,United States
+Phnom Penh,Cambodia
+Phoenix,United States
+Phuket,Thailand
+Phusro,India
+Phyongsong,North Korea
+Piatra Neamt,Romania
+Pietermaritzburg,SA
+Pikine,Senegal
+Pilibhit,India
+Pinar del Rio,Cuba
+Pindamonhangaba,Brazil
+Pingdingshan,China
+Pingdu,China
+Pingliang,China
+Pingxiang,China
+Pinhais,Brazil
+Pinsk,Belarus
+Piracicaba,Brazil
+Piraeus,Greece
+Pir Mahal,Pakistan
+Pitesti,Romania
+Pittsburgh,United States
+Piura,Peru
+Plano,United States
+Pleven,Bulgaria
+Plock,Poland
+Ploiesti,Romania
+Plovdiv,Bulgaria
+Plymouth,United Kingdom
+Plzen,Czech Republic
+Pocos de Caldas,Brazil
+Podgorica,Montenegro
+Podolsk,Russia
+Pohang,South Korea
+Pointe-Noire,Congo
+Pollachi,India
+Polomolok,Philippines
+Poltava,Ukraine
+Pomona,United States
+Ponce,United States
+Pondicherry,India
+Ponta Grossa,Brazil
+Pontianak,Indonesia
+Poole,United Kingdom
+Popayan,Colombia
+Porac,Philippines
+Porbandar,India
+Port-au-Prince,Haiti
+Port Elizabeth,SA
+Port Harcourt,Nigeria
+Portland,United States
+Port Louis,Mauritius
+Port Moresby,Papua New Guinea
+Porto Alegre,Brazil
+Porto Novo,Benin
+Porto,Portugal
+Porto Velho,Brazil
+Portoviejo,Ecuador
+Port Said,Egypt
+Portsmouth,United Kingdom
+Port Sudan,Sudan
+Posadas,Argentina
+Potosi,Bolivia
+Potsdam,Germany
+Pouso Alegre,Brazil
+Poza Rica de Hidalgo,Mexico
+Poznan,Poland
+Prague,Czech Republic
+Praia,Cape Verde
+Praia Grande,Brazil
+Prato,Italy
+Presidente Prudente,Brazil
+Preston,United Kingdom
+Pretoria,SA
+Prijedor,Bosnia and Herzegovina
+Pristina,Kosovo
+Probolinggo,Indonesia
+Proddatur,India
+Prokopyevsk,Russia
+Providence,United States
+Provo,United States
+Pskov,Russia
+Pucallpa,Peru
+Puebla de Zaragoza,Mexico
+Pueblo,United States
+Puente Alto,Chile
+Puerto Cabello,Venezuela
+Puerto Montt,Chile
+Puerto Princesa City,Philippines
+Puli Khumri,Afghanistan
+Pune,India
+Puno,Peru
+Punta Arenas,Chile
+Punto Fijo,Venezuela
+Puri,India
+Purnia,India
+Putian,China
+Puyang,China
+Pyatigorsk,Russia
+Pyongyang,North Korea
+Qa'em Shahr,Iran
+Qamishli,Syria
+Qarchak,Iran
+Qazvin,Iran
+Qianjiang,China
+Qidong,China
+Qingdao,China
+Qingtongxia,China
+Qingyang,China
+Qingyuan,China
+Qingzhou,China
+Qinhuangdao,China
+Qinyang,China
+Qinzhou,China
+Qiqihaer,China
+Qitaihe,China
+Qom,Iran
+Quanzhou,China
+Quebec City,Canada
+Queimados,Brazil
+Queretaro,Mexico
+Quetta,Pakistan
+Quevedo,Ecuador
+Quezon City,Philippines
+Qufu,China
+Quilmes,Argentina
+Quilpue,Chile
+Qui Nhon,Vietnam
+Quito,Ecuador
+Qujing,China
+Quzhou,China
+Rabat,Morocco
+Rach Gia,Vietnam
+Radom,Poland
+Raebareli,India
+Rahim Yar Khan,Pakistan
+Raichur,India
+Raiganj,India
+Raipur,India
+Rajahmundry,India
+Rajapalayam,India
+Rajkot,India
+Rajnandgaon,India
+Rajshahi,Bangladesh
+Raleigh,United States
+Ramadi,Iraq
+Ramagundam,India
+Ramat Gan,Israel
+Ramnicu Valcea,Romania
+Rampur,India
+Ranaghat,India
+Rancagua,Chile
+Ranchi,India
+Rancho Cucamonga,United States
+Rangpur,Bangladesh
+Raniganj,India
+Rasht,Iran
+Ratlam,India
+Ravenna,Italy
+Rawalpindi,Pakistan
+Rayong,Thailand
+Reading,United Kingdom
+Recife,Brazil
+Recklinghausen,Germany
+Regensburg,Germany
+Reggio Calabria,Italy
+Regina,Canada
+Rehovot,Israel
+Reims,France
+Relizane,Algeria
+Remscheid,Germany
+Rennes,France
+Reno,United States
+Renqiu,China
+Resende,Brazil
+Resistencia,Argentina
+Reutlingen,Germany
+Rewa,India
+Reykjavik,Iceland
+Reynosa,Mexico
+Ribeirao das Neves,Brazil
+Ribeirao Pires,Brazil
+Ribeirao Preto,Brazil
+Richmond,Canada
+Richmond Hill,Canada
+Richmond,United States
+Riga,Latvia
+Rijeka,Croatia
+Rimini,Italy
+Riobamba,Ecuador
+Rio Branco,Brazil
+Rio Claro,Brazil
+Rio Cuarto,Argentina
+Rio de Janeiro,Brazil
+Rio Grande,Brazil
+Rio Verde,Brazil
+Rishon LeZion,Israel
+Riverside,United States
+Rivne,Ukraine
+Riyadh,Saudi Arabia
+Rizhao,China
+Rochester,United States
+Rockford,United States
+Rodriguez,Philippines
+Rohtak,India
+Rome,Italy
+Rondonopolis,Brazil
+Rongcheng,China
+Roodepoort,SA
+Rosario,Argentina
+Rostock,Germany
+Rostov-on-Don,Russia
+Rotherham,United Kingdom
+Rotterdam,Netherlands
+Rouen,France
+Rourkela,India
+Roxas,Philippines
+Rubtsovsk,Russia
+Ruda Slaska,Poland
+Rudny,Kazakhstan
+Rui'an,China
+Ruichang,China
+Ruse,Bulgaria
+Russeifa,Jordan
+Rustavi,Georgia
+Ruzhou,China
+Ryazan,Russia
+Rybinsk,Russia
+Rybnik,Poland
+Rzeszow,Poland
+Saanich,Canada
+Saarbrucken,Germany
+Sabadell,Spain
+Sabara,Brazil
+Sabha,Libya
+Sabzewar,Iran
+Sacramento,United States
+Sadiqabad,Pakistan
+Safi,Morocco
+Saga,Japan
+Sagamihara,Japan
+Sagar,India
+Sagay City,Philippines
+Saguenay,Canada
+Saharanpur,India
+Sahiwal,Pakistan
+Saida,Algeria
+Saidpur,Bangladesh
+Saint-Denis,Reunion
+Saint-Etienne,France
+Saint John,Canada
+Saint Louis,Senegal
+Saint-Paul,Reunion
+Saint Petersburg,Russia
+Saitama,Japan
+Sakai,Japan
+Sakata,Japan
+Sakura,Japan
+Salamanca,Mexico
+Salamanca,Spain
+Salavat,Russia
+Salem,India
+Sale,Morocco
+Salem,United States
+Salerno,Italy
+Salihorsk,Belarus
+Salinas,United States
+Salta,Argentina
+Saltillo,Mexico
+Salt Lake City,United States
+Salvador,Brazil
+Salzburg,Austria
+Salzgitter,Germany
+Samara,Russia
+Samarinda,Indonesia
+Samarkand,Uzbekistan
+Sambalpur,India
+Sambhal,India
+Samsun,Turkey
+Sana'a,Yemen
+Sanandaj,Iran
+San Antonio,United States
+San Bernardino,United States
+San Bernardo,Chile
+San Buenaventura,United States
+San Carlos City,Philippines
+San Cristobal de Las Casas,Mexico
+San Cristobal,Dominican Republic
+Sancti Spiritus,Cuba
+Sanda,Japan
+Sandakan,Malaysia
+San Diego,United States
+San Fernando City,Philippines
+San Fernando del Valle de Catamarca,Argentina
+San Francisco,United States
+Sangli,India
+San Jose City,Philippines
+San Jose,Costa Rica
+San Jose del Monte City,Philippines
+San Jose,Philippines
+San Jose,United States
+San Juan,Argentina
+San Juan City,Philippines
+San Juan,Puerto Rico
+Sanliurfa,Turkey
+San Lorenzo,Paraguay
+San Luis,Argentina
+San Luis Potosi,Mexico
+San Martin,El Salvador
+San Mateo,Philippines
+Sanmenxia,China
+San Miguel de Tucuman,Argentina
+San Miguel,El Salvador
+San Miguelito,Panama
+San Miguel,Philippines
+Sanming,China
+San Nicolas,Argentina
+San Nicolas de los Garzas,Mexico
+San Pablo City,Philippines
+San Pedro de Macoris,Dominican Republic
+San Pedro,Philippines
+San Pedro Sula,Honduras
+San Rafael,Argentina
+San Salvador de Jujuy,Argentina
+San Salvador,El Salvador
+San Sebastian,Spain
+Santa Ana,United States
+Santa Barbara d'Oeste,Brazil
+Santa Clara,Cuba
+Santa Clara,United States
+Santa Clarita,United States
+Santa Coloma de Gramanet,Spain
+Santa Cruz de la Sierra,Bolivia
+Santa Cruz de Tenerife,Spain
+Santa Cruz do Sul,Brazil
+Santa Cruz,Philippines
+Santa Fe,Argentina
+Santa Fe de Bogota,Colombia
+Santa Luzia,Brazil
+Santa Maria,Philippines
+Santa Maria,United States
+Santa Marta,Colombia
+Santander,Spain
+Santarem,Brazil
+Santa Rita,Brazil
+Santa Rosa City,Philippines
+Santa Rosa,United States
+Santiago,Chile
+Santiago City,Philippines
+Santiago de Cuba,Cuba
+Santiago del Estero,Argentina
+Santiago de los Caballeros,Dominican Republic
+Santipur,India
+Santo Andre,Brazil
+Santo Domingo de los Colorados,Ecuador
+Santo Domingo,Dominican Republic
+Santos,Brazil
+Santo Tomas,Philippines
+Sanya,China
+Sao Bernardo do Campo,Brazil
+Sao Caetano do Sul,Brazil
+Sao Carlos,Brazil
+Sao Goncalo,Brazil
+Sao Joao de Meriti,Brazil
+Sao Jose,Brazil
+Sao Jose de Ribamar,Brazil
+Sao Jose do Rio Preto,Brazil
+Sao Jose dos Campos,Brazil
+Sao Jose dos Pinhais,Brazil
+Sao Leopoldo,Brazil
+Sao Luis,Brazil
+Sao Paulo,Brazil
+Sao Vicente,Brazil
+Sapporo,Japan
+Sapucaia do Sul,Brazil
+Saqez,Iran
+Saraburi,Thailand
+Sarajevo,Bosnia and Herzegovina
+Saransk,Russia
+Sarapul,Russia
+Saratov,Russia
+Sar-e Pol,Afghanistan
+Sargodha,Pakistan
+Sariaya,Philippines
+Sari,Iran
+Sariwon,North Korea
+Sasebo,Japan
+Saskatoon,Canada
+Sassari,Italy
+Satna,India
+Satu Mare,Romania
+Savannah,United States
+Sayama,Japan
+Schwerin,Germany
+Scottsdale,United States
+Seam Reab,Cambodia
+Seattle,United States
+Sekondi-Takoradi,Ghana
+Seleyang Baru,Malaysia
+Semarang,Indonesia
+Semipalatinsk,Kazakhstan
+Sendai,Japan
+Seongnam,South Korea
+Seoul,South Korea
+Serampore,India
+Seremban,Malaysia
+Sergiyev Posad,Russia
+Serpukhov,Russia
+Serra,Brazil
+Sertaozinho,Brazil
+Sete Lagoas,Brazil
+Setif,Algeria
+Seto,Japan
+Sevastopol,Ukraine
+Severodvinsk,Russia
+Seversk,Russia
+Seville,Spain
+Sfax,Tunisia
+Shah Alam,Malaysia
+Shahe,China
+Shahjahanpur,India
+Shahrak-e Gharb,Iran
+Shahrekord,Iran
+Shahrud,Iran
+Shakhty,Russia
+Shanghai,China
+Shangluo,China
+Shangqiu,China
+Shangrao,China
+Shangzhi,China
+Shantou,China
+Shanwei,China
+Shaoguan,China
+Shaowu,China
+Shaoxing,China
+Shaoyang,China
+Sharjah,UAE
+Shchyolkovo,Russia
+Sheberghan,Afghanistan
+Sheffield,United Kingdom
+Sheikhu Pura,Pakistan
+Shenyang,China
+Shenzhen,China
+Sheopur,India
+Sherbrooke,Canada
+Shibin el-Kom,Egypt
+Shihezi,China
+Shihung,South Korea
+Shijiazhuang,China
+Shikarpur,Pakistan
+Shillong,India
+Shimizu,Japan
+Shimla,India
+Shimoga,India
+Shimonoseki,Japan
+Shinyanga,Tanzania
+Shiraz,Iran
+Shishi City,China
+Shishou,China
+Shivpuri,India
+Shiyan,China
+Shizuishan,China
+Shizuoka,Japan
+Shkoder,Albania
+Shreveport,United States
+Shuangcheng,China
+Shuangyashan,China
+Shubra al Khaymah,Egypt
+Shuozhou,China
+Shymkent,Kazakhstan
+Sialkote,Pakistan
+Siauliai,Lithuania
+Sibiu,Romania
+Sibu,Malaysia
+Sidi-bel-Abbes,Algeria
+Siegen,Germany
+Sieverodonetsk,Ukraine
+Siirt,Turkey
+Sikar,India
+Silang,Philippines
+Silay City,Philippines
+Silchar,India
+Siliguri,India
+Simferopol,Ukraine
+Simi Valley,United States
+Sincelejo,Colombia
+Singapore,Singapore
+Sinuiji,North Korea
+Sioux Falls,United States
+Siping,China
+Sirjan,Iran
+Sirsa,India
+Sitapur,India
+Sittwe,Myanmar
+Sivakasi,India
+Sivas,Turkey
+Siverek,Turkey
+Skikda,Algeria
+Skopje,Macedonia
+Sliven,Bulgaria
+Slough,United Kingdom
+Sloviansk,Ukraine
+Slupsk,Poland
+Smederevo,Serbia
+Smolensk,Russia
+Soacha,Colombia
+Sobral,Brazil
+Sochi,Russia
+Sofia,Bulgaria
+Sogamoso,Colombia
+Soka,Japan
+Solapur,India
+Soledad,Colombia
+Solihull,United Kingdom
+Solikamsk,Russia
+Solingen,Germany
+Songkhla,Thailand
+Songyuan,China
+Sonipat,India
+Sorocaba,Brazil
+Sorsogon City,Philippines
+Sosnowiec,Poland
+Souk Ahras,Algeria
+Southampton,United Kingdom
+South Bend,United States
+South Dum Dum,India
+Southend on Sea,United Kingdom
+Soweto,SA
+Soyapango,El Salvador
+Split,Croatia
+Spokane,United States
+Springfield,United States
+Springs,SA
+Srinagar,India
+Stakhanov,Ukraine
+Stamford,United States
+Stara Zagora,Bulgaria
+Starsy Oskol,Russia
+Stavanger,Norway
+Stavropol,Russia
+St.~Catharines,Canada
+Sterling Heights,United States
+Sterlitamak,Russia
+St Helens,United Kingdom
+St.~John's,Canada
+St Louis,United States
+Stockholm,Sweden
+Stockport,United Kingdom
+Stockton,United States
+Stoke-on-Trent,United Kingdom
+St Paul,United States
+St Petersburg,United States
+Strasbourg,France
+Stuttgart,Germany
+Subotica,Serbia
+Suceava,Romania
+Sucre,Bolivia
+Suez,Egypt
+Suhaj,Egypt
+Suihua,China
+Suining,China
+Suita,Japan
+Suizhou,China
+Sukabumi,Indonesia
+Sukkur,Pakistan
+Sulamaniya,Iraq
+Sullana,Peru
+Sultanbeyli,Turkey
+Sultan Kudarat,Philippines
+Sumare,Brazil
+Sumgait,Azerbaijan
+Sumy,Ukraine
+Suncheon,South Korea
+Sunderland,United Kingdom
+Sundsvall,Sweden
+Sungai Petani,Malaysia
+Sunnyvale,United States
+Sunshine Coast,Australia
+Suqian,China
+Surabaya,Indonesia
+Surakarta,Indonesia
+Surat,India
+Surat Thani,Thailand
+Surgut,Russia
+Surigao City,Philippines
+Surrey,Canada
+Sutton Coldfield,United Kingdom
+Suva,Fiji
+Suwon,South Korea
+Suzano,Brazil
+Suzhou,China
+Suzuka,Japan
+Swansea,United Kingdom
+Swindon,United Kingdom
+Sydney,Australia
+Syktyvkar,Russia
+Syracuse,Italy
+Syracuse,United States
+Syzran,Russia
+Szczecin,Poland
+Szeged,Hungary
+Szekesfehervar,Hungary
+Tabaco City,Philippines
+Taboao da Serra,Brazil
+Tabriz,Iran
+Tacheng,China
+Tachikawa,Japan
+Tacloban City,Philippines
+Tacna,Peru
+Tacoma,United States
+Taebaek,South Korea
+Taganrog,Russia
+Taguig City,Philippines
+Tagum City,Philippines
+Taian,China
+Taichung,Taiwan
+Ta'if,Saudi Arabia
+Tainan City,Taiwan
+Taipei,Taiwan
+Taiping,Malaysia
+Taiyuan,China
+Taizhou,China
+Taiz,Yemen
+Tajimi,Japan
+Takamatsu,Japan
+Takaoka,Japan
+Takarazuka,Japan
+Takasaki,Japan
+Takatsuki,Japan
+Talara,Peru
+Talavera,Philippines
+Talca,Chile
+Talcahuano,Chile
+Talisay City,Philippines
+Tallahassee,United States
+Tallinn,Estonia
+Taloqan,Afghanistan
+Tama,Japan
+Tamale,Ghana
+Tambov,Russia
+Tampa,United States
+Tampere,Finland
+Tampico,Mexico
+Tanauan City,Philippines
+Tandil,Argentina
+Tandoadam,Pakistan
+Tangail,Bangladesh
+Tanga,Tanzania
+Tangier,Morocco
+Tangshan,China
+Tanjung Pinang,Indonesia
+Tanta,Egypt
+Tanza,Philippines
+Taonan,China
+Tapachula,Mexico
+Taranto,Italy
+Tarapoto,Peru
+Taraz,Kazakhstan
+Targu-Mures,Romania
+Tarija,Bolivia
+Tarlac City,Philippines
+Tarnow,Poland
+Tarragona,Spain
+Tarsus,Turkey
+Tartu,Estonia
+Tashkent,Uzbekistan
+Taubate,Burkina Faso
+Taunggyi,Myanmar
+Tauranga,NZ
+Taytay,Philippines
+Tbilisi,Georgia
+Tebessa,Algeria
+Tegal,Indonesia
+Tegucigalpa,Honduras
+Tehran,Iran
+Tehuacan,Mexico
+Teixeira de Freitas,Brazil
+Tekirdag,Turkey
+Tel Aviv,Israel
+Telford,United Kingdom
+Tembisa,SA
+Temirtau,Kazakhstan
+Tempe,United States
+Temuco,Chile
+Tenali,India
+Tengzhou,China
+Teofilo Otoni,Brazil
+Tepic,Mexico
+Teresina,Brazil
+Teresopolis,Brazil
+Termez,Uzbekistan
+Terni,Italy
+Ternopil,Ukraine
+Terrassa,Spain
+Tetouan,Monaco
+Thai Nguyen,Vietnam
+Thalassery,India
+Thane,India
+Thanjavur,India
+The Hague,Netherlands
+Thessaloniki,Greece
+Thies,Senegal
+Thimphu,Bhutan
+Thiruvananthapuram,India
+Thousand Oaks,United States
+Thrissur,India
+Thunder Bay,Canada
+Tianjin,China
+Tianmen,China
+Tianshui,China
+Tiaret,Algeria
+Tieli,China
+Tieling,China
+Tijuana,Mexico
+Tilburg,Netherlands
+Timisoara,Romania
+Timon,Brazil
+Tirana,Albania
+Tiruchchirappalli,India
+Tirunelveli,India
+Tirupati,India
+Tiruppur,India
+Tiruvannamalai,India
+Titagarh,India
+Tlalnepantla,Mexico
+Tlalpan,Mexico
+Tlaquepaque,Mexico
+Tlaxcala,Mexico
+Tlemoen,Algeria
+Tobolsk,Russia
+Toda,Japan
+Tokat,Turkey
+Tokorozawa,Japan
+Tokushima,Japan
+Tokuyama,Japan
+Tokyo,Japan
+Toledo,Brazil
+Toledo City,Philippines
+Toledo,United States
+Toluca,Mexico
+Tolyatti,Russia
+Tomakomai,Japan
+Tomsk,Russia
+Tondabayashi,Japan
+Tongchuan,China
+Tonghua,China
+Tongi,Bangladesh
+Tongjiang,China
+Tongliao,China
+Tongling,China
+Tongren,China
+Tonk,India
+Toowoomba,Australia
+Topeka,United States
+Toronto,Canada
+Torrance,United States
+Torreon,Mexico
+Torun,Poland
+Tottori,Japan
+Touggourt,Algeria
+Toulon,France
+Toulouse,France
+Tours,France
+Townsville,Australia
+Toyama,Japan
+Toyohashi,Japan
+Toyokawa,Japan
+Toyonaka,Japan
+Toyota,Japan
+Trabzon,Turkey
+Trento,Italy
+Trieste,Italy
+Tripoli,Lebanon
+Tripoli,Libya
+Trois-Rivieres,Canada
+Trondheim,Norway
+Trujillo,Peru
+Tsuchiura,Japan
+Tsu,Japan
+Tsukuba,Japan
+Tsuruoka,Japan
+Tucson,United States
+Tuguegarao City,Philippines
+Tula,Russia
+Tulsa,United States
+Tulua,Colombia
+Tulufan,China
+Tumbes,Ecuador
+Tumen,China
+Tumkur,India
+Tunis,Tunisia
+Tunja,Colombia
+Turgutlu,Turkey
+Turhal,Turkey
+Turin,Italy
+Turkmenabat,Turkmenistan
+Turku,Finland
+Turmero,Venezuela
+Tuticorin,India
+Tuxtla Gutierrez,Mexico
+Tuzla,Bosnia and Herzegovina
+Tver,Russia
+Tychy,Poland
+Tyumen,Russia
+Ube,Japan
+Uberaba,Brazil
+Uberlandia,Brazil
+Ubon Ratchathani,Thailand
+Udaipur,India
+Udon Thani,Thailand
+Udupi,India
+Ueda,Japan
+Ufa,Russia
+Uji,Japan
+Ujjain,India
+Ujung Pandang,Indonesia
+Ukhta,Russia
+Ulan Bator,Mongolia
+Ulan Hot,China
+Ulanqab,China
+Ulan-Ude,Russia
+Ulhasnagar,India
+Ulm,Germany
+Ulsan,South Korea
+Ulyanovsk,Russia
+Umeaa,Sweden
+Umlazi,SA
+Unnao,India
+Uppsala,Sweden
+Urasoe,Japan
+Urawa,Japan
+Urayasu,Japan
+Urdaneta,Philippines
+Urgench,Uzbekistan
+Urmia,Iran
+Uruapan,Mexico
+Uruguaiana,Brazil
+Urumqi,China
+Usak,Turkey
+Usolye-Sibirskoye,Russia
+Ussuriysk,Russia
+Ust-Ilimsk,Russia
+Ust-Kamenogorsk,Russia
+Utrecht,Netherlands
+Utsunomiya,Japan
+Uzhhorod,Ukraine
+Vadodara,India
+Valdivia,Chile
+Valencia,Philippines
+Valencia,Spain
+Valencia,Venezuela
+Valenciennes,France
+Valera,Venezuela
+Valladolid,Spain
+Valle de Chalco,Mexico
+Valledupar,Colombia
+Vallejo,United States
+Valparai,India
+Valparaiso,Chile
+Valsad,India
+Vanadzor,Armenia
+Vancouver,Canada
+Vancouver,United States
+Vantaa,Finland
+Van,Turkey
+Varamin,Iran
+Varanasi,India
+Varginha,Brazil
+Varna,Bulgaria
+Varzea Grande,Brazil
+Vasteraas,Sweden
+Vatakara,India
+Vaughan,Canada
+Velikiye Luki,Russia
+Veliky Novgorod,Russia
+Vellore,India
+Venice,Italy
+Veracruz,Mexico
+Vereeniging,SA
+Verona,Italy
+Viamao,Brazil
+Vicente Lopez,Argentina
+Vicenza,Italy
+Victoria,Canada
+Victoria de Las Tunas,Cuba
+Vienna,Austria
+Vientiane,Laos
+Vigo,Spain
+Vijayawada,India
+Vila Nova de Gaia,Portugal
+Vila Velha,Brazil
+Villahermosa,Mexico
+Villa Nicolas Romero,Mexico
+Villavicencio,Colombia
+Villeurbanne,France
+Vilnius,Lithuania
+Vina del Mar,Chile
+Vinh,Vietnam
+Vinnytsia,Ukraine
+Viransehir,Turkey
+Visakhapatnam,India
+Vitebsk,Belarus
+Vitoria,Brazil
+Vitoria da Conquista,Brazil
+Vitoria de Santo Antao,Brazil
+Vitoria-Gasteiz,Spain
+Vizianagaram,India
+Vladikavkaz,Russia
+Vladimir,Russia
+Vladivostok,Russia
+Volgodonsk,Russia
+Volgograd,Russia
+Vologda,Russia
+Volos,Greece
+Volta Redonda,Brazil
+Volzhsky,Russia
+Voronezh,Russia
+Votkinsk,Russia
+Vung Tau,Vietnam
+Waco,United States
+Wadhwan,India
+Wad Madani,Sudan
+Wafangdian,China
+Wagh Wagh,Australia
+Wah Cantonment,Pakistan
+Wakayama,Japan
+Walbrzych,Poland
+Walsall,United Kingdom
+Wanzhou District,China
+Warangal,India
+Wardha,India
+Warren,United States
+Warrington,United Kingdom
+Warsaw,Poland
+Washington,United States
+Waterbury,United States
+Watford,United Kingdom
+Weifang,China
+Weihai,China
+Weihui,China
+Weinan,China
+Wellington,NZ
+Wendeng,China
+Wenzhou,China
+West Bromwich,United Kingdom
+West Covina,United States
+Westminster,United States
+West Valley Cit,United States
+Whitby,Canada
+Wichita Falls,United States
+Wichita,United States
+Wiesbaden,Germany
+Willemstad,Netherlands
+Windhoek,Namibia
+Windsor,Canada
+Winnipeg,Canada
+Winston-Salem,United States
+Winterthur,Switzerland
+Witten,Germany
+Wloclawek,Poland
+Wolfsburg,Germany
+Wollongong,Australia
+Wolverhampton,United Kingdom
+Wonju,South Korea
+Wonsan,North Korea
+Worcester,United States
+Wroclaw,Poland
+Wu'an,China
+Wuhai,China
+Wuhan,China
+Wuhu,China
+Wuppertal,Germany
+Wurzburg,Germany
+Wuwei,China
+Wuxi,China
+Wuxue,China
+Wuyishan,China
+Wuzhong,China
+Wuzhou,China
+Xalapa,Mexico
+Xiamen,China
+Xian,China
+Xiangfan,China
+Xiangtan,China
+Xianning,China
+Xiantao,China
+Xianyang,China
+Xiaogan,China
+Xiaoshan,China
+Xichang,China
+Xilinhaote,China
+Xingcheng,China
+Xinghua,China
+Xingtai,China
+Xingyi,China
+Xining,China
+Xinji,China
+Xintai,China
+Xinxiang,China
+Xinyang,China
+Xinyi,China
+Xinyu,China
+Xinzhou,China
+Xochimilco,Mexico
+Xuancheng,China
+Xuchang,China
+Yachiyo,Japan
+Yaizu,Japan
+Yakeshi,China
+Yakutsk,Russia
+Yamagata,Japan
+Yamaguchi,Japan
+Yamato,Japan
+Yamoussoukro,Ivory Coast
+Yamuna Nagar,India
+Yan'an,China
+Yancheng,China
+Yangjiang,China
+Yangon,Rangoon,Myanmar
+Yangquan,China
+Yangzhou,China
+Yanji,China
+Yantai,China
+Yao,Japan
+Yaounde,Cameroon
+Yaroslavl,Russia
+Yatsushiro,Japan
+Yavatmal,India
+Yazd,Iran
+Yekaterinburg,Russia
+Yelets,Russia
+Yenakiieve,Ukraine
+Yeosu,South Korea
+Yerevan,Armenia
+Yibin,China
+Yichang,China
+Yichun,China
+Yidu,China
+Yima,China
+Yinchuan,China
+Yingcheng,China
+Yingkou,China
+Yingtan,China
+Yining,China
+Yiwu,China
+Yixing,China
+Yiyang,China
+Yizheng,China
+Yogyakarta,Indonesia
+Yokkaichi,Japan
+Yokohama,Japan
+Yokosuka,Japan
+Yonago,Japan
+Yong'an,China
+Yongzhou,China
+Yonkers,United States
+York,United Kingdom
+Yoshkar-Ola,Russia
+Yuanjiang,China
+Yueyang,China
+Yulin,China
+Yumen,China
+Yuncheng,China
+Yuxi,China
+Yuyao,China
+Yuzhno-Sakhalinsk,Russia
+Yuzhou,China
+Zaanstad,Netherlands
+Zabol,Iran
+Zabrze,Poland
+Zacatecas,Mexico
+Zagazig,Egypt
+Zagreb,Croatia
+Zahedan,Iran
+Zama,Japan
+Zamboanga City,Philippines
+Zamora de Hidalgo,Mexico
+Zanjan,Iran
+Zanzibar City,Tanzania
+Zaoyang,China
+Zaozhuang,China
+Zapopan,Mexico
+Zaporizhia,Ukraine
+Zaragoza,Spain
+Zarate,Argentina
+Zaria,Nigeria
+Zarqa,Jordan
+Zelenodolsk,Russia
+Zelenograd,Russia
+Zenica,Bosnia and Herzegovina
+Zhalantun,China
+Zhangjiagang,China
+Zhangjiajie,China
+Zhangjiakou,China
+Zhangshu,China
+Zhangye,China
+Zhangzhou,China
+Zhanjiang,China
+Zhaodong,China
+Zhaoqing,China
+Zhaotong,China
+Zheleznodorozhny,Russia
+Zhengzhou,China
+Zhenjiang,China
+Zhongshan,China
+Zhoukou,China
+Zhoushan,China
+Zhucheng,China
+Zhuhai,China
+Zhuji,China
+Zhukovsky,Russia
+Zhumadian,China
+Zhuozhou,China
+Zhuzhou,China
+Zhytomyr,Ukraine
+Zibo,China
+Zielona Gora,Poland
+Zigong,China
+Ziguinchor,Senegal
+Zinder,Niger
+Zixing,China
+Zlatoust,Russia
+Zoetermeer,Netherlands
+Zrenjanin,Serbia
+Zunyi,China
+Zurich,Switzerland
+Zuwarah,Libya
+Zwickau,Germany
+Zwolle,Netherlands

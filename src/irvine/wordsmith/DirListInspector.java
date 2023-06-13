@@ -12,6 +12,7 @@ import java.util.List;
  */
 public class DirListInspector implements Inspector {
 
+  static final String LIST_DIR = System.getProperty("lists.dir", "lists");
   private final String mDir;
   private final boolean mVerbose;
   private final List<Inspector> mInspectors = new ArrayList<>();
@@ -19,6 +20,10 @@ public class DirListInspector implements Inspector {
   DirListInspector(final String dir, final boolean verbose) {
     mDir = dir;
     mVerbose = verbose;
+  }
+
+  DirListInspector(final boolean verbose) {
+    this(LIST_DIR, verbose);
   }
 
   @Override

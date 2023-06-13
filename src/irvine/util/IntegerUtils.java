@@ -124,4 +124,37 @@ public final class IntegerUtils {
     }
   }
 
+  /**
+   * Test if the specified array is a constant value.
+   * @param a array to test
+   * @return true if the array is a constant value
+   */
+  public static boolean isConstant(final int... a) {
+    final int v0 = a[0];
+    for (final int v : a) {
+      if (v != v0) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  /**
+   * Test if the specified array is an arithmetic progression, returning
+   * 0 if it is not a progression and otherwise the common difference.
+   * @param a array to test
+   * @return 0 or common difference
+   */
+  public static int arithmeticProgression(final int... a) {
+    if (a.length < 3) {
+      return 0;
+    }
+    final int d = a[1] - a[0];
+    for (int k = 2; k < a.length; ++k) {
+      if (a[0] + k * d != a[k]) {
+        return 0;
+      }
+    }
+    return d;
+  }
 }

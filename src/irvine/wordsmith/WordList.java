@@ -19,20 +19,27 @@ public class WordList extends LinkedHashMap<String, List<String>> {
   private static final List<String> EMPTY_LIST = Collections.emptyList();
 
   private final String mName;
+  private String mDescription = null;
 
   WordList(final String file) {
     mName = file;
     try (final BufferedReader r = IOUtils.getReader(file)) {
       String line;
       while ((line = r.readLine()) != null) {
-        if (line.length() > 0 && line.charAt(0) != '#') {
-          final String[] parts = line.split(",");
-          final String key = parts[0].toUpperCase(Locale.getDefault());
-          if (parts.length == 1) {
-            put(key, EMPTY_LIST);
+        if (line.length() > 0) {
+          if (line.charAt(0) == '#') {
+            if (line.startsWith("#@")) {
+              mDescription = line.substring(2);
+            }
           } else {
-            final List<String> other = Arrays.asList(parts).subList(1, parts.length);
-            put(key, other);
+            final String[] parts = line.split(",");
+            final String key = parts[0].toUpperCase(Locale.getDefault());
+            if (parts.length == 1) {
+              put(key, EMPTY_LIST);
+            } else {
+              final List<String> other = Arrays.asList(parts).subList(1, parts.length);
+              put(key, other);
+            }
           }
         }
       }
@@ -41,7 +48,7 @@ public class WordList extends LinkedHashMap<String, List<String>> {
     }
   }
 
-  String getName() {
-    return mName;
+  String getDescription() {
+    return mDescription != null ? mDescription : "in " + mName;
   }
 }

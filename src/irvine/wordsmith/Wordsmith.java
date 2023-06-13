@@ -16,8 +16,8 @@ import irvine.util.CliFlags;
 public final class Wordsmith extends Command {
 
   // todo make this a CLI parameter option
-  private static final String LIST_DIR = System.getProperty("lists.dir", "lists");
   private static final String VERBOSE_FLAG = "verbose";
+  private static final String LOO_FLAG = "loo";
 
   /** Construct the module. */
   public Wordsmith() {
@@ -41,9 +41,16 @@ public final class Wordsmith extends Command {
   private List<Inspector> buildInspectors(final boolean verbose) {
     final ArrayList<Inspector> lst = new ArrayList<>();
     lst.add(new ConstantInspector());
+    lst.add(new LengthInspector());
     lst.add(new AlphabeticalInspector());
     lst.add(new ReverseAlphabeticalInspector());
-    lst.add(new DirListInspector(LIST_DIR, verbose));
+    lst.add(new DirListInspector(DirListInspector.LIST_DIR, verbose));
+    lst.add(new DoubledLetterInspector());
+    lst.add(new PrefixInspector());
+    lst.add(new SuffixInspector());
+    lst.add(new SliceInspector());
+    lst.add(new ConsecutiveLettersInspector());
+    lst.add(new ParityInspector());
     return lst;
   }
 
@@ -57,24 +64,54 @@ public final class Wordsmith extends Command {
     //CommonFlags.registerDictionaryFlag(flags);
     final CliFlags.Flag<String> textFlag = flags.registerRequired(String.class, "TEXT", "words to be explained");
     flags.registerOptional('v', VERBOSE_FLAG, "increase the amount of output");
+    flags.registerOptional(LOO_FLAG, "leave one out");
     textFlag.setMaxCount(Integer.MAX_VALUE);
     flags.setFlags(args);
 
     final boolean verbose = flags.isSet(VERBOSE_FLAG);
     final String[] words = getWords(flags);
-    
+
     if (verbose) {
       System.out.println("Query: " + Arrays.toString(words));
     }
-    if (words.length < 2) {
-      System.out.println("Insufficient words for useful analysis");
-      return;
-    }
 
-    for (final Inspector inspector : buildInspectors(verbose)) {
-      final String res = inspector.inspect(words);
-      if (res != null) {
-        System.out.println(res);
+    if (flags.isSet(LOO_FLAG)) {
+      if (words.length < 3) {
+        System.out.println("Insufficient words for useful analysis");
+        return;
+      }
+      // First run the full set of words
+      final List<Inspector> inspectors = buildInspectors(verbose);
+      final String[] fullResults = new String[inspectors.size()];
+      int k = 0;
+      for (final Inspector inspector : inspectors) {
+        fullResults[k++] = inspector.inspect(words);
+      }
+      // Not leave each word out in turn and check for different response
+      final String[] slice = new String[words.length - 1];
+      for (int omit = 0; omit < words.length; ++omit) {
+        System.arraycopy(words, 0, slice, 0, omit);
+        System.arraycopy(words, omit + 1, slice, omit, words.length - omit - 1);
+        System.out.println("Running: " + Arrays.toString(slice));
+        int j = 0;
+        for (final Inspector inspector : inspectors) {
+          final String res = inspector.inspect(slice);
+          if (res != null && !res.equals(fullResults[j])) {
+            System.out.println(res);
+          }
+          ++j;
+        }
+      }
+    } else {
+      if (words.length < 2) {
+        System.out.println("Insufficient words for useful analysis");
+        return;
+      }
+      for (final Inspector inspector : buildInspectors(verbose)) {
+        final String res = inspector.inspect(words);
+        if (res != null) {
+          System.out.println(res);
+        }
       }
     }
   }

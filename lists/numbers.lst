@@ -1,0 +1,103 @@
+#Enlgish, French, German, Italian, Spanish, Dutch, Swedish
+#@numbers
+zero,zéro,null,zero,cero,nul,noll
+one,un,eins,uno,uno,een,ett
+two,deux,zwei,due,dos,twee,två
+three,trois,drei,tre,tres,drie,tre
+four,quatre,vier,quattro,cuatro,vier,fyra
+five,cinq,fünf,cinque,cinco,vijf,fem
+six,six,sechs,sei,seis,zes,sex
+seven,sept,sieben,sette,siete,zeven,sju
+eight,huit,acht,otto,ocho,acht,åtta
+nine,neuf,neun,nove,nueve,negen,nio
+ten,dix,zehn,dieci,diez,tien,tio
+eleven,onze,elf,undici,once,elf,elva
+twelve,douze,zwölf,dodici,doce,twaalf,tolv
+thirteen,treize,dreizehn,tredici,trece,dertien,tretton
+fourteen,quatorze,vierzehn,quattordici,catorce,veertien,fjorton
+fifteen,quinze,fünfzehn,quindici,quince,vijftien,femton
+sixteen,seize,sechzehn,sedici,dieciséis,zestien,sexton
+seventeen,dix-sept,siebzehn,diciassette,diecisiete,zeventien,sjutton
+eighteen,dix-huit,achtzehn,diciotto,dieciocho,achttien,arton
+nineteen,dix-neuf,neunzehn,diciannove,diecinueve,negentien,nitton
+twenty,vingt,zwanzig,venti,veinte,twintig,tjugo
+twenty-one,vingt et un,einundzwanzig,ventuno,veintiuno,eenentwintig,tjugoett
+twenty-two,vingt-deux,zweiundzwanzig,ventidue,veintidós,tweeëntwintig,tjugotvå
+twenty-three,vingt-trois,dreiundzwanzig,ventitre,veintitrés,drieëntwintig,tjugotre
+twenty-four,vingt-quatre,vierundzwanzig,ventiquattro,veinticuatro,vierentwintig,tjugofyra
+twenty-five,vingt-cinq,fünfundzwanzig,venticinque,veinticinco,vijfentwintig,tjugofem
+twenty-six,vingt-six,sechsundzwanzig,ventisei,veintiséis,zesentwintig,tjugosex
+twenty-seven,vingt-sept,siebenundzwanzig,ventisette,veintisiete,zevenentwintig,tjugosju
+twenty-eight,vingt-huit,achtundzwanzig,ventotto,veintiocho,achtentwintig,tjugoåtta
+twenty-nine,vingt-neuf,neunundzwanzig,ventinove,veintinueve,negenentwintig,tjugonio
+thirty,trente,dreißig,trenta,treinta,dertig,trettio
+thirty-one,trente et un,einunddreißig,trentuno,treinta y uno,eenendertig,trettioett
+thirty-two,trente-deux,zweiunddreißig,trentadue,treinta y dos,tweeëndertig,trettiotvå
+thirty-three,trente-trois,dreiunddreißig,trentatre,treinta y tres,drieëndertig,trettiotre
+thirty-four,trente-quatre,vierunddreißig,trentaquattro,treinta y cuatro,vierendertig,trettiofyra
+thirty-five,trente-cinq,fünfunddreißig,trentacinque,treinta y cinco,vijfendertig,trettiofem
+thirty-six,trente-six,sechsunddreißig,trentasei,treinta y seis,zesendertig,trettiosex
+thirty-seven,trente-sept,siebenunddreißig,trentasette,treinta y siete,zevenendertig,trettiosju
+thirty-eight,trente-huit,achtunddreißig,trentotto,treinta y ocho,achtendertig,trettioåtta
+thirty-nine,trente-neuf,neununddreißig,trentanove,treinta y nueve,negenendertig,trettionio
+forty,quarante,vierzig,quaranta,cuarenta,veertig,fyrtio
+forty-one,quarante et un,einundvierzig,quarantuno,cuarenta y uno,eenenveertig,fyrtioett
+forty-two,quarante-deux,zweiundvierzig,quarantadue,cuarenta y dos,tweeënveertig,fyrtiotvå
+forty-three,quarante-trois,dreiundvierzig,quarantatre,cuarenta y tres,drieënveertig,fyrtiotre
+forty-four,quarante-quatre,vierundvierzig,quarantaquattro,cuarenta y cuatro,vierenveertig,fyrtiofyra
+forty-five,quarante-cinq,fünfundvierzig,quarantacinque,cuarenta y cinco,vijfenveertig,fyrtiofem
+forty-six,quarante-six,sechsundvierzig,quarantasei,cuarenta y seis,zesenveertig,fyrtiosex
+forty-seven,quarante-sept,siebenundvierzig,quarantasette,cuarenta y siete,zevenenveertig,fyrtiosju
+forty-eight,quarante-huit,achtundvierzig,quarantotto,cuarenta y ocho,achtenveertig,fyrtioåtta
+forty-nine,quarante-neuf,neunundvierzig,quarantanove,cuarenta y nueve,negenenveertig,fyrtionio
+fifty,cinquante,fünfzig,cinquanta,cincuenta,vijftig,femtio
+fifty-one,cinquante et un,einundfünfzig,cinquantuno,cincuenta y uno,eenenvijftig,femtioett
+fifty-two,cinquante-deux,zweiundfünfzig,cinquantadue,cincuenta y dos,tweeënvijftig,femtiotvå
+fifty-three,cinquante-trois,dreiundfünfzig,cinquantatre,cincuenta y tres,drieënvijftig,femtiotre
+fifty-four,cinquante-quatre,vierundfünfzig,cinquantaquattro,cincuenta y cuatro,vierenvijftig,femtiofyra
+fifty-five,cinquante-cinq,fünfundfünfzig,cinquantacinque,cincuenta y cinco,vijfenvijftig,femtiofem
+fifty-six,cinquante-six,sechsundfünfzig,cinquantasei,cincuenta y seis,zesenvijftig,femtiosex
+fifty-seven,cinquante-sept,siebenundfünfzig,cinquantasette,cincuenta y siete,zevenenvijftig,femtiosju
+fifty-eight,cinquante-huit,achtundfünfzig,cinquantotto,cincuenta y ocho,achtenvijftig,femtioåtta
+fifty-nine,cinquante-neuf,neunundfünfzig,cinquantanove,cincuenta y nueve,negenenvijftig,femtionio
+sixty,soixante,sechzig,sessanta,sesenta,zestig,sextio
+sixty-one,soixante et un,einundsechzig,sessantuno,sesenta y uno,eenenzestig,sextioett
+sixty-two,soixante-deux,zweiundsechzig,sessantadue,sesenta y dos,tweeënzestig,sextiotvå
+sixty-three,soixante-trois,dreiundsechzig,sessantatre,sesenta y tres,drieënzestig,sextiotre
+sixty-four,soixante-quatre,vierundsechzig,sessantaquattro,sesenta y cuatro,vierenzestig,sextiofyra
+sixty-five,soixante-cinq,fünfundsechzig,sessantacinque,sesenta y cinco,vijfenzestig,sextiofem
+sixty-six,soixante-six,sechsundsechzig,sessantasei,sesenta y seis,zesenzestig,sextiosex
+sixty-seven,soixante-sept,siebenundsechzig,sessantasette,sesenta y siete,zevenenzestig,sextiosju
+sixty-eight,soixante-huit,achtundsechzig,sessantotto,sesenta y ocho,achtenzestig,sextioåtta
+sixty-nine,soixante-neuf,neunundsechzig,sessantanove,sesenta y nueve,negenenzestig,sextionio
+seventy,soixante-dix,siebzig,settanta,setenta,zeventig,sjuttio
+seventy-one,soixante et onze,einundsiebzig,settantuno,setenta y uno,eenenzeventig,sjuttioett
+seventy-two,soixante-douze,zweiundsiebzig,settantadue,setenta y dos,tweeënzeventig,sjuttiotvå
+seventy-three,soixante-treize,dreiundsiebzig,settantatre,setenta y tres,drieënzeventig,sjuttiotre
+seventy-four,soixante-quatorze,vierundsiebzig,settantaquattro,setenta y cuatro,vierenzeventig,sjuttiofyra
+seventy-five,soixante-quinze,fünfundsiebzig,settantacinque,setenta y cinco,vijfenzeventig,sjuttiofem
+seventy-six,soixante-seize,sechsundsiebzig,settantasei,setenta y seis,zesenzeventig,sjuttiosex
+seventy-seven,soixante-dix-sept,siebenundsiebzig,settantasette,setenta y siete,zevenenzeventig,sjuttiosju
+seventy-eight,soixante-dix-huit,achtundsiebzig,settantotto,setenta y ocho,achtenzeventig,sjuttioåtta
+seventy-nine,soixante-dix-neuf,neunundsiebzig,settantanove,setenta y nueve,negenenzeventig,sjuttionio
+eighty,quatre-vingts,achtzig,ottanta,ochenta,tachtig,åttio
+eighty-one,quatre-vingt-un,einundachtzig,ottantuno,ochenta y uno,eenentachtig,åttioett
+eighty-two,quatre-vingt-deux,zweiundachtzig,ottantadue,ochenta y dos,tweeëntachtig,åttiotvå
+eighty-three,quatre-vingt-trois,dreiundachtzig,ottantatre,ochenta y tres,drieëntachtig,åttiotre
+eighty-four,quatre-vingt-quatre,vierundachtzig,ottantaquattro,ochenta y cuatro,vierentachtig,åttiofyra
+eighty-five,quatre-vingt-cinq,fünfundachtzig,ottantacinque,ochenta y cinco,vijfentachtig,åttiofem
+eighty-six,quatre-vingt-six,sechsundachtzig,ottantasei,ochenta y seis,zesentachtig,åttiosex
+eighty-seven,quatre-vingt-sept,siebenundachtzig,ottantasette,ochenta y siete,zevenentachtig,åttiosju
+eighty-eight,quatre-vingt-huit,achtundachtzig,ottantotto,ochenta y ocho,achtentachtig,åttioåtta
+eighty-nine,quatre-vingt-neuf,neunundachtzig,ottantanove,ochenta y nueve,negenentachtig,åttionio
+ninety,quatre-vingt-dix,neunzig,novanta,noventa,negentig,nittio
+ninety-one,quatre-vingt-onze,einundneunzig,novantuno,noventa y uno,eenennegentig,nittioett
+ninety-two,quatre-vingt-douze,zweiundneunzig,novantadue,noventa y dos,tweeënnegentig,nittiotvå
+ninety-three,quatre-vingt-treize,dreiundneunzig,novantatre,noventa y tres,drieënnegentig,nittiotre
+ninety-four,quatre-vingt-quatorze,vierundneunzig,novantaquattro,noventa y cuatro,vierennegentig,nittiofyra
+ninety-five,quatre-vingt-quinze,fünfundneunzig,novantacinque,noventa y cinco,vijfennegentig,nittiofem
+ninety-six,quatre-vingt-seize,sechsundneunzig,novantasei,noventa y seis,zesennegentig,nittiosex
+ninety-seven,quatre-vingt-dix-sept,siebenundneunzig,novantasette,noventa y siete,zevenennegentig,nittiosju
+ninety-eight,quatre-vingt-dix-huit,achtundneunzig,novantotto,noventa y ocho,achtennegentig,nittioåtta
+ninety-nine,quatre-vingt-dix-neuf,neunundneunzig,novantanove,noventa y nueve,negenennegentig,nittionio
+one hundred,cent,einhundert,cento,cien,honderd,hundra

@@ -1,36 +1,37 @@
-10000\,m
-100\,m
-100\,m backstroke
-100\,m breaststroke
-100\,m butterfly
-100\,m freestyle
-100\,m hurdles
-110\,m hurdles
-1500\,m
-1500\,m freestyle
-200\,m
-200\,m backstroke
-200\,m breaststroke
-200\,m butterfly
-200\,m freestyle
-200\,m individual medley
-20\,km walk
-3000\,m steeplechase
-400\,m
-400\,m freestyle
-400\,m hurdles
-400\,m individual medley
-$4\times100$\,m freestyle relay
-$4\times100$\,m medley relay
-$4\times100$\,m relay
-$4\times200$\,m freestyle relay
-$4\times400$\,m relay
-5000\,m
-50\,km walk
-50\,m freestyle
-800\,m
-800\,m freestyle
-abag\"ure\c si
+#@sports
+10000m
+100m
+100m backstroke
+100m breaststroke
+100m butterfly
+100m freestyle
+100m hurdles
+110m hurdles
+1500m
+1500m freestyle
+200m
+200m backstroke
+200m breaststroke
+200m butterfly
+200m freestyle
+200m individual medley
+20km walk
+3000m steeplechase
+400m
+400m freestyle
+400m hurdles
+400m individual medley
+4x100m freestyle relay
+4x100m medley relay
+4x100m relay
+4x200m freestyle relay
+4x400m relay
+5000m
+50km walk
+50m freestyle
+800m
+800m freestyle
+abaguresi
 abseiling
 adventure racing
 adventure sports
@@ -91,7 +92,7 @@ baseball
 basketball
 basque pelota
 bat-and-trap
-batt\=ojutsu
+battojutsu
 beach basketball
 beach handball
 beach rugby
@@ -132,7 +133,7 @@ bowling
 bowls
 box lacrosse
 boxing
-bo\ss eln
+bosseln
 brazilian jiu-jitsu
 breakaway roping
 team roping
@@ -146,7 +147,7 @@ pole bending.
 breaststroke
 british baseball
 broomball
-br\"annboll
+brannboll
 bujinkan
 bull fighting
 bull riding
@@ -322,7 +323,7 @@ frontenis
 fullbore target rifle
 fussball
 futsal
-fu\ss ball
+fussball
 ga-ga
 gaelic football
 gaming
@@ -385,7 +386,7 @@ intercrosse
 international fronton
 international rules football
 ironman
-j\=od\=o
+jodo
 jacquet
 jai alai
 janggi
@@ -403,7 +404,7 @@ judo
 jujutsu
 jumping
 juttejutsu
-j\=ukend\=o
+jukendo
 kabaddi
 kaisa
 karate
@@ -443,7 +444,7 @@ lelo burti
 lethwei
 letterboxing
 long jump
-longa m\'eta
+longa meta
 longboarding
 luge
 lumberjack
@@ -497,7 +498,7 @@ mountaineering
 muay thai
 mud bogging
 muggle quidditch
-m\'eta
+meta
 naginatajutsu
 netball
 newcomb ball
@@ -514,8 +515,8 @@ off-road racing
 offroad boarding
 offshore powerboat racing
 oil wrestling
-oin\v a
-okinawan kobud\=o
+oina
+okinawan kobudo
 old cat
 one day international
 one-pocket
@@ -543,7 +544,7 @@ pato
 pehlwani
 pelota mixteca
 pentathlon
-pes\"apallo
+pesapallo
 peteca
 pickle
 pickleball
@@ -565,7 +566,7 @@ practical shooting
 pradal serey
 prizefighting
 pyramid
-p\'etanque
+petanque
 quadrathlon
 quidditch
 race walking
@@ -666,7 +667,7 @@ ski touring
 skiboarding
 skibobbing
 skiing
-skij\\o ring
+skijo
 skimboarding
 skirmish
 skittles
@@ -830,7 +831,7 @@ unicycle hockey
 unicycle trials
 unicycling
 vajra-mushti
-valencian front\'o
+valencian fronto
 valencian pilota
 varpa
 varzesh-e bastani
@@ -870,14 +871,13 @@ winter sports
 wireball
 woggabaliri
 wolf hunting
-women's lacrosse
 wood chopping
 woodball
 wrestling
 wushu
 xare
 xingyiquan
-ya\v gl\.i g\"ure\c s
+yagli gures
 yak polo
 yotsudama
 yubi lakpi
