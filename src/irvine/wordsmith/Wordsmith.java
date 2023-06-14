@@ -42,9 +42,13 @@ public final class Wordsmith extends Command {
     final ArrayList<Inspector> lst = new ArrayList<>();
     lst.add(new ConstantInspector());
     lst.add(new LengthInspector());
+    lst.add(new UniqueInspector());
     lst.add(new AlphabeticalInspector());
     lst.add(new ReverseAlphabeticalInspector());
     lst.add(new AlphabetInspector());
+    lst.add(new IncrementLetterInspector());
+    lst.add(new DecrementLetterInspector());
+    lst.add(new ReplaceLetterInspector());
     lst.add(new DirListInspector(DirListInspector.LIST_DIR, true, verbose));
     lst.add(new DoubledLetterInspector());
     lst.add(new PrefixInspector());

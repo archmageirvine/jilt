@@ -151,4 +151,19 @@ public final class StringUtils {
     return sb.toString();
   }
 
+  /**
+   * Compute the syndome of the capital letters in the word.
+   * @param w word
+   * @return syndrome
+   */
+  public static int syn(final String w) {
+    int syn = 0;
+    for (int k = 0; k < w.length(); ++k) {
+      final char c = w.charAt(k);
+      if (c >= 'A' && c <= 'Z') {
+        syn |= 1 << (c - 'A');
+      }
+    }
+    return syn;
+  }
 }

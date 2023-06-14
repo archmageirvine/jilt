@@ -8,19 +8,8 @@ import irvine.util.StringUtils;
  */
 public class ConsecutiveLettersInspector implements Inspector {
 
-  private int syndrome(final String w) {
-    int syn = 0;
-    for (int k = 0; k < w.length(); ++k) {
-      final char c = w.charAt(k);
-      if (c >= 'A' && c <= 'Z') {
-        syn |= 1 << (c - 'A');
-      }
-    }
-    return syn;
-  }
-
   private int maxConsecutiveLetters(final String w) {
-    final String syn = Integer.toBinaryString(syndrome(w));
+    final String syn = Integer.toBinaryString(StringUtils.syn(w));
     final String ones = StringUtils.rep('1', syn.length());
     for (int k = 0; k < ones.length(); ++k) {
       if (syn.contains(ones.substring(k))) {

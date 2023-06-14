@@ -1,0 +1,9 @@
+#@directions
+north,N
+south,S
+east,E
+west,W
+northeast,NE
+northwest,NW
+southeast,SE
+southwest,SW
