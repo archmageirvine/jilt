@@ -15,15 +15,18 @@ public class DirListInspector implements Inspector {
   static final String LIST_DIR = System.getProperty("lists.dir", "lists");
   private final String mDir;
   private final boolean mVerbose;
+  private final boolean mTryHard;
   private final List<Inspector> mInspectors = new ArrayList<>();
+  private final List<Inspector> mSubstringInspectors = new ArrayList<>();
 
-  DirListInspector(final String dir, final boolean verbose) {
+  DirListInspector(final String dir, final boolean tryHard, final boolean verbose) {
     mDir = dir;
+    mTryHard = tryHard;
     mVerbose = verbose;
   }
 
-  DirListInspector(final boolean verbose) {
-    this(LIST_DIR, verbose);
+  DirListInspector(final boolean tryHard, final boolean verbose) {
+    this(LIST_DIR, tryHard, verbose);
   }
 
   @Override
@@ -32,6 +35,7 @@ public class DirListInspector implements Inspector {
       final File[] files = new File(mDir).listFiles(file -> file.getName().endsWith(".lst"));
       if (files != null) {
         for (final File f : files) {
+          mInspectors.add(new AnagramInspector(f.getPath()));
           mInspectors.add(new ListInspector(f.getPath(), mVerbose));
         }
       }
@@ -44,6 +48,26 @@ public class DirListInspector implements Inspector {
           sb.append('\n');
         }
         sb.append(res);
+      }
+    }
+    // Only if we didn't find an explanation above, try a harder more general search
+    if (mTryHard && sb.length() == 0) {
+      if (mSubstringInspectors.isEmpty()) {
+        final File[] files = new File(mDir).listFiles(file -> file.getName().endsWith(".lst"));
+        if (files != null) {
+          for (final File f : files) {
+            mSubstringInspectors.add(new SubstringInspector(f.getPath(), mVerbose));
+          }
+        }
+      }
+      for (final Inspector inspector : mSubstringInspectors) {
+        final String res = inspector.inspect(words);
+        if (res != null) {
+          if (sb.length() > 0) {
+            sb.append('\n');
+          }
+          sb.append(res);
+        }
       }
     }
     return sb.length() > 0 ? sb.toString() : null;

@@ -44,13 +44,15 @@ public final class Wordsmith extends Command {
     lst.add(new LengthInspector());
     lst.add(new AlphabeticalInspector());
     lst.add(new ReverseAlphabeticalInspector());
-    lst.add(new DirListInspector(DirListInspector.LIST_DIR, verbose));
+    lst.add(new AlphabetInspector());
+    lst.add(new DirListInspector(DirListInspector.LIST_DIR, true, verbose));
     lst.add(new DoubledLetterInspector());
     lst.add(new PrefixInspector());
     lst.add(new SuffixInspector());
     lst.add(new SliceInspector());
     lst.add(new ConsecutiveLettersInspector());
     lst.add(new ParityInspector());
+    lst.add(new AddSingleLetterInspector());
     return lst;
   }
 

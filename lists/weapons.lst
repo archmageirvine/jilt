@@ -1,6 +1,7 @@
-\'ep\'ee
-\=odachi
-\=otsuchi
+#@weapons
+epee
+odachi
+otsuchi
 a-bomb
 adze
 ahlspiess
@@ -37,8 +38,8 @@ automatic rifle
 awl pike
 axe
 ayudha katti
-b\=o
-b\^aton fran\c cais
+bo
+baton francais
 backsword
 bagh naka
 ballista
@@ -114,7 +115,7 @@ celtic sword
 cestrosphendone
 cestrus
 cestus
-ch\'ui
+chui
 chacing staff
 chain whip
 chako
@@ -125,7 +126,7 @@ chicken sickles
 chicotte
 chigiriki
 chisakatana
-chokut\=o
+chokuto
 chu-ko-nu
 churuvadi
 chuttuval
@@ -147,14 +148,14 @@ cudgel
 culverin
 cumberjung
 cutlass
-d\=otanuki
+dotanuki
 dadao
 dagger
 dagger-axe
 dahomey axe club
 dai chui
 daijichang
-daiky\=u
+daikyu
 dane axe
 dangpa-chang
 danisco
@@ -169,7 +170,7 @@ doglock
 doloire
 donderbus
 dongyemochang
-doppleh\"ander
+dopplehander
 doru
 dory
 double-ended flail
@@ -184,7 +185,7 @@ english bullet bow
 english long axe
 english longbow
 eskrima sticks
-esp\'ee bastarde
+espee bastarde
 espada ropera
 espadon
 estoc
@@ -244,7 +245,7 @@ golok
 great sword
 grenade
 grenade launcher
-gro\ss messer
+grossmesser
 grootzwaard
 guan
 guided missile
@@ -259,7 +260,7 @@ haikuchi
 hakapik
 halberd
 hammer
-hanb\=o
+hanbo
 hand axe
 hand cannon
 hand grenade
@@ -267,7 +268,7 @@ hand-and-a-half sword
 handgun
 hangar
 hanger
-hanky\=u
+hankyu
 harkbus
 harpe
 harpoon
@@ -303,7 +304,7 @@ intercontinental ballistic missile
 iron fan
 iron sword
 itak
-j\=o
+jo
 jangchang
 japanese fan
 javelin
@@ -318,7 +319,7 @@ jutte
 kaduthala
 kama
 kampilan
-kanab\=o
+kanabo
 karabela
 karambit
 kaskara
@@ -450,7 +451,7 @@ nangsun
 nerve gas
 ngaw
 night stick
-nihont\=o
+nihonto
 nimcha
 njiga
 nodachi
@@ -500,7 +501,7 @@ pinuti
 pistol
 pistol crossbow
 pitchfork
-plan\c con a picot
+plancon a picot
 planson
 plumbata
 poleaxe
@@ -549,7 +550,7 @@ sasumata
 saunion
 schiavona
 schweizerdegen
-schweizers\"abel
+schweizersabel
 scimitar
 scythe
 seax
@@ -581,7 +582,7 @@ sickle-sword
 side-sword
 siege tower
 sjambok
-sk\aa ne lockbow
+skaane lockbow
 sledgehammer
 sling
 slingshot
@@ -660,7 +661,7 @@ trident
 tripwire
 trishula
 truncheon
-tsukub\=o
+tsukubo
 tsurugi
 tu huo qiang
 tuck
@@ -674,7 +675,7 @@ ulfberht
 urumi
 uurga
 uzi
-vala\v ska
+valaska
 vechevoral
 verutum
 vettukathi
@@ -709,12 +710,12 @@ yataghan
 yawara
 yawara-bo
 yubi-bo
-zanbat\=o
+zanbato
 zhanmadao
 zhibei dao
 zhua
 zhuge nu
-zweih\"ander
+zweihander
 h-bomb
 a-bomb
 jet

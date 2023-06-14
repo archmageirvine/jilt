@@ -20,7 +20,7 @@ public class SliceInspector implements Inspector {
     // Try k letters from beginning and end
     for (int k = 1; 2 * k < minLength; ++k) {
       if (mA == null) {
-        mA = new DirListInspector(false);
+        mA = new DirListInspector(false, false);
       }
       final String[] sublist = new String[words.length];
       for (int j = 0; j < words.length; ++j) {
@@ -34,7 +34,7 @@ public class SliceInspector implements Inspector {
     // Try middle letters
     for (int k = 1; 2 * k < minLength; ++k) {
       if (mA == null) {
-        mA = new DirListInspector(false);
+        mA = new DirListInspector(false, false);
       }
       final String[] sublist = new String[words.length];
       for (int j = 0; j < words.length; ++j) {
@@ -42,13 +42,13 @@ public class SliceInspector implements Inspector {
       }
       final String si = mA.inspect(sublist);
       if (si != null) {
-        sb.append("Taking ").append(k).append(" letters from the middle gives \n").append(Arrays.toString(sublist)).append("\n --> ").append(si);
+        sb.append("Deleting ").append(k).append(" letters from both sides \n").append(Arrays.toString(sublist)).append("\n --> ").append(si);
       }
     }
     // Try k letters slide across
     for (int k = 2; k < minLength; ++k) {
       if (mA == null) {
-        mA = new DirListInspector(false);
+        mA = new DirListInspector(false, false);
       }
       for (int offset = 0; offset + k <= minLength; ++offset) {
         final String[] sublist = new String[words.length];

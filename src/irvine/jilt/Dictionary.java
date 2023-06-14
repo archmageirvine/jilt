@@ -82,4 +82,22 @@ public final class Dictionary {
   public static Set<String> getWordSet(final BufferedReader reader, final int minLength, final int maxLength) throws IOException {
     return getWordSet(reader, minLength, maxLength, Casing.NONE);
   }
+
+  private static Set<String> sDict = null;
+
+  /**
+   * Retrieve the default dictionary.
+   * @return dicttionary
+   */
+  public static Set<String> getDefaultDictionary() {
+    if (sDict == null) {
+      try {
+        sDict = Dictionary.getWordSet(Dictionary.getDictionaryReader(null), 1, Integer.MAX_VALUE, Casing.UPPER);
+      } catch (final IOException e) {
+        throw new RuntimeException(e);
+      }
+    }
+    return sDict;
+  }
+
 }

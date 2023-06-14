@@ -1,2000 +1,2001 @@
-1 Ceres
-2 Pallas
-3 Juno
-4 Vesta
-5 Astraea
-6 Hebe
-7 Iris
-8 Flora
-9 Metis
-10 Hygiea
-11 Parthenope
-12 Victoria
-13 Egeria
-14 Irene
-15 Eunomia
-16 Psyche
-17 Thetis
-18 Melpomene
-19 Fortuna
-20 Massalia
-21 Lutetia
-22 Kalliope
-23 Thalia
-24 Themis
-25 Phocaea
-26 Proserpina
-27 Euterpe
-28 Bellona
-29 Amphitrite
-30 Urania
-31 Euphrosyne
-32 Pomona
-33 Polyhymnia
-34 Circe
-35 Leukothea
-36 Atalante
-37 Fides
-38 Leda
-39 Laetitia
-40 Harmonia
-41 Daphne
-42 Isis
-43 Ariadne
-44 Nysa
-45 Eugenia
-46 Hestia
-47 Aglaja
-48 Doris
-49 Pales
-50 Virginia
-51 Nemausa
-52 Europa
-53 Kalypso
-54 Alexandra
-55 Pandora
-56 Melete
-57 Mnemosyne
-58 Concordia
-59 Elpis
-60 Echo
-61 Dana\"e
-62 Erato
-63 Ausonia
-64 Angelina
-65 Cybele
-66 Maja
-67 Asia
-68 Leto
-69 Hesperia
-70 Panopaea
-71 Niobe
-72 Feronia
-73 Klytia
-74 Galatea
-75 Eurydike
-76 Freia
-77 Frigga
-78 Diana
-79 Eurynome
-80 Sappho
-81 Terpsichore
-82 Alkmene
-83 Beatrix
-84 Klio
-85 Io
-86 Semele
-87 Sylvia
-88 Thisbe
-89 Julia
-90 Antiope
-91 Aegina
-92 Undina
-93 Minerva
-94 Aurora
-95 Arethusa
-96 Aegle
-97 Klotho
-98 Ianthe
-99 Dike
-100 Hekate
-101 Helena
-102 Miriam
-103 Hera
-104 Klymene
-105 Artemis
-106 Dione
-107 Camilla
-108 Hecuba
-109 Felicitas
-110 Lydia
-111 Ate
-112 Iphigenia
-113 Amalthea
-114 Kassandra
-115 Thyra
-116 Sirona
-117 Lomia
-118 Peitho
-119 Althaea
-120 Lachesis
-121 Hermione
-122 Gerda
-123 Brunhild
-124 Alkeste
-125 Liberatrix
-126 Velleda
-127 Johanna
-128 Nemesis
-129 Antigone
-130 Elektra
-131 Vala
-132 Aethra
-133 Cyrene
-134 Sophrosyne
-135 Hertha
-136 Austria
-137 Meliboea
-138 Tolosa
-139 Juewa
-140 Siwa
-141 Lumen
-142 Polana
-143 Adria
-144 Vibilia
-145 Adeona
-146 Lucina
-147 Protogeneia
-148 Gallia
-149 Medusa
-150 Nuwa
-151 Abundantia
-152 Atala
-153 Hilda
-154 Bertha
-155 Scylla
-156 Xanthippe
-157 Dejanira
-158 Koronis
-159 Aemilia
-160 Una
-161 Athor
-162 Laurentia
-163 Erigone
-164 Eva
-165 Loreley
-166 Rhodope
-167 Urda
-168 Sibylla
-169 Zelia
-170 Maria
-171 Ophelia
-172 Baucis
-173 Ino
-174 Phaedra
-175 Andromache
-176 Iduna
-177 Irma
-178 Belisana
-179 Klytaemnestra
-180 Garumna
-181 Eucharis
-182 Elsa
-183 Istria
-184 Dejopeja
-185 Eunike
-186 Celuta
-187 Lamberta
-188 Menippe
-189 Phthia
-190 Ismene
-191 Kolga
-192 Nausikaa
-193 Ambrosia
-194 Prokne
-195 Eurykleia
-196 Philomela
-197 Arete
-198 Ampella
-199 Byblis
-200 Dynamene
-201 Penelope
-202 Chryse\"{\i}s
-203 Pompeja
-204 Kallisto
-205 Martha
-206 Hersilia
-207 Hedda
-208 Lacrimosa
-209 Dido
-210 Isabella
-211 Isolda
-212 Medea
-213 Lilaea
-214 Aschera
-215 Oenone
-216 Kleopatra
-217 Eudora
-218 Bianca
-219 Thusnelda
-220 Stephania
-221 Eos
-222 Lucia
-223 Rosa
-224 Oceana
-225 Henrietta
-226 Weringia
-227 Philosophia
-228 Agathe
-229 Adelinda
-230 Athamantis
-231 Vindobona
-232 Russia
-233 Asterope
-234 Barbara
-235 Carolina
-236 Honoria
-237 Coelestina
-238 Hypatia
-239 Adrastea
-240 Vanadis
-241 Germania
-242 Kriemhild
-243 Ida
-244 Sita
-245 Vera
-246 Asporina
-247 Eukrate
-248 Lameia
-249 Ilse
-250 Bettina
-251 Sophia
-252 Clementina
-253 Mathilde
-254 Augusta
-255 Oppavia
-256 Walpurga
-257 Silesia
-258 Tyche
-259 Aletheia
-260 Huberta
-261 Prymno
-262 Valda
-263 Dresda
-264 Libussa
-265 Anna
-266 Aline
-267 Tirza
-268 Adorea
-269 Justitia
-270 Anahita
-271 Penthesilea
-272 Antonia
-273 Atropos
-274 Philagoria
-275 Sapientia
-276 Adelheid
-277 Elvira
-278 Paulina
-279 Thule
-280 Philia
-281 Lucretia
-282 Clorinde
-283 Emma
-284 Amalia
-285 Regina
-286 Iclea
-287 Nephthys
-288 Glauke
-289 Nenetta
-290 Bruna
-291 Alice
-292 Ludovica
-293 Brasilia
-294 Felicia
-295 Theresia
-296 Pha\"etusa
-297 Caecilia
-298 Baptistina
-299 Thora
-300 Geraldina
-301 Bavaria
-302 Clarissa
-303 Josephina
-304 Olga
-305 Gordonia
-306 Unitas
-307 Nike
-308 Polyxo
-309 Fraternitas
-310 Margarita
-311 Claudia
-312 Pierretta
-313 Chaldaea
-314 Rosalia
-315 Constantia
-316 Goberta
-317 Roxane
-318 Magdalena
-319 Leona
-320 Katharina
-321 Florentina
-322 Phaeo
-323 Brucia
-324 Bamberga
-325 Heidelberga
-326 Tamara
-327 Columbia
-328 Gudrun
-329 Svea
-330 Adalberta
-331 Etheridgea
-332 Siri
-333 Badenia
-334 Chicago
-335 Roberta
-336 Lacadiera
-337 Devosa
-338 Budrosa
-339 Dorothea
-340 Eduarda
-341 California
-342 Endymion
-343 Ostara
-344 Desiderata
-345 Tercidina
-346 Hermentaria
-347 Pariana
-348 May
-349 Dembowska
-350 Ornamenta
-351 Yrsa
-352 Gisela
-353 Ruperto-Carola
-354 Eleonora
-355 Gabriella
-356 Liguria
-357 Ninina
-358 Apollonia
-359 Georgia
-360 Carlova
-361 Bononia
-362 Havnia
-363 Padua
-364 Isara
-365 Corduba
-366 Vincentina
-367 Amicitia
-368 Haidea
-369 A\"eria
-370 Modestia
-371 Bohemia
-372 Palma
-373 Melusina
-374 Burgundia
-375 Ursula
-376 Geometria
-377 Campania
-378 Holmia
-379 Huenna
-380 Fiducia
-381 Myrrha
-382 Dodona
-383 Janina
-384 Burdigala
-385 Ilmatar
-386 Siegena
-387 Aquitania
-388 Charybdis
-389 Industria
-390 Alma
-391 Ingeborg
-392 Wilhelmina
-393 Lampetia
-394 Arduina
-395 Delia
-396 Aeolia
-397 Vienna
-398 Admete
-399 Persephone
-400 Ducrosa
-401 Ottilia
-402 Chlo\"e
-403 Cyane
-404 Arsino\"e
-405 Thia
-406 Erna
-407 Arachne
-408 Fama
-409 Aspasia
-410 Chloris
-411 Xanthe
-412 Elisabetha
-413 Edburga
-414 Liriope
-415 Palatia
-416 Vaticana
-417 Suevia
-418 Alemannia
-419 Aurelia
-420 Bertholda
-421 Z\"ahringia
-422 Berolina
-423 Diotima
-424 Gratia
-425 Cornelia
-426 Hippo
-427 Galene
-428 Monachia
-429 Lotis
-430 Hybris
-431 Nephele
-432 Pythia
-433 Eros
-434 Hungaria
-435 Ella
-436 Patricia
-437 Rhodia
-438 Zeuxo
-439 Ohio
-440 Theodora
-441 Bathilde
-442 Eichsfeldia
-443 Photographica
-444 Gyptis
-445 Edna
-446 Aeternitas
-447 Valentine
-448 Natalie
-449 Hamburga
-450 Brigitta
-451 Patientia
-452 Hamiltonia
-453 Tea
-454 Mathesis
-455 Bruchsalia
-456 Abnoba
-457 Alleghenia
-458 Hercynia
-459 Signe
-460 Scania
-461 Saskia
-462 Eriphyla
-463 Lola
-464 Megaira
-465 Alekto
-466 Tisiphone
-467 Laura
-468 Lina
-469 Argentina
-470 Kilia
-471 Papagena
-472 Roma
-473 Nolli
-474 Prudentia
-475 Ocllo
-476 Hedwig
-477 Italia
-478 Tergeste
-479 Caprera
-480 Hansa
-481 Emita
-482 Petrina
-483 Seppina
-484 Pittsburghia
-485 Genua
-486 Cremona
-487 Venetia
-488 Kreusa
-489 Comacina
-490 Veritas
-491 Carina
-492 Gismonda
-493 Griseldis
-494 Virtus
-495 Eulalia
-496 Gryphia
-497 Iva
-498 Tokio
-499 Venusia
-500 Selinur
-501 Urhixidur
-502 Sigune
-503 Evelyn
-504 Cora
-505 Cava
-506 Marion
-507 Laodica
-508 Princetonia
-509 Iolanda
-510 Mabella
-511 Davida
-512 Taurinensis
-513 Centesima
-514 Armida
-515 Athalia
-516 Amherstia
-517 Edith
-518 Halawe
-519 Sylvania
-520 Franziska
-521 Brixia
-522 Helga
-523 Ada
-524 Fidelio
-525 Adelaide
-526 Jena
-527 Euryanthe
-528 Rezia
-529 Preziosa
-530 Turandot
-531 Zerlina
-532 Herculina
-533 Sara
-534 Nassovia
-535 Montague
-536 Merapi
-537 Pauly
-538 Friederike
-539 Pamina
-540 Rosamunde
-541 Deborah
-542 Susanna
-543 Charlotte
-544 Jetta
-545 Messalina
-546 Herodias
-547 Praxedis
-548 Kressida
-549 Jessonda
-550 Senta
-551 Ortrud
-552 Sigelinde
-553 Kundry
-554 Peraga
-555 Norma
-556 Phyllis
-557 Violetta
-558 Carmen
-559 Nanon
-560 Delila
-561 Ingwelde
-562 Salome
-563 Suleika
-564 Dudu
-565 Marbachia
-566 Stereoskopia
-567 Eleutheria
-568 Cheruskia
-569 Misa
-570 Kythera
-571 Dulcinea
-572 Rebekka
-573 Recha
-574 Reginhild
-575 Renate
-576 Emanuela
-577 Rhea
-578 Happelia
-579 Sidonia
-580 Selene
-581 Tauntonia
-582 Olympia
-583 Klotilde
-584 Semiramis
-585 Bilkis
-586 Thekla
-587 Hypsipyle
-588 Achilles
-589 Croatia
-590 Tomyris
-591 Irmgard
-592 Bathseba
-593 Titania
-594 Mireille
-595 Polyxena
-596 Scheila
-597 Bandusia
-598 Octavia
-599 Luisa
-600 Musa
-601 Nerthus
-602 Marianna
-603 Timandra
-604 Tekmessa
-605 Juvisia
-606 Brang\"ane
-607 Jenny
-608 Adolfine
-609 Fulvia
-610 Valeska
-611 Valeria
-612 Veronika
-613 Ginevra
-614 Pia
-615 Roswitha
-616 Elly
-617 Patroclus
-618 Elfriede
-619 Triberga
-620 Drakonia
-621 Werdandi
-622 Esther
-623 Chimaera
-624 Hektor
-625 Xenia
-626 Notburga
-627 Charis
-628 Christine
-629 Bernardina
-630 Euphemia
-631 Philippina
-632 Pyrrha
-633 Zelima
-634 Ute
-635 Vundtia
-636 Erika
-637 Chrysothemis
-638 Moira
-639 Latona
-640 Brambilla
-641 Agnes
-642 Clara
-643 Scheherezade
-644 Cosima
-645 Agrippina
-646 Kastalia
-647 Adelgunde
-648 Pippa
-649 Josefa
-650 Amalasuntha
-651 Antikleia
-652 Jubilatrix
-653 Berenike
-654 Zelinda
-655 Brise\"{\i}s
-656 Beagle
-657 Gunl\"od
-658 Asteria
-659 Nestor
-660 Crescentia
-661 Cloelia
-662 Newtonia
-663 Gerlinde
-664 Judith
-665 Sabine
-666 Desdemona
-667 Denise
-668 Dora
-669 Kypria
-670 Ottegebe
-671 Carnegia
-672 Astarte
-673 Edda
-674 Rachele
-675 Ludmilla
-676 Melitta
-677 Aaltje
-678 Fredegundis
-679 Pax
-680 Genoveva
-681 Gorgo
-682 Hagar
-683 Lanzia
-684 Hildburg
-685 Hermia
-686 Gersuind
-687 Tinette
-688 Melanie
-689 Zita
-690 Wratislavia
-691 Lehigh
-692 Hippodamia
-693 Zerbinetta
-694 Ekard
-695 Bella
-696 Leonora
-697 Galilea
-698 Ernestina
-699 Hela
-700 Auravictrix
-701 Oriola
-702 Alauda
-703 No\"emi
-704 Interamnia
-705 Erminia
-706 Hirundo
-707 Steina
-708 Raphaela
-709 Fringilla
-710 Gertrud
-711 Marmulla
-712 Boliviana
-713 Luscinia
-714 Ulula
-715 Transvaalia
-716 Berkeley
-717 Wisibada
-718 Erida
-719 Albert
-720 Bohlinia
-721 Tabora
-722 Frieda
-723 Hammonia
-724 Hapag
-725 Amanda
-726 Jo\"ella
-727 Nipponia
-728 Leonisis
-729 Watsonia
-730 Athanasia
-731 Sorga
-732 Tjilaki
-733 Mocia
-734 Benda
-735 Marghanna
-736 Harvard
-737 Arequipa
-738 Alagasta
-739 Mandeville
-740 Cantabia
-741 Botolphia
-742 Edisona
-743 Eugenisis
-744 Aguntina
-745 Mauritia
-746 Marlu
-747 Winchester
-748 Sime\"{\i}sa
-749 Malzovia
-750 Oskar
-751 Fa\"{\i}na
-752 Sulamitis
-753 Tiflis
-754 Malabar
-755 Quintilla
-756 Lilliana
-757 Portlandia
-758 Mancunia
-759 Vinifera
-760 Massinga
-761 Brendelia
-762 Pulcova
-763 Cupido
-764 Gedania
-765 Mattiaca
-766 Moguntia
-767 Bondia
-768 Struveana
-769 Tatjana
-770 Bali
-771 Libera
-772 Tanete
-773 Irmintraud
-774 Armor
-775 Lumi\`ere
-776 Berbericia
-777 Gutemberga
-778 Theobalda
-779 Nina
-780 Armenia
-781 Kartvelia
-782 Montefiore
-783 Nora
-784 Pickeringia
-785 Zwetana
-786 Bredichina
-787 Moskva
-788 Hohensteina
-789 Lena
-790 Pretoria
-791 Ani
-792 Metcalfia
-793 Arizona
-794 Irenaea
-795 Fini
-796 Sarita
-797 Montana
-798 Ruth
-799 Gudula
-800 Kressmannia
-801 Helwerthia
-802 Epyaxa
-803 Picka
-804 Hispania
-805 Hormuthia
-806 Gyldenia
-807 Ceraskia
-808 Merxia
-809 Lundia
-810 Atossa
-811 Nauheima
-812 Adele
-813 Baumeia
-814 Tauris
-815 Coppelia
-816 Juliana
-817 Annika
-818 Kapteynia
-819 Barnardiana
-820 Adriana
-821 Fanny
-822 Lalage
-823 Sisigambis
-824 Anastasia
-825 Tanina
-826 Henrika
-827 Wolfiana
-828 Lindemannia
-829 Academia
-830 Petropolitana
-831 Stateira
-832 Karin
-833 Monica
-834 Burnhamia
-835 Olivia
-836 Jole
-837 Schwarzschilda
-838 Seraphina
-839 Valborg
-840 Zenobia
-841 Arabella
-842 Kerstin
-843 Nicolaia
-844 Leontina
-845 Na\"ema
-846 Lipperta
-847 Agnia
-848 Inna
-849 Ara
-850 Altona
-851 Zeissia
-852 Wladilena
-853 Nansenia
-854 Frostia
-855 Newcombia
-856 Backlunda
-857 Glasenappia
-858 El Djeza\"{\i}r
-859 Bouzar\'eah
-860 Ursina
-861 A\"{\i}da
-862 Franzia
-863 Benkoela
-864 Aase
-865 Zubaida
-866 Fatme
-867 Kovacia
-868 Lova
-869 Mellena
-870 Manto
-871 Amneris
-872 Holda
-873 Mechthild
-874 Rotraut
-875 Nymphe
-876 Scott
-877 Walk\"ure
-878 Mildred
-879 Ricarda
-880 Herba
-881 Athene
-882 Swetlana
-883 Matterania
-884 Priamus
-885 Ulrike
-886 Washingtonia
-887 Alinda
-888 Parysatis
-889 Erynia
-890 Waltraut
-891 Gunhild
-892 Seeligeria
-893 Leopoldina
-894 Erda
-895 Helio
-896 Sphinx
-897 Lysistrata
-898 Hildegard
-899 Jokaste
-900 Rosalinde
-901 Brunsia
-902 Probitas
-903 Nealley
-904 Rockefellia
-905 Universitas
-906 Repsolda
-907 Rhoda
-908 Buda
-909 Ulla
-910 Anneliese
-911 Agamemnon
-912 Maritima
-913 Otila
-914 Palisana
-915 Cosette
-916 America
-917 Lyka
-918 Itha
-919 Ilsebill
-920 Rogeria
-921 Jovita
-922 Schlutia
-923 Herluga
-924 Toni
-925 Alphonsina
-926 Imhilde
-927 Ratisbona
-928 Hildrun
-929 Algunde
-930 Westphalia
-931 Whittemora
-932 Hooveria
-933 Susi
-934 Th\"uringia
-935 Clivia
-936 Kunigunde
-937 Bethgea
-938 Chlosinde
-939 Isberga
-940 Kordula
-941 Murray
-942 Romilda
-943 Begonia
-944 Hidalgo
-945 Barcelona
-946 Po\"esia
-947 Monterosa
-948 Jucunda
-949 Hel
-950 Ahrensa
-951 Gaspra
-952 Caia
-953 Painleva
-954 Li
-955 Alstede
-956 Elisa
-957 Camelia
-958 Asplinda
-959 Arne
-960 Birgit
-961 Gunnie
-962 Asl\"og
-963 Iduberga
-964 Subamara
-965 Angelica
-966 Muschi
-967 Helionape
-968 Petunia
-969 Leocadia
-970 Primula
-971 Alsatia
-972 Cohnia
-973 Aralia
-974 Lioba
-975 Perseverantia
-976 Benjamina
-977 Philippa
-978 Aidamina
-979 Ilsewa
-980 Anacostia
-981 Martina
-982 Franklina
-983 Gunila
-984 Gretia
-985 Rosina
-986 Amelia
-987 Wallia
-988 Appella
-989 Schwassmannia
-990 Yerkes
-991 McDonalda
-992 Swasey
-993 Moultona
-994 Otthild
-995 Sternberga
-996 Hilaritas
-997 Priska
-998 Bodea
-999 Zachia
-1000 Piazzia
-1001 Gaussia
-1002 Olbersia
-1003 Lilofee
-1004 Belopolskya
-1005 Arago
-1006 Lagrangea
-1007 Pawlowia
-1008 La Paz
-1009 Sirene
-1010 Marlene
-1011 Laodamia
-1012 Sarema
-1013 Tombecka
-1014 Semphyra
-1015 Christa
-1016 Anitra
-1017 Jacqueline
-1018 Arnolda
-1019 Strackea
-1020 Arcadia
-1021 Flammario
-1022 Olympiada
-1023 Thomana
-1024 Hale
-1025 Riema
-1026 Ingrid
-1027 Aesculapia
-1028 Lydina
-1029 La Plata
-1030 Vitja
-1031 Arctica
-1032 Pafuri
-1033 Simona
-1034 Mozartia
-1035 Amata
-1036 Ganymed
-1037 Davidweilla
-1038 Tuckia
-1039 Sonneberga
-1040 Klumpkea
-1041 Asta
-1042 Amazone
-1043 Beate
-1044 Teutonia
-1045 Michela
-1046 Edwin
-1047 Geisha
-1048 Feodosia
-1049 Gotho
-1050 Meta
-1051 Merope
-1052 Belgica
-1053 Vigdis
-1054 Forsytia
-1055 Tynka
-1056 Azalea
-1057 Wanda
-1058 Grubba
-1059 Mussorgskia
-1060 Magnolia
-1061 Paeonia
-1062 Ljuba
-1063 Aquilegia
-1064 Aethusa
-1065 Amundsenia
-1066 Lobelia
-1067 Lunaria
-1068 Nofretete
-1069 Planckia
-1070 Tunica
-1071 Brita
-1072 Malva
-1073 Gellivara
-1074 Beljawskya
-1075 Helina
-1076 Viola
-1077 Campanula
-1078 Mentha
-1079 Mimosa
-1080 Orchis
-1081 Reseda
-1082 Pirola
-1083 Salvia
-1084 Tamariwa
-1085 Amaryllis
-1086 Nata
-1087 Arabis
-1088 Mitaka
-1089 Tama
-1090 Sumida
-1091 Spiraea
-1092 Lilium
-1093 Freda
-1094 Siberia
-1095 Tulipa
-1096 Reunerta
-1097 Vicia
-1098 Hakone
-1099 Figneria
-1100 Arnica
-1101 Clematis
-1102 Pepita
-1103 Sequoia
-1104 Syringa
-1105 Fragaria
-1106 Cydonia
-1107 Lictoria
-1108 Demeter
-1109 Tata
-1110 Jaroslawa
-1111 Reinmuthia
-1112 Polonia
-1113 Katja
-1114 Lorraine
-1115 Sabauda
-1116 Catriona
-1117 Reginita
-1118 Hanskya
-1119 Euboea
-1120 Cannonia
-1121 Natascha
-1122 Neith
-1123 Shapleya
-1124 Stroobantia
-1125 China
-1126 Otero
-1127 Mimi
-1128 Astrid
-1129 Neujmina
-1130 Skuld
-1131 Porzia
-1132 Hollandia
-1133 Lugduna
-1134 Kepler
-1135 Colchis
-1136 Mercedes
-1137 Ra\"{\i}ssa
-1138 Attica
-1139 Atami
-1140 Crimea
-1141 Bohmia
-1142 Aetolia
-1143 Odysseus
-1144 Oda
-1145 Robelmonte
-1146 Biarmia
-1147 Stavropolis
-1148 Rarahu
-1149 Volga
-1150 Achaia
-1151 Ithaka
-1152 Pawona
-1153 Wallenbergia
-1154 Astronomia
-1155 A\"enna
-1156 Kira
-1157 Arabia
-1158 Luda
-1159 Granada
-1160 Illyria
-1161 Thessalia
-1162 Larissa
-1163 Saga
-1164 Kobolda
-1165 Imprinetta
-1166 Sakuntala
-1167 Dubiago
-1168 Brandia
-1169 Alwine
-1170 Siva
-1171 Rusthawelia
-1172 \"Aneas
-1173 Anchises
-1174 Marmara
-1175 Margo
-1176 Lucidor
-1177 Gonnessia
-1178 Irmela
-1179 Mally
-1180 Rita
-1181 Lilith
-1182 Ilona
-1183 Jutta
-1184 Gaea
-1185 Nikko
-1186 Turnera
-1187 Afra
-1188 Gothlandia
-1189 Terentia
-1190 Pelagia
-1191 Alfaterna
-1192 Prisma
-1193 Africa
-1194 Aletta
-1195 Orangia
-1196 Sheba
-1197 Rhodesia
-1198 Atlantis
-1199 Geldonia
-1200 Imperatrix
-1201 Strenua
-1202 Marina
-1203 Nanna
-1204 Renzia
-1205 Ebella
-1206 Numerowia
-1207 Ostenia
-1208 Troilus
-1209 Pumma
-1210 Morosovia
-1211 Bressole
-1212 Francette
-1213 Algeria
-1214 Richilde
-1215 Boyer
-1216 Askania
-1217 Maximiliana
-1218 Aster
-1219 Britta
-1220 Crocus
-1221 Amor
-1222 Tina
-1223 Neckar
-1224 Fantasia
-1225 Ariane
-1226 Golia
-1227 Geranium
-1228 Scabiosa
-1229 Tilia
-1230 Riceia
-1231 Auricula
-1232 Cortusa
-1233 Kobresia
-1234 Elyna
-1235 Schorria
-1236 Tha\"{\i}s
-1237 Genevi\`eve
-1238 Predappia
-1239 Queteleta
-1240 Centenaria
-1241 Dysona
-1242 Zambesia
-1243 Pamela
-1244 Deira
-1245 Calvinia
-1246 Chaka
-1247 Memoria
-1248 Jugurtha
-1249 Rutherfordia
-1250 Galanthus
-1251 Hedera
-1252 Celestia
-1253 Frisia
-1254 Erfordia
-1255 Schilowa
-1256 Normannia
-1257 M\'ora
-1258 Sicilia
-1259 \'Ogyalla
-1260 Walhalla
-1261 Legia
-1262 Sniadeckia
-1263 Varsavia
-1264 Letaba
-1265 Schweikarda
-1266 Tone
-1267 Geertruida
-1268 Libya
-1269 Rollandia
-1270 Datura
-1271 Isergina
-1272 Gefion
-1273 Helma
-1274 Delportia
-1275 Cimbria
-1276 Ucclia
-1277 Dolores
-1278 Kenya
-1279 Uganda
-1280 Baillauda
-1281 Jeanne
-1282 Utopia
-1283 Komsomolia
-1284 Latvia
-1285 Julietta
-1286 Banachiewicza
-1287 Lorcia
-1288 Santa
-1289 Kuta\"{\i}ssi
-1290 Albertine
-1291 Phryne
-1292 Luce
-1293 Sonja
-1294 Antwerpia
-1295 Deflotte
-1296 Andr\'ee
-1297 Quadea
-1298 Nocturna
-1299 Mertona
-1300 Marcelle
-1301 Yvonne
-1302 Werra
-1303 Luthera
-1304 Arosa
-1305 Pongola
-1306 Scythia
-1307 Cimmeria
-1308 Halleria
-1309 Hyperborea
-1310 Villigera
-1311 Knopfia
-1312 Vassar
-1313 Berna
-1314 Paula
-1315 Bronislawa
-1316 Kasan
-1317 Silvretta
-1318 Nerina
-1319 Disa
-1320 Impala
-1321 Majuba
-1322 Coppernicus
-1323 Tugela
-1324 Knysna
-1325 Inanda
-1326 Losaka
-1327 Namaqua
-1328 Devota
-1329 Eliane
-1330 Spiridonia
-1331 Solvejg
-1332 Marconia
-1333 Cevenola
-1334 Lundmarka
-1335 Demoulina
-1336 Zeelandia
-1337 Gerarda
-1338 Duponta
-1339 D\'esagneauxa
-1340 Yvette
-1341 Edm\'ee
-1342 Brabantia
-1343 Nicole
-1344 Caubeta
-1345 Potomac
-1346 Gotha
-1347 Patria
-1348 Michel
-1349 Bechuana
-1350 Rosselia
-1351 Uzbekistania
-1352 Wawel
-1353 Maartje
-1354 Botha
-1355 Magoeba
-1356 Nyanza
-1357 Khama
-1358 Gaika
-1359 Prieska
-1360 Tarka
-1361 Leuschneria
-1362 Griqua
-1363 Herberta
-1364 Safara
-1365 Henyey
-1366 Piccolo
-1367 Nongoma
-1368 Numidia
-1369 Ostanina
-1370 Hella
-1371 Resi
-1372 Haremari
-1373 Cincinnati
-1374 Isora
-1375 Alfreda
-1376 Michelle
-1377 Roberbauxa
-1378 Leonce
-1379 Lomonosowa
-1380 Volodia
-1381 Danubia
-1382 Gerti
-1383 Limburgia
-1384 Kniertje
-1385 Gelria
-1386 Storeria
-1387 Kama
-1388 Aphrodite
-1389 Onnie
-1390 Abastumani
-1391 Carelia
-1392 Pierre
-1393 Sofala
-1394 Algoa
-1395 Aribeda
-1396 Outeniqua
-1397 Umtata
-1398 Donnera
-1399 Teneriffa
-1400 Tirela
-1401 Lavonne
-1402 Eri
-1403 Idelsonia
-1404 Ajax
-1405 Sibelius
-1406 Komppa
-1407 Lindel\"of
-1408 Trusanda
-1409 Isko
-1410 Margret
-1411 Brauna
-1412 Lagrula
-1413 Roucarie
-1414 J\'er\^ome
-1415 Malautra
-1416 Renauxa
-1417 Walinskia
-1418 Fayeta
-1419 Danzig
-1420 Radcliffe
-1421 Esperanto
-1422 Str\"omgrenia
-1423 Jose
-1424 Sundmania
-1425 Tuorla
-1426 Riviera
-1427 Ruvuma
-1428 Mombasa
-1429 Pemba
-1430 Somalia
-1431 Luanda
-1432 Ethiopia
-1433 Geramtina
-1434 Margot
-1435 Garlena
-1436 Salonta
-1437 Diomedes
-1438 Wendeline
-1439 Vogtia
-1440 Rostia
-1441 Bolyai
-1442 Corvina
-1443 Ruppina
-1444 Pannonia
-1445 Konkolya
-1446 Sillanp\"a\"a
-1447 Utra
-1448 Lindbladia
-1449 Virtanen
-1450 Raimonda
-1451 Gran\"o
-1452 Hunnia
-1453 Fennia
-1454 Kalevala
-1455 Mitchella
-1456 Saldanha
-1457 Ankara
-1458 Mineura
-1459 Magnya
-1460 Haltia
-1461 Jean-Jacques
-1462 Zamenhof
-1463 Nordenmarkia
-1464 Armisticia
-1465 Autonoma
-1466 M\"undleria
-1467 Mashona
-1468 Zomba
-1469 Linzia
-1470 Carla
-1471 Tornio
-1472 Muonio
-1473 Ounas
-1474 Beira
-1475 Yalta
-1476 Cox
-1477 Bonsdorffia
-1478 Vihuri
-1479 Inkeri
-1480 Aunus
-1481 T\"ubingia
-1482 Sebastiana
-1483 Hakoila
-1484 Postrema
-1485 Isa
-1486 Marilyn
-1487 Boda
-1488 Aura
-1489 Attila
-1490 Limpopo
-1491 Balduinus
-1492 Oppolzer
-1493 Sigrid
-1494 Savo
-1495 Helsinki
-1496 Turku
-1497 Tampere
-1498 Lahti
-1499 Pori
-1500 Jyv\"askyl\"a
-1501 Baade
-1502 Arenda
-1503 Kuopio
-1504 Lappeenranta
-1505 Koranna
-1506 Xosa
-1507 Vaasa
-1508 Kemi
-1509 Esclangona
-1510 Charlois
-1511 Dal\'era
-1512 Oulu
-1513 M\'atra
-1514 Ricouxa
-1515 Perrotin
-1516 Henry
-1517 Beograd
-1518 Rovaniemi
-1519 Kajaani
-1520 Imatra
-1521 Sein\"ajoki
-1522 Kokkola
-1523 Pieks\"am\"aki
-1524 Joensuu
-1525 Savonlinna
-1526 Mikkeli
-1527 Malmquista
-1528 Conrada
-1529 Oterma
-1530 Rantasepp\"a
-1531 Hartmut
-1532 Inari
-1533 Saimaa
-1534 N\"asi
-1535 P\"aij\"anne
-1536 Pielinen
-1537 Transylvania
-1538 Detre
-1539 Borrelly
-1540 Kevola
-1541 Estonia
-1542 Schal\'en
-1543 Bourgeois
-1544 Vinterhansenia
-1545 Thern\"oe
-1546 Izs\'ak
-1547 Nele
-1548 Palomaa
-1549 Mikko
-1550 Tito
-1551 Argelander
-1552 Bessel
-1553 Bauersfelda
-1554 Yugoslavia
-1555 Dejan
-1556 Wingolfia
-1557 Roehla
-1558 J\"arnefelt
-1559 Kustaanheimo
-1560 Strattonia
-1561 Fricke
-1562 Gondolatsch
-1563 No\"el
-1564 Srbija
-1565 Lema\^{\i}tre
-1566 Icarus
-1567 Alikoski
-1568 Aisleen
-1569 Evita
-1570 Brunonia
-1571 Cesco
-1572 Posnania
-1573 V\"ais\"al\"a
-1574 Meyer
-1575 Winifred
-1576 Fabiola
-1577 Reiss
-1578 Kirkwood
-1579 Herrick
-1580 Betulia
-1581 Abanderada
-1582 Martir
-1583 Antilochus
-1584 Fuji
-1585 Union
-1586 Thiele
-1587 Kahrstedt
-1588 Descamisada
-1589 Fanatica
-1590 Tsiolkovskaja
-1591 Baize
-1592 Mathieu
-1593 Fagnes
-1594 Danjon
-1595 Tanga
-1596 Itzigsohn
-1597 Laugier
-1598 Paloque
-1599 Giomus
-1600 Vyssotsky
-1601 Patry
-1602 Indiana
-1603 Neva
-1604 Tombaugh
-1605 Milankovitch
-1606 Jekhovsky
-1607 Mavis
-1608 Mu\~noz
-1609 Brenda
-1610 Mirnaya
-1611 Beyer
-1612 Hirose
-1613 Smiley
-1614 Goldschmidt
-1615 Bardwell
-1616 Filipoff
-1617 Alschmitt
-1618 Dawn
-1619 Ueta
-1620 Geographos
-1621 Druzhba
-1622 Chacornac
-1623 Vivian
-1624 Rabe
-1625 The NORC
-1626 Sadeya
-1627 Ivar
-1628 Strobel
-1629 Pecker
-1630 Milet
-1631 Kopff
-1632 Sieb\"ohme
-1633 Chimay
-1634 Ndola
-1635 Bohrmann
-1636 Porter
-1637 Swings
-1638 Ruanda
-1639 Bower
-1640 Nemo
-1641 Tana
-1642 Hill
-1643 Brown
-1644 Rafita
-1645 Waterfield
-1646 Rosseland
-1647 Menelaus
-1648 Shajna
-1649 Fabre
-1650 Heckmann
-1651 Behrens
-1652 Herg\'e
-1653 Yakhontovia
-1654 Bojeva
-1655 Comas Sol\`a
-1656 Suomi
-1657 Roemera
-1658 Innes
-1659 Punkaharju
-1660 Wood
-1661 Granule
-1662 Hoffmann
-1663 van den Bos
-1664 Felix
-1665 Gaby
-1666 van Gent
-1667 Pels
-1668 Hanna
-1669 Dagmar
-1670 Minnaert
-1671 Chaika
-1672 Gezelle
-1673 van Houten
-1674 Groeneveld
-1675 Simonida
-1676 Kariba
-1677 Tycho Brahe
-1678 Hveen
-1679 Nevanlinna
-1680 Per Brahe
-1681 Steinmetz
-1682 Karel
-1683 Castafiore
-1684 Iguass\'u
-1685 Toro
-1686 De Sitter
-1687 Glarona
-1688 Wilkens
-1689 Floris-Jan
-1690 Mayrhofer
-1691 Oort
-1692 Subbotina
-1693 Hertzsprung
-1694 Kaiser
-1695 Walbeck
-1696 Nurmela
-1697 Koskenniemi
-1698 Christophe
-1699 Honkasalo
-1700 Zvezdara
-1701 Okavango
-1702 Kalahari
-1703 Barry
-1704 Wachmann
-1705 Tapio
-1706 Dieckvoss
-1707 Chantal
-1708 P\'olit
-1709 Ukraina
-1710 Gothard
-1711 Sandrine
-1712 Angola
-1713 Bancilhon
-1714 Sy
-1715 Salli
-1716 Peter
-1717 Arlon
-1718 Namibia
-1719 Jens
-1720 Niels
-1721 Wells
-1722 Goffin
-1723 Klemola
-1724 Vladimir
-1725 CrAO
-1726 Hoffmeister
-1727 Mette
-1728 Goethe Link
-1729 Beryl
-1730 Marceline
-1731 Smuts
-1732 Heike
-1733 Silke
-1734 Zhongolovich
-1735 ITA
-1736 Floirac
-1737 Severny
-1738 Oosterhoff
-1739 Meyermann
-1740 Paavo Nurmi
-1741 Giclas
-1742 Schaifers
-1743 Schmidt
-1744 Harriet
-1745 Ferguson
-1746 Brouwer
-1747 Wright
-1748 Mauderli
-1749 Telamon
-1750 Eckert
-1751 Herget
-1752 van Herk
-1753 Mieke
-1754 Cunningham
-1755 Lorbach
-1756 Giacobini
-1757 Porvoo
-1758 Naantali
-1759 Kienle
-1760 Sandra
-1761 Edmondson
-1762 Russell
-1763 Williams
-1764 Cogshall
-1765 Wrubel
-1766 Slipher
-1767 Lampland
-1768 Appenzella
-1769 Carlostorres
-1770 Schlesinger
-1771 Makover
-1772 Gagarin
-1773 Rumpelstilz
-1774 Kulikov
-1775 Zimmerwald
-1776 Kuiper
-1777 Gehrels
-1778 Alfv\'en
-1779 Paran\'a
-1780 Kippes
-1781 Van Biesbroeck
-1782 Schneller
-1783 Albitskij
-1784 Benguella
-1785 Wurm
-1786 Raahe
-1787 Chiny
-1788 Kiess
-1789 Dobrovolsky
-1790 Volkov
-1791 Patsayev
-1792 Reni
-1793 Zoya
-1794 Finsen
-1795 Woltjer
-1796 Riga
-1797 Schaumasse
-1798 Watts
-1799 Koussevitzky
-1800 Aguilar
-1801 Titicaca
-1802 Zhang Heng
-1803 Zwicky
-1804 Chebotarev
-1805 Dirikis
-1806 Derice
-1807 Slovakia
-1808 Bellerophon
-1809 Prometheus
-1810 Epimetheus
-1811 Bruwer
-1812 Gilgamesh
-1813 Imhotep
-1814 Bach
-1815 Beethoven
-1816 Liberia
-1817 Katanga
-1818 Brahms
-1819 Laputa
-1820 Lohmann
-1821 Aconcagua
-1822 Waterman
-1823 Gliese
-1824 Haworth
-1825 Klare
-1826 Miller
-1827 Atkinson
-1828 Kashirina
-1829 Dawson
-1830 Pogson
-1831 Nicholson
-1832 Mrkos
-1833 Shmakova
-1834 Palach
-1835 Gajdariya
-1836 Komarov
-1837 Osita
-1838 Ursa
-1839 Ragazza
-1840 Hus
-1841 Masaryk
-1842 Hynek
-1843 Jarmila
-1844 Susilva
-1845 Helewalda
-1846 Bengt
-1847 Stobbe
-1848 Delvaux
-1849 Kres\'ak
-1850 Kohoutek
-1851 Lacroute
-1852 Carpenter
-1853 McElroy
-1854 Skvortsov
-1855 Korolev
-1856 R\uring\v zena
-1857 Parchomenko
-1858 Lobachevskij
-1859 Kovalevskaya
-1860 Barbarossa
-1861 Komensk\'y
-1862 Apollo
-1863 Antinous
-1864 Daedalus
-1865 Cerberus
-1866 Sisyphus
-1867 Deiphobus
-1868 Thersites
-1869 Philoctetes
-1870 Glaukos
-1871 Astyanax
-1872 Helenos
-1873 Agenor
-1874 Kacivelia
-1875 Neruda
-1876 Napolitania
-1877 Marsden
-1878 Hughes
-1879 Broederstroom
-1880 McCrosky
-1881 Shao
-1882 Rauma
-1883 Rimito
-1884 Skip
-1885 Herero
-1886 Lowell
-1887 Virton
-1888 Zu Chong-Zhi
-1889 Pakhmutova
-1890 Konoshenkova
-1891 Gondola
-1892 Lucienne
-1893 Jakoba
-1894 Haffner
-1895 Larink
-1896 Beer
-1897 Hind
-1898 Cowell
-1899 Crommelin
-1900 Katyusha
-1901 Moravia
-1902 Shaposhnikov
-1903 Adzhimushkaj
-1904 Massevitch
-1905 Ambartsumian
-1906 Naef
-1907 Rudneva
-1908 Pobeda
-1909 Alekhin
-1910 Mikhailov
-1911 Schubart
-1912 Anubis
-1913 Sekanina
-1914 Hartbeespoortdam
-1915 Quetz\'alcoatl
-1916 Boreas
-1917 Cuyo
-1918 Aiguillon
-1919 Clemence
-1920 Sarmiento
-1921 Pala
-1922 Zulu
-1923 Osiris
-1924 Horus
-1925 Franklin-Adams
-1926 Demiddelaer
-1927 Suvanto
-1928 Summa
-1929 Kollaa
-1930 Lucifer
-1931 \v Capek
-1932 Jansky
-1933 Tinchen
-1934 Jeffers
-1935 Lucerna
-1936 Lugano
-1937 Locarno
-1938 Lausanna
-1939 Loretta
-1940 Whipple
-1941 Wild
-1942 Jablunka
-1943 Anteros
-1944 G\"unter
-1945 Wesselink
-1946 Walraven
-1947 Iso-Heikkil\"a
-1948 Kampala
-1949 Messina
-1950 Wempe
-1951 Lick
-1952 Hesburgh
-1953 Rupertwildt
-1954 Kukarkin
-1955 McMath
-1956 Artek
-1957 Angara
-1958 Chandra
-1959 Karbyshev
-1960 Guisan
-1961 Dufour
-1962 Dunant
-1963 Bezovec
-1964 Luyten
-1965 van de Kamp
-1966 Tristan
-1967 Menzel
-1968 Mehltretter
-1969 Alain
-1970 Sumeria
-1971 Hagihara
-1972 Yi Xing
-1973 Colocolo
-1974 Caupolican
-1975 Pikelner
-1976 Kaverin
-1977 Shura
-1978 Patrice
-1979 Sakharov
-1980 Tezcatlipoca
-1981 Midas
-1982 Cline
-1983 Bok
-1984 Fedynskij
-1985 Hopmann
-1986 Plaut
-1987 Kaplan
-1988 Delores
-1989 Tatry
-1990 Pilcher
-1991 Darwin
-1992 Galvarino
-1993 Guacolda
-1994 Shane
-1995 Hajek
-1996 Adams
-1997 Leverrier
-1998 Titius
-1999 Hirayama
-2000 Herschel
+#@minor planets
+Ceres,1
+Pallas,2
+Juno,3
+Vesta,4
+Astraea,5
+Hebe,6
+Iris,7
+Flora,8
+Metis,9
+Hygiea,10
+Parthenope,11
+Victoria,12
+Egeria,13
+Irene,14
+Eunomia,15
+Psyche,16
+Thetis,17
+Melpomene,18
+Fortuna,19
+Massalia,20
+Lutetia,21
+Kalliope,22
+Thalia,23
+Themis,24
+Phocaea,25
+Proserpina,26
+Euterpe,27
+Bellona,28
+Amphitrite,29
+Urania,30
+Euphrosyne,31
+Pomona,32
+Polyhymnia,33
+Circe,34
+Leukothea,35
+Atalante,36
+Fides,37
+Leda,38
+Laetitia,39
+Harmonia,40
+Daphne,41
+Isis,42
+Ariadne,43
+Nysa,44
+Eugenia,45
+Hestia,46
+Aglaja,47
+Doris,48
+Pales,49
+Virginia,50
+Nemausa,51
+Europa,52
+Kalypso,53
+Alexandra,54
+Pandora,55
+Melete,56
+Mnemosyne,57
+Concordia,58
+Elpis,59
+Echo,60
+Danae,61
+Erato,62
+Ausonia,63
+Angelina,64
+Cybele,65
+Maja,66
+Asia,67
+Leto,68
+Hesperia,69
+Panopaea,70
+Niobe,71
+Feronia,72
+Klytia,73
+Galatea,74
+Eurydike,75
+Freia,76
+Frigga,77
+Diana,78
+Eurynome,79
+Sappho,80
+Terpsichore,81
+Alkmene,82
+Beatrix,83
+Klio,84
+Io,85
+Semele,86
+Sylvia,87
+Thisbe,88
+Julia,89
+Antiope,90
+Aegina,91
+Undina,92
+Minerva,93
+Aurora,94
+Arethusa,95
+Aegle,96
+Klotho,97
+Ianthe,98
+Dike,99
+Hekate,100
+Helena,101
+Miriam,102
+Hera,103
+Klymene,104
+Artemis,105
+Dione,106
+Camilla,107
+Hecuba,108
+Felicitas,109
+Lydia,110
+Ate,111
+Iphigenia,112
+Amalthea,113
+Kassandra,114
+Thyra,115
+Sirona,116
+Lomia,117
+Peitho,118
+Althaea,119
+Lachesis,120
+Hermione,121
+Gerda,122
+Brunhild,123
+Alkeste,124
+Liberatrix,125
+Velleda,126
+Johanna,127
+Nemesis,128
+Antigone,129
+Elektra,130
+Vala,131
+Aethra,132
+Cyrene,133
+Sophrosyne,134
+Hertha,135
+Austria,136
+Meliboea,137
+Tolosa,138
+Juewa,139
+Siwa,140
+Lumen,141
+Polana,142
+Adria,143
+Vibilia,144
+Adeona,145
+Lucina,146
+Protogeneia,147
+Gallia,148
+Medusa,149
+Nuwa,150
+Abundantia,151
+Atala,152
+Hilda,153
+Bertha,154
+Scylla,155
+Xanthippe,156
+Dejanira,157
+Koronis,158
+Aemilia,159
+Una,160
+Athor,161
+Laurentia,162
+Erigone,163
+Eva,164
+Loreley,165
+Rhodope,166
+Urda,167
+Sibylla,168
+Zelia,169
+Maria,170
+Ophelia,171
+Baucis,172
+Ino,173
+Phaedra,174
+Andromache,175
+Iduna,176
+Irma,177
+Belisana,178
+Klytaemnestra,179
+Garumna,180
+Eucharis,181
+Elsa,182
+Istria,183
+Dejopeja,184
+Eunike,185
+Celuta,186
+Lamberta,187
+Menippe,188
+Phthia,189
+Ismene,190
+Kolga,191
+Nausikaa,192
+Ambrosia,193
+Prokne,194
+Eurykleia,195
+Philomela,196
+Arete,197
+Ampella,198
+Byblis,199
+Dynamene,200
+Penelope,201
+Chryseis,202
+Pompeja,203
+Kallisto,204
+Martha,205
+Hersilia,206
+Hedda,207
+Lacrimosa,208
+Dido,209
+Isabella,210
+Isolda,211
+Medea,212
+Lilaea,213
+Aschera,214
+Oenone,215
+Kleopatra,216
+Eudora,217
+Bianca,218
+Thusnelda,219
+Stephania,220
+Eos,221
+Lucia,222
+Rosa,223
+Oceana,224
+Henrietta,225
+Weringia,226
+Philosophia,227
+Agathe,228
+Adelinda,229
+Athamantis,230
+Vindobona,231
+Russia,232
+Asterope,233
+Barbara,234
+Carolina,235
+Honoria,236
+Coelestina,237
+Hypatia,238
+Adrastea,239
+Vanadis,240
+Germania,241
+Kriemhild,242
+Ida,243
+Sita,244
+Vera,245
+Asporina,246
+Eukrate,247
+Lameia,248
+Ilse,249
+Bettina,250
+Sophia,251
+Clementina,252
+Mathilde,253
+Augusta,254
+Oppavia,255
+Walpurga,256
+Silesia,257
+Tyche,258
+Aletheia,259
+Huberta,260
+Prymno,261
+Valda,262
+Dresda,263
+Libussa,264
+Anna,265
+Aline,266
+Tirza,267
+Adorea,268
+Justitia,269
+Anahita,270
+Penthesilea,271
+Antonia,272
+Atropos,273
+Philagoria,274
+Sapientia,275
+Adelheid,276
+Elvira,277
+Paulina,278
+Thule,279
+Philia,280
+Lucretia,281
+Clorinde,282
+Emma,283
+Amalia,284
+Regina,285
+Iclea,286
+Nephthys,287
+Glauke,288
+Nenetta,289
+Bruna,290
+Alice,291
+Ludovica,292
+Brasilia,293
+Felicia,294
+Theresia,295
+Phaetusa,296
+Caecilia,297
+Baptistina,298
+Thora,299
+Geraldina,300
+Bavaria,301
+Clarissa,302
+Josephina,303
+Olga,304
+Gordonia,305
+Unitas,306
+Nike,307
+Polyxo,308
+Fraternitas,309
+Margarita,310
+Claudia,311
+Pierretta,312
+Chaldaea,313
+Rosalia,314
+Constantia,315
+Goberta,316
+Roxane,317
+Magdalena,318
+Leona,319
+Katharina,320
+Florentina,321
+Phaeo,322
+Brucia,323
+Bamberga,324
+Heidelberga,325
+Tamara,326
+Columbia,327
+Gudrun,328
+Svea,329
+Adalberta,330
+Etheridgea,331
+Siri,332
+Badenia,333
+Chicago,334
+Roberta,335
+Lacadiera,336
+Devosa,337
+Budrosa,338
+Dorothea,339
+Eduarda,340
+California,341
+Endymion,342
+Ostara,343
+Desiderata,344
+Tercidina,345
+Hermentaria,346
+Pariana,347
+May,348
+Dembowska,349
+Ornamenta,350
+Yrsa,351
+Gisela,352
+Ruperto-Carola,353
+Eleonora,354
+Gabriella,355
+Liguria,356
+Ninina,357
+Apollonia,358
+Georgia,359
+Carlova,360
+Bononia,361
+Havnia,362
+Padua,363
+Isara,364
+Corduba,365
+Vincentina,366
+Amicitia,367
+Haidea,368
+Aeria,369
+Modestia,370
+Bohemia,371
+Palma,372
+Melusina,373
+Burgundia,374
+Ursula,375
+Geometria,376
+Campania,377
+Holmia,378
+Huenna,379
+Fiducia,380
+Myrrha,381
+Dodona,382
+Janina,383
+Burdigala,384
+Ilmatar,385
+Siegena,386
+Aquitania,387
+Charybdis,388
+Industria,389
+Alma,390
+Ingeborg,391
+Wilhelmina,392
+Lampetia,393
+Arduina,394
+Delia,395
+Aeolia,396
+Vienna,397
+Admete,398
+Persephone,399
+Ducrosa,400
+Ottilia,401
+Chloe,402
+Cyane,403
+Arsinoe,404
+Thia,405
+Erna,406
+Arachne,407
+Fama,408
+Aspasia,409
+Chloris,410
+Xanthe,411
+Elisabetha,412
+Edburga,413
+Liriope,414
+Palatia,415
+Vaticana,416
+Suevia,417
+Alemannia,418
+Aurelia,419
+Bertholda,420
+Zahringia,421
+Berolina,422
+Diotima,423
+Gratia,424
+Cornelia,425
+Hippo,426
+Galene,427
+Monachia,428
+Lotis,429
+Hybris,430
+Nephele,431
+Pythia,432
+Eros,433
+Hungaria,434
+Ella,435
+Patricia,436
+Rhodia,437
+Zeuxo,438
+Ohio,439
+Theodora,440
+Bathilde,441
+Eichsfeldia,442
+Photographica,443
+Gyptis,444
+Edna,445
+Aeternitas,446
+Valentine,447
+Natalie,448
+Hamburga,449
+Brigitta,450
+Patientia,451
+Hamiltonia,452
+Tea,453
+Mathesis,454
+Bruchsalia,455
+Abnoba,456
+Alleghenia,457
+Hercynia,458
+Signe,459
+Scania,460
+Saskia,461
+Eriphyla,462
+Lola,463
+Megaira,464
+Alekto,465
+Tisiphone,466
+Laura,467
+Lina,468
+Argentina,469
+Kilia,470
+Papagena,471
+Roma,472
+Nolli,473
+Prudentia,474
+Ocllo,475
+Hedwig,476
+Italia,477
+Tergeste,478
+Caprera,479
+Hansa,480
+Emita,481
+Petrina,482
+Seppina,483
+Pittsburghia,484
+Genua,485
+Cremona,486
+Venetia,487
+Kreusa,488
+Comacina,489
+Veritas,490
+Carina,491
+Gismonda,492
+Griseldis,493
+Virtus,494
+Eulalia,495
+Gryphia,496
+Iva,497
+Tokio,498
+Venusia,499
+Selinur,500
+Urhixidur,501
+Sigune,502
+Evelyn,503
+Cora,504
+Cava,505
+Marion,506
+Laodica,507
+Princetonia,508
+Iolanda,509
+Mabella,510
+Davida,511
+Taurinensis,512
+Centesima,513
+Armida,514
+Athalia,515
+Amherstia,516
+Edith,517
+Halawe,518
+Sylvania,519
+Franziska,520
+Brixia,521
+Helga,522
+Ada,523
+Fidelio,524
+Adelaide,525
+Jena,526
+Euryanthe,527
+Rezia,528
+Preziosa,529
+Turandot,530
+Zerlina,531
+Herculina,532
+Sara,533
+Nassovia,534
+Montague,535
+Merapi,536
+Pauly,537
+Friederike,538
+Pamina,539
+Rosamunde,540
+Deborah,541
+Susanna,542
+Charlotte,543
+Jetta,544
+Messalina,545
+Herodias,546
+Praxedis,547
+Kressida,548
+Jessonda,549
+Senta,550
+Ortrud,551
+Sigelinde,552
+Kundry,553
+Peraga,554
+Norma,555
+Phyllis,556
+Violetta,557
+Carmen,558
+Nanon,559
+Delila,560
+Ingwelde,561
+Salome,562
+Suleika,563
+Dudu,564
+Marbachia,565
+Stereoskopia,566
+Eleutheria,567
+Cheruskia,568
+Misa,569
+Kythera,570
+Dulcinea,571
+Rebekka,572
+Recha,573
+Reginhild,574
+Renate,575
+Emanuela,576
+Rhea,577
+Happelia,578
+Sidonia,579
+Selene,580
+Tauntonia,581
+Olympia,582
+Klotilde,583
+Semiramis,584
+Bilkis,585
+Thekla,586
+Hypsipyle,587
+Achilles,588
+Croatia,589
+Tomyris,590
+Irmgard,591
+Bathseba,592
+Titania,593
+Mireille,594
+Polyxena,595
+Scheila,596
+Bandusia,597
+Octavia,598
+Luisa,599
+Musa,600
+Nerthus,601
+Marianna,602
+Timandra,603
+Tekmessa,604
+Juvisia,605
+Brangane,606
+Jenny,607
+Adolfine,608
+Fulvia,609
+Valeska,610
+Valeria,611
+Veronika,612
+Ginevra,613
+Pia,614
+Roswitha,615
+Elly,616
+Patroclus,617
+Elfriede,618
+Triberga,619
+Drakonia,620
+Werdandi,621
+Esther,622
+Chimaera,623
+Hektor,624
+Xenia,625
+Notburga,626
+Charis,627
+Christine,628
+Bernardina,629
+Euphemia,630
+Philippina,631
+Pyrrha,632
+Zelima,633
+Ute,634
+Vundtia,635
+Erika,636
+Chrysothemis,637
+Moira,638
+Latona,639
+Brambilla,640
+Agnes,641
+Clara,642
+Scheherezade,643
+Cosima,644
+Agrippina,645
+Kastalia,646
+Adelgunde,647
+Pippa,648
+Josefa,649
+Amalasuntha,650
+Antikleia,651
+Jubilatrix,652
+Berenike,653
+Zelinda,654
+Briseis,655
+Beagle,656
+Gunlod,657
+Asteria,658
+Nestor,659
+Crescentia,660
+Cloelia,661
+Newtonia,662
+Gerlinde,663
+Judith,664
+Sabine,665
+Desdemona,666
+Denise,667
+Dora,668
+Kypria,669
+Ottegebe,670
+Carnegia,671
+Astarte,672
+Edda,673
+Rachele,674
+Ludmilla,675
+Melitta,676
+Aaltje,677
+Fredegundis,678
+Pax,679
+Genoveva,680
+Gorgo,681
+Hagar,682
+Lanzia,683
+Hildburg,684
+Hermia,685
+Gersuind,686
+Tinette,687
+Melanie,688
+Zita,689
+Wratislavia,690
+Lehigh,691
+Hippodamia,692
+Zerbinetta,693
+Ekard,694
+Bella,695
+Leonora,696
+Galilea,697
+Ernestina,698
+Hela,699
+Auravictrix,700
+Oriola,701
+Alauda,702
+Noemi,703
+Interamnia,704
+Erminia,705
+Hirundo,706
+Steina,707
+Raphaela,708
+Fringilla,709
+Gertrud,710
+Marmulla,711
+Boliviana,712
+Luscinia,713
+Ulula,714
+Transvaalia,715
+Berkeley,716
+Wisibada,717
+Erida,718
+Albert,719
+Bohlinia,720
+Tabora,721
+Frieda,722
+Hammonia,723
+Hapag,724
+Amanda,725
+Joella,726
+Nipponia,727
+Leonisis,728
+Watsonia,729
+Athanasia,730
+Sorga,731
+Tjilaki,732
+Mocia,733
+Benda,734
+Marghanna,735
+Harvard,736
+Arequipa,737
+Alagasta,738
+Mandeville,739
+Cantabia,740
+Botolphia,741
+Edisona,742
+Eugenisis,743
+Aguntina,744
+Mauritia,745
+Marlu,746
+Winchester,747
+Simeisa,748
+Malzovia,749
+Oskar,750
+Faina,751
+Sulamitis,752
+Tiflis,753
+Malabar,754
+Quintilla,755
+Lilliana,756
+Portlandia,757
+Mancunia,758
+Vinifera,759
+Massinga,760
+Brendelia,761
+Pulcova,762
+Cupido,763
+Gedania,764
+Mattiaca,765
+Moguntia,766
+Bondia,767
+Struveana,768
+Tatjana,769
+Bali,770
+Libera,771
+Tanete,772
+Irmintraud,773
+Armor,774
+Lumiere,775
+Berbericia,776
+Gutemberga,777
+Theobalda,778
+Nina,779
+Armenia,780
+Kartvelia,781
+Montefiore,782
+Nora,783
+Pickeringia,784
+Zwetana,785
+Bredichina,786
+Moskva,787
+Hohensteina,788
+Lena,789
+Pretoria,790
+Ani,791
+Metcalfia,792
+Arizona,793
+Irenaea,794
+Fini,795
+Sarita,796
+Montana,797
+Ruth,798
+Gudula,799
+Kressmannia,800
+Helwerthia,801
+Epyaxa,802
+Picka,803
+Hispania,804
+Hormuthia,805
+Gyldenia,806
+Ceraskia,807
+Merxia,808
+Lundia,809
+Atossa,810
+Nauheima,811
+Adele,812
+Baumeia,813
+Tauris,814
+Coppelia,815
+Juliana,816
+Annika,817
+Kapteynia,818
+Barnardiana,819
+Adriana,820
+Fanny,821
+Lalage,822
+Sisigambis,823
+Anastasia,824
+Tanina,825
+Henrika,826
+Wolfiana,827
+Lindemannia,828
+Academia,829
+Petropolitana,830
+Stateira,831
+Karin,832
+Monica,833
+Burnhamia,834
+Olivia,835
+Jole,836
+Schwarzschilda,837
+Seraphina,838
+Valborg,839
+Zenobia,840
+Arabella,841
+Kerstin,842
+Nicolaia,843
+Leontina,844
+Naema,845
+Lipperta,846
+Agnia,847
+Inna,848
+Ara,849
+Altona,850
+Zeissia,851
+Wladilena,852
+Nansenia,853
+Frostia,854
+Newcombia,855
+Backlunda,856
+Glasenappia,857
+El Djezair,858
+Bouzareah,859
+Ursina,860
+Aida,861
+Franzia,862
+Benkoela,863
+Aase,864
+Zubaida,865
+Fatme,866
+Kovacia,867
+Lova,868
+Mellena,869
+Manto,870
+Amneris,871
+Holda,872
+Mechthild,873
+Rotraut,874
+Nymphe,875
+Scott,876
+Walkure,877
+Mildred,878
+Ricarda,879
+Herba,880
+Athene,881
+Swetlana,882
+Matterania,883
+Priamus,884
+Ulrike,885
+Washingtonia,886
+Alinda,887
+Parysatis,888
+Erynia,889
+Waltraut,890
+Gunhild,891
+Seeligeria,892
+Leopoldina,893
+Erda,894
+Helio,895
+Sphinx,896
+Lysistrata,897
+Hildegard,898
+Jokaste,899
+Rosalinde,900
+Brunsia,901
+Probitas,902
+Nealley,903
+Rockefellia,904
+Universitas,905
+Repsolda,906
+Rhoda,907
+Buda,908
+Ulla,909
+Anneliese,910
+Agamemnon,911
+Maritima,912
+Otila,913
+Palisana,914
+Cosette,915
+America,916
+Lyka,917
+Itha,918
+Ilsebill,919
+Rogeria,920
+Jovita,921
+Schlutia,922
+Herluga,923
+Toni,924
+Alphonsina,925
+Imhilde,926
+Ratisbona,927
+Hildrun,928
+Algunde,929
+Westphalia,930
+Whittemora,931
+Hooveria,932
+Susi,933
+Thuringia,934
+Clivia,935
+Kunigunde,936
+Bethgea,937
+Chlosinde,938
+Isberga,939
+Kordula,940
+Murray,941
+Romilda,942
+Begonia,943
+Hidalgo,944
+Barcelona,945
+Poesia,946
+Monterosa,947
+Jucunda,948
+Hel,949
+Ahrensa,950
+Gaspra,951
+Caia,952
+Painleva,953
+Li,954
+Alstede,955
+Elisa,956
+Camelia,957
+Asplinda,958
+Arne,959
+Birgit,960
+Gunnie,961
+Aslog,962
+Iduberga,963
+Subamara,964
+Angelica,965
+Muschi,966
+Helionape,967
+Petunia,968
+Leocadia,969
+Primula,970
+Alsatia,971
+Cohnia,972
+Aralia,973
+Lioba,974
+Perseverantia,975
+Benjamina,976
+Philippa,977
+Aidamina,978
+Ilsewa,979
+Anacostia,980
+Martina,981
+Franklina,982
+Gunila,983
+Gretia,984
+Rosina,985
+Amelia,986
+Wallia,987
+Appella,988
+Schwassmannia,989
+Yerkes,990
+McDonalda,991
+Swasey,992
+Moultona,993
+Otthild,994
+Sternberga,995
+Hilaritas,996
+Priska,997
+Bodea,998
+Zachia,999
+Piazzia,1000
+Gaussia,1001
+Olbersia,1002
+Lilofee,1003
+Belopolskya,1004
+Arago,1005
+Lagrangea,1006
+Pawlowia,1007
+La Paz,1008
+Sirene,1009
+Marlene,1010
+Laodamia,1011
+Sarema,1012
+Tombecka,1013
+Semphyra,1014
+Christa,1015
+Anitra,1016
+Jacqueline,1017
+Arnolda,1018
+Strackea,1019
+Arcadia,1020
+Flammario,1021
+Olympiada,1022
+Thomana,1023
+Hale,1024
+Riema,1025
+Ingrid,1026
+Aesculapia,1027
+Lydina,1028
+La Plata,1029
+Vitja,1030
+Arctica,1031
+Pafuri,1032
+Simona,1033
+Mozartia,1034
+Amata,1035
+Ganymed,1036
+Davidweilla,1037
+Tuckia,1038
+Sonneberga,1039
+Klumpkea,1040
+Asta,1041
+Amazone,1042
+Beate,1043
+Teutonia,1044
+Michela,1045
+Edwin,1046
+Geisha,1047
+Feodosia,1048
+Gotho,1049
+Meta,1050
+Merope,1051
+Belgica,1052
+Vigdis,1053
+Forsytia,1054
+Tynka,1055
+Azalea,1056
+Wanda,1057
+Grubba,1058
+Mussorgskia,1059
+Magnolia,1060
+Paeonia,1061
+Ljuba,1062
+Aquilegia,1063
+Aethusa,1064
+Amundsenia,1065
+Lobelia,1066
+Lunaria,1067
+Nofretete,1068
+Planckia,1069
+Tunica,1070
+Brita,1071
+Malva,1072
+Gellivara,1073
+Beljawskya,1074
+Helina,1075
+Viola,1076
+Campanula,1077
+Mentha,1078
+Mimosa,1079
+Orchis,1080
+Reseda,1081
+Pirola,1082
+Salvia,1083
+Tamariwa,1084
+Amaryllis,1085
+Nata,1086
+Arabis,1087
+Mitaka,1088
+Tama,1089
+Sumida,1090
+Spiraea,1091
+Lilium,1092
+Freda,1093
+Siberia,1094
+Tulipa,1095
+Reunerta,1096
+Vicia,1097
+Hakone,1098
+Figneria,1099
+Arnica,1100
+Clematis,1101
+Pepita,1102
+Sequoia,1103
+Syringa,1104
+Fragaria,1105
+Cydonia,1106
+Lictoria,1107
+Demeter,1108
+Tata,1109
+Jaroslawa,1110
+Reinmuthia,1111
+Polonia,1112
+Katja,1113
+Lorraine,1114
+Sabauda,1115
+Catriona,1116
+Reginita,1117
+Hanskya,1118
+Euboea,1119
+Cannonia,1120
+Natascha,1121
+Neith,1122
+Shapleya,1123
+Stroobantia,1124
+China,1125
+Otero,1126
+Mimi,1127
+Astrid,1128
+Neujmina,1129
+Skuld,1130
+Porzia,1131
+Hollandia,1132
+Lugduna,1133
+Kepler,1134
+Colchis,1135
+Mercedes,1136
+Raissa,1137
+Attica,1138
+Atami,1139
+Crimea,1140
+Bohmia,1141
+Aetolia,1142
+Odysseus,1143
+Oda,1144
+Robelmonte,1145
+Biarmia,1146
+Stavropolis,1147
+Rarahu,1148
+Volga,1149
+Achaia,1150
+Ithaka,1151
+Pawona,1152
+Wallenbergia,1153
+Astronomia,1154
+Aenna,1155
+Kira,1156
+Arabia,1157
+Luda,1158
+Granada,1159
+Illyria,1160
+Thessalia,1161
+Larissa,1162
+Saga,1163
+Kobolda,1164
+Imprinetta,1165
+Sakuntala,1166
+Dubiago,1167
+Brandia,1168
+Alwine,1169
+Siva,1170
+Rusthawelia,1171
+Aneas,1172
+Anchises,1173
+Marmara,1174
+Margo,1175
+Lucidor,1176
+Gonnessia,1177
+Irmela,1178
+Mally,1179
+Rita,1180
+Lilith,1181
+Ilona,1182
+Jutta,1183
+Gaea,1184
+Nikko,1185
+Turnera,1186
+Afra,1187
+Gothlandia,1188
+Terentia,1189
+Pelagia,1190
+Alfaterna,1191
+Prisma,1192
+Africa,1193
+Aletta,1194
+Orangia,1195
+Sheba,1196
+Rhodesia,1197
+Atlantis,1198
+Geldonia,1199
+Imperatrix,1200
+Strenua,1201
+Marina,1202
+Nanna,1203
+Renzia,1204
+Ebella,1205
+Numerowia,1206
+Ostenia,1207
+Troilus,1208
+Pumma,1209
+Morosovia,1210
+Bressole,1211
+Francette,1212
+Algeria,1213
+Richilde,1214
+Boyer,1215
+Askania,1216
+Maximiliana,1217
+Aster,1218
+Britta,1219
+Crocus,1220
+Amor,1221
+Tina,1222
+Neckar,1223
+Fantasia,1224
+Ariane,1225
+Golia,1226
+Geranium,1227
+Scabiosa,1228
+Tilia,1229
+Riceia,1230
+Auricula,1231
+Cortusa,1232
+Kobresia,1233
+Elyna,1234
+Schorria,1235
+Thais,1236
+Genevieve,1237
+Predappia,1238
+Queteleta,1239
+Centenaria,1240
+Dysona,1241
+Zambesia,1242
+Pamela,1243
+Deira,1244
+Calvinia,1245
+Chaka,1246
+Memoria,1247
+Jugurtha,1248
+Rutherfordia,1249
+Galanthus,1250
+Hedera,1251
+Celestia,1252
+Frisia,1253
+Erfordia,1254
+Schilowa,1255
+Normannia,1256
+Mora,1257
+Sicilia,1258
+Ogyalla,1259
+Walhalla,1260
+Legia,1261
+Sniadeckia,1262
+Varsavia,1263
+Letaba,1264
+Schweikarda,1265
+Tone,1266
+Geertruida,1267
+Libya,1268
+Rollandia,1269
+Datura,1270
+Isergina,1271
+Gefion,1272
+Helma,1273
+Delportia,1274
+Cimbria,1275
+Ucclia,1276
+Dolores,1277
+Kenya,1278
+Uganda,1279
+Baillauda,1280
+Jeanne,1281
+Utopia,1282
+Komsomolia,1283
+Latvia,1284
+Julietta,1285
+Banachiewicza,1286
+Lorcia,1287
+Santa,1288
+Kutaissi,1289
+Albertine,1290
+Phryne,1291
+Luce,1292
+Sonja,1293
+Antwerpia,1294
+Deflotte,1295
+Andree,1296
+Quadea,1297
+Nocturna,1298
+Mertona,1299
+Marcelle,1300
+Yvonne,1301
+Werra,1302
+Luthera,1303
+Arosa,1304
+Pongola,1305
+Scythia,1306
+Cimmeria,1307
+Halleria,1308
+Hyperborea,1309
+Villigera,1310
+Knopfia,1311
+Vassar,1312
+Berna,1313
+Paula,1314
+Bronislawa,1315
+Kasan,1316
+Silvretta,1317
+Nerina,1318
+Disa,1319
+Impala,1320
+Majuba,1321
+Coppernicus,1322
+Tugela,1323
+Knysna,1324
+Inanda,1325
+Losaka,1326
+Namaqua,1327
+Devota,1328
+Eliane,1329
+Spiridonia,1330
+Solvejg,1331
+Marconia,1332
+Cevenola,1333
+Lundmarka,1334
+Demoulina,1335
+Zeelandia,1336
+Gerarda,1337
+Duponta,1338
+Desagneauxa,1339
+Yvette,1340
+Edmee,1341
+Brabantia,1342
+Nicole,1343
+Caubeta,1344
+Potomac,1345
+Gotha,1346
+Patria,1347
+Michel,1348
+Bechuana,1349
+Rosselia,1350
+Uzbekistania,1351
+Wawel,1352
+Maartje,1353
+Botha,1354
+Magoeba,1355
+Nyanza,1356
+Khama,1357
+Gaika,1358
+Prieska,1359
+Tarka,1360
+Leuschneria,1361
+Griqua,1362
+Herberta,1363
+Safara,1364
+Henyey,1365
+Piccolo,1366
+Nongoma,1367
+Numidia,1368
+Ostanina,1369
+Hella,1370
+Resi,1371
+Haremari,1372
+Cincinnati,1373
+Isora,1374
+Alfreda,1375
+Michelle,1376
+Roberbauxa,1377
+Leonce,1378
+Lomonosowa,1379
+Volodia,1380
+Danubia,1381
+Gerti,1382
+Limburgia,1383
+Kniertje,1384
+Gelria,1385
+Storeria,1386
+Kama,1387
+Aphrodite,1388
+Onnie,1389
+Abastumani,1390
+Carelia,1391
+Pierre,1392
+Sofala,1393
+Algoa,1394
+Aribeda,1395
+Outeniqua,1396
+Umtata,1397
+Donnera,1398
+Teneriffa,1399
+Tirela,1400
+Lavonne,1401
+Eri,1402
+Idelsonia,1403
+Ajax,1404
+Sibelius,1405
+Komppa,1406
+Lindelof,1407
+Trusanda,1408
+Isko,1409
+Margret,1410
+Brauna,1411
+Lagrula,1412
+Roucarie,1413
+Jerome,1414
+Malautra,1415
+Renauxa,1416
+Walinskia,1417
+Fayeta,1418
+Danzig,1419
+Radcliffe,1420
+Esperanto,1421
+Stromgrenia,1422
+Jose,1423
+Sundmania,1424
+Tuorla,1425
+Riviera,1426
+Ruvuma,1427
+Mombasa,1428
+Pemba,1429
+Somalia,1430
+Luanda,1431
+Ethiopia,1432
+Geramtina,1433
+Margot,1434
+Garlena,1435
+Salonta,1436
+Diomedes,1437
+Wendeline,1438
+Vogtia,1439
+Rostia,1440
+Bolyai,1441
+Corvina,1442
+Ruppina,1443
+Pannonia,1444
+Konkolya,1445
+Sillanpaa,1446
+Utra,1447
+Lindbladia,1448
+Virtanen,1449
+Raimonda,1450
+Grano,1451
+Hunnia,1452
+Fennia,1453
+Kalevala,1454
+Mitchella,1455
+Saldanha,1456
+Ankara,1457
+Mineura,1458
+Magnya,1459
+Haltia,1460
+Jean-Jacques,1461
+Zamenhof,1462
+Nordenmarkia,1463
+Armisticia,1464
+Autonoma,1465
+Mundleria,1466
+Mashona,1467
+Zomba,1468
+Linzia,1469
+Carla,1470
+Tornio,1471
+Muonio,1472
+Ounas,1473
+Beira,1474
+Yalta,1475
+Cox,1476
+Bonsdorffia,1477
+Vihuri,1478
+Inkeri,1479
+Aunus,1480
+Tubingia,1481
+Sebastiana,1482
+Hakoila,1483
+Postrema,1484
+Isa,1485
+Marilyn,1486
+Boda,1487
+Aura,1488
+Attila,1489
+Limpopo,1490
+Balduinus,1491
+Oppolzer,1492
+Sigrid,1493
+Savo,1494
+Helsinki,1495
+Turku,1496
+Tampere,1497
+Lahti,1498
+Pori,1499
+Jyvaskyla,1500
+Baade,1501
+Arenda,1502
+Kuopio,1503
+Lappeenranta,1504
+Koranna,1505
+Xosa,1506
+Vaasa,1507
+Kemi,1508
+Esclangona,1509
+Charlois,1510
+Dalera,1511
+Oulu,1512
+Matra,1513
+Ricouxa,1514
+Perrotin,1515
+Henry,1516
+Beograd,1517
+Rovaniemi,1518
+Kajaani,1519
+Imatra,1520
+Seinajoki,1521
+Kokkola,1522
+Pieksamaki,1523
+Joensuu,1524
+Savonlinna,1525
+Mikkeli,1526
+Malmquista,1527
+Conrada,1528
+Oterma,1529
+Rantaseppa,1530
+Hartmut,1531
+Inari,1532
+Saimaa,1533
+Nasi,1534
+Paijanne,1535
+Pielinen,1536
+Transylvania,1537
+Detre,1538
+Borrelly,1539
+Kevola,1540
+Estonia,1541
+Schalen,1542
+Bourgeois,1543
+Vinterhansenia,1544
+Thernoe,1545
+Izsak,1546
+Nele,1547
+Palomaa,1548
+Mikko,1549
+Tito,1550
+Argelander,1551
+Bessel,1552
+Bauersfelda,1553
+Yugoslavia,1554
+Dejan,1555
+Wingolfia,1556
+Roehla,1557
+Jarnefelt,1558
+Kustaanheimo,1559
+Strattonia,1560
+Fricke,1561
+Gondolatsch,1562
+Noel,1563
+Srbija,1564
+Lemaitre,1565
+Icarus,1566
+Alikoski,1567
+Aisleen,1568
+Evita,1569
+Brunonia,1570
+Cesco,1571
+Posnania,1572
+Vaisala,1573
+Meyer,1574
+Winifred,1575
+Fabiola,1576
+Reiss,1577
+Kirkwood,1578
+Herrick,1579
+Betulia,1580
+Abanderada,1581
+Martir,1582
+Antilochus,1583
+Fuji,1584
+Union,1585
+Thiele,1586
+Kahrstedt,1587
+Descamisada,1588
+Fanatica,1589
+Tsiolkovskaja,1590
+Baize,1591
+Mathieu,1592
+Fagnes,1593
+Danjon,1594
+Tanga,1595
+Itzigsohn,1596
+Laugier,1597
+Paloque,1598
+Giomus,1599
+Vyssotsky,1600
+Patry,1601
+Indiana,1602
+Neva,1603
+Tombaugh,1604
+Milankovitch,1605
+Jekhovsky,1606
+Mavis,1607
+Munoz,1608
+Brenda,1609
+Mirnaya,1610
+Beyer,1611
+Hirose,1612
+Smiley,1613
+Goldschmidt,1614
+Bardwell,1615
+Filipoff,1616
+Alschmitt,1617
+Dawn,1618
+Ueta,1619
+Geographos,1620
+Druzhba,1621
+Chacornac,1622
+Vivian,1623
+Rabe,1624
+The NORC,1625
+Sadeya,1626
+Ivar,1627
+Strobel,1628
+Pecker,1629
+Milet,1630
+Kopff,1631
+Siebohme,1632
+Chimay,1633
+Ndola,1634
+Bohrmann,1635
+Porter,1636
+Swings,1637
+Ruanda,1638
+Bower,1639
+Nemo,1640
+Tana,1641
+Hill,1642
+Brown,1643
+Rafita,1644
+Waterfield,1645
+Rosseland,1646
+Menelaus,1647
+Shajna,1648
+Fabre,1649
+Heckmann,1650
+Behrens,1651
+Herge,1652
+Yakhontovia,1653
+Bojeva,1654
+Comas Sola,1655
+Suomi,1656
+Roemera,1657
+Innes,1658
+Punkaharju,1659
+Wood,1660
+Granule,1661
+Hoffmann,1662
+van den Bos,1663
+Felix,1664
+Gaby,1665
+van Gent,1666
+Pels,1667
+Hanna,1668
+Dagmar,1669
+Minnaert,1670
+Chaika,1671
+Gezelle,1672
+van Houten,1673
+Groeneveld,1674
+Simonida,1675
+Kariba,1676
+Tycho Brahe,1677
+Hveen,1678
+Nevanlinna,1679
+Per Brahe,1680
+Steinmetz,1681
+Karel,1682
+Castafiore,1683
+Iguassu,1684
+Toro,1685
+De Sitter,1686
+Glarona,1687
+Wilkens,1688
+Floris-Jan,1689
+Mayrhofer,1690
+Oort,1691
+Subbotina,1692
+Hertzsprung,1693
+Kaiser,1694
+Walbeck,1695
+Nurmela,1696
+Koskenniemi,1697
+Christophe,1698
+Honkasalo,1699
+Zvezdara,1700
+Okavango,1701
+Kalahari,1702
+Barry,1703
+Wachmann,1704
+Tapio,1705
+Dieckvoss,1706
+Chantal,1707
+Polit,1708
+Ukraina,1709
+Gothard,1710
+Sandrine,1711
+Angola,1712
+Bancilhon,1713
+Sy,1714
+Salli,1715
+Peter,1716
+Arlon,1717
+Namibia,1718
+Jens,1719
+Niels,1720
+Wells,1721
+Goffin,1722
+Klemola,1723
+Vladimir,1724
+CrAO,1725
+Hoffmeister,1726
+Mette,1727
+Goethe Link,1728
+Beryl,1729
+Marceline,1730
+Smuts,1731
+Heike,1732
+Silke,1733
+Zhongolovich,1734
+ITA,1735
+Floirac,1736
+Severny,1737
+Oosterhoff,1738
+Meyermann,1739
+Paavo Nurmi,1740
+Giclas,1741
+Schaifers,1742
+Schmidt,1743
+Harriet,1744
+Ferguson,1745
+Brouwer,1746
+Wright,1747
+Mauderli,1748
+Telamon,1749
+Eckert,1750
+Herget,1751
+van Herk,1752
+Mieke,1753
+Cunningham,1754
+Lorbach,1755
+Giacobini,1756
+Porvoo,1757
+Naantali,1758
+Kienle,1759
+Sandra,1760
+Edmondson,1761
+Russell,1762
+Williams,1763
+Cogshall,1764
+Wrubel,1765
+Slipher,1766
+Lampland,1767
+Appenzella,1768
+Carlostorres,1769
+Schlesinger,1770
+Makover,1771
+Gagarin,1772
+Rumpelstilz,1773
+Kulikov,1774
+Zimmerwald,1775
+Kuiper,1776
+Gehrels,1777
+Alfven,1778
+Parana,1779
+Kippes,1780
+Van Biesbroeck,1781
+Schneller,1782
+Albitskij,1783
+Benguella,1784
+Wurm,1785
+Raahe,1786
+Chiny,1787
+Kiess,1788
+Dobrovolsky,1789
+Volkov,1790
+Patsayev,1791
+Reni,1792
+Zoya,1793
+Finsen,1794
+Woltjer,1795
+Riga,1796
+Schaumasse,1797
+Watts,1798
+Koussevitzky,1799
+Aguilar,1800
+Titicaca,1801
+Zhang Heng,1802
+Zwicky,1803
+Chebotarev,1804
+Dirikis,1805
+Derice,1806
+Slovakia,1807
+Bellerophon,1808
+Prometheus,1809
+Epimetheus,1810
+Bruwer,1811
+Gilgamesh,1812
+Imhotep,1813
+Bach,1814
+Beethoven,1815
+Liberia,1816
+Katanga,1817
+Brahms,1818
+Laputa,1819
+Lohmann,1820
+Aconcagua,1821
+Waterman,1822
+Gliese,1823
+Haworth,1824
+Klare,1825
+Miller,1826
+Atkinson,1827
+Kashirina,1828
+Dawson,1829
+Pogson,1830
+Nicholson,1831
+Mrkos,1832
+Shmakova,1833
+Palach,1834
+Gajdariya,1835
+Komarov,1836
+Osita,1837
+Ursa,1838
+Ragazza,1839
+Hus,1840
+Masaryk,1841
+Hynek,1842
+Jarmila,1843
+Susilva,1844
+Helewalda,1845
+Bengt,1846
+Stobbe,1847
+Delvaux,1848
+Kresak,1849
+Kohoutek,1850
+Lacroute,1851
+Carpenter,1852
+McElroy,1853
+Skvortsov,1854
+Korolev,1855
+Ruzena,1856
+Parchomenko,1857
+Lobachevskij,1858
+Kovalevskaya,1859
+Barbarossa,1860
+Komensky,1861
+Apollo,1862
+Antinous,1863
+Daedalus,1864
+Cerberus,1865
+Sisyphus,1866
+Deiphobus,1867
+Thersites,1868
+Philoctetes,1869
+Glaukos,1870
+Astyanax,1871
+Helenos,1872
+Agenor,1873
+Kacivelia,1874
+Neruda,1875
+Napolitania,1876
+Marsden,1877
+Hughes,1878
+Broederstroom,1879
+McCrosky,1880
+Shao,1881
+Rauma,1882
+Rimito,1883
+Skip,1884
+Herero,1885
+Lowell,1886
+Virton,1887
+Zu Chong-Zhi,1888
+Pakhmutova,1889
+Konoshenkova,1890
+Gondola,1891
+Lucienne,1892
+Jakoba,1893
+Haffner,1894
+Larink,1895
+Beer,1896
+Hind,1897
+Cowell,1898
+Crommelin,1899
+Katyusha,1900
+Moravia,1901
+Shaposhnikov,1902
+Adzhimushkaj,1903
+Massevitch,1904
+Ambartsumian,1905
+Naef,1906
+Rudneva,1907
+Pobeda,1908
+Alekhin,1909
+Mikhailov,1910
+Schubart,1911
+Anubis,1912
+Sekanina,1913
+Hartbeespoortdam,1914
+Quetzalcoatl,1915
+Boreas,1916
+Cuyo,1917
+Aiguillon,1918
+Clemence,1919
+Sarmiento,1920
+Pala,1921
+Zulu,1922
+Osiris,1923
+Horus,1924
+Franklin-Adams,1925
+Demiddelaer,1926
+Suvanto,1927
+Summa,1928
+Kollaa,1929
+Lucifer,1930
+Capek,1931
+Jansky,1932
+Tinchen,1933
+Jeffers,1934
+Lucerna,1935
+Lugano,1936
+Locarno,1937
+Lausanna,1938
+Loretta,1939
+Whipple,1940
+Wild,1941
+Jablunka,1942
+Anteros,1943
+Gunter,1944
+Wesselink,1945
+Walraven,1946
+Iso-Heikkila,1947
+Kampala,1948
+Messina,1949
+Wempe,1950
+Lick,1951
+Hesburgh,1952
+Rupertwildt,1953
+Kukarkin,1954
+McMath,1955
+Artek,1956
+Angara,1957
+Chandra,1958
+Karbyshev,1959
+Guisan,1960
+Dufour,1961
+Dunant,1962
+Bezovec,1963
+Luyten,1964
+van de Kamp,1965
+Tristan,1966
+Menzel,1967
+Mehltretter,1968
+Alain,1969
+Sumeria,1970
+Hagihara,1971
+Yi Xing,1972
+Colocolo,1973
+Caupolican,1974
+Pikelner,1975
+Kaverin,1976
+Shura,1977
+Patrice,1978
+Sakharov,1979
+Tezcatlipoca,1980
+Midas,1981
+Cline,1982
+Bok,1983
+Fedynskij,1984
+Hopmann,1985
+Plaut,1986
+Kaplan,1987
+Delores,1988
+Tatry,1989
+Pilcher,1990
+Darwin,1991
+Galvarino,1992
+Guacolda,1993
+Shane,1994
+Hajek,1995
+Adams,1996
+Leverrier,1997
+Titius,1998
+Hirayama,1999
+Herschel,2000

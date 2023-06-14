@@ -7,7 +7,7 @@ Aquila,Aql,Aquilae,Altair
 Ara,Ara,Arae,beta Arae
 Aries,Ari,Arietis,Hamal
 Auriga,Aur,Aurigae,Capella
-Boötes,Boo,Boötis,Arcturus
+Bootes,Boo,Bootis,Arcturus
 Caelum,Cae,Caeli,alpha Caeli
 Camelopardalis,Cam,Camelopardalis,beta Camelopardalis
 Cancer,Cnc,Cancri,Tarf
@@ -55,8 +55,8 @@ Mensa,Men,Mensae,alpha Mensae
 Microscopium,Mic,Microscopii,gamma Microscopii
 Monoceros,Mon,Monocerotis,beta Monocerotis
 Musca,Mus,Muscae,alpha Muscae
-Norma,Nor,Normae,$\gamma_2$ Normae
-Octans,Oct,Octantis,$\nu$ Oct
+Norma,Nor,Normae,gamma_2 Normae
+Octans,Oct,Octantis,nu Oct
 Ophiuchus,Oph,Ophiuchi,Ras Alhague
 Orion,Ori,Orionis,Rigel
 Pavo,Pav,Pavonis,Peacock
@@ -87,3 +87,102 @@ Vela,Vel,Velorum,Regor
 Virgo,Vir,Virginis,Spica
 Volans,Vol,Volantis,beta Volantis
 Vulpecula,Vul,Vulpeculae,Anser
+# Remaining names are obsolete
+Anguilla
+Antinous
+Apes
+Apis
+Aranea
+Argo Navis
+Asselli
+Asterion
+Battery of Volta
+Bufo
+Camelus
+Cancer Minor
+Canis
+Capra
+Caput Medusae
+Catuli
+Ceneus
+Cerberus
+Cervus
+Chara
+Cor Caroli Regis Martyris
+Corolla
+Corona
+Corona Firmiana
+Custos Messium
+Delphin
+Deltoton
+Dentalium
+Equus
+Felis
+Frederici Honores
+Gallus
+Gladii Electorales Saxonici
+Globus Aerostaticus
+Gryphites
+Haedi
+Hippocampus
+Hirudo
+Jordanus
+Lang
+Leaena
+Leo Palatinus
+Lilium
+Limax
+Linum Piscium
+Lochium Funis
+Lumbricus
+Machina Electrica
+Malus
+Manis
+Marmor Sculptile
+Mons Maenalus
+Musca Borealis
+Noctua
+Nubecula Major
+Nubecula Minor
+Officina Typographica
+Patella
+Phaethon
+Phoenicopterus
+Pinna Marina
+Piscis Notus
+Pluteum
+Polophylax
+Pomum Imperiale
+Praesepe
+Psalterium Georgii
+Quadrans Muralis
+Quadratum
+Ramus Pomifer
+Robur Carolinum
+Rosa
+Sagitta Australis
+Scarabaeus
+Sceptrum Brandenburgicum
+Sceptrum et Manus Iustitiae
+Sciurus Volans
+Sextants Uraniae
+Siren
+Solarium
+Sudarium Veronicae
+Tarabellum
+Tarandus vel Rangifer
+Taurus Poniatovii
+Telescopium Herschelii
+Testudo
+Tigris
+Triangula
+Triangulum Major
+Triangulum Minor
+Triangulus Antarcticus
+Tubus Herschelii Minor
+Turdus Solitarius
+Uranoscopus
+Urna
+Vespa
+Vexillum
+Vulpes
