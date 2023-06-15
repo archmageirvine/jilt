@@ -25,6 +25,9 @@ public class ConsecutiveLettersInspector implements Inspector {
       return null;
     }
     final int consec = maxConsecutiveLetters(words[0]);
+    if (consec <= 1) {
+      return null; // boring for this test
+    }
     for (int k = 1; k < words.length; ++k) {
       if (maxConsecutiveLetters(words[k]) != consec) {
         return null;

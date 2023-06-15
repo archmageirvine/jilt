@@ -35,4 +35,19 @@ public final class LongUtils {
     return r;
   }
 
+  /**
+   * Test if the specified array is a constant value.
+   * @param a array to test
+   * @return true if the array is a constant value
+   */
+  public static boolean isConstant(final long... a) {
+    final long v0 = a[0];
+    for (final long v : a) {
+      if (v != v0) {
+        return false;
+      }
+    }
+    return true;
+  }
+
 }

@@ -25,6 +25,7 @@ public class ReplaceLetterInspector implements Inspector {
 
   @Override
   public String inspect(final String... words) {
+    final StringBuilder sb = new StringBuilder();
     final Set<String> dict = Dictionary.getDefaultDictionary();
     for (char replacement = 'A'; replacement <= 'Z'; ++replacement) {
       final ArrayList<String> res = new ArrayList<>();
@@ -36,9 +37,12 @@ public class ReplaceLetterInspector implements Inspector {
         res.add(r);
       }
       if (res.size() == words.length) {
-        return "Replace a letter with " + replacement + " and still have a word\n " + res;
+        if (sb.length() > 0) {
+          sb.append('\n');
+        }
+        sb.append("Replace a letter with ").append(replacement).append(" and still have a word\n").append(res);
       }
     }
-    return null;
+    return sb.length() == 0 ? null : sb.toString();
   }
 }

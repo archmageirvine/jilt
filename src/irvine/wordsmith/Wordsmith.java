@@ -43,6 +43,7 @@ public final class Wordsmith extends Command {
     lst.add(new ConstantInspector());
     lst.add(new LengthInspector());
     lst.add(new UniqueInspector());
+    lst.add(new VowelPatternsInspector());
     lst.add(new AlphabeticalInspector());
     lst.add(new ReverseAlphabeticalInspector());
     lst.add(new AlphabetInspector());
@@ -58,6 +59,8 @@ public final class Wordsmith extends Command {
     lst.add(new ParityInspector());
     lst.add(new AddSingleLetterInspector());
     lst.add(new RomanInspector());
+    lst.add(new ElementInspector());
+    lst.add(new DoReMiInspector());
     return lst;
   }
 

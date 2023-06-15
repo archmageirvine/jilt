@@ -129,7 +129,7 @@ public final class Equation extends Command {
       case MULTIPLY:
         return eval(equation.mLeft, code, p) * eval(equation.mRight, code, p);
       case DIVIDE:
-        // For now we limit to exact integer divisions
+        // For now, we limit to exact integer divisions
         final long left = eval(equation.mLeft, code, p);
         final long right = eval(equation.mRight, code, p);
         if (right != 0 && left % right == 0) {
