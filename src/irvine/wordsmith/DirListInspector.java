@@ -57,6 +57,7 @@ public class DirListInspector implements Inspector {
         if (files != null) {
           for (final File f : files) {
             mSubstringInspectors.add(new SubstringInspector(f.getPath(), mVerbose));
+            mSubstringInspectors.add(new ListSubstringInspector(f.getPath()));
           }
         }
       }
