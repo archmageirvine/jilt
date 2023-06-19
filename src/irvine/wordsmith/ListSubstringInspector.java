@@ -12,7 +12,7 @@ public class ListSubstringInspector implements Inspector {
   private final WordList mList;
 
   ListSubstringInspector(final String file) {
-    mList = new WordList(file);
+    mList = new WordList(file, true);
   }
 
   private String search(final String word) {

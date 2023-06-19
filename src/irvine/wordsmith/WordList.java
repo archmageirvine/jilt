@@ -21,7 +21,22 @@ public class WordList extends LinkedHashMap<String, List<String>> {
   private final String mName;
   private String mDescription = null;
 
-  WordList(final String file) {
+  private static String format(final String s, final boolean clean) {
+    if (clean) {
+      final StringBuilder sb = new StringBuilder();
+      for (int k = 0; k < s.length(); ++k) {
+        final char c = s.charAt(k);
+        if (c >= 'A' && c <= 'Z') {
+          sb.append(c);
+        }
+      }
+      return sb.toString();
+    } else {
+      return s;
+    }
+  }
+
+  WordList(final String file, final boolean clean) {
     mName = file;
     try (final BufferedReader r = IOUtils.getReader(file)) {
       String line;
@@ -33,7 +48,7 @@ public class WordList extends LinkedHashMap<String, List<String>> {
             }
           } else {
             final String[] parts = line.split(",");
-            final String key = parts[0].toUpperCase(Locale.getDefault());
+            final String key = format(parts[0].toUpperCase(Locale.getDefault()), clean);
             if (parts.length == 1) {
               put(key, EMPTY_LIST);
             } else {
@@ -46,6 +61,10 @@ public class WordList extends LinkedHashMap<String, List<String>> {
     } catch (final IOException e) {
       throw new RuntimeException(e);
     }
+  }
+
+  WordList(final String file) {
+    this(file, false);
   }
 
   String getDescription() {

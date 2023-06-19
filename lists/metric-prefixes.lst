@@ -1,0 +1,25 @@
+#@metric prefixes
+quetta,Q,30
+ronna,R,27
+yotta,Y,24
+zetta,Z,21
+exa,E,18
+peta,P,15
+tera,T,12
+giga,G,9
+mega,M,6
+kilo,k,3
+hecto,h,2
+deca,da,1
+deci,d,-1
+centi,c,-2
+milli,m,-3
+micro,μ,-6
+nano,n,-9
+pico,p,-1
+femto,f,-1
+atto,a,-1
+zepto,z,-2
+yocto,y,-2
+ronto,r,-2
+quecto,q,-3

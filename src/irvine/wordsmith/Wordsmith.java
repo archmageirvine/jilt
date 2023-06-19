@@ -40,12 +40,16 @@ public final class Wordsmith extends Command {
 
   private List<Inspector> buildInspectors(final boolean verbose) {
     final ArrayList<Inspector> lst = new ArrayList<>();
+    lst.add(new DictionaryInspector());
     lst.add(new ConstantInspector());
     lst.add(new LengthInspector());
     lst.add(new UniqueInspector());
     lst.add(new VowelPatternsInspector());
     lst.add(new AlphabeticalInspector());
     lst.add(new ReverseAlphabeticalInspector());
+    lst.add(new AlphabeticalWordInspector());
+    lst.add(new ReverseAlphabeticalWordInspector());
+    lst.add(new ReverseDictionaryInspector());
     lst.add(new AlphabetInspector());
     lst.add(new IncrementLetterInspector());
     lst.add(new DecrementLetterInspector());

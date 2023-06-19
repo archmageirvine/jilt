@@ -11,6 +11,7 @@ import irvine.transform.IdentityTransform;
 import irvine.transform.LetterTransform;
 import irvine.transform.LoopsTransform;
 import irvine.transform.LowercaseTransform;
+import irvine.transform.NumbersTransform;
 import irvine.transform.ReverseTransform;
 import irvine.transform.ScrabbleTransform;
 import irvine.transform.SortTransform;
@@ -48,7 +49,8 @@ public final class TransformCommand extends Command {
   private static final String REVERSE_FLAG = "reverse";
   private static final String SUM0_FLAG = "sum0";
   private static final String SUM1_FLAG = "sum1";
-  private static final String LETTER_FLAG = "letter";
+  private static final String LETTER_FLAG = "letters";
+  private static final String NUMBER_FLAG = "numbers";
   private static final String ADD_FLAG = "add";
   private static final String SUBTRACT_FLAG = "subtract";
 
@@ -73,6 +75,7 @@ public final class TransformCommand extends Command {
     flags.registerOptional(SUM0_FLAG, "sum of letters in input 0=A, ..., 25=Z");
     flags.registerOptional(SUM1_FLAG, "sum of letters in input 1=A, ..., 26=Z");
     flags.registerOptional(LETTER_FLAG, "convert numbers to letters 1=A, ..., 26=Z");
+    flags.registerOptional('N', NUMBER_FLAG, "convert letters to numbers A=1, ..., Z=26");
     flags.registerOptional(ADD_FLAG, String.class, "KEY", "cyclically add given key to the input");
     flags.registerOptional(SUBTRACT_FLAG, String.class, "KEY", "cyclically subtract given key to the input");
     CommonFlags.registerOutputFlag(flags);
@@ -94,6 +97,9 @@ public final class TransformCommand extends Command {
     }
     if (flags.isSet(LETTER_FLAG)) {
       transforms.add(new LetterTransform());
+    }
+    if (flags.isSet(NUMBER_FLAG)) {
+      transforms.add(new NumbersTransform());
     }
     if (flags.isSet(UPPERCASE_FLAG)) {
       transforms.add(new UppercaseTransform());
