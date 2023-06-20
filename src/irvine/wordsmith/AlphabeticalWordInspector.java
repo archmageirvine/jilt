@@ -21,7 +21,7 @@ public class AlphabeticalWordInspector implements Inspector {
       return null;
     }
     for (final String w : words) {
-      if (is(w)) {
+      if (!is(w)) {
         return null;
       }
     }
