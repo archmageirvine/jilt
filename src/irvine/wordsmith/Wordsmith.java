@@ -49,6 +49,8 @@ public final class Wordsmith extends Command {
     lst.add(new ReverseAlphabeticalInspector());
     lst.add(new AlphabeticalWordInspector());
     lst.add(new ReverseAlphabeticalWordInspector());
+    lst.add(new LetterSequenceInspector());
+    lst.add(new ReverseLetterSequenceInspector());
     lst.add(new ReverseDictionaryInspector());
     lst.add(new AlphabetInspector());
     lst.add(new IncrementLetterInspector());
