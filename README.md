@@ -117,6 +117,23 @@ exact set of allowed operations.
 The similar `ladder` module can be used to solve related problems where
 the words get shorter or longer by one letter at each step.
 
+## Explain word sequences
+
+The `wordsmith` module applies a collection of tests in an attempt to
+discover an explanation for a sequence of words.
+
+```
+jilt wordsmith Vienna Brussels Prague Copenhagen Tallinn Helsinki Athens Budapest
+All words are cities
+All words are capital cities
+Associated words are in alphabetical order:
+[Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, Greece, Hungary]
+
+jilt wordsmith NIGHT, PAINTING, INIQUITY, THRIVE, VAPOURS, VERIFY, REVISIT
+Increasing Roman numerals:
+[I, II, III, IV, V, VI, VII]
+```
+
 ## Wordle
 
 Wordle is a popular word game developed in 2022 by Josh Wardle, see
