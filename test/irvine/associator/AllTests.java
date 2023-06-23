@@ -1,6 +1,5 @@
 package irvine.associator;
 
-import irvine.util.WrappingStringBufferTest;
 import junit.framework.Test;
 import junit.framework.TestSuite;
 

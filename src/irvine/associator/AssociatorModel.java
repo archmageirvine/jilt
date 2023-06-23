@@ -6,7 +6,6 @@ import java.io.InputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
@@ -65,39 +64,28 @@ public class AssociatorModel implements Serializable {
   // Map words to an integer index.
   private final Map<String, Integer> mWordToIndex = new HashMap<>();
   private final DynamicArray<String> mIndexToWord = new DynamicArray<>();
-  // Pairs of associations.  Each word has a packed integer array containing
-  // known associations. The integer array consists of pairs with even indices
-  // corresponding to the integer index of the association, and odd indices
-  // corresponding to the weight (stored as raw bits of the float).
-  private final DynamicArray<int[]> mPackedVectors = new DynamicArray<>();
+  private final DynamicArray<Map<Integer,Float>> mPackedVectors = new DynamicArray<>();
 
   private int getOrCreateIndex(final String word) {
     final int index = mWordToIndex.computeIfAbsent(word, v -> mWordToIndex.size());
     if (index >= mIndexToWord.length()) {
+      if (index % 100000 == 0) {
+        System.out.println("Index now has " + index + " items");
+      }
       mIndexToWord.set(index, word);
     }
     return index;
   }
 
   private void update(final int a, final int b, final float weight) {
-    final int[] v = mPackedVectors.get(a);
+    final Map<Integer, Float> v = mPackedVectors.get(a);
     if (v == null) {
-      mPackedVectors.set(a, new int[] {b, Float.floatToRawIntBits(weight)});
+      final Map<Integer, Float> map = new HashMap<>();
+      map.put(b, weight);
+      mPackedVectors.set(a, map);
       return;
     }
-    // Check if association already exists
-    for (int k = 0; k < v.length; k += 2) {
-      if (v[k] == b) {
-        // Strengthen existing connection
-        v[k + 1] = Float.floatToRawIntBits(Float.intBitsToFloat(v[k + 1]) + weight);
-        return;
-      }
-    }
-    // Otherwise, lengthen the array to handle the new association.
-    final int[] longer = Arrays.copyOf(v, v.length + 2);
-    longer[v.length] = b;
-    longer[v.length + 1] = Float.floatToRawIntBits(weight);
-    mPackedVectors.set(a, longer);
+    v.merge(b, weight, Float::sum);
   }
 
   /**
@@ -162,12 +150,12 @@ public class AssociatorModel implements Serializable {
     for (int k = 0; k < ITERATIONS; ++k) {
       final HashMap<Integer, Float> next = new HashMap<>();
       for (final QueryState q : current) {
-        final int[] v = mPackedVectors.get(q.getWordIndex());
+        final Map<Integer, Float> v = mPackedVectors.get(q.getWordIndex());
         final float w = q.getWeight();
-        for (int j = 0; j < v.length; j += 2) {
-          if (!seen.contains(v[j])) {
-            final float x = w * scale;
-            next.merge(v[j], x, Float::sum);
+        for (final Map.Entry<Integer, Float> e : v.entrySet()) {
+          if (!seen.contains(e.getKey())) {
+            final float x = w * e.getValue() * scale;
+            next.merge(e.getKey(), x, Float::sum);
           }
         }
       }
