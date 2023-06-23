@@ -8,6 +8,9 @@ public class ReverseAlphabeticalInspector implements Inspector {
 
   @Override
   public String inspect(final String... words) {
+    if (words.length < 2) {
+      return null;
+    }
     String prev = null;
     for (final String w : words) {
       if (prev != null && w.compareTo(prev) >= 0) {
