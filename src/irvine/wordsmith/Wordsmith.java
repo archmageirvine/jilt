@@ -15,7 +15,6 @@ import irvine.util.CliFlags;
  */
 public final class Wordsmith extends Command {
 
-  // todo make this a CLI parameter option
   private static final String VERBOSE_FLAG = "verbose";
   private static final String LOO_FLAG = "loo";
 
@@ -78,10 +77,9 @@ public final class Wordsmith extends Command {
   public void mainExec(final String... args) {
     final CliFlags flags = new CliFlags(getDescription());
     flags.setDescription(DESC);
-    //CommonFlags.registerDictionaryFlag(flags);
-    final CliFlags.Flag<String> textFlag = flags.registerRequired(String.class, "TEXT", "words to be explained");
     flags.registerOptional('v', VERBOSE_FLAG, "increase the amount of output");
     flags.registerOptional(LOO_FLAG, "leave one out");
+    final CliFlags.Flag<String> textFlag = flags.registerRequired(String.class, "TEXT", "words to be explained");
     textFlag.setMaxCount(Integer.MAX_VALUE);
     flags.setFlags(args);
 

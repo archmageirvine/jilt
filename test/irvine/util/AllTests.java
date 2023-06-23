@@ -14,6 +14,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(CasingTest.class);
     suite.addTestSuite(CliFlagsTest.class);
     suite.addTestSuite(DateTest.class);
+    suite.addTestSuite(DynamicArrayTest.class);
     suite.addTestSuite(DynamicLongArrayTest.class);
     suite.addTestSuite(CollectionUtilsTest.class);
     suite.addTestSuite(IntegerUtilsTest.class);

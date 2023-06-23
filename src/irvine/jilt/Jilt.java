@@ -3,6 +3,8 @@ package irvine.jilt;
 import java.util.Arrays;
 import java.util.Locale;
 
+import irvine.associator.Associator;
+import irvine.associator.Build;
 import irvine.crypto.PlayfairCommand;
 import irvine.crypto.Playmate;
 import irvine.crypto.Telephone;
@@ -76,6 +78,8 @@ public final class Jilt {
     LADDER(new Ladder()),
     /** General explanation solver. */
     WORDSMITH(new Wordsmith()),
+    /** Associator. */
+    ASSOCIATOR(new Associator()),
     /** Solve grid word search problems. */
     WORDSEARCH(new WordSearch()),
     /** Solve word equation problems. */
@@ -100,6 +104,8 @@ public final class Jilt {
     TELEPHONE(new Telephone()),
     /** Solve Wordle. */
     WORDLE(new Wordle()),
+    /** Build associator models. */
+    BUILD_ASSOC(new Build()),
     ;
 
     private final Command mCommand;

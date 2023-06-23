@@ -196,7 +196,7 @@ the word length is something other than 5.
 
 There are other modules for finding words in a grid (wordsearch),
 generating permutations of letters, transforming words in various ways
-and so.
+and so on.
 
 ## Miscellaneous examples
 
