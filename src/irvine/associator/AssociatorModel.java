@@ -7,7 +7,6 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Objects;
@@ -116,13 +115,13 @@ public class AssociatorModel implements Serializable {
   private static final float SCALE_FACTOR = 0.5F;
   private static final int ITERATIONS = 10;
 
-  private void merge(final int maxResults, final TreeSet<QueryState> state, final TreeSet<QueryState> current) {
-    for (final QueryState q : current) {
+  private void merge(final int maxResults, final TreeSet<QueryState> state, final Map<Integer, Float> current) {
+    for (final Map.Entry<Integer, Float> q : current.entrySet()) {
       if (state.size() < maxResults) {
-        state.add(q);
+        state.add(new QueryState(q.getKey(), q.getValue()));
       }
-      if (q.getWeight() > state.last().getWeight()) {
-        state.add(q);
+      if (q.getValue() > state.last().getWeight()) {
+        state.add(new QueryState(q.getKey(), q.getValue()));
         state.pollLast();
       }
     }
@@ -135,40 +134,48 @@ public class AssociatorModel implements Serializable {
    * @return associated words
    */
   public Map<String, Float> query(final int maxResults, final String... words) {
-    final HashSet<Integer> seen = new HashSet<>();
-    final TreeSet<QueryState> state = new TreeSet<>();
-    final TreeSet<QueryState> current = new TreeSet<>();
+    final HashMap<Integer, Float> total = new HashMap<>();
     for (final String w : words) {
       final Integer index = mWordToIndex.get(w);
       if (index != null) {
-        seen.add(index);
-        current.add(new QueryState(index, 1F));
+        total.put(index, 1F);
       }
     }
-    state.addAll(current);
+    HashMap<Integer, Float> next = new HashMap<>(total);
     float scale = 1;
     for (int k = 0; k < ITERATIONS; ++k) {
-      final HashMap<Integer, Float> next = new HashMap<>();
-      for (final QueryState q : current) {
-        final Map<Integer, Float> v = mPackedVectors.get(q.getWordIndex());
-        final float w = q.getWeight();
+      final Map<Integer, Float> current = next;
+      //final Map<Integer, Float> current = new HashMap<>(total);
+      next = new HashMap<>();
+      for (final Map.Entry<Integer, Float> q : current.entrySet()) {
+        final Map<Integer, Float> v = mPackedVectors.get(q.getKey());
+        //final float w = scale * q.getValue();
+        final float w = scale * q.getValue() / v.size();
+        //final float w = scale / v.size();
         for (final Map.Entry<Integer, Float> e : v.entrySet()) {
-          if (!seen.contains(e.getKey())) {
-            final float x = w * e.getValue() * scale;
-            next.merge(e.getKey(), x, Float::sum);
-          }
+          final int key = e.getKey();
+          //final float x = w * e.getValue();
+          //final float x = w * e.getValue() / mPackedVectors.get(key).size();
+          final float x = w; // / mPackedVectors.get(key).size();
+          final float u = total.merge(key, x, Float::sum);
+          //next.merge(key, x, Float::sum);
+          next.put(key, u);
+//          if (mIndexToWord.get(key).equals("CARRIE FISHER")) {
+//            System.err.println(k + " saw CARRIE FISHER with weight " + x + " total " + total.get(key));
+//          }
         }
       }
-      current.clear();
-      for (final Map.Entry<Integer, Float> e : next.entrySet()) {
-        current.add(new QueryState(e.getKey(), e.getValue()));
-        seen.add(e.getKey());
-      }
-      merge(maxResults, state, current);
       scale *= SCALE_FACTOR;
+//      if (k <= 0) {
+//        for (final Map.Entry<Integer, Float> e : total.entrySet()) {
+//          System.out.println("   " + k + " " + mIndexToWord.get(e.getKey()) + " " + e.getValue());
+//        }
+//      }
     }
+    final TreeSet<QueryState> sorted = new TreeSet<>();
+    merge(maxResults, sorted, total);
     final LinkedHashMap<String, Float> res = new LinkedHashMap<>();
-    for (final QueryState q : state) {
+    for (final QueryState q : sorted) {
       res.put(mIndexToWord.get(q.getWordIndex()), q.getWeight());
     }
     return res;
