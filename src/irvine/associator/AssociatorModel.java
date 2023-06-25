@@ -7,9 +7,11 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Objects;
+import java.util.Set;
 import java.util.TreeSet;
 import java.util.zip.GZIPInputStream;
 import java.util.zip.GZIPOutputStream;
@@ -63,7 +65,7 @@ public class AssociatorModel implements Serializable {
   // Map words to an integer index.
   private final Map<String, Integer> mWordToIndex = new HashMap<>();
   private final DynamicArray<String> mIndexToWord = new DynamicArray<>();
-  private final DynamicArray<Map<Integer,Float>> mPackedVectors = new DynamicArray<>();
+  private final DynamicArray<Set<Integer>> mAssociates = new DynamicArray<>();
 
   private int getOrCreateIndex(final String word) {
     final int index = mWordToIndex.computeIfAbsent(word, v -> mWordToIndex.size());
@@ -76,40 +78,30 @@ public class AssociatorModel implements Serializable {
     return index;
   }
 
-  private void update(final int a, final int b, final float weight) {
-    final Map<Integer, Float> v = mPackedVectors.get(a);
+  private void update(final int a, final int b) {
+    final Set<Integer> v = mAssociates.get(a);
     if (v == null) {
-      final Map<Integer, Float> map = new HashMap<>();
-      map.put(b, weight);
-      mPackedVectors.set(a, map);
+      final Set<Integer> set = new HashSet<>();
+      set.add(b);
+      mAssociates.set(a, set);
       return;
     }
-    v.merge(b, weight, Float::sum);
+    v.add(b);
   }
 
   /**
    * Add an association between two words.
    * @param a first word
    * @param b second word
-   * @param weight weight of connection
    */
-  public void add(final String a, final String b, final float weight) {
+  public void add(final String a, final String b) {
     if (a.equals(b)) {
       return; // Ignore self associations
     }
     final int u = getOrCreateIndex(a);
     final int v = getOrCreateIndex(b);
-    update(u, v, weight);
-    update(v, u, weight);
-  }
-
-  /**
-   * Add an association between two words with weight 1.
-   * @param a first word
-   * @param b second word
-   */
-  public void add(final String a, final String b) {
-    add(a, b, 1.0F);
+    update(u, v);
+    update(v, u);
   }
 
   private static final float SCALE_FACTOR = 0.5F;
@@ -148,12 +140,11 @@ public class AssociatorModel implements Serializable {
       //final Map<Integer, Float> current = new HashMap<>(total);
       next = new HashMap<>();
       for (final Map.Entry<Integer, Float> q : current.entrySet()) {
-        final Map<Integer, Float> v = mPackedVectors.get(q.getKey());
+        final Set<Integer> v = mAssociates.get(q.getKey());
         //final float w = scale * q.getValue();
         final float w = scale * q.getValue() / v.size();
         //final float w = scale / v.size();
-        for (final Map.Entry<Integer, Float> e : v.entrySet()) {
-          final int key = e.getKey();
+        for (final int key : v) {
           //final float x = w * e.getValue();
           //final float x = w * e.getValue() / mPackedVectors.get(key).size();
           final float x = w; // / mPackedVectors.get(key).size();

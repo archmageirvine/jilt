@@ -20,9 +20,11 @@ public class ParityInspector implements Inspector {
     if (words.length < 5) {
       return null;
     }
+    int maxLen = 0;
     final String[] c = new String[words.length];
     for (int j = 0; j < words.length; ++j) {
       final String w = words[j];
+      maxLen = Math.max(maxLen, w.length());
       int p = w.charAt(0) & 1;
       boolean constant = true;
       boolean alternate = true;
@@ -42,6 +44,9 @@ public class ParityInspector implements Inspector {
       } else {
         c[j] = "-";
       }
+    }
+    if (maxLen < 3) {
+      return null;
     }
     // More checking could be done here -- parity syndromes
     if (isConstant("C", c)) {
