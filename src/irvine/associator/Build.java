@@ -33,11 +33,10 @@ public final class Build extends Command {
     String line;
     while ((line = r.readLine()) != null) {
       final String[] parts = line.split("\t");
-      if (parts.length > 3 || parts.length < 2) {
+      if (parts.length != 2) {
         System.err.println("Skipping: " + line);
       } else {
-        final float wt = parts.length == 2 ? 1.0F : Float.parseFloat(parts[2]);
-        am.add(clean(parts[0]), clean(parts[1]), wt);
+        am.add(clean(parts[0]), clean(parts[1]));
         ++cnt;
       }
     }
