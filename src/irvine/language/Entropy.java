@@ -36,7 +36,7 @@ public final class Entropy extends Command {
     CommonFlags.registerModelFlag(flags);
     flags.registerOptional('r', RESULTS_FLAG, Integer.class, "INT", "retain this many solutions");
     flags.registerOptional('B', BEST_FLAG, "print only incrementally better results");
-    final CliFlags.Flag<String> textFlag = flags.registerRequired(String.class, "TEXT", "text to generate Caesar shifts of");
+    final CliFlags.Flag<String> textFlag = flags.registerRequired(String.class, "TEXT", "text to compute entropy of");
     textFlag.setMinCount(0);
     flags.setValidator(f -> {
       if (f.isSet(BEST_FLAG) && f.isSet(RESULTS_FLAG)) {
