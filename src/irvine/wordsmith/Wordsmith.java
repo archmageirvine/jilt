@@ -55,6 +55,8 @@ public final class Wordsmith extends Command {
     lst.add(new IncrementLetterInspector());
     lst.add(new DecrementLetterInspector());
     lst.add(new ReplaceLetterInspector());
+    lst.add(new ReplaceFirstLetterInspector());
+    lst.add(new ReplaceLastLetterInspector());
     lst.add(new DirListInspector(DirListInspector.LIST_DIR, true, verbose));
     lst.add(new DoubledLetterInspector());
     lst.add(new PrefixInspector());
@@ -68,7 +70,9 @@ public final class Wordsmith extends Command {
     lst.add(new DoReMiInspector());
     lst.add(new Split2Inspector());
     lst.add(new Split3Inspector());
+    lst.add(new RotationInspector());
     lst.add(new MetaValuationInspector());
+    lst.add(new MetaWordListInspector());
     return lst;
   }
 
