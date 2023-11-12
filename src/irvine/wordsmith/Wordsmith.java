@@ -65,6 +65,7 @@ public final class Wordsmith extends Command {
     lst.add(new ConsecutiveLettersInspector());
     lst.add(new ParityInspector());
     lst.add(new AddSingleLetterInspector());
+    lst.add(new AddSingleLetter2Inspector());
     lst.add(new RomanInspector());
     lst.add(new ElementInspector());
     lst.add(new DoReMiInspector());

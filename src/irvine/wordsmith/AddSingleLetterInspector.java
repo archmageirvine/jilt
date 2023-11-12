@@ -1,5 +1,7 @@
 package irvine.wordsmith;
 
+import java.util.ArrayList;
+
 import irvine.jilt.Dictionary;
 
 /**
@@ -8,25 +10,29 @@ import irvine.jilt.Dictionary;
  */
 public class AddSingleLetterInspector implements Inspector {
 
-  private boolean is(final char c, final String word) {
+  protected String is(final char c, final String word) {
     for (int k = 0; k <= word.length(); ++k) {
-      if (Dictionary.getDefaultDictionary().contains(word.substring(0, k) + c + word.substring(k))) {
-        return true;
+      final String w = word.substring(0, k) + c + word.substring(k);
+      if (Dictionary.getDefaultDictionary().contains(w)) {
+        return w;
       }
     }
-    return false;
+    return null;
   }
 
   private void checkConstantLetter(final char c, final String[] words, final StringBuilder sb) {
+    final ArrayList<String> s = new ArrayList<>();
     for (final String w : words) {
-      if (!is(c, w)) {
+      final String replace = is(c, w);
+      if (replace == null) {
         return;
       }
+      s.add(replace);
     }
     if (sb.length() > 0) {
       sb.append('\n');
     }
-    sb.append("The letter ").append(c).append(" can be added to every word");
+    sb.append("The letter ").append(c).append(" can be added to every word:\n").append(s);
   }
 
   private void checkIncrementingLetter(final char c, final String[] words, final StringBuilder sb) {
@@ -34,16 +40,19 @@ public class AddSingleLetterInspector implements Inspector {
       return;
     }
     char d = c;
+    final ArrayList<String> s = new ArrayList<>();
     for (final String w : words) {
-      if (!is(d, w)) {
+      final String replace = is(d, w);
+      if (replace == null) {
         return;
       }
+      s.add(replace);
       ++d;
     }
     if (sb.length() > 0) {
       sb.append('\n');
     }
-    sb.append("The letters ").append(c).append((char)(c + 1)).append((char)(c + 2)).append("... can be added");
+    sb.append("The letters ").append(c).append((char)(c + 1)).append((char)(c + 2)).append("... can be added:\n").append(s);
   }
 
   private void checkDecrementingLetter(final char c, final String[] words, final StringBuilder sb) {
@@ -51,16 +60,16 @@ public class AddSingleLetterInspector implements Inspector {
       return;
     }
     char d = c;
+    final ArrayList<String> s = new ArrayList<>();
     for (final String w : words) {
-      if (!is(d, w)) {
+      final String replace = is(d, w);
+      if (replace == null) {
         return;
       }
+      s.add(replace);
       --d;
     }
-    if (sb.length() > 0) {
-      sb.append('\n');
-    }
-    sb.append("The letters ").append(c).append((char)(c - 1)).append((char)(c - 2)).append("... can be added to every word");
+    sb.append("The letters ").append(c).append((char)(c - 1)).append((char)(c - 2)).append("... can be added to every word:\n").append(s);
   }
 
   @Override
