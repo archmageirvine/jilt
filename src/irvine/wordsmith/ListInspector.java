@@ -69,6 +69,9 @@ public class ListInspector implements Inspector {
         }
       }
     }
+    if (res.charAt(res.length() - 1) != '\n') {
+      res.append('\n');
+    }
     return res.toString();
   }
 }

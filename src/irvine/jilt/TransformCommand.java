@@ -15,6 +15,7 @@ import irvine.transform.NumbersTransform;
 import irvine.transform.ReverseTransform;
 import irvine.transform.ScrabbleTransform;
 import irvine.transform.SortTransform;
+import irvine.transform.SubstituteTransform;
 import irvine.transform.SubtractTransform;
 import irvine.transform.SumTransform;
 import irvine.transform.TelephoneSumTransform;
@@ -53,6 +54,8 @@ public final class TransformCommand extends Command {
   private static final String NUMBER_FLAG = "numbers";
   private static final String ADD_FLAG = "add";
   private static final String SUBTRACT_FLAG = "subtract";
+  private static final String ENCODE = "subtitute";
+  private static final String DECODE = "inverse";
 
   /**
    * Transform words.
@@ -78,6 +81,8 @@ public final class TransformCommand extends Command {
     flags.registerOptional('N', NUMBER_FLAG, "convert letters to numbers A=1, ..., Z=26");
     flags.registerOptional(ADD_FLAG, String.class, "KEY", "cyclically add given key to the input");
     flags.registerOptional(SUBTRACT_FLAG, String.class, "KEY", "cyclically subtract given key to the input");
+    flags.registerOptional('E', ENCODE, String.class, "KEY", "perform simple substitution encoding using the given key");
+    flags.registerOptional('D', DECODE, String.class, "KEY", "perform simple substitution decoding using the given key");
     CommonFlags.registerOutputFlag(flags);
     CommonFlags.registerInputFlag(flags);
     flags.setValidator(f -> {
@@ -139,6 +144,12 @@ public final class TransformCommand extends Command {
     }
     if (flags.isSet(SUBTRACT_FLAG)) {
       transforms.add(new SubtractTransform((String) flags.getValue(SUBTRACT_FLAG)));
+    }
+    if (flags.isSet(ENCODE)) {
+      transforms.add(new SubstituteTransform((String) flags.getValue(ENCODE), false));
+    }
+    if (flags.isSet(DECODE)) {
+      transforms.add(new SubstituteTransform((String) flags.getValue(DECODE), true));
     }
 
     final boolean includeTransformName = flags.isSet(NAME_FLAG);

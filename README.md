@@ -123,13 +123,13 @@ The `wordsmith` module applies a collection of tests in an attempt to
 discover an explanation for a sequence of words.
 
 ```
-jilt wordsmith Vienna Brussels Prague Copenhagen Tallinn Helsinki Athens Budapest
+> jilt wordsmith Vienna Brussels Prague Copenhagen Tallinn Helsinki Athens Budapest
 All words are cities
 All words are capital cities
 Associated words are in alphabetical order:
 [Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, Greece, Hungary]
 
-jilt wordsmith NIGHT, PAINTING, INIQUITY, THRIVE, VAPOURS, VERIFY, REVISIT
+> jilt wordsmith NIGHT, PAINTING, INIQUITY, THRIVE, VAPOURS, VERIFY, REVISIT
 Increasing Roman numerals:
 [I, II, III, IV, V, VI, VII]
 ```
