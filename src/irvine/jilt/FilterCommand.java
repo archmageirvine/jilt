@@ -9,6 +9,7 @@ import java.util.Locale;
 
 import irvine.filter.AlphabetFilter;
 import irvine.filter.AlphabeticalFilter;
+import irvine.filter.ChemicalElementFilter;
 import irvine.filter.ContainsFilter;
 import irvine.filter.DecreasingFilter;
 import irvine.filter.DeltaFilter;
@@ -75,6 +76,7 @@ public final class FilterCommand extends Command {
   private static final String DISTINCT_FLAG = "distinct";
   private static final String DELTA_FLAG = "delta";
   private static final String SUBSTRING_FLAG = "substring";
+  private static final String CHEMICAL_FLAG = "chemical";
 
   private boolean is(final List<Filter> filters, final String word) {
     for (final Filter f : filters) {
@@ -127,6 +129,7 @@ public final class FilterCommand extends Command {
     flags.registerOptional(TELEPHONE_SUM_FLAG, String.class, "INT", "word matches the specified sum of digits when dialed");
     flags.registerOptional(DELTA_FLAG, String.class, "STRING", "word has exactly one letter different from the specified word");
     flags.registerOptional(SUBSTRING_FLAG, String.class, "STRING", "word is a substring of the specified word");
+    flags.registerOptional(CHEMICAL_FLAG, "words can be written as a concatenation of chemical element symbols");
     flags.setValidator(f -> {
       if (!CommonFlags.validateDictionary(f)) {
         return false;
@@ -189,6 +192,9 @@ public final class FilterCommand extends Command {
     }
     if (flags.isSet(DISTINCT_FLAG)) {
       filters.add(new DistinctFilter());
+    }
+    if (flags.isSet(CHEMICAL_FLAG)) {
+      filters.add(new ChemicalElementFilter());
     }
     if (flags.isSet(ALPHABET_FLAG)) {
       filters.add(new AlphabetFilter((String) flags.getValue(ALPHABET_FLAG)));

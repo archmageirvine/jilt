@@ -1,7 +1,7 @@
 package irvine.wordsmith;
 
 /**
- * Check for Roman numerals.
+ * Check for chemical element symbols.
  * @author Sean A. Irvine
  */
 public class ElementInspector implements Inspector {
@@ -35,7 +35,7 @@ public class ElementInspector implements Inspector {
     return true;
   }
 
-  private static boolean isChemicalSequence(final String word, final int pos) {
+  public static boolean isChemicalSequence(final String word, final int pos) {
     if (pos >= word.length()) {
       return true;
     }
