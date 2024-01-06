@@ -19,7 +19,13 @@ public final class Caesar extends Command {
     super("Caesar shifts");
   }
 
-  static String caesarShift(final String text, final int shift) {
+  /**
+   * Caesar shift the text by the specified amount.
+   * @param text text to shift
+   * @param shift amount to shift
+   * @return Caesar shifted text
+   */
+  public static String caesarShift(final String text, final int shift) {
     if (shift < 0 || shift > 25) {
       throw new IllegalArgumentException();
     }
