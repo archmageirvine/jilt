@@ -79,6 +79,12 @@ public class LoopsTransform implements Transform {
     LOOPS.put(';', 0);
     LOOPS.put('-', 0);
     LOOPS.put('?', 0);
+    LOOPS.put('(', 0);
+    LOOPS.put(')', 0);
+    LOOPS.put('[', 0);
+    LOOPS.put(']', 0);
+    LOOPS.put('{', 0);
+    LOOPS.put('}', 0);
     LOOPS.put('\'', 0);
   }
 
