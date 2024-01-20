@@ -11,6 +11,7 @@ import irvine.transform.IdentityTransform;
 import irvine.transform.LetterTransform;
 import irvine.transform.LoopsTransform;
 import irvine.transform.LowercaseTransform;
+import irvine.transform.MatchTransform;
 import irvine.transform.NumbersTransform;
 import irvine.transform.ReverseTransform;
 import irvine.transform.ScrabbleTransform;
@@ -56,6 +57,7 @@ public final class TransformCommand extends Command {
   private static final String SUBTRACT_FLAG = "subtract";
   private static final String ENCODE = "subtitute";
   private static final String DECODE = "inverse";
+  private static final String MATCH = "match";
 
   /**
    * Transform words.
@@ -83,6 +85,7 @@ public final class TransformCommand extends Command {
     flags.registerOptional(SUBTRACT_FLAG, String.class, "KEY", "cyclically subtract given key to the input");
     flags.registerOptional('E', ENCODE, String.class, "KEY", "perform simple substitution encoding using the given key");
     flags.registerOptional('D', DECODE, String.class, "KEY", "perform simple substitution decoding using the given key");
+    flags.registerOptional(MATCH, String.class, "STRING", "count the number of letters in the given string matching each input");
     CommonFlags.registerOutputFlag(flags);
     CommonFlags.registerInputFlag(flags);
     flags.setValidator(f -> {
@@ -150,6 +153,9 @@ public final class TransformCommand extends Command {
     }
     if (flags.isSet(DECODE)) {
       transforms.add(new SubstituteTransform((String) flags.getValue(DECODE), true));
+    }
+    if (flags.isSet(MATCH)) {
+      transforms.add(new MatchTransform((String) flags.getValue(MATCH)));
     }
 
     final boolean includeTransformName = flags.isSet(NAME_FLAG);
