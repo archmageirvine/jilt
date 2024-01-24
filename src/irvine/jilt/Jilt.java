@@ -12,6 +12,7 @@ import irvine.language.Anagram;
 import irvine.language.Caesar;
 import irvine.language.Chain;
 import irvine.language.Demux;
+import irvine.language.Descramble;
 import irvine.language.Dict;
 import irvine.language.Entropy;
 import irvine.language.Equation;
@@ -86,6 +87,8 @@ public final class Jilt {
     FREQ(new Frequency()),
     /** Compute entropy. */
     ENTROPY(new Entropy()),
+    /** Try to descramble text. */
+    DESCRAMBLE(new Descramble()),
     /** Caesar shifts. */
     CAESAR(new Caesar()),
     /** Solve simple substitution ciphers. */
