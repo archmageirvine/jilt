@@ -15,6 +15,7 @@ import irvine.filter.DecreasingFilter;
 import irvine.filter.DeltaFilter;
 import irvine.filter.DiplogramFilter;
 import irvine.filter.DistinctFilter;
+import irvine.filter.ExactCountFilter;
 import irvine.filter.Filter;
 import irvine.filter.IncreasingFilter;
 import irvine.filter.LengthFilter;
@@ -77,6 +78,7 @@ public final class FilterCommand extends Command {
   private static final String DELTA_FLAG = "delta";
   private static final String SUBSTRING_FLAG = "substring";
   private static final String CHEMICAL_FLAG = "chemical";
+  private static final String VOWEL_COUNT = "vowel-count";
 
   private boolean is(final List<Filter> filters, final String word) {
     for (final Filter f : filters) {
@@ -130,6 +132,7 @@ public final class FilterCommand extends Command {
     flags.registerOptional(DELTA_FLAG, String.class, "STRING", "word has exactly one letter different from the specified word");
     flags.registerOptional(SUBSTRING_FLAG, String.class, "STRING", "word is a substring of the specified word");
     flags.registerOptional(CHEMICAL_FLAG, "words can be written as a concatenation of chemical element symbols");
+    flags.registerOptional(VOWEL_COUNT, Integer.class, "INT", "word contains the specified number of vowels");
     flags.setValidator(f -> {
       if (!CommonFlags.validateDictionary(f)) {
         return false;
@@ -255,6 +258,9 @@ public final class FilterCommand extends Command {
     }
     if (flags.isSet(DIPLOGRAM_FLAG)) {
       filters.add(new DiplogramFilter((Integer) flags.getValue(DIPLOGRAM_FLAG)));
+    }
+    if (flags.isSet(VOWEL_COUNT)) {
+      filters.add(new ExactCountFilter("aeiou", (Integer) flags.getValue(VOWEL_COUNT)));
     }
     if (flags.isSet(IN_DICT_FLAG)) {
       try (final BufferedReader reader = Dictionary.getDictionaryReader((String) flags.getValue(CommonFlags.DICTIONARY_FLAG))) {
