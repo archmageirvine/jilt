@@ -43,7 +43,7 @@ public final class WordSearch extends Command {
     final int nx = x + DELTA_X[d];
     final int ny = y + DELTA_Y[d];
     if (ny >= 0 && ny < mGrid.length && nx >= 0 && nx < mGrid[ny].length) {
-      search(out, sx, sy, nx, ny, d, soFar + mGrid[y][x]);
+      search(out, sx, sy, nx, ny, d, soFar + mGrid[ny][nx]);
     }
   }
 
@@ -151,7 +151,7 @@ public final class WordSearch extends Command {
         for (int y = 0; y < mGrid.length; ++y) {
           for (int x = 0; x < mGrid[y].length; ++x) {
             for (int d = 0; d < DELTA_X.length; ++d) {
-              search(out, x, y, x, y, d, "");
+              search(out, x, y, x, y, d, String.valueOf(mGrid[y][x]));
             }
           }
         }
