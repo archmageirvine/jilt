@@ -74,6 +74,7 @@ public final class Wordsmith extends Command {
     lst.add(new Split3Inspector());
     lst.add(new RotationInspector());
     lst.add(new CaesarInspector());
+    lst.add(new AdjacentInspector());
     lst.add(new MetaValuationInspector());
     lst.add(new MetaWordListInspector());
     return lst;
