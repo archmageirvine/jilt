@@ -51,7 +51,7 @@ class Node implements Comparable<Node> {
 
   @Override
   public boolean equals(final Object o) {
-    return o instanceof Node && mScore == ((Node) o).mScore && mPermutation == ((Node) o).mPermutation;
+    return o instanceof Node && mScore == ((Node) o).mScore && Arrays.equals(mPermutation, ((Node) o).mPermutation);
   }
 
   @Override
