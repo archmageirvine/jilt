@@ -87,7 +87,7 @@ public final class Dictionary {
 
   /**
    * Retrieve the default dictionary.
-   * @return dicttionary
+   * @return dictionary
    */
   public static Set<String> getDefaultDictionary() {
     if (sDict == null) {
