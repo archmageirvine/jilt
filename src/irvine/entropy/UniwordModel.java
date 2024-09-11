@@ -20,8 +20,7 @@ import irvine.util.Sort;
 import irvine.util.StringUtils;
 
 /**
- * Reduced alphabet character gram model.  Consecutive whitespace is collapsed
- * to a single symbol.  Model uses PPMC scoring strategy with exclusions.
+ * Reduced alphabet single word model.
  * @author Sean A. Irvine
  */
 public class UniwordModel implements Entropy {
@@ -121,7 +120,6 @@ public class UniwordModel implements Entropy {
 
   /**
    * Load a model from the specified file name.
-   *
    * @param modelName file name of model
    * @exception IOException if an I/O error occurs
    */
@@ -176,7 +174,6 @@ public class UniwordModel implements Entropy {
 
   /**
    * Entropy via a unigram word model.
-   *
    * @param args source files
    * @exception IOException if an I/O error occurs
    */

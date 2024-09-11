@@ -71,7 +71,7 @@ public class NGramModel implements Entropy {
         final long child = childPtr(position, mContext[j]);
         if (child == 0) {
           // No such child, create space and link new child.
-          mModel.set(position + 2 * mContext[j] - 1, mNextFree);
+          mModel.set(position + 2L * mContext[j] - 1, mNextFree);
           position = mNextFree;
           mNextFree += 2 * ALPHABET_SIZE;
         } else {
@@ -80,7 +80,7 @@ public class NGramModel implements Entropy {
       }
       // Increment count
       final int s = mContext[mOrder - 1];
-      final long nPos = position + 2 * s - 2;
+      final long nPos = position + 2L * s - 2;
       mModel.set(nPos, mModel.get(nPos) + 1);
     }
   }

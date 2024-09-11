@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintStream;
+import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -69,7 +70,7 @@ public class OnePartCodeSolver {
 
   private final PrintStream mOut;
   private final Entropy mModel;
-  private int mRetain = 100000;
+  private int mRetain = 10;
 
   /**
    * Construct a solver.
@@ -99,34 +100,56 @@ public class OnePartCodeSolver {
   }
 
   private double score(final List<String> message, final Map<String, String> code) {
-    return mModel.entropy(toString(message, code));
+    final String s = toString(message, code);
+    return mModel.entropy(s); // / Math.log(1 + s.length());
+  }
+
+  private String[] getWords() throws IOException {
+    final Set<String> dict = Dictionary.getWordSet(new BufferedReader(new FileReader("/home/sean/Downloads/code2")), 1, 20);
+    final String[] words = new String[dict.size()];
+    int k = 0;
+    for (final String w : dict) {
+      words[k++] = w;
+    }
+    Arrays.sort(words);
+    return words;
   }
 
   public void solve(final List<String> message) throws IOException {
     final Map<String, String> code = new HashMap<>();
-    final TreeSet<String> sorted = new TreeSet<>();
-    for (final String c : message) {
-      code.put(c, "");
-      sorted.add(c);
+    final TreeSet<String> sorted = new TreeSet<>(message);
+    final String[] dict = getWords();
+    if (sorted.size() > dict.length) {
+      throw new UnsupportedEncodingException();
     }
-    //final Set<String> dict = Dictionary.getDefaultDictionary();
-    final Set<String> dict = Dictionary.getWordSet(new BufferedReader(new FileReader("/home/sean/Downloads/code3")), 1, 20);
+    // invert dictionary
+    final HashMap<String, Integer> inverse = new HashMap<>();
+    for (int k = 0; k < dict.length; ++k) {
+      inverse.put(dict[k], k);
+    }
+    final double r = dict.length / (sorted.size() + 1.0);
+    double s = 0;
+    for (final String w : sorted) {
+      s += r;
+      code.put(w, dict[(int) s]);
+    }
     TreeSet<ScoreNode> solutions = new TreeSet<>();
-    solutions.add(new ScoreNode(0.0, code, ""));
-    for (final String c : sorted) {
-      // Consider possible assignments for code word c
-      mOut.println("Trying possibilities for " + c);
+    solutions.add(new ScoreNode(score(message, code), code, ""));
+    System.out.println("Starting: " + dict.length + " " + sorted.size());
+    while (true) {
+      // Try moving each word in turn
       final TreeSet<ScoreNode> nextSolutions = new TreeSet<>();
       for (final ScoreNode node : solutions) {
         final Map<String, String> existingCode = node.mCode;
-        final String prev = node.mPrev;
-        for (final String w : dict) {
-          if (w.compareTo(prev) > 0) {
+        for (final String c : sorted) {
+          final int prev = inverse.getOrDefault(existingCode.get(sorted.lower(c)), -1);
+          final int next = inverse.getOrDefault(existingCode.get(sorted.higher(c)), dict.length);
+          for (int k = prev + 1; k < next; ++k) {
             final Map<String, String> copy = new HashMap<>(existingCode);
-            copy.put(c, w);
+            copy.put(c, dict[k]);
             final double score = score(message, copy);
             if (nextSolutions.isEmpty() || score < nextSolutions.last().mScore) {
-              nextSolutions.add(new ScoreNode(score, copy, w));
+              nextSolutions.add(new ScoreNode(score, copy, ""));
               if (nextSolutions.size() > mRetain) {
                 nextSolutions.pollLast();
               }
