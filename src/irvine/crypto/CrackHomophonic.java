@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.TreeSet;
 
+import irvine.entropy.Entropy;
 import irvine.entropy.FourGramAlphabetModel;
 import irvine.util.CliFlags;
 import irvine.util.DoubleUtils;
@@ -76,7 +77,7 @@ public class CrackHomophonic {
     return decrypt;
   }
 
-  private final FourGramAlphabetModel mModel;
+  private final Entropy mModel;
   private final String mDistribution;
   private final int mRetain;
   // The largest entropy in the set under construction.  Maintained separately to avoid
@@ -84,7 +85,7 @@ public class CrackHomophonic {
   private double mLastEntropy = Double.POSITIVE_INFINITY;
   private final Random mRandom = new Random();
 
-  CrackHomophonic(final FourGramAlphabetModel model, final String distribution, final int retain) {
+  CrackHomophonic(final Entropy model, final String distribution, final int retain) {
     mModel = model;
     mDistribution = distribution;
     mRetain = retain;
@@ -215,7 +216,7 @@ public class CrackHomophonic {
     flags.setValidator(new HomophonicFlagsValidator());
     flags.setFlags(args);
 
-    final FourGramAlphabetModel model;
+    final Entropy model;
     if (flags.isSet(MODEL_FLAG)) {
       model = FourGramAlphabetModel.loadModel((String) flags.getValue(MODEL_FLAG));
     } else {

@@ -106,9 +106,9 @@ public class FourGramAlphabetModel implements Entropy, Serializable {
     mContextMask = mCounts.length - 1;
   }
 
-  private static FourGramAlphabetModel loadModel(final InputStream stream) throws IOException {
+  private static Entropy loadModel(final InputStream stream) throws IOException {
     try (final ObjectInputStream ois = new ObjectInputStream(new GZIPInputStream(stream))) {
-      return (FourGramAlphabetModel) ois.readObject();
+      return (Entropy) ois.readObject();
     } catch (final ClassNotFoundException e) {
       throw new RuntimeException("Incompatible model file", e);
     }
@@ -120,7 +120,7 @@ public class FourGramAlphabetModel implements Entropy, Serializable {
    * @return the model
    * @exception IOException if an I/O error occurs
    */
-  public static FourGramAlphabetModel loadModel(final String filename) throws IOException {
+  public static Entropy loadModel(final String filename) throws IOException {
     try (final InputStream is = new FileInputStream(filename)) {
       return loadModel(is);
     }
@@ -132,7 +132,7 @@ public class FourGramAlphabetModel implements Entropy, Serializable {
    * @return the model
    * @exception IOException if an I/O error occurs
    */
-  public static FourGramAlphabetModel loadModelResource(final String resource) throws IOException {
+  public static Entropy loadModelResource(final String resource) throws IOException {
     try (final InputStream is = FourGramAlphabetModel.class.getClassLoader().getResourceAsStream(resource)) {
       return loadModel(is);
     }
@@ -143,7 +143,7 @@ public class FourGramAlphabetModel implements Entropy, Serializable {
    * @return the model
    * @exception IOException if an I/O error occurs
    */
-  public static FourGramAlphabetModel loadModel() throws IOException {
+  public static Entropy loadModel() throws IOException {
     return loadModelResource(DEFAULT_MODEL);
   }
 
@@ -338,7 +338,7 @@ public class FourGramAlphabetModel implements Entropy, Serializable {
       }
       System.out.println("Model saved.");
     } else {
-      final FourGramAlphabetModel model = loadModel(modelName);
+      final Entropy model = loadModel(modelName);
       if (flags.isSet(VERSION_FLAG)) {
         System.out.println(model.toString());
       }

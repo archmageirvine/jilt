@@ -1,20 +1,28 @@
 package irvine.entropy;
 
 import java.io.BufferedInputStream;
-import java.io.BufferedReader;
-import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+import java.util.zip.GZIPInputStream;
+import java.util.zip.GZIPOutputStream;
 
+import irvine.jilt.CommonFlags;
+import irvine.util.CliFlags;
+import irvine.util.IOUtils;
 import irvine.util.LongDynamicLongArray;
+import irvine.util.StringUtils;
 
 /**
  * Reduced alphabet character gram model.
  * @author Sean A. Irvine
  */
-public class NGramModel implements Entropy {
+public class NGramModel implements Entropy, Serializable {
 
+  private static final String ORDER_FLAG = "order";
   private static final int ROOT = 2;
   private static final int SPACE = 27;
   private static final int DIGIT = 28;
@@ -33,7 +41,7 @@ public class NGramModel implements Entropy {
    * Tree consists of pairs of longs.  The first long of the pair is
    * the count for the current node, and the second long points to
    * the index of the first child of the node (and the next 2&times;
-   * <code>ALPHABET_SIZE</code> entries are pointers for the children.
+   * <code>ALPHABET_SIZE</code> entries are pointers for the children).
    * Node 0 is unused. Root is at 2.
    */
   private final LongDynamicLongArray mModel = new LongDynamicLongArray();
@@ -53,6 +61,37 @@ public class NGramModel implements Entropy {
     }
     mOrder = order;
     mContext = new int[mOrder];
+  }
+
+  /**
+   * Serialize the current model.
+   * @param filename output filename
+   * @throws IOException if an I/O error occurs
+   */
+  void saveModel(final String filename) throws IOException {
+    try (final ObjectOutputStream oos = new ObjectOutputStream(new GZIPOutputStream(new FileOutputStream(filename)))) {
+      oos.writeObject(this);
+    }
+  }
+
+  private static NGramModel loadModel(final InputStream stream) throws IOException {
+    try (final ObjectInputStream ois = new ObjectInputStream(stream)) {
+      return (NGramModel) ois.readObject();
+    } catch (final ClassNotFoundException e) {
+      throw new RuntimeException("Incompatible model file", e);
+    }
+  }
+
+  /**
+   * Load a model.
+   * @param filename file name of the model
+   * @return the model
+   * @exception IOException if an I/O error occurs
+   */
+  public static NGramModel loadModel(final String filename) throws IOException {
+    try (final InputStream is = new GZIPInputStream(IOUtils.getStream(filename))) {
+      return loadModel(is);
+    }
   }
 
   private long childPtr(final long current, final int symbol) {
@@ -116,53 +155,26 @@ public class NGramModel implements Entropy {
 
   /**
    * Add contents of given stream into the model.
-   *
    * @param in input stream
    * @exception IOException if an I/O error occurs
    */
   public void add(final InputStream in) throws IOException {
+    long s = 0;
     try (BufferedInputStream is = new BufferedInputStream(in)) {
       int c;
       boolean lastWasSpace = true;
       while ((c = is.read()) != -1) {
         final int v = clean(c);
-        if (v > 0) {
-          if (v != SPACE || !lastWasSpace) {
-            addSymbol(v);
-            lastWasSpace = v == SPACE;
-          }
+        if (v > 0 && (v != SPACE || !lastWasSpace)) {
+          addSymbol(v);
+          lastWasSpace = v == SPACE;
+        }
+        if (++s % 100000000 == 0) {
+          StringUtils.message("Processed " + s + " characters of input");
         }
       }
     }
   }
-
-//  private String symbol(final int v) {
-//    switch (v) {
-//    case 0:
-//      return "?";
-//    case SPACE:
-//      return " ";
-//    case DIGIT:
-//      return "0";
-//    default:
-//      return String.valueOf((char) (v + 'A' - 1));
-//    }
-//  }
-//
-//  private void dump(final long n, final String indent) {
-//    if (n == 0) {
-//      return;
-//    }
-//    final String id2 = indent + "  ";
-//    for (int k = 0; k < ALPHABET_SIZE; ++k) {
-//      final long count = count(n, k + 1);
-//      final long address = childPtr(n, k + 1);
-//      if (count != 0 || address != 0) {
-//        System.out.println(indent + symbol(k + 1) + " (" + count + ")");
-//      }
-//      dump(address, id2);
-//    }
-//  }
 
   private long findContext(final int[] context, final int start) {
     long position = ROOT;
@@ -229,24 +241,35 @@ public class NGramModel implements Entropy {
   /**
    * Entropy via a word gram model.  Build a model using the supplied files,
    * then score each line of text on standard input.
-   *
    * @param args source files
    * @exception IOException if an I/O error occurs
    */
   public static void main(final String[] args) throws IOException {
-    final NGramModel model = new NGramModel(4);
-    for (final String f : args) {
-      System.err.println("Adding: " + f);
-      try (FileInputStream fis = new FileInputStream(f)) {
-        model.add(fis);
+    final CliFlags flags = new CliFlags("Build a character based entropy model");
+    flags.registerRequired('o', CommonFlags.OUTPUT_FLAG, String.class, "FILE", "where to write the model");
+    flags.registerOptional('i', CommonFlags.INPUT_FLAG, String.class, "FILE", "existing model to add content to");
+    flags.registerOptional('O', ORDER_FLAG, Integer.class, "INT", "order of model to build", 4);
+    flags.setValidator(f -> {
+      if (flags.isSet(CommonFlags.INPUT_FLAG) && flags.isSet(ORDER_FLAG)) {
+        flags.setParseMessage("Do not specify both existing model and order.");
+        return false;
       }
+      return true;
+    });
+    flags.setFlags(args);
+    final NGramModel model;
+    if (flags.isSet(CommonFlags.INPUT_FLAG)) {
+      model = loadModel((String) flags.getValue(CommonFlags.INPUT_FLAG));
+    } else {
+      final int order = (Integer) flags.getValue(ORDER_FLAG);
+      model = new NGramModel(order);
     }
-    //    model.dump(ROOT, "");
-    try (BufferedReader r = new BufferedReader(new InputStreamReader(System.in))) {
-      String line;
-      while ((line = r.readLine()) != null) {
-        System.out.println(model.entropy(line) + " " + line);
-      }
+    StringUtils.message("Adding input to order " + model.mOrder + " model");
+    try (final InputStream fis = new BufferedInputStream(System.in)) {
+      model.add(fis);
     }
+    final String output = (String) flags.getValue(CommonFlags.OUTPUT_FLAG);
+    StringUtils.message("Saving model to " + output);
+    model.saveModel(output);
   }
 }

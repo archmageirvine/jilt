@@ -2,6 +2,7 @@ package irvine.util;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -166,4 +167,22 @@ public final class StringUtils {
     }
     return syn;
   }
+
+  /**
+   * Print a dated message to a stream.
+   * @param out stream to write to
+   * @param message message to print
+   */
+  public static void message(final PrintStream out, final String message) {
+    out.println(Date.now() + message);
+  }
+
+  /**
+   * Print a dated message on standard output.
+   * @param message message to print
+   */
+  public static void message(final String message) {
+    message(System.out, message);
+  }
+
 }

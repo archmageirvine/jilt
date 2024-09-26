@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import irvine.StandardIoTestCase;
 import irvine.TestUtils;
+import irvine.entropy.Entropy;
 import irvine.entropy.FourGramAlphabetModel;
 
 /**
@@ -19,7 +20,7 @@ public class CrackHomophonicTest extends StandardIoTestCase {
 
   // Not very realistic it keeps minimal solutions
   public void testUgly() throws IOException {
-    final FourGramAlphabetModel model = FourGramAlphabetModel.loadModel();
+    final Entropy model = FourGramAlphabetModel.loadModel();
     final CrackHomophonic cracker = new CrackHomophonic(model, CrackHomophonic.DEFAULT_DISTRIBUTION, 2);
     cracker.setSeed(42);
     cracker.solveByExchange(CIPHER, 2);
