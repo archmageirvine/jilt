@@ -27,6 +27,7 @@ public class NGramModel implements Entropy, Serializable {
   private static final int SPACE = 27;
   private static final int DIGIT = 28;
   private static final int ALPHABET_SIZE = 28;
+  private static final long serialVersionUID = 1L;
 
   /*
    * Alphabet encoding: 0 unused (not stored)
@@ -51,7 +52,6 @@ public class NGramModel implements Entropy, Serializable {
 
   /**
    * Construct a new word gram model.
-   *
    * @param order order of model
    * @exception IllegalArgumentException if <code>order</code> is negative.
    */
