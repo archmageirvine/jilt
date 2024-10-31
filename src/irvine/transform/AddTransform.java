@@ -11,18 +11,21 @@ public class AddTransform implements Transform {
   private static final String A = "ZABCDEFGHIJKLMNOPQRSTUVWXYZ";
   private static final String B = "zabcdefghijklmnopqrstuvwxyz";
   private final String mKey;
+  private final int mOffset;
 
   /**
    * Add with a specified key.
    * @param key the key string
+   * @param offset usually 0 or 1
    */
-  public AddTransform(final String key) {
+  public AddTransform(final String key, final int offset) {
     mKey = key.toUpperCase(Locale.getDefault());
+    mOffset = offset;
   }
 
   @Override
   public String getName() {
-    return "ADD(" + mKey + ")";
+    return "ADD(" + mKey + "," + mOffset + ")";
   }
 
   @Override
@@ -31,7 +34,7 @@ public class AddTransform implements Transform {
     int keyPos = 0;
     for (int k = 0; k < s.length(); ++k) {
       final char c = s.charAt(k);
-      final int shift = mKey.charAt(keyPos) - '@';
+      final int shift = mKey.charAt(keyPos) - 'A' + mOffset;
       if (shift < 0 || shift > 26) {
         sb.append(c);
       } else if (c >= 'A' && c <= 'Z') {

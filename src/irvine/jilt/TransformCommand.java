@@ -53,8 +53,10 @@ public final class TransformCommand extends Command {
   private static final String SUM1_FLAG = "sum1";
   private static final String LETTER_FLAG = "letters";
   private static final String NUMBER_FLAG = "numbers";
-  private static final String ADD_FLAG = "add";
-  private static final String SUBTRACT_FLAG = "subtract";
+  private static final String ADD0_FLAG = "add0";
+  private static final String ADD1_FLAG = "add1";
+  private static final String SUBTRACT0_FLAG = "subtract0";
+  private static final String SUBTRACT1_FLAG = "subtract1";
   private static final String ENCODE = "subtitute";
   private static final String DECODE = "inverse";
   private static final String MATCH = "match";
@@ -81,8 +83,10 @@ public final class TransformCommand extends Command {
     flags.registerOptional(SUM1_FLAG, "sum of letters in input 1=A, ..., 26=Z");
     flags.registerOptional(LETTER_FLAG, "convert numbers to letters 1=A, ..., 26=Z");
     flags.registerOptional('N', NUMBER_FLAG, "convert letters to numbers A=1, ..., Z=26");
-    flags.registerOptional(ADD_FLAG, String.class, "KEY", "cyclically add given key to the input");
-    flags.registerOptional(SUBTRACT_FLAG, String.class, "KEY", "cyclically subtract given key to the input");
+    flags.registerOptional(ADD0_FLAG, String.class, "KEY", "cyclically add given key to the input (0 based)");
+    flags.registerOptional(ADD1_FLAG, String.class, "KEY", "cyclically add given key to the input (1 based)");
+    flags.registerOptional(SUBTRACT0_FLAG, String.class, "KEY", "cyclically subtract given key to the input (0 based)");
+    flags.registerOptional(SUBTRACT1_FLAG, String.class, "KEY", "cyclically subtract given key to the input (1 based)");
     flags.registerOptional('E', ENCODE, String.class, "KEY", "perform simple substitution encoding using the given key");
     flags.registerOptional('D', DECODE, String.class, "KEY", "perform simple substitution decoding using the given key");
     flags.registerOptional(MATCH, String.class, "STRING", "count the number of letters in the given string matching each input");
@@ -142,11 +146,17 @@ public final class TransformCommand extends Command {
     if (flags.isSet(SUM1_FLAG)) {
       transforms.add(new SumTransform(1));
     }
-    if (flags.isSet(ADD_FLAG)) {
-      transforms.add(new AddTransform((String) flags.getValue(ADD_FLAG)));
+    if (flags.isSet(ADD0_FLAG)) {
+      transforms.add(new AddTransform((String) flags.getValue(ADD0_FLAG), 0));
     }
-    if (flags.isSet(SUBTRACT_FLAG)) {
-      transforms.add(new SubtractTransform((String) flags.getValue(SUBTRACT_FLAG)));
+    if (flags.isSet(ADD1_FLAG)) {
+      transforms.add(new AddTransform((String) flags.getValue(ADD1_FLAG), 1));
+    }
+    if (flags.isSet(SUBTRACT0_FLAG)) {
+      transforms.add(new SubtractTransform((String) flags.getValue(SUBTRACT0_FLAG), 0));
+    }
+    if (flags.isSet(SUBTRACT1_FLAG)) {
+      transforms.add(new SubtractTransform((String) flags.getValue(SUBTRACT1_FLAG), 1));
     }
     if (flags.isSet(ENCODE)) {
       transforms.add(new SubstituteTransform((String) flags.getValue(ENCODE), false));

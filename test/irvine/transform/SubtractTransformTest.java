@@ -9,7 +9,7 @@ import junit.framework.TestCase;
 public class SubtractTransformTest extends TestCase {
 
   public void testFilter() {
-    final Transform t = new SubtractTransform("ABC");
+    final Transform t = new SubtractTransform("ABC", 1);
     assertEquals("", t.apply(""));
     assertEquals("ZYX", t.apply("AAA"));
     assertEquals("zyx", t.apply("aaa"));
