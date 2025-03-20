@@ -17,7 +17,7 @@ import irvine.util.LimitedLengthPriorityQueue;
 public final class Entropy extends Command {
 
   private static final String RESULTS_FLAG = "results";
-  private static final String BEST_FLAG = " best";
+  private static final String BEST_FLAG = "best";
 
   /** Construct the module. */
   public Entropy() {
